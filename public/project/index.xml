@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Projects on Juan Carlos Villaseñor-Derbez</title>
+    <link>/project/</link>
+    <description>Recent content in Projects on Juan Carlos Villaseñor-Derbez</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <copyright>&amp;copy; 2018 Juan Carlos Villaseñor-Derbez</copyright>
+    <lastBuildDate>Wed, 24 Jan 2018 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/project/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Fisheries &amp; Marine reserves</title>
+      <link>/project/marine_reserves/</link>
+      <pubDate>Wed, 24 Jan 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/project/marine_reserves/</guid>
+      <description>Unsustainable fishing practices threaten biodiversity, conservation, economic and social outcomes. Marine Protected Areas &amp;ndash;and marine reserves, in which all extractive efforts are prohibited&amp;ndash; are frequently implemented to aid in the recovery of fish and invertebrate stocks by limiting or restricting fishing effort and gears. While widely adopted as conservation strategies, I am more interested in their utility as fishery management tools, especially when implemented as community-based marine reserves1.
+ Small-scale lobster fishers from El Rosario, Baja California, Mexico (Photo by Arturo Hernández)  Theory tells us that by reducing fishing effort, populations in the bounded area should rebound.</description>
+    </item>
+    
+    <item>
+      <title>Global Fishing Watch</title>
+      <link>/project/gfw/</link>
+      <pubDate>Wed, 24 Jan 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/project/gfw/</guid>
+      <description>Texto aqui</description>
+    </item>
+    
+    <item>
+      <title>Giant Sea Bass</title>
+      <link>/project/mero_gigante/</link>
+      <pubDate>Wed, 27 Apr 2016 00:00:00 +0000</pubDate>
+      
+      <guid>/project/mero_gigante/</guid>
+      <description>The Giant Sea Bass Project seeks to recover natural history of one of the appex predators in the Kelp Forests of the California Current System: the Giant Sea Bass (GSB; Stereolepis gigas). For a good part of the 1900´s, GSB were an important fishery in California. The intense fishing pressure drove down ints population to the brink of extinction, and the species was protected in 1981. However, in Baja California (Mexico) it is still allowed to fish for this species.</description>
+    </item>
+    
+    <item>
+      <title>Invasive Lionfish</title>
+      <link>/project/lionfish/</link>
+      <pubDate>Wed, 27 Apr 2016 00:00:00 +0000</pubDate>
+      
+      <guid>/project/lionfish/</guid>
+      <description>Text here</description>
+    </item>
+    
+  </channel>
+</rss>
