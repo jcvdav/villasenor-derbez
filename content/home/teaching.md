@@ -15,10 +15,13 @@ weight = 60
 
 +++
 
-Short workshops:
+Short talks:
 
-- February, 2018 - [**Advanced RMarkdown**](http://villasenor-derbez.com/LAFF_R/) for the [LAFF](http://www.laff.bren.ucsb.edu) group. *Santa Barbara, USA*
-- September, 2017 - [**Intro to RMarkdown**](http://www.villasenor-derbez.com/intro2Rmd/) as an [eco-data-science](https://eco-data-science.github.io/) workshop. *Santa Barbara, USA*
-- June, 2017 - [**Evaluation of Marine Reserves in Mexico** (*spanish*)](http://www.villasenor-derbez.com/CursoMAREA/) to environmental managers. *Mexico City, MX*
+- February, 2018 - [**Advanced RMarkdown**](https://github.com/jcvdav/LAFF_R) for the [LAFF](http://www.laff.bren.ucsb.edu) group. *Santa Barbara, USA*
+- September, 2017 - [**Intro to RMarkdown**](https://jcvdav.github.io/intro2Rmd/) as an [eco-data-science](https://eco-data-science.github.io/) workshop. *Santa Barbara, USA*
+
+Workshops:
+
+- June, 2017 - [**Evaluation of Marine Reserves in Mexico** (*spanish*)](https://jcvdav.github.io/CursoMAREA/) to environmental managers. *Mexico City, MX*
 - July, 2015 - **ReefCheck kelp forest monitoring protocol: theory and practice** for fishers in El Rosario and Isla Natividad, Baja California
 - July, 2015 - **Use of Oceanographic Instruments (CTD, miniDOT, SeaBird Thermistors)** to community members of El Rosario and Isla Natividad, Baja California
