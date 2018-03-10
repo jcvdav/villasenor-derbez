@@ -34,4 +34,49 @@ The file will have its original line endings in you[0Kr
 [0K[?25h[?25l
 [0;32mJC@LAPTOP-SKCMSUPK [0;35m [0;33m~/Documents/GitHub/villasenor-d[0Ke
 rbez[0;36m (master)[0m[0K
-$[0K[3G[?25h[?25l$ g[0K[?25hi[0Kt[0K[7G[?25l$ git a[0K[?25hd[0K[?25ld[0K[9G[?25h[10G[11G[?25l$ git add -[0K[?25hA[0K
+$[0K[3G[?25h[?25l$ g[0K[?25hi[0Kt[0K[7G[?25l$ git a[0K[?25hd[0K[?25ld[0K[9G[?25h[10G[11G[?25l$ git add -[0K[?25hA[0K[?25l
+[0K[?25h[?25l
+[0;32mJC@LAPTOP-SKCMSUPK [0;35m [0;33m~/Documents/GitHub/villasenor-d[0Ke
+rbez[0;36m (master)[0m[0K
+$[0K[3G[?25h[?25l$ g[0K[?25hi[0Kt[0K[7G[?25l$ git c[0K[?25ho[0Km[0Km[0Ki[0Kt[0K[14G[?25l$ git commit -[0K[?25hm[0K[17G[?25l$ git commit -m "[0K[?25hM[0Ko[0Kd[0Ki[0Kf[0Ki[0Ke[0Kd[0K[27G[?25l$ git commit -m "Modified C[0K[?25hV[0K[30G[?25l$ git commit -m "Modified CV a[0K[?25hn[0Kd[0K[34G[?25l$ git commit -m "Modified CV and a[0K[?25hd[0Kd[0Ke[0Kd[0K[40G[?25l$ git commit -m "Modified CV and added n[0K[?25he[0Kw[0K[44G[?25l$ git commit -m "Modified CV and added new b[0K[?25hi[0Kb[0Kt[0Ke[0K[?25lx[0K[49G[?25h[50G[51G[?25l$ git commit -m "Modified CV and added new bibtex e[0K
+[0K[?25hnt[0Kr[0Ky[0K[6G[?25lntry f[0K[?25ho[0Kr[0K[10G[?25lntry for c[0K[?25hed[0Kd[0K[?25lntry for ced[0K[?25hr[0Ko[0Ks[0K[17G[?25lntry for cedros p[0K[?25ha[0Kp[0Ke[0Kr[0K"[0K[?25l
+[0K[?25h[master e75bb52] Modified CV and added new bibtex e[0Kn[?25l
+try for cedros paper[0K
+ 15 files changed, 60 insertions(+), 15 deletions(-[0K)
+[0K
+ rewrite .Rproj.user/9BE093DE/console06/3229BC1 (10[0K0
+%)[0K
+ rewrite .Rproj.user/9BE093DE/console06/INDEX001 (8[0K6
+%)[0K
+ rename public/files/CV.pdf => static/files/CV_Vill[0Ka
+senorDerbez.pdf (85%)[0K
+ create mode 100644 static/files/citations/cedros.b[0Ki
+b[0K
+ create mode 100644 static/img/MAREA.png[0K
+[0K[?25h[?25l
+[0;32mJC@LAPTOP-SKCMSUPK [0;35m [0;33m~/Documents/GitHub/villasenor-d[0Ke
+rbez[0;36m (master)[0m[0K
+$[0K[3G[?25h[?25l$ g[0K[?25hi[0Kt[0K[7G[?25l$ git p[0K[?25hu[0Ks[0Kh[0K[?25l
+[0K[?25hfatal: HttpRequestException encountered.[0K[?25l
+   An error occurred while sending the request.[0K
+[0K[?25herror: cannot spawn rpostback-askpass: No such file[0K[?25l
+or directory[0K
+[0K[?25hUsername for 'https://github.com':[0K[36G[?25lUsername for 'https://github.com': j[0K[?25hc[0Kv[0Kd[0Ka[0Kv[0K[?25l
+error: cannot spawn rpostback-askpass: No such file[0K
+or directory[0K
+[0K[?25hPassword for 'https://jcvdav@github.com':[0K[43G[?25l
+[0K[?25hCounting objects: 33, done.[0K[?25l
+Delta compression using up to 4 threads.[0K
+Compressing objects: 100% (29/29), done.[0K
+Writing objects: 100% (33/33), 333.11 KiB | 0 bytes[0K/
+s, done.[0K
+Total 33 (delta 15), reused 0 (delta 0)[0K
+[0K[?25hremote: Resolving deltas: 100% (15/15), completed w[0Ki[?25l
+th 15 local objects.[0K
+[0K[?25hTo https://github.com/jcvdav/villasenor-derbez.git[0K[?25l
+   bd0cf41..e75bb52  master -> master[0K
+[0K[?25h[?25l
+[0;32mJC@LAPTOP-SKCMSUPK [0;35m [0;33m~/Documents/GitHub/villasenor-d[0Ke[20G[?25h[?25l
+rbez[0;36m (master)[0m[0K
+$[0K[3G[?25h[?25l$ g[0K[?25hi[0Kt[0K[7G[?25l$ git c[0K[?25ho[0Km[0Km[0Ki[0Kt[0K[14G[?25l$ git commit -[0K[?25ha[0K[17G[?25l$ git commit -a -[0K[?25hm[0K[20G[?25l$ git commit -a -m "[0K[?25hM[0Ko[0Kd[0Ki[0Kf[0Ki[0Ke[0Kd[0K[30G[?25l$ git commit -a -m "Modified b[0K[?25hi[0Kb[0Kt[0Ke[0Kx[0K[37G[?25l$ git commit -a -m "Modified bibtex e[0K[?25hn[0Kt[0Kr[0Ki[0Ke[0Ks[0K"[0K[?25l
+[0K[?25h
