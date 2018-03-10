@@ -38,3 +38,10 @@ I have always felt passionate about the Ocean. Growing up in Playa del Carmen, M
 
 - [Curriculum Vitae](./files/CV_VillasenorDerbez.pdf)
 
+<a class="twitter-timeline"
+  href="https://twitter.com/villasenor_jc"
+  data-width="300"
+  data-height="300">
+Tweets by @villasenor_jc
+</a>
+
