@@ -36,5 +36,5 @@ I am a Ph.D. Student and [Latin American Fisheries Fellow](http://www.laff.bren.
 
 I have always felt passionate about the Ocean. Growing up in Playa del Carmen, Mexico I spent a lot of time in the water. I have been a SCUBA diver since I was 10 years old, and a fisher for as long as I can remember. Aside from my work, I enjoy SCUBA diving, fishing, and sailing. Following what seems to be a tradition in my family, I enjoy cooking a blend of Mexican and Spanish dishes for my close ones.
 
-- [Curriculum Vitae](./files/CV.pdf)
+- [Curriculum Vitae](./files/CV_VillasenorDerbez.pdf)
 
