@@ -302,4 +302,59 @@ fatal: updating files failed[0K
 [0K[?25h[?25l
 [0;32mJC@LAPTOP-SKCMSUPK [0;35m [0;33m~/Documents/GitHub/villasenor-d[0Ke
 rbez[0;36m (master)[0m[0K
-$[0K[3G[?25h[?25l$ g[0K[?25hi[0Kt[0K[7G[?25l$ git c[0K[7G[?25h[8G[?25l$ git co[0K[?25hm[0K[?25l$ git co[0K[?25h[?25l$ git c[0K[?25h[?25l$ git[0K[7G[?25h[6G[?25l$ gi[0K[?25h[?25l$ g[0K[?25h[?25l$[0K[3G[?25h[?25l$ git add -A[0K[?25h
+$[0K[3G[?25h[?25l$ g[0K[?25hi[0Kt[0K[7G[?25l$ git c[0K[7G[?25h[8G[?25l$ git co[0K[?25hm[0K[?25l$ git co[0K[?25h[?25l$ git c[0K[?25h[?25l$ git[0K[7G[?25h[6G[?25l$ gi[0K[?25h[?25l$ g[0K[?25h[?25l$[0K[3G[?25h[?25l$ git add -A[0K[?25h[?25l
+[0K[?25hwarning: LF will be replaced by CRLF in .Rproj.user[0K/[?25l
+9BE093DE/sources/prop/7F51B9D7.[0K
+The file will have its original line endings in you[0Kr
+ working directory.[0K
+warning: LF will be replaced by CRLF in .Rproj.user[0K/
+9BE093DE/sources/prop/AA2898DD.[0K
+The file will have its original line endings in you[0Kr
+ working directory.[0K
+warning: LF will be replaced by CRLF in public/inde[0Kx
+.html.[0K
+The file will have its original line endings in you[0Kr
+ working directory.[0K
+[0K[?25h[?25l
+[0;32mJC@LAPTOP-SKCMSUPK [0;35m [0;33m~/Documents/GitHub/villasenor-d[0Ke[20G[?25h[?25l
+rbez[0;36m (master)[0m[0K
+$[0K[3G[?25h[?25l$ g[0K[?25hi[0Kt[0K[7G[?25l$ git c[0K[?25ho[0Km[0K[?25lm[0K[10G[?25h[11G[?25l$ git commi[0K[?25ht[0K[14G[?25l$ git commit -[0K[?25hm[0K[17G[?25l$ git commit -m "[0K[?25hA[0Kd[0Kd[0Ke[0Kd[0K[?25l$ git commit -m "Adde[0K[23G[?25h[22G[?25l$ git commit -m "Add[0K[?25h[?25l$ git commit -m "Ad[0K[?25h[?25l$ git commit -m "A[0K[?25h[?25l$ git commit -m "[0K[?25hD[0Ke[0Kl[0Ke[0Kt[0Ke[0Kd[0K[26G[?25l$ git commit -m "Deleted l[0K[?25hi[0Kn[0Kk[0K[31G[?25l$ git commit -m "Deleted link t[0K[?25ho[0K[34G[?25l$ git commit -m "Deleted link to t[0K[?25hw[0Ki[0K[?25lt[0K[37G[?25h[38G[?25l$ git commit -m "Deleted link to twitt[0K[?25he[0Kr[0K[42G[?25l$ git commit -m "Deleted link to twitter t[0K[?25hi[0Km[0Ke[0Kl[0Ki[0Kn[0Ke[0K"[0K[?25l
+[0K[?25h[master 0348c7a] Deleted link to twitter timeline[0K[?25l
+ 5 files changed, 56 insertions(+), 19 deletions(-)[0K
+[0K[?25h[?25l
+[0;32mJC@LAPTOP-SKCMSUPK [0;35m [0;33m~/Documents/GitHub/villasenor-d[0Ke
+rbez[0;36m (master)[0m[0K
+$[0K[3G[?25h[?25l$ g[0K[?25hi[0Kt[0K[7G[?25l$ git p[0K[?25hu[0Ks[0Kh[0K[?25l
+[0K[?25hfatal: HttpRequestException encountered.[0K[?25l
+   An error occurred while sending the request.[0K
+[0K[?25herror: cannot spawn rpostback-askpass: No such file[0K[?25l
+or directory[0K
+[0K[?25hUsername for 'https://github.com':[0K[36G[?25lUsername for 'https://github.com': j[0K[?25hc[0Kv[0Kd[0Ka[0Kv[0K[?25l
+error: cannot spawn rpostback-askpass: No such file[0K
+or directory[0K
+[0K[?25hPassword for 'https://jcvdav@github.com':[0K[43G[?25l
+[0K[?25hCounting objects: 15, done.[0K[?25l
+Delta compression using up to 4 threads.[0K
+Compressing objects: 100% (14/14), done.[0K
+Writing objects: 100% (15/15), 1.46 KiB | 0 bytes/s[0K,
+ done.[0K
+Total 15 (delta 9), reused 0 (delta 0)[0K
+[0K[?25h[?25lremote: Resolving deltas:  11% (1/9)[0K[1G[?25hremote: Resolving deltas: 100% (9/9), completed wit[0Kh[?25l
+ 9 local objects.[0K
+[0K[?25hTo https://github.com/jcvdav/villasenor-derbez.git[0K[?25l
+   87a989e..0348c7a  master -> master[0K
+[0K[?25h[?25l
+[0;32mJC@LAPTOP-SKCMSUPK [0;35m [0;33m~/Documents/GitHub/villasenor-d[0Ke
+rbez[0;36m (master)[0m[0K
+$[0K[3G[?25h[0m[0K]0;:/c/Users/JC/Documents/GitHub/villasenor-derbez[?25l
+[0;32mJC@LAPTOP-SKCMSUPK [0;35m [0;33m~/Documents/GitHub/villasenor-d[0Ke
+rbez[0;36m (master)[0m[0K
+$[0K[3G[?25h[?25l[2A[0;32mJC@LAPTOP-SKCMSUPK [0;35m [0;33m~/Documents/GitHub/villasenor-derbez[0;36m (master)[0K
+[0m$[0K
+[?25l$ git[0K
+[0K[1A[6G[?25h[7G[?25l$ git a[0K
+[0K[1A[8G[?25h[?25l$ git ad[0K
+[0K[1A[9G[?25h[?25l$ git add[0K
+[0K[1A[10G[?25h[11G[?25l$ git add -[0K
+[0K[1A[12G[?25h[?25l$ git add -A[0K
+[0K[1A[13G[?25h
