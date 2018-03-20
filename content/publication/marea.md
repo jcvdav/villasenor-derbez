@@ -73,7 +73,11 @@ caption = ""
 
 - [MPANews by OpenChannels](https://mpanews.openchannels.org/news/mpa-news/mpa-science-corner-hydroacoustics-cost-effective-tool-marine-reserve-effectiveness)
 - [CONACyT Prensa](http://www.conacytprensa.mx/index.php/ciencia/ambiente/20594-marea-refugios-pesqueros-evaluacion) (Mexican Academy of Sciences)
+- [Ecoticias](https://www.ecoticias.com/eco-america/182033/MAREA-aplicacion-web-evaluar-reservas-marinas)
 - [Portal Político](https://www.portalpolitico.tv/medio-ambiente/marea-una-aplicacion-web-para-evaluar-reservas-marinas)
+- [Medium](https://medium.com/colaborativo/marea-app-para-evaluar-reservas-marinas-934fded6eefb)
+- [Oriente Michoacano](https://orientemichoacano.wixsite.com/oriente-michoacano/single-post/2018/03/19/MAREA-una-aplicaci%C3%B3n-web-para-evaluar-reservas-marinas)
+- [Noticias de Chiapas](http://noticiasdechiapas.com.mx/nota.php?id=108831)
 
 **Altmetric**
 
