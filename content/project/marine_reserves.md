@@ -42,7 +42,7 @@ Through a combination of ecological and economic theory, I aim to better underst
 Work in progress includes:
 
 - Reserve effectiveness:
-    - Evaluating the ecological and social effectiveness of community-based marine reserves in Mexico ([working paper](https://rawgit.com/jcvdav/ReserveEffect/master/Frontiers_Manuscript/Villasenor-Derbez.pdf))
+    - Evaluating the ecological and social effectiveness of community-based marine reserves in Mexico ([working paper](https://rawgit.com/jcvdav/ReserveEffect/master/docs/paper/Villasenor-Derbez.pdf))
     - Evaluating the fishery benefits of MPAs in the Gulf of California
     - State of marine conservation in Mexico
 
