@@ -194,7 +194,22 @@
       <pubDate>Wed, 27 Apr 2016 00:00:00 +0000</pubDate>
       
       <guid>/project/lionfish/</guid>
-      <description>&lt;p&gt;Text here&lt;/p&gt;
+      <description>&lt;p&gt;Lionfish (&lt;em&gt;Pterois volitans&lt;/em&gt;/&lt;em&gt;miles&lt;/em&gt; complex) are an invasive species in the Western Atlantic and the Caribbean, likely introduced through liberation of aquarium-kept organisms. They are the first marine vertebrates to establish in North Atlantic and Caribbean coasts. Lionfish have been widely reported in coral reefs, but also in other habitats such as estuaries, mangroves, areas with hard-bottoms, and mesophotic reefs. Due to their threat to local biodiversity, the speed of their spread, and difficulty of management, their presence in these waters has been labeled as a major marine invasion.&lt;/p&gt;
+
+&lt;figure&gt;
+  &lt;img src=&#34;../../img/lionfish.JPG&#34; alt=&#34;Lionfish (Pterois volitans) in a Mexican coral reef&#34;/&gt;
+  &lt;figcaption&gt;Lionfish (&lt;i&gt;Pterois volitans&lt;/i&gt;) in a Mexican coral reef&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;In order to efficiently manage the invasion, managers must be able to fully understand the biology of the species. This includes understanding what they eat, where they live, how and when they reproduce, and how they grow.&lt;/p&gt;
+
+&lt;p&gt;Work in progress includes:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Regional differences in allometric growth (&lt;a href=&#34;https://rawgit.com/jcvdav/lionfish_biometry/master/docs/Manuscript.pdf&#34; target=&#34;_blank&#34;&gt;working paper&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Feeding ecology of invasive lionfish (Pterois volitans and Pterois miles) in the temperate and
+tropical western Atlantic. This work lead by Jonathan Peake and Alex K. Bogdanoff (&lt;em&gt;in press&lt;/em&gt; &lt;a href=&#34;https://link.springer.com/journal/10530&#34; target=&#34;_blank&#34;&gt;&lt;em&gt;Biological Invasions&lt;/em&gt;&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;
 </description>
     </item>
     
