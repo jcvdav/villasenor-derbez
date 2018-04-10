@@ -36,6 +36,10 @@ The Giant Sea Bass Project seeks to recover natural history of one of the appex 
   <figcaption>Giant Sea Bass landings ("Arribos") by the U.S. fleet from Mexican and U.S. waters </figcaption>
 </figure>
 
+Work in progress includes:
+
+  - Age and growth of giant sea bass in Mexican waters
+
 - [External project page](file:///C:/Users/JC/Desktop/OldShit/www.merogigante.org)
 
 - [Project on ResearchGate](https://www.researchgate.net/project/Natural-history-of-the-giant-sea-bass-Stereolepis-gigas-in-Mexican-waters)

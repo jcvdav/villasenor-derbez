@@ -35,7 +35,6 @@
 &lt;ul&gt;
 &lt;li&gt;Evaluating the ecological and social effectiveness of community-based marine reserves in Mexico (&lt;a href=&#34;https://rawgit.com/jcvdav/ReserveEffect/master/docs/paper/Villasenor-Derbez.pdf&#34; target=&#34;_blank&#34;&gt;working paper&lt;/a&gt;)&lt;/li&gt;
 &lt;li&gt;Evaluating the fishery benefits of MPAs in the Gulf of California&lt;/li&gt;
-&lt;li&gt;State of marine conservation in Mexico&lt;/li&gt;
 &lt;/ul&gt;&lt;/li&gt;
 
 &lt;li&gt;&lt;p&gt;Predator-prey-humans:&lt;/p&gt;
@@ -69,7 +68,15 @@
       <pubDate>Wed, 24 Jan 2018 00:00:00 +0000</pubDate>
       
       <guid>/project/gfw/</guid>
-      <description>&lt;p&gt;Texto aqui&lt;/p&gt;
+      <description>&lt;p&gt;&lt;a href=&#34;http://globalfishingwatch.org/map/&#34; target=&#34;_blank&#34;&gt;Global Fishing Watch&lt;/a&gt; provides near-real time tracking of fishing vessels via on-board Automatic Identification Systems (AIS) and Vessel Monitoring Systems (VMS). Among the data that these systems report, latitude, longitude and timestamp are included. Combining these with movement patterns of know fishing vessels, GFW identifies fishing activity. This high-ressolution, boat-level, spatially-explicit data offers the opportunity to ask many different questions. For example, &lt;a href=&#34;http://science.sciencemag.org/content/359/6378/904&#34; target=&#34;_blank&#34;&gt;tracking the global footprint of fisheries&lt;/a&gt;, or &lt;a href=&#34;https://www.nature.com/articles/s41559-018-0499-1&#34; target=&#34;_blank&#34;&gt;evaluating the effect of IUU policies&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;Work in progress includes:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Predicting landings based on a boat&amp;rsquo;s history (&lt;em&gt;i.e.&lt;/em&gt; where and when it fished)&lt;/li&gt;
+&lt;li&gt;Identifying areas of opportunity and threat to implement Marine Protected Areas&lt;/li&gt;
+&lt;li&gt;What is the effect of ENSO events on fishing behavior?&lt;/li&gt;
+&lt;/ul&gt;
 </description>
     </item>
     
@@ -180,7 +187,11 @@
   &lt;figcaption&gt;Giant Sea Bass landings (&#34;Arribos&#34;) by the U.S. fleet from Mexican and U.S. waters &lt;/figcaption&gt;
 &lt;/figure&gt;
 
+&lt;p&gt;Work in progress includes:&lt;/p&gt;
+
 &lt;ul&gt;
+&lt;li&gt;&lt;p&gt;Age and growth of giant sea bass in Mexican waters&lt;/p&gt;&lt;/li&gt;
+
 &lt;li&gt;&lt;p&gt;&lt;a href=&#34;file:///C:/Users/JC/Desktop/OldShit/www.merogigante.org&#34; target=&#34;_blank&#34;&gt;External project page&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
 
 &lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://www.researchgate.net/project/Natural-history-of-the-giant-sea-bass-Stereolepis-gigas-in-Mexican-waters&#34; target=&#34;_blank&#34;&gt;Project on ResearchGate&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;

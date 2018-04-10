@@ -44,7 +44,6 @@ Work in progress includes:
 - Reserve effectiveness:
     - Evaluating the ecological and social effectiveness of community-based marine reserves in Mexico ([working paper](https://rawgit.com/jcvdav/ReserveEffect/master/docs/paper/Villasenor-Derbez.pdf))
     - Evaluating the fishery benefits of MPAs in the Gulf of California
-    - State of marine conservation in Mexico
 
 - Predator-prey-humans:
     - How do predator-prey interactions govern the timeline of recovery and fishery benefits of in marine reserves?

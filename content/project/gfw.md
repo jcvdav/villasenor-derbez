@@ -28,4 +28,10 @@ caption = ""
 
 +++
 
-Texto aqui
+[Global Fishing Watch](http://globalfishingwatch.org/map/) provides near-real time tracking of fishing vessels via on-board Automatic Identification Systems (AIS) and Vessel Monitoring Systems (VMS). Among the data that these systems report, latitude, longitude and timestamp are included. Combining these with movement patterns of know fishing vessels, GFW identifies fishing activity. This high-ressolution, boat-level, spatially-explicit data offers the opportunity to ask many different questions. For example, [tracking the global footprint of fisheries](http://science.sciencemag.org/content/359/6378/904), or [evaluating the effect of IUU policies](https://www.nature.com/articles/s41559-018-0499-1).
+
+Work in progress includes:
+
+  - Predicting landings based on a boat's history (*i.e.* where and when it fished)
+  - Identifying areas of opportunity and threat to implement Marine Protected Areas
+  - What is the effect of ENSO events on fishing behavior?
