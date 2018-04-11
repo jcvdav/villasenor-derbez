@@ -40,5 +40,4 @@ In order to efficiently manage the invasion, managers must be able to fully unde
 Work in progress includes:
 
   - Regional differences in allometric growth ([working paper](https://rawgit.com/jcvdav/lionfish_biometry/master/docs/Manuscript.pdf))
-  - Feeding ecology of invasive lionfish (Pterois volitans and Pterois miles) in the temperate and
-tropical western Atlantic. This work lead by Jonathan Peake and Alex K. Bogdanoff (*in press* [*Biological Invasions*](https://link.springer.com/journal/10530))
+

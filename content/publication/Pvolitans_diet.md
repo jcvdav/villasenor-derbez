@@ -18,7 +18,7 @@ publication_types = ["2"]
 
 # Publication name and optional abbreviated version.
 publication = "*Pan-American Journal of Aquatic Sciences*"
-publication_short = "*PANAMJAS*. 9(2):131-135"
+publication_short = "*PanamJAS*. 9(2):131-135"
 
 # Abstract and optional shortened version.
 abstract = "Stomach contents were analyzed from 109 individuals. A total of 4 Genera and 14 Species were identified. Crustaceans accounted for %N=67.39% , %IRI= 86.37% of the total identified taxa and Teleosts %N=32.61% (%IRI = 13.63%). An ontogenetic change was observed in *P. volitans* diet."

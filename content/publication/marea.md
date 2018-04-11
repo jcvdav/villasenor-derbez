@@ -18,7 +18,7 @@ publication_types = ["2"]
 
 # Publication name and optional abbreviated version.
 publication = "*PLOS ONE*"
-publication_short = "*PLOS ONE*. [DOI 10.1371/journal.pone.0191821]([https://doi.org/10.1371/journal.pone.0191821)"
+publication_short = "*PLOS ONE*. [DOI 10.1371/journal.pone.0191821](https://doi.org/10.1371/journal.pone.0191821)"
 
 # Abstract and optional shortened version.
 abstract = "Marine reserves are implemented to achieve a variety of objectives, but are seldom rigorously evaluated to determine whether those objectives are met. In the rare cases when evaluations do take place, they typically focus on ecological indicators and ignore other relevant objectives such as socioeconomics and governance. And regardless of the objectives, the diversity of locations, monitoring protocols, and analysis approaches hinder the ability to compare results across case studies. Moreover, analysis and evaluation of reserves is generally conducted by outside researchers, not the reserve managers or users, plausibly thereby hindering effective local management and rapid response to change. We present a framework and tool, called 'MAREA', to overcome these challenges. Its purpose is to evaluate the extent to which any given reserve has achieved its stated objectives. MAREA provides specific guidance on data collection and formatting, and then conducts rigorous causal inference analysis based on data input by the user, providing real-time outputs about the effectiveness of the reserve. MAREA's ease of use, standardization of state-of-the-art inference methods, and ability to analyze marine reserve effectiveness across ecological, socioeconomic, and governance objectives could dramatically further our understanding and support of effective marine reserve management."
@@ -82,5 +82,3 @@ caption = ""
 **Altmetric**
 
 <script type="text/javascript" src="https://d1bxh8uas1mnw7.cloudfront.net/assets/embed.js"></script><div class="altmetric-embed" data-badge-type="donut" data-altmetric-id="32439969" />
-
-<div data-badge-popover="right" data-badge-type="medium-donut" data-doi="10.1371/journal.pone.0191821" data-hide-no-mentions="true" class="altmetric-embed"></div>
