@@ -1,14 +1,0 @@
-[?25l$ g[0K[?25hi[0Kt[0K[7G[?25l$ git p[0K[?25hu[0Ks[0Kh[0K[?25l
-[0K[?25hCounting objects: 13, done.[0K[?25l
-Delta compression using up to 4 threads.[0K
-Compressing objects: 100% (13/13), done.[0K
-Writing objects: 100% (13/13), 1.59 KiB | 1.59 MiB/s, done.[0K
-Total 13 (delta 6), reused 0 (delta 0)[0K
-[0K[?25hremote: Resolving deltas:  50% (3/6)[0K[40G[?25lremote: Resolving deltas: 100% (6/6), completed with 5 local ob[0Kj
-ects.[0K
-[0K[?25hTo https://github.com/jcvdav/villasenor-derbez.git[0K[?25l
-   6e492a0..8569e7f  master -> master[0K
-[0K[?25h[?25l
-[0;32mJC@LAPTOP-SKCMSUPK [0;35m [0;33m~/Documents/GitHub/villasenor-derbez[0;36m (maste[0Kr
-)[0m[0K
-$[0K[3G[?25h[?25l$ g[0K[?25hi[0Kt[0K[7G[?25l$ git a[0K[?25hd[0Kd[0K[11G[?25l$ git add -[0K[?25hA[0K

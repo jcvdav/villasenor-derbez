@@ -38,7 +38,7 @@ projects = ["lionfish"]
 tags = ["invasive_spp", "lionfish", "marine-ecology"]
 
 # Links (optional).
-url_pdf = "https://link.springer.com/article/10.1007%2Fs10530-018-1720-5"
+url_pdf = "https://www.researchgate.net/publication/324453358_Feeding_ecology_of_invasive_lionfish_Pterois_volitans_and_Pterois_miles_in_the_temperate_and_tropical_western_Atlantic"
 url_preprint = ""
 url_code = ""
 url_dataset = ""
