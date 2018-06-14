@@ -43,7 +43,7 @@ En esta sección verás los temas que cubriré en la primera sección. Muy proba
 <h3> Posts introductorios </h3>
 
 <ul>
-<li> <a href = "/r-y-r-studio/"> R y RStudio para <i>Data Science</i> </a> </li>
+<li> <a href = "/post/r-y-r-studio/"> R y RStudio para <i>Data Science</i> </a> </li>
 
 <li> Objetos, clases y atributos </li>
 
