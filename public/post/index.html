@@ -67,16 +67,16 @@
   
   <meta property="og:site_name" content="Juan Carlos Villaseñor-Derbez">
   <meta property="og:url" content="/post/">
-  <meta property="og:title" content="Posts | Juan Carlos Villaseñor-Derbez">
+  <meta property="og:title" content="ERRE | Juan Carlos Villaseñor-Derbez">
   <meta property="og:description" content="Ph.D. Student">
   <meta property="og:locale" content="en-us">
   
-  <meta property="og:updated_time" content="2017-01-01T00:00:00-08:00">
+  <meta property="og:updated_time" content="2018-06-01T00:00:00-07:00">
   
 
   
 
-  <title>Posts | Juan Carlos Villaseñor-Derbez</title>
+  <title>ERRE | Juan Carlos Villaseñor-Derbez</title>
 
 </head>
 <body id="top" data-spy="scroll" data-target="#toc" data-offset="71" >
@@ -210,6 +210,25 @@
         
 
         <li class="nav-item">
+          <a href="/#posts">
+            
+            <span>ERRE (Blog)</span>
+            
+          </a>
+        </li>
+
+        
+        
+
+        
+        
+        
+        
+        
+          
+        
+
+        <li class="nav-item">
           <a href="/#contact">
             
             <span>Contact</span>
@@ -234,8 +253,95 @@
 
 <div class="universal-wrapper">
 
-  <h1>Posts</h1>
+  <h1>ERRE</h1>
 
+  
+  <div class="article-style" itemprop="articleBody">
+
+<p><a href="https://github.com/jcvdav/villasenor-derbez"><img style="position: absolute; top: 0; right: 0; border: 0;" src="https://s3.amazonaws.com/github/ribbons/forkme_right_gray_6d6d6d.png" alt="Fork me on GitHub"></a></p>
+
+<h1 id="sobre-el-blog">Sobre el blog</h1>
+
+<p><strong>Bienvenido a <code>ERRE</code> (R en Español)!</strong> Inicié este blog para ayudar a la comunidad hispanohablante a navegar el mundo de la programación en R, que tiene la fama de no ser muy intuitivo <sup class="footnote-ref" id="fnref:1"><a rel="footnote" href="#fn:1">1</a></sup>. La documentación en R puede ser ambigua, y generalmente recurrimos a sitios como <a href="https://es.stackoverflow.com/" target="_blank">StackOverflow</a> o <a href="https://github.com/" target="_blank">GitHub</a> para encontrar información más detallada. Estos son muy buenos recursos, pero la mayoría de la información está en inglés y traducir R - Inglés - Español - R puede ser más largo. Trataré de usar mis horas de sufrimiento para explicar los conceptos de la manera en que yo lo entiendo (probablemente no sea la más correcta, pero por lo menos estará en español).</p>
+
+<p>El enfoque principal de <code>ERRE</code> no será la estadística, aunque habrá posts sobre eso. Además, no intentaré convencerte de que R es mejor que otro lenguaje. Si estás aquí, asumo que es porque ya estás interesado en usar R. El enfoque será en comprender el lenguaje de programación para que puedas después aplicar las pruebas estadísticas y análisis que sean de tu interés. También habrá un enfoque en manipulación y visualización de datos, que considero habilidades transferibles através de disciplinas. Es recomendable que uses <a href="https://cran.r-project.org/bin/windows/base/" target="_blank">R</a> desde <a href="https://www.rstudio.com/products/rstudio/download/" target="_blank">R Studio</a>.</p>
+
+<h1 id="antes-de-empezar">Antes de empezar</h1>
+
+<p>En los diferentes posts notarás palabras en <em>itálicas</em>. Trataré de limitar utilizar este énfasis únicamente para palabras en inglés que no valdría la pena traducir, que al traducir perderían contexto, o que suenan mejor. Por ejemplo, yo prefiero <em>data science</em> que &ldquo;ciencia de los datos&rdquo;. También verás texto en <code>monospace</code>, que representará código. Por ejemplo, si quiero hacer referencia a una variaable multiplicada por dos verás: <code>mi_variable * 2</code>. A veces bloques de texto tendrán el mismo, lo que indicará que son bloques de código, Por ejemplo:</p>
+
+<pre><code># Sumar dos variables
+a &lt;- 2
+b &lt;- 3
+
+a + b
+</code></pre>
+
+<p>Finalmente, a veces usaremos funciones de R que pertenecen a algún paquete[^2]. Cuando sea posible, especificaré de dónde viene la función usando el <code>namespace</code> diciendo <code>paquete::función()</code>. Esto sería el equivalente a decir <code>apellido::nombre</code>, donde el paquete contiene muchas funciones de la misma manera en que un apellido (o familia) puede contener a varias personas.</p>
+
+<h1 id="temas">Temas</h1>
+
+<p>En esta sección verás los temas que cubriré en la primera sección. Muy probablemente agregue más mientras se desarrolle el blog. Los temas para los cuales existe un post se verán en azul, y tendrán un enlace al post. Si un tema no está disponible, puedes <a href="https://github.com/jcvdav/villasenor-derbez" target="_blank">ofrecer una contribución</a>!</p>
+
+<div class = "row">
+<div class = "col-md-6">
+
+<h3> Posts introductorios </h3>
+
+<ul>
+<li> <a href = "/r-y-r-studio/"> R y RStudio para <i>Data Science</i> </a> </li>
+
+<li> Objetos, clases y atributos </li>
+
+<li> Ciclos y condicionales </li>
+
+<li> Mensajes de error </li>
+
+<li> Estadística en R </li>
+
+<li> Manejo de datos con <code>tidyr</code> y <code>dplyr</code> </li>
+
+<li> Visualización con <code>ggplot2</code> </li>
+
+<li> Colaborando con Git y GitHub </li>
+
+</ul>
+</div>
+<div class = "col-md-6">
+
+<h3> Posts avanzados </h3>
+
+<ul>
+<li> Modelación numérica con <code>deSolve</code> </li>
+
+<li> <code>rmarkdown</code> avanzado </li>
+
+<li> Aplicaicones web con <code>shiny</code> </li>
+
+<li> Crea tus paquetes con <code>devtools</code> y <code>testthat</code> </li>
+
+<li> Análisis espaciales en R </li>
+
+<li> Manejo de paquetes con <code>packrat</code> </li>
+
+<li> Computación paralela </li>
+
+<li> BIG data en R </li>
+
+<li> R desde la línea de comando </li>
+</ul>
+</div>
+</div>
+<div class="footnotes">
+
+<hr />
+
+<ol>
+<li id="fn:1"><a href="http://arrgh.tim-smith.us" target="_blank">aRrgh: a newcomer’s (angry) guide to R</a>
+ <a class="footnote-return" href="#fnref:1"><sup>^</sup></a></li>
+</ol>
+</div>
+</div>
   
 
   
@@ -250,10 +356,8 @@
 
   <span class="article-date">
     
-        Last updated on
-    
-    <time datetime="2016-04-20 00:00:00 -0700 PDT" itemprop="datePublished dateModified">
-      Jan 13, 2018
+    <time datetime="2018-06-04 00:00:00 &#43;0000 UTC" itemprop="datePublished dateModified">
+      Jun 4, 2018
     </time>
   </span>
   <span itemscope itemprop="author publisher" itemtype="http://schema.org/Person">
@@ -263,13 +367,16 @@
   
   <span class="middot-divider"></span>
   <span class="article-reading-time">
-    3 min read
+    14 min read
   </span>
   
 
   
   
 
+  
+  
+  
   
 
   
@@ -279,20 +386,16 @@
 
   
   
-  <a href="/post/getting-started/">
-    <img src="/img/headers/getting-started.png" class="article-banner" itemprop="image">
-  </a>
-  
   <h3 class="article-title" itemprop="headline">
-    <a href="/post/getting-started/" itemprop="url">Academic: the website designer for Hugo</a>
+    <a href="/post/r-y-r-studio/" itemprop="url">R y RStudio</a>
   </h3>
   <div class="article-style" itemprop="articleBody">
     
-    <p>Create a beautifully simple website or blog in under 10 minutes.</p>
+    El ambiente de trabajo en RStudioInvestigación reproducibleProyectos de RStudioScripts y documentos de rmakrdownScriptsDocumentos de rmarkdownPaquetes en R: base, stats y otros másConclusionesEste es el primer post de ERRE. Antes de comenzar a escribir código, creo que es necesario establecer bases sólidas que nos permitan aprovechar R al máximo. En este post hablaremos sobre las generalidades de R y RStudio, y las ventajas de trabajar en este ambiente.
     
   </div>
   <p class="read-more" itemprop="mainEntityOfPage">
-    <a href="/post/getting-started/" class="btn btn-primary btn-outline">
+    <a href="/post/r-y-r-studio/" class="btn btn-primary btn-outline">
       CONTINUE READING
     </a>
   </p>

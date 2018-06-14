@@ -282,11 +282,16 @@ defaultContentLanguageInSubdir = false
   name = "Workshops"
   url = "#teaching"
   weight = 5
-
+  
+[[menu.main]]
+  name = "ERRE (Blog)"
+  url = "#posts"
+  weight = 10
+  
 [[menu.main]]
   name = "Contact"
   url = "#contact"
-  weight = 6
+  weight = 70
 
 # Taxonomies.
 [taxonomies]

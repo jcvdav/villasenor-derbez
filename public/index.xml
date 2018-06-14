@@ -11,6 +11,215 @@
     <atom:link href="/" rel="self" type="application/rss+xml" />
     
     <item>
+      <title>R y RStudio</title>
+      <link>/post/r-y-r-studio/</link>
+      <pubDate>Mon, 04 Jun 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/post/r-y-r-studio/</guid>
+      <description>&lt;div id=&#34;TOC&#34;&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;#el-ambiente-de-trabajo-en-rstudio&#34;&gt;El ambiente de trabajo en RStudio&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#investigacion-reproducible&#34;&gt;Investigación reproducible&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#proyectos-de-rstudio&#34;&gt;Proyectos de RStudio&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#scripts-y-documentos-de-rmakrdown&#34;&gt;Scripts y documentos de &lt;code&gt;rmakrdown&lt;/code&gt;&lt;/a&gt;&lt;ul&gt;
+&lt;li&gt;&lt;a href=&#34;#scripts&#34;&gt;Scripts&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#documentos-de-rmarkdown&#34;&gt;Documentos de &lt;code&gt;rmarkdown&lt;/code&gt;&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#paquetes-en-r-base-stats-y-otros-mas&#34;&gt;Paquetes en R: &lt;code&gt;base&lt;/code&gt;, &lt;code&gt;stats&lt;/code&gt; y otros más&lt;/a&gt;&lt;/li&gt;
+&lt;li&gt;&lt;a href=&#34;#conclusiones&#34;&gt;Conclusiones&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;/div&gt;
+
+&lt;p&gt;Este es el primer post de &lt;code&gt;ERRE&lt;/code&gt;. Antes de comenzar a escribir código, creo que es necesario establecer bases sólidas que nos permitan aprovechar R al máximo. En este post hablaremos sobre las generalidades de R y RStudio, y las ventajas de trabajar en este ambiente. Presentaré una introducción al uso de proyectos de RStudio para tener un ambiente de trabajo ordenado, y hablaremos brevemente sobre maneras de ejecutar código. Finalmente, hablaremos sobre el uso de paquetes en R para extender la funcionalidad de R.&lt;/p&gt;
+&lt;div id=&#34;el-ambiente-de-trabajo-en-rstudio&#34; class=&#34;section level1&#34;&gt;
+&lt;h1&gt;El ambiente de trabajo en RStudio&lt;/h1&gt;
+&lt;p&gt;¿Cuál es la diferencia entre R y RStudio? Esta pregunta me la han hecho varias veces, y creo que es válido aclarar esta duda antes de comenzar con la parte del código. R es un lenguaje de programación con enfoque estadístico. R es el motor que ejecuta las operaciones que el usuario pide. Hay varias formas en las que el usuario puede comunicarse con ese motor. La manera más básica es utilizar R desde la interfaz de usuario de R:&lt;/p&gt;
+&lt;div class=&#34;figure&#34;&gt;
+&lt;img src=&#34;/img/2018-06-04-r-y-r-studio/Rgui.JPG&#34; /&gt;
+
+&lt;/div&gt;
+&lt;p&gt;Aunque esta plataforma nos permite comunicarnos con R y hacer todas las operaciones, no brinda un ambiente de trabajo flexible. Como lo dice Hadley Wickham,&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;p&gt;No se puede hacer &lt;em&gt;data science&lt;/em&gt; desde una interfaz de usuario &lt;a href=&#34;#fn1&#34; class=&#34;footnoteRef&#34; id=&#34;fnref1&#34;&gt;&lt;sup&gt;1&lt;/sup&gt;&lt;/a&gt;.&lt;/p&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;Es aquí donde RStuido se vuelve importante. RStudio es un Ambiente de Desarrollo Integrado (IDE, &lt;em&gt;Integrated Development Environment&lt;/em&gt;) que brinda todas las erramientas dentro de la interfaz de usuario. Esto es muy útil, pues nos evita tener que cambiar de ambientes para hacer diferentes tareas, y podemos integrar todo nuestro proceso de trabajo en un mismo ambiente. Esto permite la replicación de análisis y resultados.&lt;/p&gt;
+&lt;p&gt;Puedes descargar R &lt;a href=&#34;https://cran.r-project.org/bin/windows/base/&#34;&gt;R&lt;/a&gt; y &lt;a href=&#34;https://www.rstudio.com/products/rstudio/download/&#34;&gt;RStudio&lt;/a&gt; de manera gratuita. Una vez que los tengas instalados, puedes abrir RStudio y verás algo así:&lt;/p&gt;
+&lt;div class=&#34;figure&#34;&gt;
+&lt;img src=&#34;/img/2018-06-04-r-y-r-studio/RStudio.JPG&#34; /&gt;
+
+&lt;/div&gt;
+&lt;p&gt;Notarás que hay más divisiones o secciones que en el RGui. En RStudio estas secciones reciben el nombre de &lt;strong&gt;páneles&lt;/strong&gt;. A medida que avancemos en este post describiremos a detalle cada uno de ellos, pero aquí hay un resumen de las partes principales:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;Console&lt;/code&gt;: Aquí verás un cursos que parpadea a la derecha de un símbolo &lt;code&gt;&amp;gt;&lt;/code&gt;. Escribe &lt;code&gt;2 + 2&lt;/code&gt; y presiona la tecla &lt;code&gt;Enter&lt;/code&gt;. La computadora responde diciendo &lt;code&gt;[1] 4&lt;/code&gt;. Esta consola nos sirve para comunicarnos con R. Al pedirle la suma, R respondió diciendo que el resultado es &lt;code&gt;4&lt;/code&gt;. Por ahora ignoraremos el valor de &lt;code&gt;[1]&lt;/code&gt; que aparece a la izquierda.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Environment&lt;/code&gt;: Este panel mostrará todos los objetos y variables que carguemos. Por ejemplo, en la consola escribe &lt;code&gt;a &amp;lt;- 2 + 2&lt;/code&gt; y presiona &lt;code&gt;Enter&lt;/code&gt;. Verás que esta vez R no respondió, pero en nuestro ambiente ahora hay algo llamado &lt;code&gt;a&lt;/code&gt;, donde R almacenó el resultado de la operación que le pedimos. Si en la consola escribes &lt;code&gt;a&lt;/code&gt; y presionas &lt;code&gt;Enter&lt;/code&gt;, R dirá: &lt;code&gt;[1] 4&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;History&lt;/code&gt;: Este pánel te mostrará un historial de las operaciones anteriores. Si haces doble click sobre uno de los renglones, el texto se copiará a la consola para que puedas volver a ejecutar la operación. Desde la consola también puedes acceder a operaciones pasadas. Para esto, debes colocar el cursos en la consola y presionar la tecla que apunta hacia arriba en tu teclado. Cada vez que la presiones regresarás un paso atrás.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Files&lt;/code&gt;: Aquí aparecerán los archivos que estén en el directorio de trabajo. En la siguiente sección hablaremos sobre como mantener archivos ordenados mediante el uso de proyectos.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;Help&lt;/code&gt;: Este es probablemente uno de los páneles más útiles. Para conocer cómo se usa una función generalmente recurrimos a la documentación. Por ejemplo, la función para calcular el promedio de una serie de datos es &lt;code&gt;mean()&lt;/code&gt; pero, cómo le especifico los datos para los cuales quiero el promedio? Puedes conocer más sobre los &lt;code&gt;inputs&lt;/code&gt; y &lt;code&gt;outputs&lt;/code&gt; de una función escribiendo &lt;code&gt;?mean&lt;/code&gt; en la consola y presionando &lt;code&gt;Enter&lt;/code&gt;. Esto abrirá la documentación de la función.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;RStudio también te permite modificar el ambiente de trabajo, incluyendo diferentes páneles o especificando donde quieres que aparezcan. También es posible modificar los esquemas de colores y el tamaño de fuente. Todas estas características las puedes explorar en la pestaña de &lt;code&gt;Herramientas&lt;/code&gt;, bajo la sección de &lt;code&gt;Opciones globales&lt;/code&gt; y &lt;code&gt;Opciones de proyecto&lt;/code&gt;.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;investigacion-reproducible&#34; class=&#34;section level1&#34;&gt;
+&lt;h1&gt;Investigación reproducible&lt;/h1&gt;
+&lt;p&gt;Es importante que nuestros análisis y resultados puedan ser reproducidosy corroborados. Uno de los grandes avances de la humanidad es la capacidad de comunicar información por medio del lenguaje escrito. Escribir código nos permite comunicar nuestros procedimientos y contar una historia, pues el código no es más que texto. Aunque tiene su propia estructura, el código no es más que texto que puede ser comprendido por computadoras y humanos al mismo tiempo. Por ejemplo, el siguiente código es muy obvio para humanos y computadoras:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;2 + 2&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Existen muchos lenguajes de programación, cada uno con sus reglas semánticas y gramaticales. No importa cuan complicado sea el código, la intuición es la misma. Al escribir código generamos una receta o bitácora explícita de nuestros procedimientos, permitiendo que sean replicados. Además, podemos incluir mensajes que sean fáciles de leer por humanos pero que la computadora ignore. En R esto se hace con el uso del símbolo de número o &lt;em&gt;hashtag&lt;/em&gt;: &lt;code&gt;#&lt;/code&gt;. Todo el texto a la derecha de ese símbolo será ignorado por R, pero brinda información al humano que esté leyendo el código, por ejemplo:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;# Sumamos dos más dos
+2 + 2&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Comentar el código nos ayuda a explicar las operaciones que hacemos. Esto es útil al compartir nuestro código con alguien más, pero también al regresar a código viejo. Más de una vez he regresado a código viejo que, por alguna razón, no comenté y termino perdiendo mucho tiempo identificando lo que hago.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;proyectos-de-rstudio&#34; class=&#34;section level1&#34;&gt;
+&lt;h1&gt;Proyectos de RStudio&lt;/h1&gt;
+&lt;p&gt;Utilizar proyectos en R es una de las mejores formas de mantener un ambiente de trabajo ordenado. El proyecto mantiene un directorio de trabajo estable, donde mantenemos nuestros archivos asociados. El directorio de trabajo no es más que la localización de todos los archivos. El comando &lt;code&gt;getwd()&lt;/code&gt; (&lt;em&gt;get working directory&lt;/em&gt;) te mostrará el directorio de trabajo. Si es la primera vez que abres RStudio o estás fuera de un proyecto,el resultado será:&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;[1] &amp;quot;C:/Usuarios/TuUsuario/Documentos&amp;quot;&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;Dentro de Documentos yo tengo todos mis archivos, así que trabajar en este nivel podría ser complicado. Por ejemplo, asumamos que tengo dos proyectos de investigación. Uno es sobre peces rojos y otro de pájaros azules. Para cada uno de estos tendré archivos con datos, que mantengo separados en folders con la siguiente estructura:&lt;/p&gt;
+&lt;pre&gt;&lt;code&gt;C:/Usuarios/JC/Documentos/Proyectos:
+|
+-- PecesRojos/
+|  |
+|  -- datos/
+|    |
+|    -- peces_rojos.csv
+|
+-- PajarosAzules/
+    |
+    -- datos/
+      |
+      -- pajaros_azules.csv&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Además, dentro de &lt;code&gt;Documentos&lt;/code&gt; tengo muchos otros archivos, ordenados y desordenados, que pertenecen a muchas otras cosas. Al trabajar en el proyecto de &lt;em&gt;PecesRojos&lt;/em&gt; quiero asegurarme que todo lo que veo son datos asociados a esto, sin ver datos de &lt;em&gt;PajarosAzules&lt;/em&gt; o fotos de mis vacaciones pasadas. Para esto, usamos los proyectos de RStudio. Estos son los pasos para crear un proyecto de RStudio:&lt;/p&gt;
+&lt;ol style=&#34;list-style-type: decimal&#34;&gt;
+&lt;li&gt;En la parte superior derecha de RStudio verás un ícono como este:&lt;/li&gt;
+&lt;/ol&gt;
+&lt;div class=&#34;figure&#34;&gt;
+&lt;img src=&#34;/img/2018-06-04-r-y-r-studio/Rprojects.JPG&#34; /&gt;
+
+&lt;/div&gt;
+&lt;ol start=&#34;2&#34; style=&#34;list-style-type: decimal&#34;&gt;
+&lt;li&gt;Al hacer click, verás las siguientes opciones:&lt;/li&gt;
+&lt;/ol&gt;
+&lt;div class=&#34;figure&#34;&gt;
+&lt;img src=&#34;/img/2018-06-04-r-y-r-studio/Rprojects2.JPG&#34; /&gt;
+
+&lt;/div&gt;
+&lt;ol start=&#34;3&#34; style=&#34;list-style-type: decimal&#34;&gt;
+&lt;li&gt;Selecciona la opción de &lt;em&gt;New Project&lt;/em&gt; y verás una nueva ventana así:&lt;/li&gt;
+&lt;/ol&gt;
+&lt;div class=&#34;figure&#34;&gt;
+&lt;img src=&#34;/img/2018-06-04-r-y-r-studio/Rprojects3.JPG&#34; /&gt;
+
+&lt;/div&gt;
+&lt;ol start=&#34;4&#34; style=&#34;list-style-type: decimal&#34;&gt;
+&lt;li&gt;En este caso, yo ya tengo folders con mis datos, por lo que seleccionaré la opción de &lt;em&gt;Existing Directory&lt;/em&gt;, que asociará mi proyecto de RStudio con una directorio existente. Al seleccionar esa opción aparece una nueva ventana, pidiéndome que indice el directorio al cual quiero asociar mir poyecto:&lt;/li&gt;
+&lt;/ol&gt;
+&lt;div class=&#34;figure&#34;&gt;
+&lt;img src=&#34;/img/2018-06-04-r-y-r-studio/Rprojects4.JPG&#34; /&gt;
+
+&lt;/div&gt;
+&lt;ol start=&#34;5&#34; style=&#34;list-style-type: decimal&#34;&gt;
+&lt;li&gt;Al hacer click en &lt;em&gt;Browse&lt;/em&gt; se abrirá mi explorador de archivos, con el cual puedo navegar a &lt;code&gt;C:/Usuarios/JC/Documentos/Proyectos/PecesRojos&lt;/code&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;div class=&#34;figure&#34;&gt;
+&lt;img src=&#34;/img/2018-06-04-r-y-r-studio/Rprojects5.JPG&#34; /&gt;
+
+&lt;/div&gt;
+&lt;ol start=&#34;6&#34; style=&#34;list-style-type: decimal&#34;&gt;
+&lt;li&gt;Seleccionando el folder de &lt;code&gt;PecesRojos&lt;/code&gt; y dando click en &lt;em&gt;Open&lt;/em&gt; la ventana del paso 4 ahora contendrá la dirección del directorio de trabajo:&lt;/li&gt;
+&lt;/ol&gt;
+&lt;div class=&#34;figure&#34;&gt;
+&lt;img src=&#34;/img/2018-06-04-r-y-r-studio/Rprojects6.JPG&#34; /&gt;
+
+&lt;/div&gt;
+&lt;ol start=&#34;7&#34; style=&#34;list-style-type: decimal&#34;&gt;
+&lt;li&gt;Finalmente, hacemos click en el botón de &lt;em&gt;Create Project&lt;/em&gt; y RStudio se actualizará.&lt;/li&gt;
+&lt;/ol&gt;
+&lt;p&gt;¿Tantos pasos y todo se ve igual? No, al poner más atención verás algunas diferencias. Por ejemplo, la esquina superior derecha ahora dice &lt;code&gt;PecesRojos&lt;/code&gt;, indicándonos que estamos en ese proyecto. La pestaña de &lt;code&gt;Files&lt;/code&gt; mostrará la carpeta donde tenemos los datos, y un projecto de R llamado &lt;code&gt;PecesRojos.Rproj&lt;/code&gt;. Además, el pánel con el historial de operaciones está vacío. Lo más importante es que si ahora ejecutamos el comando para obtener el directorio (&lt;code&gt;getwd()&lt;/code&gt;) obtenemos:&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;[1] &amp;quot;C:/Usuarios/TuUsuario/Documentos/Proyectos/PecesRojos&amp;quot;&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;Estto puede parecer trivial, pero tener un directorio asociado a nuestro proyecto nos permite cargar y guardar datos, figuras y tablas más fácilmente. Estos temás se cubrirán más adelante en detalle. Por ahora, procura usar proyectos de RStudio para administrár mejor tu trabajo y mantener todo más ordenado.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;scripts-y-documentos-de-rmakrdown&#34; class=&#34;section level1&#34;&gt;
+&lt;h1&gt;Scripts y documentos de &lt;code&gt;rmakrdown&lt;/code&gt;&lt;/h1&gt;
+&lt;p&gt;Como vimos anteriormente, podemos ejecutar comandos directamente en la consola. Sin embargo, la mayoría de las veces realizaremos varias operaciones simultáneamente, y necesitamos tener tódo el código en un documento. Esto nos ahorra tener que escribir todas las operaciones cada vez, pero también nos da un archivo que podemos archivar para futuras referencias o compartir. Aquí exploraremos dos formas de hacerlo.&lt;/p&gt;
+&lt;div id=&#34;scripts&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Scripts&lt;/h2&gt;
+&lt;p&gt;La forma más sencilla es con el uso de &lt;em&gt;scripts&lt;/em&gt; de R. Estos no son más que documento de texto con extensión &lt;code&gt;.*R&lt;/code&gt; en vez de &lt;code&gt;*.txt&lt;/code&gt;. Para crear un &lt;em&gt;script&lt;/em&gt; haz click en ícono de “Nuevo documento” y selecciona &lt;em&gt;R Script&lt;/em&gt;:&lt;/p&gt;
+&lt;div class=&#34;figure&#34;&gt;
+&lt;img src=&#34;/img/2018-06-04-r-y-r-studio/script.JPG&#34; /&gt;
+
+&lt;/div&gt;
+&lt;p&gt;También puedes utilizar la combinación de teclas &lt;code&gt;Ctrl&lt;/code&gt; + &lt;code&gt;Shift&lt;/code&gt; + &lt;code&gt;N&lt;/code&gt;. Esto abrirá un documento de texto vacío.&lt;/p&gt;
+&lt;p&gt;Tu ambiente en RStudio ahora debe verse similar a esto:&lt;/p&gt;
+&lt;div class=&#34;figure&#34;&gt;
+&lt;img src=&#34;/img/2018-06-04-r-y-r-studio/script2.JPG&#34; /&gt;
+
+&lt;/div&gt;
+&lt;p&gt;El panel superior izquierdo contiene el &lt;em&gt;script&lt;/em&gt;, que dice &lt;code&gt;Untitled1&lt;/code&gt;. Aquí podemos escribir varias operaciones seguidas, pero R no las ejecutará hasta que se lo indiquemos. Por ejemplo, el siguiente código genera una serie de 10 números almacenados en la variable &lt;code&gt;num&lt;/code&gt; y después calcula el promedio, la mediana, la varianza y la desviación estándar. Todas estas funciones toman un &lt;em&gt;input&lt;/em&gt; &lt;code&gt;x&lt;/code&gt;, en este caso &lt;code&gt;num&lt;/code&gt; y regresan el valor del estadístico calculado. Copia y pega el código en tu script.&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;# Este script calcula el promedio, mediana, varianza y desviación estándar de
+# 10 números almacenados en la variable num
+
+num &amp;lt;- c(1, 7, 2, 9, 0, 2, 4, 6, 8, 1) # Almacenar 10 números en la variable num
+
+# calcular el promedio de num
+mean(x = num)
+
+# Calcular la media de num
+median(x = num)
+
+# Calcular la varianza de num
+var(x = num)
+
+# Calcular la desviación estándar de num
+sd(x = num)&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Si presionas &lt;code&gt;Enter&lt;/code&gt;, lo único que lograrás es agregar una nueva línea. Para ejecutar el código deberás colocar tu cursor al principio o al final de una línea y presionar &lt;code&gt;Ctrl&lt;/code&gt; + &lt;code&gt;Enter&lt;/code&gt; (También puedes hacer click en el ícono que dice &lt;em&gt;Run&lt;/em&gt; en la esquina superior derecha del &lt;em&gt;script&lt;/em&gt;). Prueba con la línea 4, donde creamos la variable &lt;code&gt;num&lt;/code&gt;. Repite el proceso para las líneas 7, 10, 13 y 16. Notarás que en la consola aparecen los valores correspondientes a cada operación. Hasta ahora no hay mucha diferencia, pues seguimos ejecutando el código una línea a la vez.&lt;/p&gt;
+&lt;p&gt;Ahora, selecciona el código entero y presiona &lt;code&gt;Ctrl&lt;/code&gt; + &lt;code&gt;Enter&lt;/code&gt; o haz click en &lt;em&gt;Run&lt;/em&gt;. Notarás que todas las líneas son ejecutadas automáticamente. Para guardar el documento, simplemente haz click en el ícono del &lt;a href=&#34;https://www.google.com/search?q=disquete&#34;&gt;disquete&lt;/a&gt; o “guardar”. Como con cualquier otro archivo, puedes guardar el &lt;em&gt;R script&lt;/em&gt; en cualquier lugar de tu computadora. Como estamos utilizando proyectos de RStudio, yo sugiero crear una carpeta dentro de &lt;code&gt;PecesRojos&lt;/code&gt; llamda &lt;code&gt;scripts&lt;/code&gt;, donde mantendremos todos estos archivos.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;documentos-de-rmarkdown&#34; class=&#34;section level2&#34;&gt;
+&lt;h2&gt;Documentos de &lt;code&gt;rmarkdown&lt;/code&gt;&lt;/h2&gt;
+&lt;p&gt;Los documentos de &lt;code&gt;rmarkdown&lt;/code&gt; también son documentos de texto, pero con extensión &lt;code&gt;*.Rmd&lt;/code&gt;. Al igual que los &lt;em&gt;scripts&lt;/em&gt;, estos nos permiten tener una serie de operaciones juntas. La principal diferencia es que un documento de &lt;code&gt;rmarkdown&lt;/code&gt; se “teje” para generar archivos &lt;code&gt;*.pdf&lt;/code&gt;, &lt;code&gt;*.docx&lt;/code&gt; o &lt;code&gt;*.html&lt;/code&gt;. Por ejemplo, este sitio entero está generado con &lt;code&gt;rmarkdown&lt;/code&gt;. Más adelante tendremos un post dedicado al uso de &lt;code&gt;rmarkdown&lt;/code&gt;, pero a continuación algunos detalles generales.&lt;/p&gt;
+&lt;p&gt;Para crear un documento de &lt;code&gt;rmarkdown&lt;/code&gt; seguirás el mismo camino que para crear un &lt;em&gt;script&lt;/em&gt;. Sin embargo, seleccionarás la opción que dice &lt;em&gt;R Markdown&lt;/em&gt;. Al hacerlo, deberás ver una ventana así:&lt;/p&gt;
+&lt;div class=&#34;figure&#34;&gt;
+&lt;img src=&#34;/img/2018-06-04-r-y-r-studio/rmarkdown.JPG&#34; /&gt;
+
+&lt;/div&gt;
+&lt;p&gt;Ingresa un título para tu documento y, si quieres, un nombre para el autor. Selecciona la opción de &lt;code&gt;HTML&lt;/code&gt; y da click en OK. Deberás de ver un documento con el siguiente código:&lt;/p&gt;
+&lt;div class=&#34;figure&#34;&gt;
+&lt;img src=&#34;/img/2018-06-04-r-y-r-studio/rmarkdown2.JPG&#34; /&gt;
+
+&lt;/div&gt;
+&lt;p&gt;Notarás que en la parte superior se encuentra el título y nombre que ingresaste, además de la fecha y el tipo de formato a generar. Más abjo hay secciones con texto y código. Notarás que el texto no usa &lt;code&gt;#&lt;/code&gt; para los comentarios. Esto es porque ahora separamos el texto del documento y el código usando &lt;em&gt;code chunks&lt;/em&gt;. Estos se crean al presionar el botón que dice &lt;em&gt;Insert&lt;/em&gt; en la esquina superior derecha del documento. Los &lt;em&gt;chunks&lt;/em&gt; contienen el código a ejecutar, y todo lo que está fuera aparecerá como texto en el documento final. Si quieres incluir comentarios en tu código y que no sean visibles, puedes hacerlo dentro de los &lt;em&gt;chunks&lt;/em&gt;.&lt;/p&gt;
+&lt;p&gt;Ve al &lt;em&gt;cunk&lt;/em&gt; que dice &lt;code&gt;summary(cars)&lt;/code&gt; y haz click en la flecha verde en el extremo derecho del &lt;em&gt;chunk&lt;/em&gt;. Esto generará un resumen de los datos &lt;code&gt;cars&lt;/code&gt; que están precargados en la memoria de R. Los datos contienen velocidades y distancias, y la función &lt;code&gt;summary()&lt;/code&gt; calcula el rango, quartiles, mediana y promedio de cada variable.&lt;/p&gt;
+&lt;div class=&#34;figure&#34;&gt;
+&lt;img src=&#34;/img/2018-06-04-r-y-r-studio/rmarkdown3.JPG&#34; /&gt;
+
+&lt;/div&gt;
+&lt;p&gt;Ahora, para aprovechar al máximo el documento, ve a la parte superior y da click en la bola de estambre que dice &lt;em&gt;Knit&lt;/em&gt; (tejer). R te pedirá que indiques un nombre del archivo. Al crear el documento especificamos el &lt;strong&gt;Título&lt;/strong&gt; del archivo, que no necesariamente es el nombre del archivo. Piensa que el título podría ser &lt;em&gt;“El Viejo y el Mar”&lt;/em&gt;, y el nombre del archivo &lt;code&gt;libro_Hemingway.Rmd&lt;/code&gt;. Guarda tu documento dentro de tu carpeta del proyecto; a mi me gusta tener por lo menos carpetas distintas para &lt;code&gt;datos&lt;/code&gt;, &lt;code&gt;scripts&lt;/code&gt; y &lt;code&gt;docs&lt;/code&gt;. Al guardar el documento, R ejecutará todos los &lt;em&gt;chunks&lt;/em&gt; y generará un documento de &lt;code&gt;*.html&lt;/code&gt; que contiene el texto, código, y resultados del código.&lt;/p&gt;
+&lt;p&gt;Ese documento de &lt;code&gt;*.html&lt;/code&gt; contiene todas las imágenes generadas, por lo que puedes compartirlo directamente con alguien que no necesariamente trabaja en R y esta persona podrá abrirlo en cualquier explorador web. En el 98% de los casos, yo prefiero trabajar en un documento de &lt;code&gt;rmarkdown&lt;/code&gt; y recomiendo que tú hagas lo mismo. Más adelante aprenderemos más sobre &lt;code&gt;rmarkdown&lt;/code&gt;, como cambiar formatos de salida y como aprovechar al máximo esta herramienta.&lt;/p&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+&lt;div id=&#34;paquetes-en-r-base-stats-y-otros-mas&#34; class=&#34;section level1&#34;&gt;
+&lt;h1&gt;Paquetes en R: &lt;code&gt;base&lt;/code&gt;, &lt;code&gt;stats&lt;/code&gt; y otros más&lt;/h1&gt;
+&lt;p&gt;En la sección anterior utilizamos las funciones &lt;code&gt;mean()&lt;/code&gt;, &lt;code&gt;median()&lt;/code&gt;, &lt;code&gt;var()&lt;/code&gt; y &lt;code&gt;sd()&lt;/code&gt;. Como estas, hay muchas otras funciones directamente disponibles en R. Sin embargo, la activa comunidad de usuarios de R ha creado otras funciones con aplicaciones específicas. Estas funciones de distribuyen en paquetes, que pueden ser instalados. En el caso de las funciones anteriores, &lt;code&gt;mean()&lt;/code&gt; pertenece al paquete &lt;code&gt;base&lt;/code&gt;, mientras que &lt;code&gt;median()&lt;/code&gt;, &lt;code&gt;var()&lt;/code&gt; y &lt;code&gt;sd()&lt;/code&gt; pertenecen al paquete &lt;code&gt;stats&lt;/code&gt;. Todas las funciones pertenecen a un paquete. Para instalar un paquete nuevo (o la versión más actual de un paquete que ya tienes), utilizamos el comando &lt;code&gt;install.packages()&lt;/code&gt;. Por ejemplo, copia, pega y ejecuta el siguiente código en tu consola:&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;# Instalar paquetes que usaremos en siguientes posts
+install.packages(c(&amp;quot;dplyr&amp;quot;, &amp;quot;raster&amp;quot;))&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;Este código instalará automáticamente &lt;code&gt;dplyr&lt;/code&gt; y &lt;code&gt;raster&lt;/code&gt;, dos paquetes con muchas funciones útiles que usaremos en siguientes posts. Una vez que la instalación haya terminado podemos cargar los paquetes. Aunque los paquetes ya estén instalados, es necesario especificarle a R que usaremos funciones de estos paquetes. Para esto, usamos el comando &lt;code&gt;library()&lt;/code&gt;. El siguiente código carga los paquetes para que podamos usarlos.&lt;/p&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;# Cargar paquetes
+library(raster)
+library(dplyr)&lt;/code&gt;&lt;/pre&gt;
+&lt;p&gt;El comando &lt;code&gt;install.packages()&lt;/code&gt; solamente lo utilizaremos cuando necesitemos instalar un paquete (por lo general, solo una vez). Sin embargo, &lt;code&gt;library()&lt;/code&gt; lo usaremos cada vez que necesitemos usar un paquete.&lt;/p&gt;
+&lt;p&gt;En ocasiones dos paquetes distintos tendrán funciones con el mismo nombre. Por ejemplo, los paquetes &lt;code&gt;dplyr&lt;/code&gt; y &lt;code&gt;raster&lt;/code&gt; (que usaremos en siguientes posts) tienen la función &lt;code&gt;select()&lt;/code&gt;. Esta función hace cosas muy distintas en cada paquete. El &lt;code&gt;select()&lt;/code&gt; de &lt;code&gt;dplyr&lt;/code&gt; selecciona columnas de un &lt;code&gt;data.frame&lt;/code&gt;, mientras que el &lt;code&gt;select()&lt;/code&gt; de &lt;code&gt;raster&lt;/code&gt; sirve para obtener partes de una imagen satelital dibujando sobre una gáfica. Más adelante usaremos estas funcionalidades, pero por ahora el mensaje clave es que dos funciones de dos paquetes pueden tener nombres distintos. De ahora en adelante, cuando presente una función nueva especificaré el paquete del cual proviene utilizando el &lt;code&gt;NAMESPACE&lt;/code&gt;, que se ve así: &lt;code&gt;base::mean()&lt;/code&gt;. Esto indica que la función &lt;code&gt;mean()&lt;/code&gt; proviene del paquete &lt;code&gt;base&lt;/code&gt;. Al utilizar el &lt;code&gt;NAMESPACE&lt;/code&gt; podemos saber de donde viene la función, pero también le indica a R que de todas las posibles funciones que tienen el mismo nombre, le estamos pidiendo que use una en específico.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div id=&#34;conclusiones&#34; class=&#34;section level1&#34;&gt;
+&lt;h1&gt;Conclusiones&lt;/h1&gt;
+&lt;p&gt;En este post aprendimos la diferencia entre R y RStudio, y las algunas de lasventajas asociadas a trabajar en el Ambiente de Desarrollo Integrado. Hablamos sobre la importancia de usar código para comunicar y replicar análisis con otras personas y con nosotros mismos. Aprendimos como crear un proyecto de RStudio que nos permite organizar nuestro trabajo y mantener proyectos diferentes aislados. Después, hablamos sobre los formatos que se pueden utilizar para compartir código, y la utilidad de &lt;code&gt;rmarkdown&lt;/code&gt; para compartir texto y análisis en un documento unificado. Finalmente, hablamos sobre los paquetes en R, y aprendimos como instalar y cargar paquetes. Con suerte, estos temas te darán las bases necesarias para usar R y RStudio de manera más fluida en los siguientes blogs, donde nos enfocaremos más en la programación.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class=&#34;footnotes&#34;&gt;
+&lt;hr /&gt;
+&lt;ol&gt;
+&lt;li id=&#34;fn1&#34;&gt;&lt;p&gt;&lt;a href=&#34;https://www.youtube.com/watch?v=cpbtcsGE0OA&#34;&gt;Video&lt;/a&gt;&lt;a href=&#34;#fnref1&#34;&gt;↩&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
+&lt;/ol&gt;
+&lt;/div&gt;
+</description>
+    </item>
+    
+    <item>
       <title>Feeding ecology of invasive lionfish (Pterois volitans and Pterois miles) in the temperate and tropical western Atlantic</title>
       <link>/publication/peake2018/</link>
       <pubDate>Wed, 11 Apr 2018 00:00:00 +0000</pubDate>
@@ -28,49 +237,23 @@
       <pubDate>Wed, 24 Jan 2018 00:00:00 +0000</pubDate>
       
       <guid>/project/marine_reserves/</guid>
-      <description>&lt;p&gt;Unsustainable fishing practices threaten biodiversity, conservation, economic and social outcomes. Marine Protected Areas &amp;ndash;and marine reserves, in which all extractive efforts are prohibited&amp;ndash; are frequently implemented to aid in the recovery of fish and invertebrate stocks by limiting or restricting fishing effort and gears. While widely adopted as conservation strategies, I am more interested in their utility as fishery management tools, especially when implemented as &lt;em&gt;community-based&lt;/em&gt; marine reserves&lt;sup class=&#34;footnote-ref&#34; id=&#34;fnref:cbmr&#34;&gt;&lt;a rel=&#34;footnote&#34; href=&#34;#fn:cbmr&#34;&gt;1&lt;/a&gt;&lt;/sup&gt;.&lt;/p&gt;
+      <description>&lt;p&gt;Unsustainable fishing practices threaten biodiversity, conservation, economic and social outcomes. Marine Protected Areas &amp;ndash;and marine reserves, in which all extractive efforts are prohibited&amp;ndash; are frequently implemented to aid in the recovery of fish and invertebrate stocks by limiting or restricting fishing effort and gears. While widely adopted as conservation strategies, I am more interested in their utility as fishery management tools.&lt;/p&gt;
 
 &lt;figure&gt;
   &lt;img src=&#34;../../img/lobster_fishers.jpg&#34; alt=&#34;Fishers from El Rosario, Baja California, Mexico&#34;/&gt;
   &lt;figcaption&gt;Small-scale lobster fishers from El Rosario, Baja California, Mexico (Photo by Arturo Hernández)&lt;/figcaption&gt;
 &lt;/figure&gt;
 
-&lt;p&gt;Theory tells us that by reducing fishing effort, populations in the bounded area should rebound. More abundant and larger organisms within the reserve should export offspring to adjacent waters; adult organisms could also step out of the invisible boundaries and step into fishing grouds. However, evidence that marine reserves can have this ecosystem-level effect that would benefit fisheries is limited. When livelihoods of fishers like the team in the picture above are at stake, it is important to base conservation and management actions on solid evidence of their effectiveness.&lt;/p&gt;
+&lt;p&gt;Theory tells us that by reducing fishing effort, populations in the bounded area should rebound. More abundant and larger organisms within the reserve should export offspring to adjacent waters; adult organisms could also move out of the invisible boundaries and into fishing grouds. However, evidence that marine reserves can have this ecosystem-level effect that would benefit fisheries is limited. Furthermore, closing an area to fishing causes fishers to move elsewhere, but findings of redistribution are ambiguous. When livelihoods of fishers like the team in the picture above are at stake, it is important to base conservation and management actions on solid evidence of their effectiveness.&lt;/p&gt;
 
-&lt;p&gt;Through a combination of ecological and economic theory, I aim to better understand the mechanisms that govern marine reserve functioning, and provide management recommendations as to when, where, and how to implement marine reserves that meet conservation goals while producing (or maintaining) benefits to fisheries. I am also interested in understanding what are the practical implications of climate change, and how we adapt current MPA design strategies to a changing climate.&lt;/p&gt;
+&lt;p&gt;Through a combination of ecological and economic theory, I aim to better understand the mechanisms that govern marine reserve functioning, and provide management recommendations as to when, where, and how to implement marine reserves that meet conservation goals while producing (or maintaining) benefits to fisheries.&lt;/p&gt;
 
 &lt;p&gt;Work in progress includes:&lt;/p&gt;
 
 &lt;ul&gt;
-&lt;li&gt;&lt;p&gt;Reserve effectiveness:&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Evaluating the ecological and social effectiveness of community-based marine reserves in Mexico (&lt;a href=&#34;https://rawgit.com/jcvdav/ReserveEffect/master/docs/paper/Villasenor-Derbez.pdf&#34; target=&#34;_blank&#34;&gt;working paper&lt;/a&gt;)&lt;/li&gt;
-&lt;li&gt;Evaluating the fishery benefits of MPAs in the Gulf of California&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;Predator-prey-humans:&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;How do predator-prey interactions govern the timeline of recovery and fishery benefits of in marine reserves?&lt;/li&gt;
-&lt;li&gt;What strategies (&lt;em&gt;e.g.&lt;/em&gt; partial protection, periodical closures) maximize the benefits of marine reserves to fisheries?&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;MPAs and climate change:&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Are mobile marine protected areas (mMPAs) a better strategy to protect &amp;ldquo;species on the move&amp;rdquo;?&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
+&lt;li&gt;Management and effectiveness of community-based marine reserves in small-scale fisheries (&lt;a href=&#34;https://rawgit.com/jcvdav/ReserveEffect/master/docs/paper/Villasenor-Derbez.pdf&#34; target=&#34;_blank&#34;&gt;working paper&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;How does fishing effort redistribute after the implementation of large-scale marine protected areas?&lt;/li&gt;
 &lt;/ul&gt;
-&lt;div class=&#34;footnotes&#34;&gt;
-
-&lt;hr /&gt;
-
-&lt;ol&gt;
-&lt;li id=&#34;fn:cbmr&#34;&gt;Community-based marine reserves are implemented by the users, typically small-scale fishers who choose to forgo profits today with the hope of increased profits tomorrow; these areas may or may not be recognized by the government.
- &lt;a class=&#34;footnote-return&#34; href=&#34;#fnref:cbmr&#34;&gt;&lt;sup&gt;^&lt;/sup&gt;&lt;/a&gt;&lt;/li&gt;
-&lt;/ol&gt;
-&lt;/div&gt;
 </description>
     </item>
     
@@ -86,7 +269,7 @@
 
 &lt;ul&gt;
 &lt;li&gt;Predicting landings based on a boat&amp;rsquo;s history (&lt;em&gt;i.e.&lt;/em&gt; where and when it fished)&lt;/li&gt;
-&lt;li&gt;Identifying areas of opportunity and threat to implement Marine Protected Areas&lt;/li&gt;
+&lt;li&gt;How does fishing effort redistribute after the implementation of large-scale marine protected areas?&lt;/li&gt;
 &lt;li&gt;What is the effect of ENSO events on fishing behavior?&lt;/li&gt;
 &lt;/ul&gt;
 </description>
@@ -229,194 +412,6 @@
 &lt;ul&gt;
 &lt;li&gt;Regional differences in allometric growth (&lt;a href=&#34;https://rawgit.com/jcvdav/lionfish_biometry/master/docs/Manuscript.pdf&#34; target=&#34;_blank&#34;&gt;working paper&lt;/a&gt;)&lt;/li&gt;
 &lt;/ul&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>Academic: the website designer for Hugo</title>
-      <link>/post/getting-started/</link>
-      <pubDate>Wed, 20 Apr 2016 00:00:00 -0700</pubDate>
-      
-      <guid>/post/getting-started/</guid>
-      <description>
-
-&lt;p&gt;&lt;strong&gt;Academic&lt;/strong&gt; is a framework to help you create a beautiful website quickly. Perfect for personal sites, blogs, or business/project sites. &lt;a href=&#34;https://themes.gohugo.io/theme/academic/&#34; target=&#34;_blank&#34;&gt;Check out the latest demo&lt;/a&gt; of what you&amp;rsquo;ll get in less than 10 minutes. Then head on over to the &lt;a href=&#34;https://sourcethemes.com/academic/docs/&#34; target=&#34;_blank&#34;&gt;Quick Start guide&lt;/a&gt; or take a look at the &lt;a href=&#34;https://sourcethemes.com/academic/updates/&#34; target=&#34;_blank&#34;&gt;Release Notes&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://github.com/gcushen/hugo-academic/&#34; target=&#34;_blank&#34;&gt;&lt;img src=&#34;https://raw.githubusercontent.com/gcushen/hugo-academic/master/academic.png&#34; alt=&#34;Screenshot&#34; /&gt;&lt;/a&gt;&lt;/p&gt;
-
-&lt;p&gt;Key features:&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Easily manage various content including homepage, blog posts, publications, talks, and projects&lt;/li&gt;
-&lt;li&gt;Extensible via &lt;strong&gt;color themes&lt;/strong&gt; and &lt;strong&gt;widgets/plugins&lt;/strong&gt;&lt;/li&gt;
-&lt;li&gt;Write in &lt;a href=&#34;https://sourcethemes.com/academic/docs/writing-markdown-latex/&#34; target=&#34;_blank&#34;&gt;Markdown&lt;/a&gt; for easy formatting and code highlighting, with &lt;a href=&#34;https://en.wikibooks.org/wiki/LaTeX/Mathematics&#34; target=&#34;_blank&#34;&gt;LaTeX&lt;/a&gt; for mathematical expressions&lt;/li&gt;
-&lt;li&gt;Social/academic network linking, &lt;a href=&#34;https://analytics.google.com&#34; target=&#34;_blank&#34;&gt;Google Analytics&lt;/a&gt;, and &lt;a href=&#34;https://disqus.com&#34; target=&#34;_blank&#34;&gt;Disqus&lt;/a&gt; comments&lt;/li&gt;
-&lt;li&gt;Responsive and mobile friendly&lt;/li&gt;
-&lt;li&gt;Simple and refreshing one page design&lt;/li&gt;
-&lt;li&gt;Multilingual and easy to customize&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h2 id=&#34;color-themes&#34;&gt;Color Themes&lt;/h2&gt;
-
-&lt;p&gt;Academic is available in different color themes and font themes.&lt;/p&gt;
-
-
-
-&lt;div class=&#34;gallery&#34;&gt;
-  
-  
-  
-  
-    
-  
-  &lt;a data-fancybox=&#34;gallery-1&#34; data-caption=&#34;Default&#34; href=&#34;https://raw.githubusercontent.com/gcushen/hugo-academic/master/images/theme-default.png&#34;&gt;
-    &lt;img alt=&#34;&#34; src=&#34;https://raw.githubusercontent.com/gcushen/hugo-academic/master/images/theme-default.png&#34;&gt;
-  &lt;/a&gt;
-  
-  
-  
-  
-    
-  
-  &lt;a data-fancybox=&#34;gallery-1&#34; data-caption=&#34;Ocean&#34; href=&#34;https://raw.githubusercontent.com/gcushen/hugo-academic/master/images/theme-ocean.png&#34;&gt;
-    &lt;img alt=&#34;&#34; src=&#34;https://raw.githubusercontent.com/gcushen/hugo-academic/master/images/theme-ocean.png&#34;&gt;
-  &lt;/a&gt;
-  
-  
-  
-  
-    
-  
-  &lt;a data-fancybox=&#34;gallery-1&#34; data-caption=&#34;Dark&#34; href=&#34;https://raw.githubusercontent.com/gcushen/hugo-academic/master/images/theme-dark.png&#34;&gt;
-    &lt;img alt=&#34;&#34; src=&#34;https://raw.githubusercontent.com/gcushen/hugo-academic/master/images/theme-dark.png&#34;&gt;
-  &lt;/a&gt;
-  
-  
-  
-  
-    
-  
-  &lt;a data-fancybox=&#34;gallery-1&#34; data-caption=&#34;Default&#34; href=&#34;https://raw.githubusercontent.com/gcushen/hugo-academic/master/images/theme-forest.png&#34;&gt;
-    &lt;img alt=&#34;&#34; src=&#34;https://raw.githubusercontent.com/gcushen/hugo-academic/master/images/theme-forest.png&#34;&gt;
-  &lt;/a&gt;
-  
-  
-  
-  
-    
-  
-  &lt;a data-fancybox=&#34;gallery-1&#34; data-caption=&#34;Coffee theme with Playfair font&#34; href=&#34;https://raw.githubusercontent.com/gcushen/hugo-academic/master/images/theme-coffee-playfair.png&#34;&gt;
-    &lt;img alt=&#34;&#34; src=&#34;https://raw.githubusercontent.com/gcushen/hugo-academic/master/images/theme-coffee-playfair.png&#34;&gt;
-  &lt;/a&gt;
-  
-  
-  
-  
-    
-  
-  &lt;a data-fancybox=&#34;gallery-1&#34; data-caption=&#34;1950s&#34; href=&#34;https://raw.githubusercontent.com/gcushen/hugo-academic/master/images/theme-1950s.png&#34;&gt;
-    &lt;img alt=&#34;&#34; src=&#34;https://raw.githubusercontent.com/gcushen/hugo-academic/master/images/theme-1950s.png&#34;&gt;
-  &lt;/a&gt;
-  
-&lt;/div&gt;
-
-&lt;h2 id=&#34;install&#34;&gt;Install&lt;/h2&gt;
-
-&lt;p&gt;You can choose from one of the following four methods to install:&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;one-click install using your web browser (recommended)&lt;/li&gt;
-&lt;li&gt;install on your computer using Git with the Command Prompt/Terminal app&lt;/li&gt;
-&lt;li&gt;install on your computer by downloading the ZIP files&lt;/li&gt;
-&lt;li&gt;install on your computer with RStudio&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;h3 id=&#34;quick-install-using-your-web-browser&#34;&gt;Quick install using your web browser&lt;/h3&gt;
-
-&lt;ol&gt;
-&lt;li&gt;&lt;a href=&#34;https://app.netlify.com/start/deploy?repository=https://github.com/sourcethemes/academic-kickstart&#34; target=&#34;_blank&#34;&gt;Install Academic with Netlify&lt;/a&gt;
-
-&lt;ul&gt;
-&lt;li&gt;Netlify will provide you with a customizable URL to access your new site&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;li&gt;On GitHub, go to your newly created &lt;code&gt;academic-kickstart&lt;/code&gt; repository and edit &lt;code&gt;config.toml&lt;/code&gt; to personalize your site. Shortly after saving the file, your site will automatically update&lt;/li&gt;
-&lt;li&gt;Read the &lt;a href=&#34;https://sourcethemes.com/academic/docs/&#34; target=&#34;_blank&#34;&gt;Quick Start Guide&lt;/a&gt; to learn how to add Markdown content. For inspiration, refer to the &lt;a href=&#34;https://github.com/gcushen/hugo-academic/tree/master/exampleSite&#34; target=&#34;_blank&#34;&gt;Markdown content&lt;/a&gt; which powers the &lt;a href=&#34;https://themes.gohugo.io/theme/academic/&#34; target=&#34;_blank&#34;&gt;Demo&lt;/a&gt;&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;h3 id=&#34;install-with-git&#34;&gt;Install with Git&lt;/h3&gt;
-
-&lt;p&gt;Prerequisites:&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;https://git-scm.com/downloads&#34; target=&#34;_blank&#34;&gt;Download and install Git&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://gohugo.io/getting-started/installing/#quick-install&#34; target=&#34;_blank&#34;&gt;Download and install Hugo&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-
-&lt;ol&gt;
-&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://github.com/sourcethemes/academic-kickstart#fork-destination-box&#34; target=&#34;_blank&#34;&gt;Fork&lt;/a&gt; the &lt;em&gt;Academic Kickstart&lt;/em&gt; repository and clone your fork with Git:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;git clone https://github.com/sourcethemes/academic-kickstart.git My_Website
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;&lt;em&gt;Note that if you forked Academic Kickstart, the above command should be edited to clone your fork, i.e. replace &lt;code&gt;sourcethemes&lt;/code&gt; with your GitHub username.&lt;/em&gt;&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;Initialize the theme:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;cd My_Website
-git submodule update --init --recursive
-&lt;/code&gt;&lt;/pre&gt;&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;h3 id=&#34;install-with-zip&#34;&gt;Install with ZIP&lt;/h3&gt;
-
-&lt;ol&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/sourcethemes/academic-kickstart/archive/master.zip&#34; target=&#34;_blank&#34;&gt;Download&lt;/a&gt; and extract &lt;em&gt;Academic Kickstart&lt;/em&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;https://github.com/gcushen/hugo-academic/archive/master.zip&#34; target=&#34;_blank&#34;&gt;Download&lt;/a&gt; and extract the &lt;em&gt;Academic theme&lt;/em&gt; to the &lt;code&gt;themes/academic/&lt;/code&gt; folder from the above step&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;h3 id=&#34;install-with-rstudio&#34;&gt;Install with RStudio&lt;/h3&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://sourcethemes.com/academic/docs/install/#install-with-rstudio&#34; target=&#34;_blank&#34;&gt;View the guide to installing Academic with RStudio&lt;/a&gt;&lt;/p&gt;
-
-&lt;h2 id=&#34;quick-start&#34;&gt;Quick start&lt;/h2&gt;
-
-&lt;ol&gt;
-&lt;li&gt;&lt;p&gt;If you installed on your computer, view your new website by running the following command:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code&gt;hugo server
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;Now visit &lt;a href=&#34;http://localhost:1313&#34; target=&#34;_blank&#34;&gt;localhost:1313&lt;/a&gt; and your new Academic powered website will appear. Otherwise, if using Netlify, they will provide you with your URL.&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;Read the &lt;a href=&#34;https://sourcethemes.com/academic/docs/&#34; target=&#34;_blank&#34;&gt;Quick Start Guide&lt;/a&gt; to learn how to add Markdown content, customize your site, and deploy it. For inspiration, refer to the &lt;a href=&#34;https://github.com/gcushen/hugo-academic/tree/master/exampleSite&#34; target=&#34;_blank&#34;&gt;Markdown content&lt;/a&gt; which powers the &lt;a href=&#34;https://themes.gohugo.io/theme/academic/&#34; target=&#34;_blank&#34;&gt;Demo&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;Build your site by running the &lt;code&gt;hugo&lt;/code&gt; command. Then &lt;a href=&#34;https://georgecushen.com/create-your-website-with-hugo/&#34; target=&#34;_blank&#34;&gt;host it for free using Github Pages&lt;/a&gt; or Netlify (refer to the first installation method). Alternatively, copy the generated &lt;code&gt;public/&lt;/code&gt; directory (by FTP, Rsync, etc.) to your production web server (such as a university&amp;rsquo;s hosting service).&lt;/p&gt;&lt;/li&gt;
-&lt;/ol&gt;
-
-&lt;h2 id=&#34;updating&#34;&gt;Updating&lt;/h2&gt;
-
-&lt;p&gt;Feel free to &lt;em&gt;star&lt;/em&gt; the project on &lt;a href=&#34;https://github.com/gcushen/hugo-academic/&#34; target=&#34;_blank&#34;&gt;Github&lt;/a&gt; to help keep track of updates and check out the &lt;a href=&#34;https://sourcethemes.com/academic/updates&#34; target=&#34;_blank&#34;&gt;release notes&lt;/a&gt; prior to updating your site.&lt;/p&gt;
-
-&lt;p&gt;Before updating the framework, it is recommended to make a backup of your entire website directory (or at least your &lt;code&gt;themes/academic&lt;/code&gt; directory) and record your current version number.&lt;/p&gt;
-
-&lt;p&gt;By default, Academic is installed as a Git submodule which can be updated by running the following command:&lt;/p&gt;
-
-&lt;pre&gt;&lt;code class=&#34;language-bash&#34;&gt;git submodule update --remote --merge
-&lt;/code&gt;&lt;/pre&gt;
-
-&lt;p&gt;&lt;a href=&#34;https://sourcethemes.com/academic/docs/update/&#34; target=&#34;_blank&#34;&gt;Check out the update guide&lt;/a&gt; for full instructions and alternative methods.&lt;/p&gt;
-
-&lt;h2 id=&#34;feedback-contributing&#34;&gt;Feedback &amp;amp; Contributing&lt;/h2&gt;
-
-&lt;p&gt;Please use the &lt;a href=&#34;https://github.com/gcushen/hugo-academic/issues&#34; target=&#34;_blank&#34;&gt;issue tracker&lt;/a&gt; to let me know about any bugs or feature requests, or alternatively make a pull request.&lt;/p&gt;
-
-&lt;p&gt;For support, head over to the &lt;a href=&#34;http://discuss.gohugo.io&#34; target=&#34;_blank&#34;&gt;Hugo discussion forum&lt;/a&gt;.&lt;/p&gt;
-
-&lt;h2 id=&#34;license&#34;&gt;License&lt;/h2&gt;
-
-&lt;p&gt;Copyright 2016-present &lt;a href=&#34;https://georgecushen.com&#34; target=&#34;_blank&#34;&gt;George Cushen&lt;/a&gt;.&lt;/p&gt;
-
-&lt;p&gt;Released under the &lt;a href=&#34;https://github.com/gcushen/hugo-academic/blob/master/LICENSE.md&#34; target=&#34;_blank&#34;&gt;MIT&lt;/a&gt; license.&lt;/p&gt;
 </description>
     </item>
     

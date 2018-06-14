@@ -33,5 +33,5 @@ caption = ""
 Work in progress includes:
 
   - Predicting landings based on a boat's history (*i.e.* where and when it fished)
-  - Identifying areas of opportunity and threat to implement Marine Protected Areas
+  - How does fishing effort redistribute after the implementation of large-scale marine protected areas?
   - What is the effect of ENSO events on fishing behavior?

@@ -1,0 +1,652 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="theme" content="hugo-academic">
+  <meta name="generator" content="Hugo 0.34" />
+  <meta name="author" content="Juan Carlos Villaseñor-Derbez">
+
+  
+  
+  
+  
+    
+      
+    
+  
+  <meta name="description" content="El ambiente de trabajo en RStudioInvestigación reproducibleProyectos de RStudioScripts y documentos de rmakrdownScriptsDocumentos de rmarkdownPaquetes en R: base, stats y otros másConclusionesEste es el primer post de ERRE. Antes de comenzar a escribir código, creo que es necesario establecer bases sólidas que nos permitan aprovechar R al máximo. En este post hablaremos sobre las generalidades de R y RStudio, y las ventajas de trabajar en este ambiente.">
+
+  
+  <link rel="alternate" hreflang="en-us" href="/post/r-y-r-studio/">
+
+  
+
+
+  
+
+  
+  
+  <meta name="theme-color" content="#0095eb">
+  
+  
+  
+  
+    
+  
+  
+    
+    
+      
+        <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
+      
+    
+  
+  
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha512-6MXa8B6uaO18Hid6blRMetEIoPqHf7Ux1tnyIQdpt9qI5OACx7C+O3IVTr98vwGnlcg0LOLa02i9Y1HpVhlfiw==" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/academicons/1.8.1/css/academicons.min.css" integrity="sha512-NThgw3XKQ1absAahW6to7Ey42uycrVvfNfyjqcFNgCmOCQ5AR4AO0SiXrN+8ZtYeappp56lk1WtvjVmEa+VR6A==" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha512-SfTiTlX6kk+qitfevl/7LibUOeJWlt9rbyDn92a1DqWOw9vWG2MFoays0sgObmWazO5BQPiFucnnEAjpAB+/Sw==" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.css" integrity="sha256-ygkqlh3CYSUri3LhQxzdcm0n1EQvH2Y+U5S2idbLtxs=" crossorigin="anonymous">
+  
+  
+  
+  
+  <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Montserrat:400,700%7cRoboto:400,400italic,700%7cRoboto&#43;Mono">
+  
+  <link rel="stylesheet" href="/styles.css">
+  
+
+  
+
+  
+  <link rel="alternate" href="/index.xml" type="application/rss+xml" title="Juan Carlos Villaseñor-Derbez">
+  <link rel="feed" href="/index.xml" type="application/rss+xml" title="Juan Carlos Villaseñor-Derbez">
+  
+
+  <link rel="manifest" href="/site.webmanifest">
+  <link rel="icon" type="image/png" href="/img/icon.png">
+  <link rel="apple-touch-icon" type="image/png" href="/img/icon-192.png">
+
+  <link rel="canonical" href="/post/r-y-r-studio/">
+
+  <meta property="twitter:card" content="summary_large_image">
+  
+  <meta property="twitter:site" content="@villasenor_jc">
+  <meta property="twitter:creator" content="@villasenor_jc">
+  
+  <meta property="og:site_name" content="Juan Carlos Villaseñor-Derbez">
+  <meta property="og:url" content="/post/r-y-r-studio/">
+  <meta property="og:title" content="R y RStudio | Juan Carlos Villaseñor-Derbez">
+  <meta property="og:description" content="El ambiente de trabajo en RStudioInvestigación reproducibleProyectos de RStudioScripts y documentos de rmakrdownScriptsDocumentos de rmarkdownPaquetes en R: base, stats y otros másConclusionesEste es el primer post de ERRE. Antes de comenzar a escribir código, creo que es necesario establecer bases sólidas que nos permitan aprovechar R al máximo. En este post hablaremos sobre las generalidades de R y RStudio, y las ventajas de trabajar en este ambiente.">
+  <meta property="og:locale" content="en-us">
+  
+  <meta property="article:published_time" content="2018-06-04T00:00:00&#43;00:00">
+  
+  <meta property="article:modified_time" content="2018-06-04T00:00:00&#43;00:00">
+  
+
+  
+
+  <title>R y RStudio | Juan Carlos Villaseñor-Derbez</title>
+
+</head>
+<body id="top" data-spy="scroll" data-target="#toc" data-offset="71" >
+
+<nav class="navbar navbar-default navbar-fixed-top" id="navbar-main">
+  <div class="container">
+
+    
+    <div class="navbar-header">
+      
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+              data-target=".navbar-collapse" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      
+      <a class="navbar-brand" href="/">Juan Carlos Villaseñor-Derbez</a>
+    </div>
+
+    
+    <div class="collapse navbar-collapse">
+
+      
+      
+      <ul class="nav navbar-nav navbar-right">
+        
+
+        
+        
+        
+        
+        
+          
+        
+
+        <li class="nav-item">
+          <a href="/#about">
+            
+            <span>About</span>
+            
+          </a>
+        </li>
+
+        
+        
+
+        
+        
+        
+        
+        
+          
+        
+
+        <li class="nav-item">
+          <a href="/#selected_publications">
+            
+            <span>Recent work</span>
+            
+          </a>
+        </li>
+
+        
+        
+
+        
+        
+        
+        
+        
+          
+        
+
+        <li class="nav-item">
+          <a href="/#projects">
+            
+            <span>Projects</span>
+            
+          </a>
+        </li>
+
+        
+        
+
+        
+        
+        
+        
+        
+          
+        
+
+        <li class="nav-item">
+          <a href="/#pr_publications">
+            
+            <span>Publications</span>
+            
+          </a>
+        </li>
+
+        
+        
+
+        
+        
+        
+        
+        
+          
+        
+
+        <li class="nav-item">
+          <a href="/#teaching">
+            
+            <span>Workshops</span>
+            
+          </a>
+        </li>
+
+        
+        
+
+        
+        
+        
+        
+        
+          
+        
+
+        <li class="nav-item">
+          <a href="/#posts">
+            
+            <span>ERRE (Blog)</span>
+            
+          </a>
+        </li>
+
+        
+        
+
+        
+        
+        
+        
+        
+          
+        
+
+        <li class="nav-item">
+          <a href="/#contact">
+            
+            <span>Contact</span>
+            
+          </a>
+        </li>
+
+        
+        
+      
+
+      
+      </ul>
+
+    </div>
+  </div>
+</nav>
+
+
+<article class="article" itemscope itemtype="http://schema.org/Article">
+
+  
+
+
+  <div class="article-container">
+    <h1 itemprop="name">R y RStudio</h1>
+
+    
+
+<div class="article-metadata">
+
+  <span class="article-date">
+    
+    <time datetime="2018-06-04 00:00:00 &#43;0000 UTC" itemprop="datePublished dateModified">
+      Jun 4, 2018
+    </time>
+  </span>
+  <span itemscope itemprop="author publisher" itemtype="http://schema.org/Person">
+    <meta itemprop="name" content="Juan Carlos Villaseñor-Derbez">
+  </span>
+
+  
+  <span class="middot-divider"></span>
+  <span class="article-reading-time">
+    14 min read
+  </span>
+  
+
+  
+  
+
+  
+  
+  
+  
+
+  
+  
+<div class="share-box" aria-hidden="true">
+  <ul class="share">
+    <li>
+      <a class="twitter"
+         href="https://twitter.com/intent/tweet?text=R%20y%20RStudio&amp;url=%2fpost%2fr-y-r-studio%2f"
+         target="_blank" rel="noopener">
+        <i class="fa fa-twitter"></i>
+      </a>
+    </li>
+    <li>
+      <a class="facebook"
+         href="https://www.facebook.com/sharer.php?u=%2fpost%2fr-y-r-studio%2f"
+         target="_blank" rel="noopener">
+        <i class="fa fa-facebook"></i>
+      </a>
+    </li>
+    <li>
+      <a class="linkedin"
+         href="https://www.linkedin.com/shareArticle?mini=true&amp;url=%2fpost%2fr-y-r-studio%2f&amp;title=R%20y%20RStudio"
+         target="_blank" rel="noopener">
+        <i class="fa fa-linkedin"></i>
+      </a>
+    </li>
+    <li>
+      <a class="weibo"
+         href="http://service.weibo.com/share/share.php?url=%2fpost%2fr-y-r-studio%2f&amp;title=R%20y%20RStudio"
+         target="_blank" rel="noopener">
+        <i class="fa fa-weibo"></i>
+      </a>
+    </li>
+    <li>
+      <a class="email"
+         href="mailto:?subject=R%20y%20RStudio&amp;body=%2fpost%2fr-y-r-studio%2f">
+        <i class="fa fa-envelope"></i>
+      </a>
+    </li>
+  </ul>
+</div>
+
+
+  
+
+</div>
+
+
+    <div class="article-style" itemprop="articleBody">
+      <div id="TOC">
+<ul>
+<li><a href="#el-ambiente-de-trabajo-en-rstudio">El ambiente de trabajo en RStudio</a></li>
+<li><a href="#investigacion-reproducible">Investigación reproducible</a></li>
+<li><a href="#proyectos-de-rstudio">Proyectos de RStudio</a></li>
+<li><a href="#scripts-y-documentos-de-rmakrdown">Scripts y documentos de <code>rmakrdown</code></a><ul>
+<li><a href="#scripts">Scripts</a></li>
+<li><a href="#documentos-de-rmarkdown">Documentos de <code>rmarkdown</code></a></li>
+</ul></li>
+<li><a href="#paquetes-en-r-base-stats-y-otros-mas">Paquetes en R: <code>base</code>, <code>stats</code> y otros más</a></li>
+<li><a href="#conclusiones">Conclusiones</a></li>
+</ul>
+</div>
+
+<p>Este es el primer post de <code>ERRE</code>. Antes de comenzar a escribir código, creo que es necesario establecer bases sólidas que nos permitan aprovechar R al máximo. En este post hablaremos sobre las generalidades de R y RStudio, y las ventajas de trabajar en este ambiente. Presentaré una introducción al uso de proyectos de RStudio para tener un ambiente de trabajo ordenado, y hablaremos brevemente sobre maneras de ejecutar código. Finalmente, hablaremos sobre el uso de paquetes en R para extender la funcionalidad de R.</p>
+<div id="el-ambiente-de-trabajo-en-rstudio" class="section level1">
+<h1>El ambiente de trabajo en RStudio</h1>
+<p>¿Cuál es la diferencia entre R y RStudio? Esta pregunta me la han hecho varias veces, y creo que es válido aclarar esta duda antes de comenzar con la parte del código. R es un lenguaje de programación con enfoque estadístico. R es el motor que ejecuta las operaciones que el usuario pide. Hay varias formas en las que el usuario puede comunicarse con ese motor. La manera más básica es utilizar R desde la interfaz de usuario de R:</p>
+<div class="figure">
+<img src="/img/2018-06-04-r-y-r-studio/Rgui.JPG" />
+
+</div>
+<p>Aunque esta plataforma nos permite comunicarnos con R y hacer todas las operaciones, no brinda un ambiente de trabajo flexible. Como lo dice Hadley Wickham,</p>
+<blockquote>
+<p>No se puede hacer <em>data science</em> desde una interfaz de usuario <a href="#fn1" class="footnoteRef" id="fnref1"><sup>1</sup></a>.</p>
+</blockquote>
+<p>Es aquí donde RStuido se vuelve importante. RStudio es un Ambiente de Desarrollo Integrado (IDE, <em>Integrated Development Environment</em>) que brinda todas las erramientas dentro de la interfaz de usuario. Esto es muy útil, pues nos evita tener que cambiar de ambientes para hacer diferentes tareas, y podemos integrar todo nuestro proceso de trabajo en un mismo ambiente. Esto permite la replicación de análisis y resultados.</p>
+<p>Puedes descargar R <a href="https://cran.r-project.org/bin/windows/base/">R</a> y <a href="https://www.rstudio.com/products/rstudio/download/">RStudio</a> de manera gratuita. Una vez que los tengas instalados, puedes abrir RStudio y verás algo así:</p>
+<div class="figure">
+<img src="/img/2018-06-04-r-y-r-studio/RStudio.JPG" />
+
+</div>
+<p>Notarás que hay más divisiones o secciones que en el RGui. En RStudio estas secciones reciben el nombre de <strong>páneles</strong>. A medida que avancemos en este post describiremos a detalle cada uno de ellos, pero aquí hay un resumen de las partes principales:</p>
+<ul>
+<li><code>Console</code>: Aquí verás un cursos que parpadea a la derecha de un símbolo <code>&gt;</code>. Escribe <code>2 + 2</code> y presiona la tecla <code>Enter</code>. La computadora responde diciendo <code>[1] 4</code>. Esta consola nos sirve para comunicarnos con R. Al pedirle la suma, R respondió diciendo que el resultado es <code>4</code>. Por ahora ignoraremos el valor de <code>[1]</code> que aparece a la izquierda.</li>
+<li><code>Environment</code>: Este panel mostrará todos los objetos y variables que carguemos. Por ejemplo, en la consola escribe <code>a &lt;- 2 + 2</code> y presiona <code>Enter</code>. Verás que esta vez R no respondió, pero en nuestro ambiente ahora hay algo llamado <code>a</code>, donde R almacenó el resultado de la operación que le pedimos. Si en la consola escribes <code>a</code> y presionas <code>Enter</code>, R dirá: <code>[1] 4</code>.</li>
+<li><code>History</code>: Este pánel te mostrará un historial de las operaciones anteriores. Si haces doble click sobre uno de los renglones, el texto se copiará a la consola para que puedas volver a ejecutar la operación. Desde la consola también puedes acceder a operaciones pasadas. Para esto, debes colocar el cursos en la consola y presionar la tecla que apunta hacia arriba en tu teclado. Cada vez que la presiones regresarás un paso atrás.</li>
+<li><code>Files</code>: Aquí aparecerán los archivos que estén en el directorio de trabajo. En la siguiente sección hablaremos sobre como mantener archivos ordenados mediante el uso de proyectos.</li>
+<li><code>Help</code>: Este es probablemente uno de los páneles más útiles. Para conocer cómo se usa una función generalmente recurrimos a la documentación. Por ejemplo, la función para calcular el promedio de una serie de datos es <code>mean()</code> pero, cómo le especifico los datos para los cuales quiero el promedio? Puedes conocer más sobre los <code>inputs</code> y <code>outputs</code> de una función escribiendo <code>?mean</code> en la consola y presionando <code>Enter</code>. Esto abrirá la documentación de la función.</li>
+</ul>
+<p>RStudio también te permite modificar el ambiente de trabajo, incluyendo diferentes páneles o especificando donde quieres que aparezcan. También es posible modificar los esquemas de colores y el tamaño de fuente. Todas estas características las puedes explorar en la pestaña de <code>Herramientas</code>, bajo la sección de <code>Opciones globales</code> y <code>Opciones de proyecto</code>.</p>
+</div>
+<div id="investigacion-reproducible" class="section level1">
+<h1>Investigación reproducible</h1>
+<p>Es importante que nuestros análisis y resultados puedan ser reproducidosy corroborados. Uno de los grandes avances de la humanidad es la capacidad de comunicar información por medio del lenguaje escrito. Escribir código nos permite comunicar nuestros procedimientos y contar una historia, pues el código no es más que texto. Aunque tiene su propia estructura, el código no es más que texto que puede ser comprendido por computadoras y humanos al mismo tiempo. Por ejemplo, el siguiente código es muy obvio para humanos y computadoras:</p>
+<pre><code>2 + 2</code></pre>
+<p>Existen muchos lenguajes de programación, cada uno con sus reglas semánticas y gramaticales. No importa cuan complicado sea el código, la intuición es la misma. Al escribir código generamos una receta o bitácora explícita de nuestros procedimientos, permitiendo que sean replicados. Además, podemos incluir mensajes que sean fáciles de leer por humanos pero que la computadora ignore. En R esto se hace con el uso del símbolo de número o <em>hashtag</em>: <code>#</code>. Todo el texto a la derecha de ese símbolo será ignorado por R, pero brinda información al humano que esté leyendo el código, por ejemplo:</p>
+<pre><code># Sumamos dos más dos
+2 + 2</code></pre>
+<p>Comentar el código nos ayuda a explicar las operaciones que hacemos. Esto es útil al compartir nuestro código con alguien más, pero también al regresar a código viejo. Más de una vez he regresado a código viejo que, por alguna razón, no comenté y termino perdiendo mucho tiempo identificando lo que hago.</p>
+</div>
+<div id="proyectos-de-rstudio" class="section level1">
+<h1>Proyectos de RStudio</h1>
+<p>Utilizar proyectos en R es una de las mejores formas de mantener un ambiente de trabajo ordenado. El proyecto mantiene un directorio de trabajo estable, donde mantenemos nuestros archivos asociados. El directorio de trabajo no es más que la localización de todos los archivos. El comando <code>getwd()</code> (<em>get working directory</em>) te mostrará el directorio de trabajo. Si es la primera vez que abres RStudio o estás fuera de un proyecto,el resultado será:</p>
+<p><code>[1] &quot;C:/Usuarios/TuUsuario/Documentos&quot;</code></p>
+<p>Dentro de Documentos yo tengo todos mis archivos, así que trabajar en este nivel podría ser complicado. Por ejemplo, asumamos que tengo dos proyectos de investigación. Uno es sobre peces rojos y otro de pájaros azules. Para cada uno de estos tendré archivos con datos, que mantengo separados en folders con la siguiente estructura:</p>
+<pre><code>C:/Usuarios/JC/Documentos/Proyectos:
+|
+-- PecesRojos/
+|  |
+|  -- datos/
+|    |
+|    -- peces_rojos.csv
+|
+-- PajarosAzules/
+    |
+    -- datos/
+      |
+      -- pajaros_azules.csv</code></pre>
+<p>Además, dentro de <code>Documentos</code> tengo muchos otros archivos, ordenados y desordenados, que pertenecen a muchas otras cosas. Al trabajar en el proyecto de <em>PecesRojos</em> quiero asegurarme que todo lo que veo son datos asociados a esto, sin ver datos de <em>PajarosAzules</em> o fotos de mis vacaciones pasadas. Para esto, usamos los proyectos de RStudio. Estos son los pasos para crear un proyecto de RStudio:</p>
+<ol style="list-style-type: decimal">
+<li>En la parte superior derecha de RStudio verás un ícono como este:</li>
+</ol>
+<div class="figure">
+<img src="/img/2018-06-04-r-y-r-studio/Rprojects.JPG" />
+
+</div>
+<ol start="2" style="list-style-type: decimal">
+<li>Al hacer click, verás las siguientes opciones:</li>
+</ol>
+<div class="figure">
+<img src="/img/2018-06-04-r-y-r-studio/Rprojects2.JPG" />
+
+</div>
+<ol start="3" style="list-style-type: decimal">
+<li>Selecciona la opción de <em>New Project</em> y verás una nueva ventana así:</li>
+</ol>
+<div class="figure">
+<img src="/img/2018-06-04-r-y-r-studio/Rprojects3.JPG" />
+
+</div>
+<ol start="4" style="list-style-type: decimal">
+<li>En este caso, yo ya tengo folders con mis datos, por lo que seleccionaré la opción de <em>Existing Directory</em>, que asociará mi proyecto de RStudio con una directorio existente. Al seleccionar esa opción aparece una nueva ventana, pidiéndome que indice el directorio al cual quiero asociar mir poyecto:</li>
+</ol>
+<div class="figure">
+<img src="/img/2018-06-04-r-y-r-studio/Rprojects4.JPG" />
+
+</div>
+<ol start="5" style="list-style-type: decimal">
+<li>Al hacer click en <em>Browse</em> se abrirá mi explorador de archivos, con el cual puedo navegar a <code>C:/Usuarios/JC/Documentos/Proyectos/PecesRojos</code></li>
+</ol>
+<div class="figure">
+<img src="/img/2018-06-04-r-y-r-studio/Rprojects5.JPG" />
+
+</div>
+<ol start="6" style="list-style-type: decimal">
+<li>Seleccionando el folder de <code>PecesRojos</code> y dando click en <em>Open</em> la ventana del paso 4 ahora contendrá la dirección del directorio de trabajo:</li>
+</ol>
+<div class="figure">
+<img src="/img/2018-06-04-r-y-r-studio/Rprojects6.JPG" />
+
+</div>
+<ol start="7" style="list-style-type: decimal">
+<li>Finalmente, hacemos click en el botón de <em>Create Project</em> y RStudio se actualizará.</li>
+</ol>
+<p>¿Tantos pasos y todo se ve igual? No, al poner más atención verás algunas diferencias. Por ejemplo, la esquina superior derecha ahora dice <code>PecesRojos</code>, indicándonos que estamos en ese proyecto. La pestaña de <code>Files</code> mostrará la carpeta donde tenemos los datos, y un projecto de R llamado <code>PecesRojos.Rproj</code>. Además, el pánel con el historial de operaciones está vacío. Lo más importante es que si ahora ejecutamos el comando para obtener el directorio (<code>getwd()</code>) obtenemos:</p>
+<p><code>[1] &quot;C:/Usuarios/TuUsuario/Documentos/Proyectos/PecesRojos&quot;</code></p>
+<p>Estto puede parecer trivial, pero tener un directorio asociado a nuestro proyecto nos permite cargar y guardar datos, figuras y tablas más fácilmente. Estos temás se cubrirán más adelante en detalle. Por ahora, procura usar proyectos de RStudio para administrár mejor tu trabajo y mantener todo más ordenado.</p>
+</div>
+<div id="scripts-y-documentos-de-rmakrdown" class="section level1">
+<h1>Scripts y documentos de <code>rmakrdown</code></h1>
+<p>Como vimos anteriormente, podemos ejecutar comandos directamente en la consola. Sin embargo, la mayoría de las veces realizaremos varias operaciones simultáneamente, y necesitamos tener tódo el código en un documento. Esto nos ahorra tener que escribir todas las operaciones cada vez, pero también nos da un archivo que podemos archivar para futuras referencias o compartir. Aquí exploraremos dos formas de hacerlo.</p>
+<div id="scripts" class="section level2">
+<h2>Scripts</h2>
+<p>La forma más sencilla es con el uso de <em>scripts</em> de R. Estos no son más que documento de texto con extensión <code>.*R</code> en vez de <code>*.txt</code>. Para crear un <em>script</em> haz click en ícono de “Nuevo documento” y selecciona <em>R Script</em>:</p>
+<div class="figure">
+<img src="/img/2018-06-04-r-y-r-studio/script.JPG" />
+
+</div>
+<p>También puedes utilizar la combinación de teclas <code>Ctrl</code> + <code>Shift</code> + <code>N</code>. Esto abrirá un documento de texto vacío.</p>
+<p>Tu ambiente en RStudio ahora debe verse similar a esto:</p>
+<div class="figure">
+<img src="/img/2018-06-04-r-y-r-studio/script2.JPG" />
+
+</div>
+<p>El panel superior izquierdo contiene el <em>script</em>, que dice <code>Untitled1</code>. Aquí podemos escribir varias operaciones seguidas, pero R no las ejecutará hasta que se lo indiquemos. Por ejemplo, el siguiente código genera una serie de 10 números almacenados en la variable <code>num</code> y después calcula el promedio, la mediana, la varianza y la desviación estándar. Todas estas funciones toman un <em>input</em> <code>x</code>, en este caso <code>num</code> y regresan el valor del estadístico calculado. Copia y pega el código en tu script.</p>
+<pre class="r"><code># Este script calcula el promedio, mediana, varianza y desviación estándar de
+# 10 números almacenados en la variable num
+
+num &lt;- c(1, 7, 2, 9, 0, 2, 4, 6, 8, 1) # Almacenar 10 números en la variable num
+
+# calcular el promedio de num
+mean(x = num)
+
+# Calcular la media de num
+median(x = num)
+
+# Calcular la varianza de num
+var(x = num)
+
+# Calcular la desviación estándar de num
+sd(x = num)</code></pre>
+<p>Si presionas <code>Enter</code>, lo único que lograrás es agregar una nueva línea. Para ejecutar el código deberás colocar tu cursor al principio o al final de una línea y presionar <code>Ctrl</code> + <code>Enter</code> (También puedes hacer click en el ícono que dice <em>Run</em> en la esquina superior derecha del <em>script</em>). Prueba con la línea 4, donde creamos la variable <code>num</code>. Repite el proceso para las líneas 7, 10, 13 y 16. Notarás que en la consola aparecen los valores correspondientes a cada operación. Hasta ahora no hay mucha diferencia, pues seguimos ejecutando el código una línea a la vez.</p>
+<p>Ahora, selecciona el código entero y presiona <code>Ctrl</code> + <code>Enter</code> o haz click en <em>Run</em>. Notarás que todas las líneas son ejecutadas automáticamente. Para guardar el documento, simplemente haz click en el ícono del <a href="https://www.google.com/search?q=disquete">disquete</a> o “guardar”. Como con cualquier otro archivo, puedes guardar el <em>R script</em> en cualquier lugar de tu computadora. Como estamos utilizando proyectos de RStudio, yo sugiero crear una carpeta dentro de <code>PecesRojos</code> llamda <code>scripts</code>, donde mantendremos todos estos archivos.</p>
+</div>
+<div id="documentos-de-rmarkdown" class="section level2">
+<h2>Documentos de <code>rmarkdown</code></h2>
+<p>Los documentos de <code>rmarkdown</code> también son documentos de texto, pero con extensión <code>*.Rmd</code>. Al igual que los <em>scripts</em>, estos nos permiten tener una serie de operaciones juntas. La principal diferencia es que un documento de <code>rmarkdown</code> se “teje” para generar archivos <code>*.pdf</code>, <code>*.docx</code> o <code>*.html</code>. Por ejemplo, este sitio entero está generado con <code>rmarkdown</code>. Más adelante tendremos un post dedicado al uso de <code>rmarkdown</code>, pero a continuación algunos detalles generales.</p>
+<p>Para crear un documento de <code>rmarkdown</code> seguirás el mismo camino que para crear un <em>script</em>. Sin embargo, seleccionarás la opción que dice <em>R Markdown</em>. Al hacerlo, deberás ver una ventana así:</p>
+<div class="figure">
+<img src="/img/2018-06-04-r-y-r-studio/rmarkdown.JPG" />
+
+</div>
+<p>Ingresa un título para tu documento y, si quieres, un nombre para el autor. Selecciona la opción de <code>HTML</code> y da click en OK. Deberás de ver un documento con el siguiente código:</p>
+<div class="figure">
+<img src="/img/2018-06-04-r-y-r-studio/rmarkdown2.JPG" />
+
+</div>
+<p>Notarás que en la parte superior se encuentra el título y nombre que ingresaste, además de la fecha y el tipo de formato a generar. Más abjo hay secciones con texto y código. Notarás que el texto no usa <code>#</code> para los comentarios. Esto es porque ahora separamos el texto del documento y el código usando <em>code chunks</em>. Estos se crean al presionar el botón que dice <em>Insert</em> en la esquina superior derecha del documento. Los <em>chunks</em> contienen el código a ejecutar, y todo lo que está fuera aparecerá como texto en el documento final. Si quieres incluir comentarios en tu código y que no sean visibles, puedes hacerlo dentro de los <em>chunks</em>.</p>
+<p>Ve al <em>cunk</em> que dice <code>summary(cars)</code> y haz click en la flecha verde en el extremo derecho del <em>chunk</em>. Esto generará un resumen de los datos <code>cars</code> que están precargados en la memoria de R. Los datos contienen velocidades y distancias, y la función <code>summary()</code> calcula el rango, quartiles, mediana y promedio de cada variable.</p>
+<div class="figure">
+<img src="/img/2018-06-04-r-y-r-studio/rmarkdown3.JPG" />
+
+</div>
+<p>Ahora, para aprovechar al máximo el documento, ve a la parte superior y da click en la bola de estambre que dice <em>Knit</em> (tejer). R te pedirá que indiques un nombre del archivo. Al crear el documento especificamos el <strong>Título</strong> del archivo, que no necesariamente es el nombre del archivo. Piensa que el título podría ser <em>“El Viejo y el Mar”</em>, y el nombre del archivo <code>libro_Hemingway.Rmd</code>. Guarda tu documento dentro de tu carpeta del proyecto; a mi me gusta tener por lo menos carpetas distintas para <code>datos</code>, <code>scripts</code> y <code>docs</code>. Al guardar el documento, R ejecutará todos los <em>chunks</em> y generará un documento de <code>*.html</code> que contiene el texto, código, y resultados del código.</p>
+<p>Ese documento de <code>*.html</code> contiene todas las imágenes generadas, por lo que puedes compartirlo directamente con alguien que no necesariamente trabaja en R y esta persona podrá abrirlo en cualquier explorador web. En el 98% de los casos, yo prefiero trabajar en un documento de <code>rmarkdown</code> y recomiendo que tú hagas lo mismo. Más adelante aprenderemos más sobre <code>rmarkdown</code>, como cambiar formatos de salida y como aprovechar al máximo esta herramienta.</p>
+</div>
+</div>
+<div id="paquetes-en-r-base-stats-y-otros-mas" class="section level1">
+<h1>Paquetes en R: <code>base</code>, <code>stats</code> y otros más</h1>
+<p>En la sección anterior utilizamos las funciones <code>mean()</code>, <code>median()</code>, <code>var()</code> y <code>sd()</code>. Como estas, hay muchas otras funciones directamente disponibles en R. Sin embargo, la activa comunidad de usuarios de R ha creado otras funciones con aplicaciones específicas. Estas funciones de distribuyen en paquetes, que pueden ser instalados. En el caso de las funciones anteriores, <code>mean()</code> pertenece al paquete <code>base</code>, mientras que <code>median()</code>, <code>var()</code> y <code>sd()</code> pertenecen al paquete <code>stats</code>. Todas las funciones pertenecen a un paquete. Para instalar un paquete nuevo (o la versión más actual de un paquete que ya tienes), utilizamos el comando <code>install.packages()</code>. Por ejemplo, copia, pega y ejecuta el siguiente código en tu consola:</p>
+<pre class="r"><code># Instalar paquetes que usaremos en siguientes posts
+install.packages(c(&quot;dplyr&quot;, &quot;raster&quot;))</code></pre>
+<p>Este código instalará automáticamente <code>dplyr</code> y <code>raster</code>, dos paquetes con muchas funciones útiles que usaremos en siguientes posts. Una vez que la instalación haya terminado podemos cargar los paquetes. Aunque los paquetes ya estén instalados, es necesario especificarle a R que usaremos funciones de estos paquetes. Para esto, usamos el comando <code>library()</code>. El siguiente código carga los paquetes para que podamos usarlos.</p>
+<pre class="r"><code># Cargar paquetes
+library(raster)
+library(dplyr)</code></pre>
+<p>El comando <code>install.packages()</code> solamente lo utilizaremos cuando necesitemos instalar un paquete (por lo general, solo una vez). Sin embargo, <code>library()</code> lo usaremos cada vez que necesitemos usar un paquete.</p>
+<p>En ocasiones dos paquetes distintos tendrán funciones con el mismo nombre. Por ejemplo, los paquetes <code>dplyr</code> y <code>raster</code> (que usaremos en siguientes posts) tienen la función <code>select()</code>. Esta función hace cosas muy distintas en cada paquete. El <code>select()</code> de <code>dplyr</code> selecciona columnas de un <code>data.frame</code>, mientras que el <code>select()</code> de <code>raster</code> sirve para obtener partes de una imagen satelital dibujando sobre una gáfica. Más adelante usaremos estas funcionalidades, pero por ahora el mensaje clave es que dos funciones de dos paquetes pueden tener nombres distintos. De ahora en adelante, cuando presente una función nueva especificaré el paquete del cual proviene utilizando el <code>NAMESPACE</code>, que se ve así: <code>base::mean()</code>. Esto indica que la función <code>mean()</code> proviene del paquete <code>base</code>. Al utilizar el <code>NAMESPACE</code> podemos saber de donde viene la función, pero también le indica a R que de todas las posibles funciones que tienen el mismo nombre, le estamos pidiendo que use una en específico.</p>
+</div>
+<div id="conclusiones" class="section level1">
+<h1>Conclusiones</h1>
+<p>En este post aprendimos la diferencia entre R y RStudio, y las algunas de lasventajas asociadas a trabajar en el Ambiente de Desarrollo Integrado. Hablamos sobre la importancia de usar código para comunicar y replicar análisis con otras personas y con nosotros mismos. Aprendimos como crear un proyecto de RStudio que nos permite organizar nuestro trabajo y mantener proyectos diferentes aislados. Después, hablamos sobre los formatos que se pueden utilizar para compartir código, y la utilidad de <code>rmarkdown</code> para compartir texto y análisis en un documento unificado. Finalmente, hablamos sobre los paquetes en R, y aprendimos como instalar y cargar paquetes. Con suerte, estos temas te darán las bases necesarias para usar R y RStudio de manera más fluida en los siguientes blogs, donde nos enfocaremos más en la programación.</p>
+</div>
+<div class="footnotes">
+<hr />
+<ol>
+<li id="fn1"><p><a href="https://www.youtube.com/watch?v=cpbtcsGE0OA">Video</a><a href="#fnref1">↩</a></p></li>
+</ol>
+</div>
+
+    </div>
+
+    
+
+
+
+
+
+    
+    
+
+    
+
+    
+
+
+  </div>
+</article>
+
+<footer class="site-footer">
+  <div class="container">
+    <p class="powered-by">
+
+      &copy; 2018 Juan Carlos Villaseñor-Derbez &middot; 
+
+      Powered by the
+      <a href="https://sourcethemes.com/academic/" target="_blank" rel="noopener">Academic theme</a> for
+      <a href="https://gohugo.io" target="_blank" rel="noopener">Hugo</a>.
+
+      <span class="pull-right" aria-hidden="true">
+        <a href="#" id="back_to_top">
+          <span class="button_icon">
+            <i class="fa fa-chevron-up fa-2x"></i>
+          </span>
+        </a>
+      </span>
+
+    </p>
+  </div>
+</footer>
+
+
+<div id="modal" class="modal fade" role="dialog">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close btn-large" data-dismiss="modal">&times;</button>
+        <h4 class="modal-title">Cite</h4>
+      </div>
+      <div>
+        <pre><code class="modal-body tex"></code></pre>
+      </div>
+      <div class="modal-footer">
+        <a class="btn btn-primary btn-outline js-copy-cite" href="#" target="_blank">
+          <i class="fa fa-copy"></i> Copy
+        </a>
+        <a class="btn btn-primary btn-outline js-download-cite" href="#" target="_blank">
+          <i class="fa fa-download"></i> Download
+        </a>
+        <div id="modal-error"></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+    
+
+    
+    
+
+    
+
+    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js" integrity="sha512-3P8rXCuGJdNZOnUx/03c1jOTnMn3rP63nBip5gOP2qmUh5YAdVAvFZ1E+QLZZbC1rtMrQb+mah3AfYW11RUrWA==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.imagesloaded/4.1.3/imagesloaded.pkgd.min.js" integrity="sha512-umsR78NN0D23AzgoZ11K7raBD+R6hqKojyBZs1w8WvYlsI+QuKRGBx3LFCwhatzBunCjDuJpDHwxD13sLMbpRA==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha512-iztkobsvnjKfAtTNdHkGVjAYTrrtlC7mGp/54c40wowO7LhURYl3gVzzcEqGl/qKXQltJ2HwMrdLcNUdo+N/RQ==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.isotope/3.0.4/isotope.pkgd.min.js" integrity="sha512-VDBOIlDbuC4VWxGJNmuFRQ0Li0SKkDpmGyuhAG5LTDLd/dJ/S0WMVxriR2Y+CyPL5gzjpN4f/6iqWVBJlht0tQ==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.2.5/jquery.fancybox.min.js" integrity="sha256-X5PoE3KU5l+JcX+w09p/wHl9AzK333C4hJ2I9S5mD4M=" crossorigin="anonymous"></script>
+    
+    
+    <script src="/js/hugo-academic.js"></script>
+    
+
+    
+    
+      
+      
+      <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js" integrity="sha256-/BfiIkHlHoVihZdc6TFuj7MmJ0TWcWsMXkeDFwhi0zw=" crossorigin="anonymous"></script>
+      
+
+      
+
+      
+
+      <script>hljs.initHighlightingOnLoad();</script>
+    
+
+    
+    
+
+  </body>
+</html>
+
