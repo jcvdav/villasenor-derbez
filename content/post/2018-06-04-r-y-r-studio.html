@@ -18,7 +18,7 @@ header:
 <li><a href="#el-ambiente-de-trabajo-en-rstudio">El ambiente de trabajo en RStudio</a></li>
 <li><a href="#investigacion-reproducible">Investigación reproducible</a></li>
 <li><a href="#proyectos-de-rstudio">Proyectos de RStudio</a></li>
-<li><a href="#scripts-y-documentos-de-rmakrdown">Scripts y documentos de <code>rmakrdown</code></a><ul>
+<li><a href="#distribucion-de-codigo">Distribución de código</a><ul>
 <li><a href="#scripts">Scripts</a></li>
 <li><a href="#documentos-de-rmarkdown">Documentos de <code>rmarkdown</code></a></li>
 </ul></li>
@@ -27,48 +27,49 @@ header:
 </ul>
 </div>
 
-<p>Este es el primer post de <code>ERRE</code>. Antes de comenzar a escribir código, creo que es necesario establecer bases sólidas que nos permitan aprovechar R al máximo. En este post hablaremos sobre las generalidades de R y RStudio, y las ventajas de trabajar en este ambiente. Presentaré una introducción al uso de proyectos de RStudio para tener un ambiente de trabajo ordenado, y hablaremos brevemente sobre maneras de ejecutar código. Finalmente, hablaremos sobre el uso de paquetes en R para extender la funcionalidad de R.</p>
+<p>Este es el primer post de <code>ERRE</code>. Antes de comenzar a escribir código, creo que es necesario establecer bases sólidas que nos permitan aprovechar R al máximo. En este post hablaremos sobre las generalidades de R y RStudio y las ventajas de trabajar en este ambiente. Daré una introducción al uso de proyectos de RStudio para tener un ambiente de trabajo ordenado y hablaremos brevemente sobre las principales formas de ejecutar código. Finalmente, hablaremos sobre el uso de paquetes para extender la funcionalidad de R.</p>
 <div id="el-ambiente-de-trabajo-en-rstudio" class="section level1">
 <h1>El ambiente de trabajo en RStudio</h1>
-<p>¿Cuál es la diferencia entre R y RStudio? Esta pregunta me la han hecho varias veces, y creo que es válido aclarar esta duda antes de comenzar con la parte del código. R es un lenguaje de programación con enfoque estadístico. R es el motor que ejecuta las operaciones que el usuario pide. Hay varias formas en las que el usuario puede comunicarse con ese motor. La manera más básica es utilizar R desde la interfaz de usuario de R:</p>
+<p>¿Cuál es la diferencia entre R y RStudio? Esta pregunta me la han hecho varias veces, y creo que es válido aclarar esta duda antes de comenzar con la parte del código. R es un lenguaje de programación con enfoque estadístico. R es el motor que ejecuta las operaciones que el usuario somete. Hay varias plataformas que permiten la comunicación usuarrio-motor. Una de ellas es utilizar R desde la interfaz de usuario de R:</p>
 <div class="figure">
 <img src="/img/2018-06-04-r-y-r-studio/Rgui.JPG" />
 
 </div>
-<p>Aunque esta plataforma nos permite comunicarnos con R y hacer todas las operaciones, no brinda un ambiente de trabajo flexible. Como lo dice Hadley Wickham,</p>
+<p>Aunque esta plataforma permite comunicarnos con R y hacer todas las operaciones, no brinda un ambiente de trabajo flexible. Como lo dice Hadley Wickham,</p>
 <blockquote>
 <p>No se puede hacer <em>data science</em> desde una interfaz de usuario <a href="#fn1" class="footnoteRef" id="fnref1"><sup>1</sup></a>.</p>
 </blockquote>
-<p>Es aquí donde RStuido se vuelve importante. RStudio es un Ambiente de Desarrollo Integrado (IDE, <em>Integrated Development Environment</em>) que brinda todas las erramientas dentro de la interfaz de usuario. Esto es muy útil, pues nos evita tener que cambiar de ambientes para hacer diferentes tareas, y podemos integrar todo nuestro proceso de trabajo en un mismo ambiente. Esto permite la replicación de análisis y resultados.</p>
+<p>Es aquí donde RStuido se vuelve importante. RStudio es un Ambiente de Desarrollo Integrado (IDE, <em>Integrated Development Environment</em>). Esto quiere decir que expande la funcionalidad y flexibilidad de la interfaz de usuario. Esto es muy útil, pues nos evita tener que cambiar de ambientes para hacer diferentes tareas. En resumen, podemos integrar todo nuestro proceso de trabajo en un mismo ambiente. Esto además permite la replicación de análisis, resultados y productos (documentos, imágenes, presentaciones).</p>
 <p>Puedes descargar R <a href="https://cran.r-project.org/bin/windows/base/">R</a> y <a href="https://www.rstudio.com/products/rstudio/download/">RStudio</a> de manera gratuita. Una vez que los tengas instalados, puedes abrir RStudio y verás algo así:</p>
 <div class="figure">
 <img src="/img/2018-06-04-r-y-r-studio/RStudio.JPG" />
 
 </div>
-<p>Notarás que hay más divisiones o secciones que en el RGui. En RStudio estas secciones reciben el nombre de <strong>páneles</strong>. A medida que avancemos en este post describiremos a detalle cada uno de ellos, pero aquí hay un resumen de las partes principales:</p>
+<p>Notarás que hay más divisiones o secciones que en el RGui de la primera figura. En RStudio estas secciones reciben el nombre de <strong>páneles</strong>. Aquí hay un resumen de las partes principales:</p>
 <ul>
-<li><code>Console</code>: Aquí verás un cursos que parpadea a la derecha de un símbolo <code>&gt;</code>. Escribe <code>2 + 2</code> y presiona la tecla <code>Enter</code>. La computadora responde diciendo <code>[1] 4</code>. Esta consola nos sirve para comunicarnos con R. Al pedirle la suma, R respondió diciendo que el resultado es <code>4</code>. Por ahora ignoraremos el valor de <code>[1]</code> que aparece a la izquierda.</li>
-<li><code>Environment</code>: Este panel mostrará todos los objetos y variables que carguemos. Por ejemplo, en la consola escribe <code>a &lt;- 2 + 2</code> y presiona <code>Enter</code>. Verás que esta vez R no respondió, pero en nuestro ambiente ahora hay algo llamado <code>a</code>, donde R almacenó el resultado de la operación que le pedimos. Si en la consola escribes <code>a</code> y presionas <code>Enter</code>, R dirá: <code>[1] 4</code>.</li>
-<li><code>History</code>: Este pánel te mostrará un historial de las operaciones anteriores. Si haces doble click sobre uno de los renglones, el texto se copiará a la consola para que puedas volver a ejecutar la operación. Desde la consola también puedes acceder a operaciones pasadas. Para esto, debes colocar el cursos en la consola y presionar la tecla que apunta hacia arriba en tu teclado. Cada vez que la presiones regresarás un paso atrás.</li>
-<li><code>Files</code>: Aquí aparecerán los archivos que estén en el directorio de trabajo. En la siguiente sección hablaremos sobre como mantener archivos ordenados mediante el uso de proyectos.</li>
-<li><code>Help</code>: Este es probablemente uno de los páneles más útiles. Para conocer cómo se usa una función generalmente recurrimos a la documentación. Por ejemplo, la función para calcular el promedio de una serie de datos es <code>mean()</code> pero, cómo le especifico los datos para los cuales quiero el promedio? Puedes conocer más sobre los <code>inputs</code> y <code>outputs</code> de una función escribiendo <code>?mean</code> en la consola y presionando <code>Enter</code>. Esto abrirá la documentación de la función.</li>
+<li><code>Console</code>: Aquí verás un cursos que parpadea a la derecha de un símbolo <code>&gt;</code> y un cursor parpadeante. Escribe <code>2 + 2</code> y presiona la tecla <code>Enter</code>. La computadora responde diciendo <code>[1] 4</code>. Esta consola nos sirve para comunicarnos con R. Al pedirle la suma, R respondió diciendo que el resultado es <code>4</code>. Por ahora ignoraremos el valor de <code>[1]</code> que aparece a la izquierda.</li>
+<li><code>Environment</code>: Este panel mostrará todos los objetos y variables generadas o cargadas. Por ejemplo, en la consola escribe <code>a &lt;- 2 + 2</code> y presiona <code>Enter</code>. Verás que esta vez R no respondió, pero en nuestro ambiente ahora hay una variable llamado <code>a</code>, donde R almacenó el resultado de la operación. Si en la consola escribes <code>a</code> y presionas <code>Enter</code>, R dirá: <code>[1] 4</code>. Toma nota que en R usaremos el operador <code>&lt;-</code> para asignar valores a una variable.</li>
+<li><code>History</code>: Este pánel te mostrará un historial de las operaciones anteriores. Si haces doble click sobre uno de los renglones, el texto se copiará a la consola para que puedas volver a ejecutar la operación. Desde la consola también puedes acceder a operaciones pasadas. Para esto, debes colocar el cursor en la consola y en tu teclado presionar la tecla que apunta hacia arriba. Cada vez que la presiones regresarás un paso atrás.</li>
+<li><code>Files</code>: Aquí aparecerán los archivos que estén en el directorio de trabajo. En la siguiente sección hablaremos sobre como mantener archivos ordenados mediante el uso de proyectos de RStudio.</li>
+<li><code>Help</code>: Este es probablemente uno de los páneles más útiles. Para conocer cómo se usa una función generalmente recurrimos a la documentación. Por ejemplo, la función para calcular el promedio de una serie de datos es <code>mean()</code> pero, ¿Cómo le especifico los datos para los cuales quiero el promedio? Puedes conocer más sobre los <code>inputs</code> y <code>outputs</code> de una función escribiendo <code>?mean</code> en la consola y presionando <code>Enter</code>. Esto abrirá la documentación de la función.</li>
 </ul>
-<p>RStudio también te permite modificar el ambiente de trabajo, incluyendo diferentes páneles o especificando donde quieres que aparezcan. También es posible modificar los esquemas de colores y el tamaño de fuente. Todas estas características las puedes explorar en la pestaña de <code>Herramientas</code>, bajo la sección de <code>Opciones globales</code> y <code>Opciones de proyecto</code>.</p>
+<p>RStudio también te permite modificar el ambiente de trabajo. Puedes mover la posición de los páneles o modificar los esquemas de colores y el tamaño de fuente. Todas estas características las puedes explorar en la pestaña de <code>Herramientas</code>, bajo la sección de <code>Opciones globales</code> y <code>Opciones de proyecto</code>.</p>
 </div>
 <div id="investigacion-reproducible" class="section level1">
 <h1>Investigación reproducible</h1>
-<p>Es importante que nuestros análisis y resultados puedan ser reproducidosy corroborados. Uno de los grandes avances de la humanidad es la capacidad de comunicar información por medio del lenguaje escrito. Escribir código nos permite comunicar nuestros procedimientos y contar una historia, pues el código no es más que texto. Aunque tiene su propia estructura, el código no es más que texto que puede ser comprendido por computadoras y humanos al mismo tiempo. Por ejemplo, el siguiente código es muy obvio para humanos y computadoras:</p>
+<p>Es importante que nuestros análisis y resultados puedan ser reproducidos y corroborados. Uno de los grandes avances de la humanidad es la capacidad de comunicar información por medio del lenguaje escrito, pues deja un legado que no requiere ser pasado de “boca en boca”. Escribir código nos permite comunicar nuestros procedimientos y contar una historia, pues el código no es más que texto. Aunque tiene su propia estructura, el código no es más que texto que puede ser comprendido por computadoras y humanos al mismo tiempo. Por ejemplo, el siguiente código es muy obvio para humanos y computadoras:</p>
 <pre><code>2 + 2</code></pre>
-<p>Existen muchos lenguajes de programación, cada uno con sus reglas semánticas y gramaticales. No importa cuan complicado sea el código, la intuición es la misma. Al escribir código generamos una receta o bitácora explícita de nuestros procedimientos, permitiendo que sean replicados. Además, podemos incluir mensajes que sean fáciles de leer por humanos pero que la computadora ignore. En R esto se hace con el uso del símbolo de número o <em>hashtag</em>: <code>#</code>. Todo el texto a la derecha de ese símbolo será ignorado por R, pero brinda información al humano que esté leyendo el código, por ejemplo:</p>
+<p>Existen muchos lenguajes de programación, cada uno con sus reglas semánticas y gramaticales. No importa cuan complicado sea el código, la intuición es la misma. Al escribir código generamos una receta o bitácora explícita de nuestros procedimientos, permitiendo que sean replicados.</p>
+<p>Además, podemos incluir mensajes que sean fáciles de leer por humanos pero que la computadora ignore. En R esto se hace con el uso del símbolo de número o <em>hashtag</em> (<code>#</code>). Todo el texto a la derecha de ese símbolo será ignorado por R, pero brinda información al humano que esté leyendo el código, por ejemplo:</p>
 <pre><code># Sumamos dos más dos
-2 + 2</code></pre>
-<p>Comentar el código nos ayuda a explicar las operaciones que hacemos. Esto es útil al compartir nuestro código con alguien más, pero también al regresar a código viejo. Más de una vez he regresado a código viejo que, por alguna razón, no comenté y termino perdiendo mucho tiempo identificando lo que hago.</p>
+2 + 2 # Tambien puedo comentar en la misma línea</code></pre>
+<p>Comentar el código nos ayuda a explicar las operaciones que hacemos. Esto es útil al compartir nuestro código con alguien más, pero también al regresar a código viejo. Más de una vez he regresado a código viejo que no había comentado. Cada una de esas veces me he arrepentido de no haberlo hecho.</p>
 </div>
 <div id="proyectos-de-rstudio" class="section level1">
 <h1>Proyectos de RStudio</h1>
-<p>Utilizar proyectos en R es una de las mejores formas de mantener un ambiente de trabajo ordenado. El proyecto mantiene un directorio de trabajo estable, donde mantenemos nuestros archivos asociados. El directorio de trabajo no es más que la localización de todos los archivos. El comando <code>getwd()</code> (<em>get working directory</em>) te mostrará el directorio de trabajo. Si es la primera vez que abres RStudio o estás fuera de un proyecto,el resultado será:</p>
+<p>Utilizar proyectos en R es una de las mejores formas de mantener un ambiente de trabajo ordenado. El proyecto mantiene un directorio de trabajo estable, donde mantenemos nuestros archivos asociados. El directorio de trabajo no es más que la localización de todos los archivos y carpetas. El comando <code>getwd()</code> (<em>get working directory</em>) te mostrará el directorio de trabajo. Si es la primera vez que abres RStudio o estás fuera de un proyecto, puede que el resultado sea:</p>
 <p><code>[1] &quot;C:/Usuarios/TuUsuario/Documentos&quot;</code></p>
-<p>Dentro de Documentos yo tengo todos mis archivos, así que trabajar en este nivel podría ser complicado. Por ejemplo, asumamos que tengo dos proyectos de investigación. Uno es sobre peces rojos y otro de pájaros azules. Para cada uno de estos tendré archivos con datos, que mantengo separados en folders con la siguiente estructura:</p>
+<p>Supongamos que mantengo todos mis archivos dentro de la carpeta de <code>Documentos</code>. Por ejemplo, asumamos que tengo dos proyectos de investigación. Uno es sobre peces rojos y otro de pájaros azules. Para cada uno de estos tendré archivos con datos, que mantengo separados en folders con la siguiente estructura:</p>
 <pre><code>C:/Usuarios/JC/Documentos/Proyectos:
 |
 -- PecesRojos/
@@ -82,7 +83,8 @@ header:
     -- datos/
       |
       -- pajaros_azules.csv</code></pre>
-<p>Además, dentro de <code>Documentos</code> tengo muchos otros archivos, ordenados y desordenados, que pertenecen a muchas otras cosas. Al trabajar en el proyecto de <em>PecesRojos</em> quiero asegurarme que todo lo que veo son datos asociados a esto, sin ver datos de <em>PajarosAzules</em> o fotos de mis vacaciones pasadas. Para esto, usamos los proyectos de RStudio. Estos son los pasos para crear un proyecto de RStudio:</p>
+<p>Además, dentro de <code>Documentos</code> tengo muchos otros archivos, ordenados y desordenados, que pertenecen a muchas otras cosas. Al trabajar en el proyecto de <em>PecesRojos</em> quiero asegurarme que todo lo que veo en mi pánel de <code>Files</code> son datos asociados a esto, sin ver datos de <em>PajarosAzules</em> o fotos de mis vacaciones pasadas. Para esto, usamos los proyectos de RStudio.</p>
+<p>Estos son los pasos para crear un proyecto de RStudio:</p>
 <ol style="list-style-type: decimal">
 <li>En la parte superior derecha de RStudio verás un ícono como este:</li>
 </ol>
@@ -105,7 +107,7 @@ header:
 
 </div>
 <ol start="4" style="list-style-type: decimal">
-<li>En este caso, yo ya tengo folders con mis datos, por lo que seleccionaré la opción de <em>Existing Directory</em>, que asociará mi proyecto de RStudio con una directorio existente. Al seleccionar esa opción aparece una nueva ventana, pidiéndome que indice el directorio al cual quiero asociar mir poyecto:</li>
+<li>En este caso, yo ya tengo carpetas con mis datos, por lo que seleccionaré la opción de <em>Existing Directory</em>. Al seleccionar esa opción aparece una nueva ventana, pidiéndome que indice el directorio al cual quiero asociar mir poyecto:</li>
 </ol>
 <div class="figure">
 <img src="/img/2018-06-04-r-y-r-studio/Rprojects4.JPG" />
@@ -128,13 +130,13 @@ header:
 <ol start="7" style="list-style-type: decimal">
 <li>Finalmente, hacemos click en el botón de <em>Create Project</em> y RStudio se actualizará.</li>
 </ol>
-<p>¿Tantos pasos y todo se ve igual? No, al poner más atención verás algunas diferencias. Por ejemplo, la esquina superior derecha ahora dice <code>PecesRojos</code>, indicándonos que estamos en ese proyecto. La pestaña de <code>Files</code> mostrará la carpeta donde tenemos los datos, y un projecto de R llamado <code>PecesRojos.Rproj</code>. Además, el pánel con el historial de operaciones está vacío. Lo más importante es que si ahora ejecutamos el comando para obtener el directorio (<code>getwd()</code>) obtenemos:</p>
+<p>¿Tantos pasos y todo se ve igual? No, al poner más atención verás algunas diferencias. Por ejemplo, la esquina superior derecha ahora dice <code>PecesRojos</code>, indicándonos que estamos en ese proyecto. La pestaña de <code>Files</code> mostrará la carpeta donde tengo los datos y un projecto de R llamado <code>PecesRojos.Rproj</code>. Además, el pánel con el historial de operaciones está vacío, pues no hemos ejecutado código en este proyecto. Lo más importante es que si ahora ejecuto el comando para obtener el directorio (<code>getwd()</code>) obtengo:</p>
 <p><code>[1] &quot;C:/Usuarios/TuUsuario/Documentos/Proyectos/PecesRojos&quot;</code></p>
-<p>Estto puede parecer trivial, pero tener un directorio asociado a nuestro proyecto nos permite cargar y guardar datos, figuras y tablas más fácilmente. Estos temás se cubrirán más adelante en detalle. Por ahora, procura usar proyectos de RStudio para administrár mejor tu trabajo y mantener todo más ordenado.</p>
+<p>Esto puede parecer trivial, pero tener un directorio asociado a nuestro proyecto nos permite cargar y guardar datos, figuras y tablas más fácilmente sin tener que estar cambiando el directorio. Estos temás se cubrirán más adelante en detalle. Por ahora, procura usar proyectos de RStudio para administrár mejor tu trabajo y mantener todo más ordenado.</p>
 </div>
-<div id="scripts-y-documentos-de-rmakrdown" class="section level1">
-<h1>Scripts y documentos de <code>rmakrdown</code></h1>
-<p>Como vimos anteriormente, podemos ejecutar comandos directamente en la consola. Sin embargo, la mayoría de las veces realizaremos varias operaciones simultáneamente, y necesitamos tener tódo el código en un documento. Esto nos ahorra tener que escribir todas las operaciones cada vez, pero también nos da un archivo que podemos archivar para futuras referencias o compartir. Aquí exploraremos dos formas de hacerlo.</p>
+<div id="distribucion-de-codigo" class="section level1">
+<h1>Distribución de código</h1>
+<p>Como vimos anteriormente, podemos ejecutar comandos directamente en la consola. Sin embargo, la mayoría de las veces realizaremos varias operaciones simultáneamente y necesitamos tener tódo el código en un mismo lugar. Esto nos ahorra tener que escribir todas las operaciones cada vez, pero también nos da un documento que podemos archivar para futuras referencias o compartir. Aquí exploraremos dos formas de hacerlo.</p>
 <div id="scripts" class="section level2">
 <h2>Scripts</h2>
 <p>La forma más sencilla es con el uso de <em>scripts</em> de R. Estos no son más que documento de texto con extensión <code>.*R</code> en vez de <code>*.txt</code>. Para crear un <em>script</em> haz click en ícono de “Nuevo documento” y selecciona <em>R Script</em>:</p>
@@ -171,7 +173,7 @@ sd(x = num)</code></pre>
 <div id="documentos-de-rmarkdown" class="section level2">
 <h2>Documentos de <code>rmarkdown</code></h2>
 <p>Los documentos de <code>rmarkdown</code> también son documentos de texto, pero con extensión <code>*.Rmd</code>. Al igual que los <em>scripts</em>, estos nos permiten tener una serie de operaciones juntas. La principal diferencia es que un documento de <code>rmarkdown</code> se “teje” para generar archivos <code>*.pdf</code>, <code>*.docx</code> o <code>*.html</code>. Por ejemplo, este sitio entero está generado con <code>rmarkdown</code>. Más adelante tendremos un post dedicado al uso de <code>rmarkdown</code>, pero a continuación algunos detalles generales.</p>
-<p>Para crear un documento de <code>rmarkdown</code> seguirás el mismo camino que para crear un <em>script</em>. Sin embargo, seleccionarás la opción que dice <em>R Markdown</em>. Al hacerlo, deberás ver una ventana así:</p>
+<p>Crear un documento de <code>rmarkdown</code>es similar a crear un <em>script</em>. Sin embargo, seleccionarás la opción que dice <em>R Markdown</em>. Al hacerlo, deberás ver una ventana así:</p>
 <div class="figure">
 <img src="/img/2018-06-04-r-y-r-studio/rmarkdown.JPG" />
 
@@ -187,7 +189,12 @@ sd(x = num)</code></pre>
 <img src="/img/2018-06-04-r-y-r-studio/rmarkdown3.JPG" />
 
 </div>
-<p>Ahora, para aprovechar al máximo el documento, ve a la parte superior y da click en la bola de estambre que dice <em>Knit</em> (tejer). R te pedirá que indiques un nombre del archivo. Al crear el documento especificamos el <strong>Título</strong> del archivo, que no necesariamente es el nombre del archivo. Piensa que el título podría ser <em>“El Viejo y el Mar”</em>, y el nombre del archivo <code>libro_Hemingway.Rmd</code>. Guarda tu documento dentro de tu carpeta del proyecto; a mi me gusta tener por lo menos carpetas distintas para <code>datos</code>, <code>scripts</code> y <code>docs</code>. Al guardar el documento, R ejecutará todos los <em>chunks</em> y generará un documento de <code>*.html</code> que contiene el texto, código, y resultados del código.</p>
+<p>Ahora, para aprovechar al máximo el documento, ve a la parte superior y da click en la bola de estambre que dice <em>Knit</em> (tejer).</p>
+<div class="figure">
+<img src="/img/2018-06-04-r-y-r-studio/rmarkdown4.JPG" />
+
+</div>
+<p>R te pedirá que indiques un nombre del archivo. Al crear el documento especificamos el <strong>Título</strong> del archivo, que no necesariamente es el nombre del archivo. Piensa que el título podría ser <em>“El Viejo y el Mar”</em>, y el nombre del archivo <code>libro_Hemingway.Rmd</code>. Guarda tu documento dentro de tu carpeta del proyecto; a mi me gusta tener por lo menos carpetas distintas para <code>datos</code>, <code>scripts</code> y <code>docs</code>. Al guardar el documento, R ejecutará todos los <em>chunks</em> y generará un documento de <code>*.html</code> que contiene el texto, código, y resultados del código.</p>
 <p>Ese documento de <code>*.html</code> contiene todas las imágenes generadas, por lo que puedes compartirlo directamente con alguien que no necesariamente trabaja en R y esta persona podrá abrirlo en cualquier explorador web. En el 98% de los casos, yo prefiero trabajar en un documento de <code>rmarkdown</code> y recomiendo que tú hagas lo mismo. Más adelante aprenderemos más sobre <code>rmarkdown</code>, como cambiar formatos de salida y como aprovechar al máximo esta herramienta.</p>
 </div>
 </div>
@@ -205,7 +212,7 @@ library(dplyr)</code></pre>
 </div>
 <div id="conclusiones" class="section level1">
 <h1>Conclusiones</h1>
-<p>En este post aprendimos la diferencia entre R y RStudio, y las algunas de lasventajas asociadas a trabajar en el Ambiente de Desarrollo Integrado. Hablamos sobre la importancia de usar código para comunicar y replicar análisis con otras personas y con nosotros mismos. Aprendimos como crear un proyecto de RStudio que nos permite organizar nuestro trabajo y mantener proyectos diferentes aislados. Después, hablamos sobre los formatos que se pueden utilizar para compartir código, y la utilidad de <code>rmarkdown</code> para compartir texto y análisis en un documento unificado. Finalmente, hablamos sobre los paquetes en R, y aprendimos como instalar y cargar paquetes. Con suerte, estos temas te darán las bases necesarias para usar R y RStudio de manera más fluida en los siguientes blogs, donde nos enfocaremos más en la programación.</p>
+<p>En este post aprendimos la diferencia entre R y RStudio, y algunas de las ventajas asociadas a trabajar en el Ambiente de Desarrollo Integrado. Hablamos sobre la importancia de usar código para comunicar y replicar análisis con otras personas y con nosotros mismos. Aprendimos como crear un proyecto de RStudio que nos permite organizar nuestro trabajo y mantener proyectos diferentes aislados. Después, hablamos sobre los formatos que se pueden utilizar para compartir código, y la utilidad de <code>rmarkdown</code> para compartir texto y análisis en un documento unificado. Finalmente, hablamos sobre los paquetes en R, y aprendimos como instalar y cargar paquetes. Con suerte, estos temas te darán las bases necesarias para usar R y RStudio de manera más fluida en los siguientes blogs, donde nos enfocaremos más en la programación.</p>
 </div>
 <div class="footnotes">
 <hr />
