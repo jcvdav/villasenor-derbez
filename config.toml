@@ -3,7 +3,7 @@
 
 # The URL of your website.
 # End your URL with a `/` trailing slash, e.g. `https://example.com/`.
-baseurl = "https://villasenor-derbez.com/"
+baseurl = "/"
 
 # Title of your site
 title = "Juan Carlos Villaseñor-Derbez"
@@ -111,7 +111,7 @@ defaultContentLanguageInSubdir = false
   comment_count = true
 
   # Display next/previous section pager?
-  section_pager = false
+  section_pager = true
 
   # Enable global LaTeX math rendering?
   #   If false, you can enable it locally on a per page basis.

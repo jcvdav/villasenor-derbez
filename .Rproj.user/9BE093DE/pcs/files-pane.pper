@@ -1,5 +1,5 @@
 {
-    "path" : "~/GitHub/villasenor-derbez/themes/hugo-academic/layouts/partials",
+    "path" : "~/GitHub/villasenor-derbez/themes/hugo-academic/layouts/_default",
     "sortOrder" : [
         {
             "ascending" : true,

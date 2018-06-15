@@ -1,6 +1,6 @@
 build-last-errors="[]"
 build-last-errors-base-dir=""
-build-last-outputs="[{\"output\":\"==> rmarkdown::clean_site()\\n\\n\",\"type\":0},{\"output\":\"Removing files: \\r\\n blogdown\\r\\n public\\r\\n content/post/2018-06-04-r-y-r-studio.html\\r\\n static/rmarkdown-libs\\r\\n static/post/2015-07-23-r-rmarkdown_files\",\"type\":1}]"
+build-last-outputs="[{\"output\":\"==> rmarkdown::render_site(encoding = 'UTF-8')\\n\\n\",\"type\":0},{\"output\":\"Rendering content/post/2018-06-04-r-y-r-studio.Rmd\\r\\n\",\"type\":2},{\"output\":\"[?25lBuilding sites … \",\"type\":1},{\"output\":\"[?25h\\r[K\\n                   | EN  \\n+------------------+----+\\n  Pages            | 55  \\n  Paginator pages  |  2  \\n  Non-page files   |  0  \\n  Static files     | 42  \\n  Processed images |  0  \\n  Aliases          | 23  \\n  Sitemaps         |  1  \\n  Cleaned          |  0  \\n\\nTotal in 519 ms\\n\",\"type\":1},{\"output\":\"\\r\\nOutput created: public/index.html\\r\\n\",\"type\":2}]"
 compile_pdf_state="{\"errors\":[],\"output\":\"\",\"running\":false,\"tab_visible\":false,\"target_file\":\"\"}"
 files.monitored-path=""
 find-in-files-state="{\"handle\":\"\",\"input\":\"\",\"path\":\"\",\"regex\":true,\"results\":{\"file\":[],\"line\":[],\"lineValue\":[],\"matchOff\":[],\"matchOn\":[]},\"running\":false}"
