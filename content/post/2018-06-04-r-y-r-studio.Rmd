@@ -1,7 +1,7 @@
 ---
 title: R y RStudio
 author: J.C. Villaseñor-Derbez
-date: '2018-06-04'
+date: '2018-06-14'
 output:
   blogdown::html_page:
       toc: yes
