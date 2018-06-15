@@ -39,9 +39,7 @@
   
     
     
-      
-        <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
-      
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css">
     
   
   
@@ -78,7 +76,7 @@
   
   <meta property="og:site_name" content="Juan Carlos Villaseñor-Derbez">
   <meta property="og:url" content="/post/r-y-r-studio/">
-  <meta property="og:title" content="R y RStudio | Juan Carlos Villaseñor-Derbez">
+  <meta property="og:title" content="R y RStudio2 | Juan Carlos Villaseñor-Derbez">
   <meta property="og:description" content="El ambiente de trabajo en RStudioInvestigación reproducibleProyectos de RStudioDistribución de códigoScriptsDocumentos de rmarkdownPaquetes en R: base, stats y otros másConclusionesEste es el primer post de ERRE. Antes de comenzar a escribir código, creo que es necesario establecer bases sólidas que nos permitan aprovechar R al máximo. En este post hablaremos sobre las generalidades de R y RStudio y las ventajas de trabajar en este ambiente.">
   <meta property="og:locale" content="en-us">
   
@@ -89,7 +87,7 @@
 
   
 
-  <title>R y RStudio | Juan Carlos Villaseñor-Derbez</title>
+  <title>R y RStudio2 | Juan Carlos Villaseñor-Derbez</title>
 
 </head>
 <body id="top" data-spy="scroll" data-target="#toc" data-offset="71" >
@@ -223,7 +221,7 @@
         
 
         <li class="nav-item">
-          <a href="/#posts">
+          <a href="/#post">
             
             <span>ERRE (Blog)</span>
             
@@ -267,7 +265,7 @@
 
 
   <div class="article-container">
-    <h1 itemprop="name">R y RStudio</h1>
+    <h1 itemprop="name">R y RStudio2</h1>
 
     
 
@@ -304,7 +302,7 @@
   <ul class="share">
     <li>
       <a class="twitter"
-         href="https://twitter.com/intent/tweet?text=R%20y%20RStudio&amp;url=%2fpost%2fr-y-r-studio%2f"
+         href="https://twitter.com/intent/tweet?text=R%20y%20RStudio2&amp;url=%2fpost%2fr-y-r-studio%2f"
          target="_blank" rel="noopener">
         <i class="fa fa-twitter"></i>
       </a>
@@ -318,21 +316,21 @@
     </li>
     <li>
       <a class="linkedin"
-         href="https://www.linkedin.com/shareArticle?mini=true&amp;url=%2fpost%2fr-y-r-studio%2f&amp;title=R%20y%20RStudio"
+         href="https://www.linkedin.com/shareArticle?mini=true&amp;url=%2fpost%2fr-y-r-studio%2f&amp;title=R%20y%20RStudio2"
          target="_blank" rel="noopener">
         <i class="fa fa-linkedin"></i>
       </a>
     </li>
     <li>
       <a class="weibo"
-         href="http://service.weibo.com/share/share.php?url=%2fpost%2fr-y-r-studio%2f&amp;title=R%20y%20RStudio"
+         href="http://service.weibo.com/share/share.php?url=%2fpost%2fr-y-r-studio%2f&amp;title=R%20y%20RStudio2"
          target="_blank" rel="noopener">
         <i class="fa fa-weibo"></i>
       </a>
     </li>
     <li>
       <a class="email"
-         href="mailto:?subject=R%20y%20RStudio&amp;body=%2fpost%2fr-y-r-studio%2f">
+         href="mailto:?subject=R%20y%20RStudio2&amp;body=%2fpost%2fr-y-r-studio%2f">
         <i class="fa fa-envelope"></i>
       </a>
     </li>
@@ -391,10 +389,10 @@
 <div id="investigacion-reproducible" class="section level1">
 <h1>Investigación reproducible</h1>
 <p>Es importante que nuestros análisis y resultados puedan ser reproducidos y corroborados. Uno de los grandes avances de la humanidad es la capacidad de comunicar información por medio del lenguaje escrito, pues deja un legado que no requiere ser pasado de “boca en boca”. Escribir código nos permite comunicar nuestros procedimientos y contar una historia, pues el código no es más que texto. Aunque tiene su propia estructura, el código no es más que texto que puede ser comprendido por computadoras y humanos al mismo tiempo. Por ejemplo, el siguiente código es muy obvio para humanos y computadoras:</p>
-<pre><code>2 + 2</code></pre>
+<pre class="r"><code>2 + 2</code></pre>
 <p>Existen muchos lenguajes de programación, cada uno con sus reglas semánticas y gramaticales. No importa cuan complicado sea el código, la intuición es la misma. Al escribir código generamos una receta o bitácora explícita de nuestros procedimientos, permitiendo que sean replicados.</p>
 <p>Además, podemos incluir mensajes que sean fáciles de leer por humanos pero que la computadora ignore. En R esto se hace con el uso del símbolo de número o <em>hashtag</em> (<code>#</code>). Todo el texto a la derecha de ese símbolo será ignorado por R, pero brinda información al humano que esté leyendo el código, por ejemplo:</p>
-<pre><code># Sumamos dos más dos
+<pre class="r"><code># Sumamos dos más dos
 2 + 2 # Tambien puedo comentar en la misma línea</code></pre>
 <p>Comentar el código nos ayuda a explicar las operaciones que hacemos. Esto es útil al compartir nuestro código con alguien más, pero también al regresar a código viejo. Más de una vez he regresado a código viejo que no había comentado. Cada una de esas veces me he arrepentido de no haberlo hecho.</p>
 </div>
@@ -403,7 +401,7 @@
 <p>Utilizar proyectos en R es una de las mejores formas de mantener un ambiente de trabajo ordenado. El proyecto mantiene un directorio de trabajo estable, donde mantenemos nuestros archivos asociados. El directorio de trabajo no es más que la localización de todos los archivos y carpetas. El comando <code>getwd()</code> (<em>get working directory</em>) te mostrará el directorio de trabajo. Si es la primera vez que abres RStudio o estás fuera de un proyecto, puede que el resultado sea:</p>
 <p><code>[1] &quot;C:/Usuarios/TuUsuario/Documentos&quot;</code></p>
 <p>Supongamos que mantengo todos mis archivos dentro de la carpeta de <code>Documentos</code>. Por ejemplo, asumamos que tengo dos proyectos de investigación. Uno es sobre peces rojos y otro de pájaros azules. Para cada uno de estos tendré archivos con datos, que mantengo separados en folders con la siguiente estructura:</p>
-<pre><code>C:/Usuarios/JC/Documentos/Proyectos:
+<pre class="r"><code>C:/Usuarios/JC/Documentos/Proyectos:
 |
 -- PecesRojos/
 |  |
@@ -644,6 +642,8 @@ library(dplyr)</code></pre>
       <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js" integrity="sha256-/BfiIkHlHoVihZdc6TFuj7MmJ0TWcWsMXkeDFwhi0zw=" crossorigin="anonymous"></script>
       
 
+      
+      <script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/languages/r.min.js"></script>
       
 
       

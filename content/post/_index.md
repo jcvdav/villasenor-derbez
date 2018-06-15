@@ -2,7 +2,7 @@
 title = "ERRE"
 date = 2018-06-01
 math = false
-highlight = false
+highlight = true
 
 # Optional featured image (relative to `static/img/` folder).
 [header]
@@ -31,7 +31,7 @@ b <- 3
 a + b
 ```
 
-Finalmente, a veces usaremos funciones de R que pertenecen a algún paquete[^2]. Cuando sea posible, especificaré de dónde viene la función usando el `namespace` diciendo `paquete::función()`. Esto sería el equivalente a decir `apellido::nombre`, donde el paquete contiene muchas funciones de la misma manera en que un apellido (o familia) puede contener a varias personas.
+Finalmente, a veces usaremos funciones de R que pertenecen a algún paquete. Cuando sea posible, especificaré de dónde viene la función usando el `namespace` diciendo `paquete::función()`. Esto sería el equivalente a decir `apellido::nombre`, donde el paquete contiene muchas funciones de la misma manera en que un apellido (o familia) puede contener a varias personas.
 
 # Temas
 
@@ -40,18 +40,18 @@ En esta sección verás los temas que cubriré en la primera sección. Muy proba
 <div class = "row">
 <div class = "col-md-6">
 
-<h3> Posts introductorios </h3>
+<h3> Introducción a la programación en R </h3>
 
 <ul>
 <li> <a href = "/post/r-y-r-studio/"> R y RStudio para <i>Data Science</i> </a> </li>
 
-<li> Objetos, clases y atributos </li>
+<li> Guardando valores: variables, vectores, matrices, listas y tablas de datos </li>
 
-<li> Ciclos y condicionales </li>
+<li> Sequencas de control: Ciclos y condicionales </li>
 
 <li> Mensajes de error </li>
 
-<li> Estadística en R </li>
+<li> Estadística paramétrica en R </li>
 
 <li> Manejo de datos con <code>tidyr</code> y <code>dplyr</code> </li>
 
@@ -63,7 +63,7 @@ En esta sección verás los temas que cubriré en la primera sección. Muy proba
 </div>
 <div class = "col-md-6">
 
-<h3> Posts avanzados </h3>
+<h3> Programación aplicada </h3>
 
 <ul>
 <li> Modelación numérica con <code>deSolve</code> </li>

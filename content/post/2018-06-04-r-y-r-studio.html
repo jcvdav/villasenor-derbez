@@ -1,5 +1,5 @@
 ---
-title: R y RStudio
+title: R y RStudio2
 author: J.C. Villaseñor-Derbez
 date: '2018-06-04'
 output:
@@ -58,10 +58,10 @@ header:
 <div id="investigacion-reproducible" class="section level1">
 <h1>Investigación reproducible</h1>
 <p>Es importante que nuestros análisis y resultados puedan ser reproducidos y corroborados. Uno de los grandes avances de la humanidad es la capacidad de comunicar información por medio del lenguaje escrito, pues deja un legado que no requiere ser pasado de “boca en boca”. Escribir código nos permite comunicar nuestros procedimientos y contar una historia, pues el código no es más que texto. Aunque tiene su propia estructura, el código no es más que texto que puede ser comprendido por computadoras y humanos al mismo tiempo. Por ejemplo, el siguiente código es muy obvio para humanos y computadoras:</p>
-<pre><code>2 + 2</code></pre>
+<pre class="r"><code>2 + 2</code></pre>
 <p>Existen muchos lenguajes de programación, cada uno con sus reglas semánticas y gramaticales. No importa cuan complicado sea el código, la intuición es la misma. Al escribir código generamos una receta o bitácora explícita de nuestros procedimientos, permitiendo que sean replicados.</p>
 <p>Además, podemos incluir mensajes que sean fáciles de leer por humanos pero que la computadora ignore. En R esto se hace con el uso del símbolo de número o <em>hashtag</em> (<code>#</code>). Todo el texto a la derecha de ese símbolo será ignorado por R, pero brinda información al humano que esté leyendo el código, por ejemplo:</p>
-<pre><code># Sumamos dos más dos
+<pre class="r"><code># Sumamos dos más dos
 2 + 2 # Tambien puedo comentar en la misma línea</code></pre>
 <p>Comentar el código nos ayuda a explicar las operaciones que hacemos. Esto es útil al compartir nuestro código con alguien más, pero también al regresar a código viejo. Más de una vez he regresado a código viejo que no había comentado. Cada una de esas veces me he arrepentido de no haberlo hecho.</p>
 </div>
@@ -70,7 +70,7 @@ header:
 <p>Utilizar proyectos en R es una de las mejores formas de mantener un ambiente de trabajo ordenado. El proyecto mantiene un directorio de trabajo estable, donde mantenemos nuestros archivos asociados. El directorio de trabajo no es más que la localización de todos los archivos y carpetas. El comando <code>getwd()</code> (<em>get working directory</em>) te mostrará el directorio de trabajo. Si es la primera vez que abres RStudio o estás fuera de un proyecto, puede que el resultado sea:</p>
 <p><code>[1] &quot;C:/Usuarios/TuUsuario/Documentos&quot;</code></p>
 <p>Supongamos que mantengo todos mis archivos dentro de la carpeta de <code>Documentos</code>. Por ejemplo, asumamos que tengo dos proyectos de investigación. Uno es sobre peces rojos y otro de pájaros azules. Para cada uno de estos tendré archivos con datos, que mantengo separados en folders con la siguiente estructura:</p>
-<pre><code>C:/Usuarios/JC/Documentos/Proyectos:
+<pre class="r"><code>C:/Usuarios/JC/Documentos/Proyectos:
 |
 -- PecesRojos/
 |  |

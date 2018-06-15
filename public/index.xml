@@ -11,7 +11,7 @@
     <atom:link href="/" rel="self" type="application/rss+xml" />
     
     <item>
-      <title>R y RStudio</title>
+      <title>R y RStudio2</title>
       <link>/post/r-y-r-studio/</link>
       <pubDate>Mon, 04 Jun 2018 00:00:00 +0000</pubDate>
       
@@ -61,10 +61,10 @@
 &lt;div id=&#34;investigacion-reproducible&#34; class=&#34;section level1&#34;&gt;
 &lt;h1&gt;Investigación reproducible&lt;/h1&gt;
 &lt;p&gt;Es importante que nuestros análisis y resultados puedan ser reproducidos y corroborados. Uno de los grandes avances de la humanidad es la capacidad de comunicar información por medio del lenguaje escrito, pues deja un legado que no requiere ser pasado de “boca en boca”. Escribir código nos permite comunicar nuestros procedimientos y contar una historia, pues el código no es más que texto. Aunque tiene su propia estructura, el código no es más que texto que puede ser comprendido por computadoras y humanos al mismo tiempo. Por ejemplo, el siguiente código es muy obvio para humanos y computadoras:&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;2 + 2&lt;/code&gt;&lt;/pre&gt;
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;2 + 2&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;Existen muchos lenguajes de programación, cada uno con sus reglas semánticas y gramaticales. No importa cuan complicado sea el código, la intuición es la misma. Al escribir código generamos una receta o bitácora explícita de nuestros procedimientos, permitiendo que sean replicados.&lt;/p&gt;
 &lt;p&gt;Además, podemos incluir mensajes que sean fáciles de leer por humanos pero que la computadora ignore. En R esto se hace con el uso del símbolo de número o &lt;em&gt;hashtag&lt;/em&gt; (&lt;code&gt;#&lt;/code&gt;). Todo el texto a la derecha de ese símbolo será ignorado por R, pero brinda información al humano que esté leyendo el código, por ejemplo:&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;# Sumamos dos más dos
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;# Sumamos dos más dos
 2 + 2 # Tambien puedo comentar en la misma línea&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;Comentar el código nos ayuda a explicar las operaciones que hacemos. Esto es útil al compartir nuestro código con alguien más, pero también al regresar a código viejo. Más de una vez he regresado a código viejo que no había comentado. Cada una de esas veces me he arrepentido de no haberlo hecho.&lt;/p&gt;
 &lt;/div&gt;
@@ -73,7 +73,7 @@
 &lt;p&gt;Utilizar proyectos en R es una de las mejores formas de mantener un ambiente de trabajo ordenado. El proyecto mantiene un directorio de trabajo estable, donde mantenemos nuestros archivos asociados. El directorio de trabajo no es más que la localización de todos los archivos y carpetas. El comando &lt;code&gt;getwd()&lt;/code&gt; (&lt;em&gt;get working directory&lt;/em&gt;) te mostrará el directorio de trabajo. Si es la primera vez que abres RStudio o estás fuera de un proyecto, puede que el resultado sea:&lt;/p&gt;
 &lt;p&gt;&lt;code&gt;[1] &amp;quot;C:/Usuarios/TuUsuario/Documentos&amp;quot;&lt;/code&gt;&lt;/p&gt;
 &lt;p&gt;Supongamos que mantengo todos mis archivos dentro de la carpeta de &lt;code&gt;Documentos&lt;/code&gt;. Por ejemplo, asumamos que tengo dos proyectos de investigación. Uno es sobre peces rojos y otro de pájaros azules. Para cada uno de estos tendré archivos con datos, que mantengo separados en folders con la siguiente estructura:&lt;/p&gt;
-&lt;pre&gt;&lt;code&gt;C:/Usuarios/JC/Documentos/Proyectos:
+&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;C:/Usuarios/JC/Documentos/Proyectos:
 |
 -- PecesRojos/
 |  |

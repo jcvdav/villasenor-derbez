@@ -1,5 +1,5 @@
 ---
-title: R y RStudio
+title: R y RStudio2
 author: J.C. Villaseñor-Derbez
 date: '2018-06-04'
 output:
@@ -46,7 +46,7 @@ RStudio también te permite modificar el ambiente de trabajo. Puedes mover la po
 
 Es importante que nuestros análisis y resultados puedan ser reproducidos y corroborados. Uno de los grandes avances de la humanidad es la capacidad de comunicar información por medio del lenguaje escrito, pues deja un legado que no requiere ser pasado de "boca en boca". Escribir código nos permite comunicar nuestros procedimientos y contar una historia, pues el código no es más que texto. Aunque tiene su propia estructura, el código no es más que texto que puede ser comprendido por computadoras y humanos al mismo tiempo. Por ejemplo, el siguiente código es muy obvio para humanos y computadoras:
 
-```
+```{r, eval = F}
 2 + 2
 ```
 
@@ -54,7 +54,7 @@ Existen muchos lenguajes de programación, cada uno con sus reglas semánticas y
 
 Además, podemos incluir mensajes que sean fáciles de leer por humanos pero que la computadora ignore. En R esto se hace con el uso del símbolo de número o *hashtag* (`#`). Todo el texto a la derecha de ese símbolo será ignorado por R, pero brinda información al humano que esté leyendo el código, por ejemplo:
 
-```
+```{r, eval = F}
 # Sumamos dos más dos
 2 + 2 # Tambien puedo comentar en la misma línea
 ```
@@ -69,7 +69,7 @@ Utilizar proyectos en R es una de las mejores formas de mantener un ambiente de 
 
 Supongamos que mantengo todos mis archivos dentro de la carpeta de `Documentos`. Por ejemplo, asumamos que tengo dos proyectos de investigación. Uno es sobre peces rojos y otro de pájaros azules. Para cada uno de estos tendré archivos con datos, que mantengo separados en folders con la siguiente estructura:
 
-```
+```{r, eval = F}
 C:/Usuarios/JC/Documentos/Proyectos:
 |
 -- PecesRojos/
