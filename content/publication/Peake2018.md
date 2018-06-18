@@ -25,7 +25,7 @@ abstract = "Numerous location-based diet studies have been published describing 
 abstract_short = "Numerous location-based diet studies have been published describing different aspects of invasive lionfish (*Pterois volitans* and *Pterois miles*) feeding ecology, but there has been no synthesis of their diet composition and feeding patterns across regional gradients. 8125 lionfish stomachs collected from 10 locations were analyzed to provide a generalized description of their feeding ecology at a regional scale and to compare their diet among locations."
 
 # Featured image thumbnail (optional)
-image_preview = "pvolitans.JPG"
+image_preview = ""
 
 # Is this a selected publication? (true/false)
 selected = true
