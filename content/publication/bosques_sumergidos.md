@@ -18,7 +18,7 @@ publication_types = ["0"]
 
 # Publication name and optional abbreviated version.
 publication = "*Biodiversitas*"
-publication_short = "*Biodiversitas*
+publication_short = "*Biodiversitas*"
 
 # Abstract and optional shortened version.
 abstract = "En México hay una gran variedad de ecosistemas marinos, entre ellos destacan por su belleza y función ecológica los arrecifes coralinos y rocosos, los manglares, los montes submarinos y las praderas de pastos marinos. Sin embargo, otro ecosistema muy poco conocido pero de singular belleza y de gran importancia ecológica y socioeconómica son los bosques de kelp o bosques de macroalgas."

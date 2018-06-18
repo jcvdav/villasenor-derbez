@@ -5,7 +5,7 @@
     
     <url>
     
-      <loc>https://villasenor-derbez.com/post/r-y-r-studio/</loc>
+      <loc>/post/r-y-r-studio/</loc>
       <lastmod>2018-06-14T00:00:00+00:00</lastmod>
     </url>
     
@@ -14,8 +14,8 @@
     
     <url>
     
-      <loc>https://villasenor-derbez.com/post/</loc>
-      <lastmod>2018-06-01T00:00:00-07:00</lastmod>
+      <loc>/post/</loc>
+      <lastmod>2018-06-01T00:00:00-05:00</lastmod>
     </url>
     
   
@@ -23,7 +23,7 @@
     
     <url>
     
-      <loc>https://villasenor-derbez.com/publication/peake2018/</loc>
+      <loc>/publication/peake2018/</loc>
       <lastmod>2018-04-11T00:00:00+00:00</lastmod>
     </url>
     
@@ -32,7 +32,16 @@
     
     <url>
     
-      <loc>https://villasenor-derbez.com/project/marine_reserves/</loc>
+      <loc>/publication/bosques_sumergidos/</loc>
+      <lastmod>2018-03-01T00:00:00+00:00</lastmod>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <loc>/project/marine_reserves/</loc>
       <lastmod>2018-01-24T00:00:00+00:00</lastmod>
     </url>
     
@@ -41,7 +50,7 @@
     
     <url>
     
-      <loc>https://villasenor-derbez.com/project/gfw/</loc>
+      <loc>/project/gfw/</loc>
       <lastmod>2018-01-24T00:00:00+00:00</lastmod>
     </url>
     
@@ -50,7 +59,7 @@
     
     <url>
     
-      <loc>https://villasenor-derbez.com/publication/marea/</loc>
+      <loc>/publication/marea/</loc>
       <lastmod>2018-01-01T00:00:00+00:00</lastmod>
     </url>
     
@@ -59,7 +68,7 @@
     
     <url>
     
-      <loc>https://villasenor-derbez.com/publication/template/</loc>
+      <loc>/publication/template/</loc>
       <lastmod>2017-12-01T00:00:00+00:00</lastmod>
     </url>
     
@@ -68,7 +77,7 @@
     
     <url>
     
-      <loc>https://villasenor-derbez.com/publication/giant_seabass/</loc>
+      <loc>/publication/giant_seabass/</loc>
       <lastmod>2017-12-01T00:00:00+00:00</lastmod>
     </url>
     
@@ -77,7 +86,7 @@
     
     <url>
     
-      <loc>https://villasenor-derbez.com/publication/mero_gigante/</loc>
+      <loc>/publication/mero_gigante/</loc>
       <lastmod>2017-12-01T00:00:00+00:00</lastmod>
     </url>
     
@@ -86,7 +95,7 @@
     
     <url>
     
-      <loc>https://villasenor-derbez.com/publication/turfeffect_guidebook_eng/</loc>
+      <loc>/publication/turfeffect_guidebook_eng/</loc>
       <lastmod>2017-06-01T00:00:00+00:00</lastmod>
     </url>
     
@@ -95,7 +104,7 @@
     
     <url>
     
-      <loc>https://villasenor-derbez.com/publication/turfeffect_guidebook_esp/</loc>
+      <loc>/publication/turfeffect_guidebook_esp/</loc>
       <lastmod>2017-06-01T00:00:00+00:00</lastmod>
     </url>
     
@@ -104,8 +113,8 @@
     
     <url>
     
-      <loc>https://villasenor-derbez.com/talk/example-talk/</loc>
-      <lastmod>2017-01-01T00:00:00-08:00</lastmod>
+      <loc>/talk/example-talk/</loc>
+      <lastmod>2017-01-01T00:00:00-05:00</lastmod>
     </url>
     
   
@@ -113,7 +122,7 @@
     
     <url>
     
-      <loc>https://villasenor-derbez.com/tags/academic/</loc>
+      <loc>/tags/academic/</loc>
       <lastmod>2017-01-01T00:00:00+00:00</lastmod>
     </url>
     
@@ -122,7 +131,7 @@
     
     <url>
     
-      <loc>https://villasenor-derbez.com/publication/</loc>
+      <loc>/publication/</loc>
       <lastmod>2017-01-01T00:00:00+00:00</lastmod>
     </url>
     
@@ -131,7 +140,7 @@
     
     <url>
     
-      <loc>https://villasenor-derbez.com/talk/</loc>
+      <loc>/talk/</loc>
       <lastmod>2017-01-01T00:00:00+00:00</lastmod>
     </url>
     
@@ -140,7 +149,7 @@
     
     <url>
     
-      <loc>https://villasenor-derbez.com/publication/fishers_2_fishers/</loc>
+      <loc>/publication/fishers_2_fishers/</loc>
       <lastmod>2016-12-01T00:00:00+00:00</lastmod>
     </url>
     
@@ -149,7 +158,7 @@
     
     <url>
     
-      <loc>https://villasenor-derbez.com/project/mero_gigante/</loc>
+      <loc>/project/mero_gigante/</loc>
       <lastmod>2016-04-27T00:00:00+00:00</lastmod>
     </url>
     
@@ -158,7 +167,7 @@
     
     <url>
     
-      <loc>https://villasenor-derbez.com/project/lionfish/</loc>
+      <loc>/project/lionfish/</loc>
       <lastmod>2016-04-27T00:00:00+00:00</lastmod>
     </url>
     
@@ -167,7 +176,7 @@
     
     <url>
     
-      <loc>https://villasenor-derbez.com/publication/clarion/</loc>
+      <loc>/publication/clarion/</loc>
       <lastmod>2016-01-01T00:00:00+00:00</lastmod>
     </url>
     
@@ -176,7 +185,7 @@
     
     <url>
     
-      <loc>https://villasenor-derbez.com/publication/enso_tuna/</loc>
+      <loc>/publication/enso_tuna/</loc>
       <lastmod>2015-12-01T00:00:00+00:00</lastmod>
     </url>
     
@@ -185,7 +194,7 @@
     
     <url>
     
-      <loc>https://villasenor-derbez.com/publication/null_sets/</loc>
+      <loc>/publication/null_sets/</loc>
       <lastmod>2015-01-01T00:00:00+00:00</lastmod>
     </url>
     
@@ -194,7 +203,7 @@
     
     <url>
     
-      <loc>https://villasenor-derbez.com/publication/datamares_reservas/</loc>
+      <loc>/publication/datamares_reservas/</loc>
       <lastmod>2015-01-01T00:00:00+00:00</lastmod>
     </url>
     
@@ -203,7 +212,7 @@
     
     <url>
     
-      <loc>https://villasenor-derbez.com/publication/cedros/</loc>
+      <loc>/publication/cedros/</loc>
       <lastmod>2015-01-01T00:00:00+00:00</lastmod>
     </url>
     
@@ -212,7 +221,7 @@
     
     <url>
     
-      <loc>https://villasenor-derbez.com/publication/pvolitans_diet/</loc>
+      <loc>/publication/pvolitans_diet/</loc>
       <lastmod>2014-01-01T00:00:00+00:00</lastmod>
     </url>
     
@@ -221,7 +230,7 @@
     
     <url>
     
-      <loc>https://villasenor-derbez.com/publication/datamares_kelp/</loc>
+      <loc>/publication/datamares_kelp/</loc>
       <lastmod>2014-01-01T00:00:00+00:00</lastmod>
     </url>
     
@@ -230,7 +239,7 @@
     
     <url>
     
-      <loc>https://villasenor-derbez.com/tags/</loc>
+      <loc>/tags/</loc>
       <lastmod>2017-12-01T00:00:00+00:00</lastmod>
       <priority>0</priority>
     </url>
@@ -240,8 +249,8 @@
     
     <url>
     
-      <loc>https://villasenor-derbez.com/publication_types/0/</loc>
-      <lastmod>2017-12-01T00:00:00+00:00</lastmod>
+      <loc>/publication_types/0/</loc>
+      <lastmod>2018-03-01T00:00:00+00:00</lastmod>
       <priority>0</priority>
     </url>
     
@@ -250,7 +259,7 @@
     
     <url>
     
-      <loc>https://villasenor-derbez.com/publication_types/2/</loc>
+      <loc>/publication_types/2/</loc>
       <lastmod>2018-04-11T00:00:00+00:00</lastmod>
       <priority>0</priority>
     </url>
@@ -260,7 +269,7 @@
     
     <url>
     
-      <loc>https://villasenor-derbez.com/publication_types/5/</loc>
+      <loc>/publication_types/5/</loc>
       <lastmod>2017-06-01T00:00:00+00:00</lastmod>
       <priority>0</priority>
     </url>
@@ -270,7 +279,7 @@
     
     <url>
     
-      <loc>https://villasenor-derbez.com/publication_types/7/</loc>
+      <loc>/publication_types/7/</loc>
       <lastmod>2017-12-01T00:00:00+00:00</lastmod>
       <priority>0</priority>
     </url>
@@ -280,7 +289,7 @@
     
     <url>
     
-      <loc>https://villasenor-derbez.com/tags/bigdata/</loc>
+      <loc>/tags/bigdata/</loc>
       <lastmod>2018-01-24T00:00:00+00:00</lastmod>
       <priority>0</priority>
     </url>
@@ -290,7 +299,17 @@
     
     <url>
     
-      <loc>https://villasenor-derbez.com/tags/biodiversity/</loc>
+      <loc>/tags/biodiversity/</loc>
+      <lastmod>2018-03-01T00:00:00+00:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <loc>/tags/by-catch/</loc>
       <lastmod>2018-01-24T00:00:00+00:00</lastmod>
       <priority>0</priority>
     </url>
@@ -300,7 +319,16 @@
     
     <url>
     
-      <loc>https://villasenor-derbez.com/tags/by-catch/</loc>
+      <loc>/categories/</loc>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <loc>/tags/climate-change/</loc>
       <lastmod>2018-01-24T00:00:00+00:00</lastmod>
       <priority>0</priority>
     </url>
@@ -310,7 +338,8 @@
     
     <url>
     
-      <loc>https://villasenor-derbez.com/categories/</loc>
+      <loc>/tags/conservation/</loc>
+      <lastmod>2018-03-01T00:00:00+00:00</lastmod>
       <priority>0</priority>
     </url>
     
@@ -319,7 +348,17 @@
     
     <url>
     
-      <loc>https://villasenor-derbez.com/tags/climate-change/</loc>
+      <loc>/tags/fisheries/</loc>
+      <lastmod>2018-03-01T00:00:00+00:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <loc>/tags/gfw/</loc>
       <lastmod>2018-01-24T00:00:00+00:00</lastmod>
       <priority>0</priority>
     </url>
@@ -329,37 +368,7 @@
     
     <url>
     
-      <loc>https://villasenor-derbez.com/tags/conservation/</loc>
-      <lastmod>2018-01-24T00:00:00+00:00</lastmod>
-      <priority>0</priority>
-    </url>
-    
-  
-    
-    
-    <url>
-    
-      <loc>https://villasenor-derbez.com/tags/fisheries/</loc>
-      <lastmod>2018-01-24T00:00:00+00:00</lastmod>
-      <priority>0</priority>
-    </url>
-    
-  
-    
-    
-    <url>
-    
-      <loc>https://villasenor-derbez.com/tags/gfw/</loc>
-      <lastmod>2018-01-24T00:00:00+00:00</lastmod>
-      <priority>0</priority>
-    </url>
-    
-  
-    
-    
-    <url>
-    
-      <loc>https://villasenor-derbez.com/tags/gsb/</loc>
+      <loc>/tags/gsb/</loc>
       <lastmod>2016-04-27T00:00:00+00:00</lastmod>
       <priority>0</priority>
     </url>
@@ -369,7 +378,7 @@
     
     <url>
     
-      <loc>https://villasenor-derbez.com/tags/invasive_spp/</loc>
+      <loc>/tags/invasive_spp/</loc>
       <lastmod>2018-04-11T00:00:00+00:00</lastmod>
       <priority>0</priority>
     </url>
@@ -379,8 +388,8 @@
     
     <url>
     
-      <loc>https://villasenor-derbez.com/</loc>
-      <lastmod>2017-10-15T00:00:00-07:00</lastmod>
+      <loc>/</loc>
+      <lastmod>2017-10-15T00:00:00-05:00</lastmod>
       <priority>0</priority>
     </url>
     
@@ -389,7 +398,7 @@
     
     <url>
     
-      <loc>https://villasenor-derbez.com/tags/lionfish/</loc>
+      <loc>/tags/lionfish/</loc>
       <lastmod>2018-04-11T00:00:00+00:00</lastmod>
       <priority>0</priority>
     </url>
@@ -399,7 +408,7 @@
     
     <url>
     
-      <loc>https://villasenor-derbez.com/tags/marine-ecology/</loc>
+      <loc>/tags/marine-ecology/</loc>
       <lastmod>2018-04-11T00:00:00+00:00</lastmod>
       <priority>0</priority>
     </url>
@@ -409,7 +418,7 @@
     
     <url>
     
-      <loc>https://villasenor-derbez.com/tags/marine-reserves/</loc>
+      <loc>/tags/marine-reserves/</loc>
       <lastmod>2018-01-24T00:00:00+00:00</lastmod>
       <priority>0</priority>
     </url>
@@ -419,7 +428,7 @@
     
     <url>
     
-      <loc>https://villasenor-derbez.com/tags/oceanography/</loc>
+      <loc>/tags/oceanography/</loc>
       <lastmod>2018-01-24T00:00:00+00:00</lastmod>
       <priority>0</priority>
     </url>
@@ -429,7 +438,7 @@
     
     <url>
     
-      <loc>https://villasenor-derbez.com/project/</loc>
+      <loc>/project/</loc>
       <lastmod>2018-01-24T00:00:00+00:00</lastmod>
       <priority>0</priority>
     </url>
@@ -439,8 +448,8 @@
     
     <url>
     
-      <loc>https://villasenor-derbez.com/publication_types/</loc>
-      <lastmod>2017-12-01T00:00:00+00:00</lastmod>
+      <loc>/publication_types/</loc>
+      <lastmod>2018-03-01T00:00:00+00:00</lastmod>
       <priority>0</priority>
     </url>
     
@@ -449,7 +458,7 @@
     
     <url>
     
-      <loc>https://villasenor-derbez.com/tags/</loc>
+      <loc>/tags/</loc>
       <lastmod>2017-01-01T00:00:00+00:00</lastmod>
       <priority>0</priority>
     </url>
