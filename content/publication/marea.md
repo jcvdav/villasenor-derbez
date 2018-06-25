@@ -71,6 +71,7 @@ caption = ""
 
 **Media coverage**
 
+- [MedPAN](http://medpan.org/a-user-friendly-tool-to-evaluate-the-effectiveness-of-no-take-marine-reserves/)
 - [MPANews by OpenChannels](https://mpanews.openchannels.org/news/mpa-news/mpa-science-corner-hydroacoustics-cost-effective-tool-marine-reserve-effectiveness)
 - [CONACyT Prensa](http://www.conacytprensa.mx/index.php/ciencia/ambiente/20594-marea-refugios-pesqueros-evaluacion) (Mexican Academy of Sciences)
 - [Ecoticias](https://www.ecoticias.com/eco-america/182033/MAREA-aplicacion-web-evaluar-reservas-marinas)
