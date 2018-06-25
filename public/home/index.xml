@@ -2,96 +2,96 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Homes on Juan Carlos Villaseñor-Derbez</title>
-    <link>https://villasenor-derbez.com/home/</link>
+    <link>/home/</link>
     <description>Recent content in Homes on Juan Carlos Villaseñor-Derbez</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; 2018 Juan Carlos Villaseñor-Derbez</copyright>
     <lastBuildDate>Sun, 15 Oct 2017 00:00:00 -0700</lastBuildDate>
     
-	<atom:link href="https://villasenor-derbez.com/home/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="/home/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Marine Scientist | Diver | Fisher</title>
-      <link>https://villasenor-derbez.com/home/hero/</link>
+      <link>/home/hero/</link>
       <pubDate>Sun, 15 Oct 2017 00:00:00 -0700</pubDate>
       
-      <guid>https://villasenor-derbez.com/home/hero/</guid>
+      <guid>/home/hero/</guid>
       <description>
 (function defer() { if (window.jQuery) { jQuery(document).ready(function(){ GetLatestReleaseInfo(); }); } else { setTimeout(function() { defer() }, 50); } })(); function GetLatestReleaseInfo() { $.getJSON(&#39;https://api.github.com/repos/gcushen/hugo-academic/tags&#39;).done(function (json) { let release = json[0]; // let downloadURL = release.zipball_url; $(&#39;#academic-release&#39;).text(&#39;Latest release &#39; + release.name); }); }  </description>
     </item>
     
     <item>
       <title></title>
-      <link>https://villasenor-derbez.com/home/about/</link>
+      <link>/home/about/</link>
       <pubDate>Wed, 20 Apr 2016 00:00:00 +0000</pubDate>
       
-      <guid>https://villasenor-derbez.com/home/about/</guid>
+      <guid>/home/about/</guid>
       <description>About me I am a Ph.D. Student and Latin American Fisheries Fellow at the Bren School of Environmental Science &amp;amp; Management in UC, Santa Barbara. My research combines Ecology, Oceanography, and Economy to provide pragmatic solutions that further sustainable fishery management and marine conservation. I believe today&amp;rsquo;s available technology can allow us to revolutionize the way in which we manage fisheries and do conservation.
 I have always felt passionate about the Ocean.</description>
     </item>
     
     <item>
       <title>Recent Publications</title>
-      <link>https://villasenor-derbez.com/home/selected_publications/</link>
+      <link>/home/selected_publications/</link>
       <pubDate>Wed, 20 Apr 2016 00:00:00 -0700</pubDate>
       
-      <guid>https://villasenor-derbez.com/home/selected_publications/</guid>
+      <guid>/home/selected_publications/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Projects</title>
-      <link>https://villasenor-derbez.com/home/projects/</link>
+      <link>/home/projects/</link>
       <pubDate>Wed, 20 Apr 2016 00:00:00 +0000</pubDate>
       
-      <guid>https://villasenor-derbez.com/home/projects/</guid>
+      <guid>/home/projects/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Publications</title>
-      <link>https://villasenor-derbez.com/home/pr_publications/</link>
+      <link>/home/pr_publications/</link>
       <pubDate>Wed, 20 Apr 2016 00:00:00 -0700</pubDate>
       
-      <guid>https://villasenor-derbez.com/home/pr_publications/</guid>
+      <guid>/home/pr_publications/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Publications</title>
-      <link>https://villasenor-derbez.com/home/outreach/</link>
+      <link>/home/outreach/</link>
       <pubDate>Wed, 20 Apr 2016 00:00:00 -0700</pubDate>
       
-      <guid>https://villasenor-derbez.com/home/outreach/</guid>
+      <guid>/home/outreach/</guid>
       <description></description>
     </item>
     
     <item>
       <title>Recent &amp; Upcoming Talks</title>
-      <link>https://villasenor-derbez.com/home/talks/</link>
+      <link>/home/talks/</link>
       <pubDate>Wed, 20 Apr 2016 00:00:00 +0000</pubDate>
       
-      <guid>https://villasenor-derbez.com/home/talks/</guid>
+      <guid>/home/talks/</guid>
       <description></description>
     </item>
     
     <item>
       <title>ERRE</title>
-      <link>https://villasenor-derbez.com/home/post/</link>
+      <link>/home/post/</link>
       <pubDate>Wed, 20 Apr 2016 00:00:00 +0000</pubDate>
       
-      <guid>https://villasenor-derbez.com/home/post/</guid>
+      <guid>/home/post/</guid>
       <description>Visita el sitio principal para ver todos los temas</description>
     </item>
     
     <item>
       <title>Teaching</title>
-      <link>https://villasenor-derbez.com/home/teaching/</link>
+      <link>/home/teaching/</link>
       <pubDate>Wed, 20 Apr 2016 00:00:00 +0000</pubDate>
       
-      <guid>https://villasenor-derbez.com/home/teaching/</guid>
+      <guid>/home/teaching/</guid>
       <description>Short talks:
  February, 2018 - Advanced RMarkdown for the LAFF group. Santa Barbara, USA September, 2017 - Intro to RMarkdown as an eco-data-science workshop. Santa Barbara, USA  Workshops:
  September, 2017 - A General Approach and Tool to Evaluate the Effectiveness of No-Take Marine Reserves EBM tools Webinar June, 2017 - Evaluation of Marine Reserves in Mexico (spanish) to environmental managers. Mexico City, MX July, 2015 - ReefCheck kelp forest monitoring protocol: theory and practice for fishers in El Rosario and Isla Natividad, Baja California July, 2015 - Use of Oceanographic Instruments (CTD, miniDOT, SeaBird Thermistors) to community members of El Rosario and Isla Natividad, Baja California  </description>
@@ -99,19 +99,19 @@ I have always felt passionate about the Ocean.</description>
     
     <item>
       <title>Contact</title>
-      <link>https://villasenor-derbez.com/home/contact/</link>
+      <link>/home/contact/</link>
       <pubDate>Wed, 20 Apr 2016 00:00:00 +0000</pubDate>
       
-      <guid>https://villasenor-derbez.com/home/contact/</guid>
+      <guid>/home/contact/</guid>
       <description> </description>
     </item>
     
     <item>
       <title>Tags</title>
-      <link>https://villasenor-derbez.com/home/tags/</link>
+      <link>/home/tags/</link>
       <pubDate>Wed, 20 Sep 2017 00:00:00 -0700</pubDate>
       
-      <guid>https://villasenor-derbez.com/home/tags/</guid>
+      <guid>/home/tags/</guid>
       <description></description>
     </item>
     
