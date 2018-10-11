@@ -1,0 +1,130 @@
+---
+title: "Guardando valores: variables, vectores, matrices, listas y tablas de datos"
+author: J.C. Villaseñor-Derbez
+date: '2018-06-14'
+output:
+  blogdown::html_page:
+      toc: yes
+slug: operaciones-basicas
+categories: []
+tags: []
+header:
+  image: ""
+---
+
+
+En el [post anterior](https://www.villasenor-derbez.com/post/r-y-r-studio/) hablamos sobre R y RStudio, con una introducción a los scripts y documentos de `rmarkdown` y el uso de proyectos de RStudio para mantener nuestro código ordenado. En este post nos adentraremos más en el uso de R. En concreto, aprenderemos como almacenar valores y datos en objetos en R.
+
+# Asignación de valores
+
+En la sección de [scripts](https://www.villasenor-derbez.com/post/r-y-r-studio/#scripts) del post anterior habíamos almacenado valores en una variable llamada `num`. El código era similar a este:
+
+```{r}
+# Almacenar 10 números en la variable numeros
+numeros <- c(1, 7, 2, 9, 0, 2, 4, 6, 8, 1)
+```
+
+Podemos almacenar prácticamente cualquier tipo de información en una variable (piensa en números, texto, coordenadas, mapa, colores, modelos). Cada tipo de información tendrá su forma específica de almacenarse. Además, al generar la variable en la que almacenamos la información, es necesario seguir ciertas reglas. A continuación algunas reglas generales para nombrar objetos.
+
+El nombre de la variable puede contener números, pero debe de comenzar con una letra. Por ejemplo, `mis_datos` y `mis_2_datos` y `mis_datos_2` son nombres aceptables. Por el contrario `2datos` no lo es.
+
+Ejecuta el siguiente código línea por línea:
+
+```{r, error = T}
+# Asignaciones correctas
+mis_datos <- 1
+mis_2_datos <- 1
+mis_datos_2 <- 1
+
+# Asignación incorrecta
+2datos <- 1
+```
+
+La última línea resultará en un error, con R diciendo `Error: unexpected symbol in "2datos"`. Esto sucede porque la variable no comienza con una letra.
+
+R también distingue entre mayúsculas y minúsculas, por lo que es necesario nombrar y llamar nuestras variables de manera correcta. Por ejemplo, en las siguientes líneas de código la primera funciona y la segunda no. Sabes por qué sucede esto?
+
+```{r, eval = F}
+mis_datos
+```
+
+
+```{r, error = T}
+# Multiplicar una variable por 2
+mis_datos * 2
+
+# Multiplicar una variable por 2
+Mis_datos * 2
+```
+
+# Atributos
+
+Al evaluar este código, `numeros` aparece en nuestro ambiente como un valor, y vemos algo asi:
+
+![](/img/2018-06-29-operaciones-basicas/ambiente.JPG)
+
+La información presentada es la siguiente:
+
+- Del lado izquierdo vemos el nombre de la variable (`numeros`)
+- El tipo de valores, en este caso numéricos indicados por `num`
+- La dimensión del objeto, donde `[1:10]` nos dice que hay 10 elementos
+- Vista previa de algunos (o todos) los elementos almacenados (`1, 7, 2, 9, 0, 2, 4, 6, 8, 1`)
+
+Nosotros podemos acceder a todas estas caracetrísticas con diferentes comandos. Por ejemplo, para obtener los nombres de todas las variables almacenadas, podemos usar la función `ls()`, que nos da una lista de los objetos en nuestro ambiente.
+
+```{r}
+ls()
+```
+
+Usando el nombre de la variable, podemos acceder a sus propiedades, como la clase y dmiensiones.
+
+Para obtener la clase, usamos la función `class()`:
+
+```{r}
+class(numeros)
+```
+
+En este caso, nuestra variable números es de tipo `numeric`.
+
+Para conocer la longitud del objeto, usamos la función `length()`:
+
+```{r}
+length(numeros)
+```
+
+El resultado es `10`, pues es el número de elementos que hemos almacenado en `numeros`.
+
+También podemos almacenar texto en una variable, por ejemplo:
+
+```{r}
+# Guardar texto en una variable llamada dias
+dias <- c("Lunes", "Martes", "Miercoles", "Jueves", "Viernes")
+```
+
+Cómo reconoce R esta información? Podemos preguntarle usando `class()`:
+
+```{r}
+class(dias)
+```
+
+R reconoce el texto como objetos de tipo `character`, es decir, caracteres.
+
+
+
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
