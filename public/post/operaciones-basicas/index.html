@@ -17,8 +17,7 @@
       
     
   
-  <meta name="description" content="Asignación de valoresAtributosEn el post anterior hablamos sobre R y RStudio, con una introducción a los scripts y documentos de rmarkdown y el uso de proyectos de RStudio para mantener nuestro código ordenado. En este post nos adentraremos más en el uso de R. En concreto, aprenderemos como almacenar valores y datos en objetos en R.
-Asignación de valoresEn la sección de scripts del post anterior habíamos almacenado valores en una variable llamada num.">
+  <meta name="description" content="">
 
   
   <link rel="alternate" hreflang="en-us" href="https://villasenor-derbez.com/post/operaciones-basicas/">
@@ -78,8 +77,7 @@ Asignación de valoresEn la sección de scripts del post anterior habíamos alm
   <meta property="og:site_name" content="Juan Carlos Villaseñor-Derbez">
   <meta property="og:url" content="https://villasenor-derbez.com/post/operaciones-basicas/">
   <meta property="og:title" content="Guardando valores: variables, vectores, matrices, listas y tablas de datos | Juan Carlos Villaseñor-Derbez">
-  <meta property="og:description" content="Asignación de valoresAtributosEn el post anterior hablamos sobre R y RStudio, con una introducción a los scripts y documentos de rmarkdown y el uso de proyectos de RStudio para mantener nuestro código ordenado. En este post nos adentraremos más en el uso de R. En concreto, aprenderemos como almacenar valores y datos en objetos en R.
-Asignación de valoresEn la sección de scripts del post anterior habíamos almacenado valores en una variable llamada num.">
+  <meta property="og:description" content="">
   <meta property="og:locale" content="en-us">
   
   <meta property="article:published_time" content="2018-06-14T00:00:00&#43;00:00">
@@ -286,7 +284,7 @@ Asignación de valoresEn la sección de scripts del post anterior habíamos alm
   
   <span class="middot-divider"></span>
   <span class="article-reading-time">
-    3 min read
+    0 min read
   </span>
   
 
@@ -349,75 +347,7 @@ Asignación de valoresEn la sección de scripts del post anterior habíamos alm
 
 
     <div class="article-style" itemprop="articleBody">
-      <div id="TOC">
-<ul>
-<li><a href="#asignacion-de-valores">Asignación de valores</a></li>
-<li><a href="#atributos">Atributos</a></li>
-</ul>
-</div>
-
-<p>En el <a href="https://www.villasenor-derbez.com/post/r-y-r-studio/">post anterior</a> hablamos sobre R y RStudio, con una introducción a los scripts y documentos de <code>rmarkdown</code> y el uso de proyectos de RStudio para mantener nuestro código ordenado. En este post nos adentraremos más en el uso de R. En concreto, aprenderemos como almacenar valores y datos en objetos en R.</p>
-<div id="asignacion-de-valores" class="section level1">
-<h1>Asignación de valores</h1>
-<p>En la sección de <a href="https://www.villasenor-derbez.com/post/r-y-r-studio/#scripts">scripts</a> del post anterior habíamos almacenado valores en una variable llamada <code>num</code>. El código era similar a este:</p>
-<pre class="r"><code># Almacenar 10 números en la variable numeros
-numeros &lt;- c(1, 7, 2, 9, 0, 2, 4, 6, 8, 1)</code></pre>
-<p>Podemos almacenar prácticamente cualquier tipo de información en una variable (piensa en números, texto, coordenadas, mapa, colores, modelos). Cada tipo de información tendrá su forma específica de almacenarse. Además, al generar la variable en la que almacenamos la información, es necesario seguir ciertas reglas. A continuación algunas reglas generales para nombrar objetos.</p>
-<p>El nombre de la variable puede contener números, pero debe de comenzar con una letra. Por ejemplo, <code>mis_datos</code> y <code>mis_2_datos</code> y <code>mis_datos_2</code> son nombres aceptables. Por el contrario <code>2datos</code> no lo es.</p>
-<p>Ejecuta el siguiente código línea por línea:</p>
-<pre class="r"><code># Asignaciones correctas
-mis_datos &lt;- 1
-mis_2_datos &lt;- 1
-mis_datos_2 &lt;- 1
-
-# Asignación incorrecta
-2datos &lt;- 1</code></pre>
-<pre><code>## Error: &lt;text&gt;:7:2: unexpected symbol
-## 6: # Asignación incorrecta
-## 7: 2datos
-##     ^</code></pre>
-<p>La última línea resultará en un error, con R diciendo <code>Error: unexpected symbol in &quot;2datos&quot;</code>. Esto sucede porque la variable no comienza con una letra.</p>
-<p>R también distingue entre mayúsculas y minúsculas, por lo que es necesario nombrar y llamar nuestras variables de manera correcta. Por ejemplo, en las siguientes líneas de código la primera funciona y la segunda no. Sabes por qué sucede esto?</p>
-<pre class="r"><code>mis_datos</code></pre>
-<pre class="r"><code># Multiplicar una variable por 2
-mis_datos * 2</code></pre>
-<pre><code>## Error in eval(expr, envir, enclos): object &#39;mis_datos&#39; not found</code></pre>
-<pre class="r"><code># Multiplicar una variable por 2
-Mis_datos * 2</code></pre>
-<pre><code>## Error in eval(expr, envir, enclos): object &#39;Mis_datos&#39; not found</code></pre>
-</div>
-<div id="atributos" class="section level1">
-<h1>Atributos</h1>
-<p>Al evaluar este código, <code>numeros</code> aparece en nuestro ambiente como un valor, y vemos algo asi:</p>
-<p><img src="/img/2018-06-29-operaciones-basicas/ambiente.JPG" /></p>
-<p>La información presentada es la siguiente:</p>
-<ul>
-<li>Del lado izquierdo vemos el nombre de la variable (<code>numeros</code>)</li>
-<li>El tipo de valores, en este caso numéricos indicados por <code>num</code></li>
-<li>La dimensión del objeto, donde <code>[1:10]</code> nos dice que hay 10 elementos</li>
-<li>Vista previa de algunos (o todos) los elementos almacenados (<code>1, 7, 2, 9, 0, 2, 4, 6, 8, 1</code>)</li>
-</ul>
-<p>Nosotros podemos acceder a todas estas caracetrísticas con diferentes comandos. Por ejemplo, para obtener los nombres de todas las variables almacenadas, podemos usar la función <code>ls()</code>, que nos da una lista de los objetos en nuestro ambiente.</p>
-<pre class="r"><code>ls()</code></pre>
-<pre><code>## [1] &quot;numeros&quot;</code></pre>
-<p>Usando el nombre de la variable, podemos acceder a sus propiedades, como la clase y dmiensiones.</p>
-<p>Para obtener la clase, usamos la función <code>class()</code>:</p>
-<pre class="r"><code>class(numeros)</code></pre>
-<pre><code>## [1] &quot;numeric&quot;</code></pre>
-<p>En este caso, nuestra variable números es de tipo <code>numeric</code>.</p>
-<p>Para conocer la longitud del objeto, usamos la función <code>length()</code>:</p>
-<pre class="r"><code>length(numeros)</code></pre>
-<pre><code>## [1] 10</code></pre>
-<p>El resultado es <code>10</code>, pues es el número de elementos que hemos almacenado en <code>numeros</code>.</p>
-<p>También podemos almacenar texto en una variable, por ejemplo:</p>
-<pre class="r"><code># Guardar texto en una variable llamada dias
-dias &lt;- c(&quot;Lunes&quot;, &quot;Martes&quot;, &quot;Miercoles&quot;, &quot;Jueves&quot;, &quot;Viernes&quot;)</code></pre>
-<p>Cómo reconoce R esta información? Podemos preguntarle usando <code>class()</code>:</p>
-<pre class="r"><code>class(dias)</code></pre>
-<pre><code>## [1] &quot;character&quot;</code></pre>
-<p>R reconoce el texto como objetos de tipo <code>character</code>, es decir, caracteres.</p>
-</div>
-
+      
     </div>
 
     
@@ -433,10 +363,15 @@ dias &lt;- c(&quot;Lunes&quot;, &quot;Martes&quot;, &quot;Miercoles&quot;, &quot
     <div class="article-widget">
       <div class="post-nav">
   
+  <div class="post-nav-item">
+    <div class="meta-nav">Next</div>
+    <a href="https://villasenor-derbez.com/post/operaciones-basicas/" rel="next">Guardando valores: variables, vectores, matrices, listas y tablas de datos</a>
+  </div>
+  
   
   <div class="post-nav-item">
     <div class="meta-nav">Previous</div>
-    <a href="https://villasenor-derbez.com/post/operaciones-basicas/" rel="prev">Guardando valores: variables, vectores, matrices, listas y tablas de datos</a>
+    <a href="https://villasenor-derbez.com/post/r-y-r-studio/" rel="prev">R y RStudio</a>
   </div>
   
 </div>
