@@ -58,7 +58,7 @@ defaultContentLanguageInSubdir = false
   organizations = [ { name = "Bren School of Environmental Science and Management, UCSB", url = "http://bren.ucsb.edu/" } ]
 
   gravatar = false  # Get your avatar from Gravatar.com? (true/false)
-  avatar = "portrait.jpg"  # Specify an avatar image (in `static/img/` folder) or delete value to disable avatar.
+  avatar = "headshot.jpg"  # Specify an avatar image (in `static/img/` folder) or delete value to disable avatar.
   email = "jvillasenor@bren.ucsb.edu"
   address = "2400 Bren Hall, University of California, Santa Barbara, CA, US, 93106"
   office_hours = ""
