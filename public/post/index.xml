@@ -18,7 +18,7 @@
       <pubDate>Thu, 14 Jun 2018 00:00:00 +0000</pubDate>
       
       <guid>/post/operaciones-basicas/</guid>
-      <description>Asignación de valoresAtributosEn el post anterior hablamos sobre R y RStudio, con una introducción a los scripts y documentos de rmarkdown y el uso de proyectos de RStudio para mantener nuestro código ordenado. En este post nos adentraremos más en el uso de R. En concreto, aprenderemos como almacenar valores y datos en objetos en R.
+      <description>Asignación de valoresAtributosEn el post anterior hablamos sobre R y RStudio, con una introducción a los scripts y documentos de rmarkdown y el uso de proyectos de RStudio para mantener nuestro código ordenado. En este post nos adentraremos más en el uso de R. En concreto, aprenderemos como almacenar valores y datos en objetos en R. Camila.
 Asignación de valoresEn la sección de scripts del post anterior habíamos almacenado valores en una variable llamada num.</description>
     </item>
     

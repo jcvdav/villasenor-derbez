@@ -13,7 +13,7 @@ header:
 ---
 
 
-En el [post anterior](https://www.villasenor-derbez.com/post/r-y-r-studio/) hablamos sobre R y RStudio, con una introducción a los scripts y documentos de `rmarkdown` y el uso de proyectos de RStudio para mantener nuestro código ordenado. En este post nos adentraremos más en el uso de R. En concreto, aprenderemos como almacenar valores y datos en objetos en R.
+En el [post anterior](https://www.villasenor-derbez.com/post/r-y-r-studio/) hablamos sobre R y RStudio, con una introducción a los scripts y documentos de `rmarkdown` y el uso de proyectos de RStudio para mantener nuestro código ordenado. En este post nos adentraremos más en el uso de R. En concreto, aprenderemos como almacenar valores y datos en objetos en R. Camila.
 
 # Asignación de valores
 
