@@ -23,7 +23,7 @@
 &lt;/ul&gt;
 &lt;/div&gt;
 
-&lt;p&gt;En el &lt;a href=&#34;https://www.villasenor-derbez.com/post/r-y-r-studio/&#34;&gt;post anterior&lt;/a&gt; hablamos sobre R y RStudio, con una introducción a los scripts y documentos de &lt;code&gt;rmarkdown&lt;/code&gt; y el uso de proyectos de RStudio para mantener nuestro código ordenado. En este post nos adentraremos más en el uso de R. En concreto, aprenderemos como almacenar valores y datos en objetos en R. Camila.&lt;/p&gt;
+&lt;p&gt;En el &lt;a href=&#34;https://www.villasenor-derbez.com/post/r-y-r-studio/&#34;&gt;post anterior&lt;/a&gt; hablamos sobre R y RStudio, con una introducción a los scripts y documentos de &lt;code&gt;rmarkdown&lt;/code&gt; y el uso de proyectos de RStudio para mantener nuestro código ordenado. En este post nos adentraremos más en el uso de R. En concreto, aprenderemos como almacenar valores y datos en objetos en R.&lt;/p&gt;
 &lt;div id=&#34;asignacion-de-valores&#34; class=&#34;section level1&#34;&gt;
 &lt;h1&gt;Asignación de valores&lt;/h1&gt;
 &lt;p&gt;En la sección de &lt;a href=&#34;https://www.villasenor-derbez.com/post/r-y-r-studio/#scripts&#34;&gt;scripts&lt;/a&gt; del post anterior habíamos almacenado valores en una variable llamada &lt;code&gt;num&lt;/code&gt;. El código era similar a este:&lt;/p&gt;
