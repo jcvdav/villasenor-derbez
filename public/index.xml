@@ -11,257 +11,6 @@
     <atom:link href="/" rel="self" type="application/rss+xml" />
     
     <item>
-      <title>Guardando valores: variables, vectores, matrices, listas y tablas de datos</title>
-      <link>/post/operaciones-basicas/</link>
-      <pubDate>Thu, 14 Jun 2018 00:00:00 +0000</pubDate>
-      
-      <guid>/post/operaciones-basicas/</guid>
-      <description>&lt;div id=&#34;TOC&#34;&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;#asignacion-de-valores&#34;&gt;Asignación de valores&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;#atributos&#34;&gt;Atributos&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/div&gt;
-
-&lt;p&gt;En el &lt;a href=&#34;https://www.villasenor-derbez.com/post/r-y-r-studio/&#34;&gt;post anterior&lt;/a&gt; hablamos sobre R y RStudio, con una introducción a los scripts y documentos de &lt;code&gt;rmarkdown&lt;/code&gt; y el uso de proyectos de RStudio para mantener nuestro código ordenado. En este post nos adentraremos más en el uso de R. En concreto, aprenderemos como almacenar valores y datos en objetos en R.&lt;/p&gt;
-&lt;div id=&#34;asignacion-de-valores&#34; class=&#34;section level1&#34;&gt;
-&lt;h1&gt;Asignación de valores&lt;/h1&gt;
-&lt;p&gt;En la sección de &lt;a href=&#34;https://www.villasenor-derbez.com/post/r-y-r-studio/#scripts&#34;&gt;scripts&lt;/a&gt; del post anterior habíamos almacenado valores en una variable llamada &lt;code&gt;num&lt;/code&gt;. El código era similar a este:&lt;/p&gt;
-&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;# Almacenar 10 números en la variable numeros
-numeros &amp;lt;- c(1, 7, 2, 9, 0, 2, 4, 6, 8, 1)&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Podemos almacenar prácticamente cualquier tipo de información en una variable (piensa en números, texto, coordenadas, mapa, colores, modelos). Cada tipo de información tendrá su forma específica de almacenarse. Además, al generar la variable en la que almacenamos la información, es necesario seguir ciertas reglas. A continuación algunas reglas generales para nombrar objetos.&lt;/p&gt;
-&lt;p&gt;El nombre de la variable puede contener números, pero debe de comenzar con una letra. Por ejemplo, &lt;code&gt;mis_datos&lt;/code&gt; y &lt;code&gt;mis_2_datos&lt;/code&gt; y &lt;code&gt;mis_datos_2&lt;/code&gt; son nombres aceptables. Por el contrario &lt;code&gt;2datos&lt;/code&gt; no lo es.&lt;/p&gt;
-&lt;p&gt;Ejecuta el siguiente código línea por línea:&lt;/p&gt;
-&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;# Asignaciones correctas
-mis_datos &amp;lt;- 1
-mis_2_datos &amp;lt;- 1
-mis_datos_2 &amp;lt;- 1
-
-# Asignación incorrecta
-2datos &amp;lt;- 1&lt;/code&gt;&lt;/pre&gt;
-&lt;pre&gt;&lt;code&gt;## Error: &amp;lt;text&amp;gt;:7:2: unexpected symbol
-## 6: # Asignación incorrecta
-## 7: 2datos
-##     ^&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;La última línea resultará en un error, con R diciendo &lt;code&gt;Error: unexpected symbol in &amp;quot;2datos&amp;quot;&lt;/code&gt;. Esto sucede porque la variable no comienza con una letra.&lt;/p&gt;
-&lt;p&gt;R también distingue entre mayúsculas y minúsculas, por lo que es necesario nombrar y llamar nuestras variables de manera correcta. Por ejemplo, en las siguientes líneas de código la primera funciona y la segunda no. Sabes por qué sucede esto?&lt;/p&gt;
-&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;mis_datos&lt;/code&gt;&lt;/pre&gt;
-&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;# Multiplicar una variable por 2
-mis_datos * 2&lt;/code&gt;&lt;/pre&gt;
-&lt;pre&gt;&lt;code&gt;## Error in eval(expr, envir, enclos): objeto &amp;#39;mis_datos&amp;#39; no encontrado&lt;/code&gt;&lt;/pre&gt;
-&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;# Multiplicar una variable por 2
-Mis_datos * 2&lt;/code&gt;&lt;/pre&gt;
-&lt;pre&gt;&lt;code&gt;## Error in eval(expr, envir, enclos): objeto &amp;#39;Mis_datos&amp;#39; no encontrado&lt;/code&gt;&lt;/pre&gt;
-&lt;/div&gt;
-&lt;div id=&#34;atributos&#34; class=&#34;section level1&#34;&gt;
-&lt;h1&gt;Atributos&lt;/h1&gt;
-&lt;p&gt;Al evaluar este código, &lt;code&gt;numeros&lt;/code&gt; aparece en nuestro ambiente como un valor, y vemos algo asi:&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;/img/2018-06-29-operaciones-basicas/ambiente.JPG&#34; /&gt;&lt;/p&gt;
-&lt;p&gt;La información presentada es la siguiente:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;Del lado izquierdo vemos el nombre de la variable (&lt;code&gt;numeros&lt;/code&gt;)&lt;/li&gt;
-&lt;li&gt;El tipo de valores, en este caso numéricos indicados por &lt;code&gt;num&lt;/code&gt;&lt;/li&gt;
-&lt;li&gt;La dimensión del objeto, donde &lt;code&gt;[1:10]&lt;/code&gt; nos dice que hay 10 elementos&lt;/li&gt;
-&lt;li&gt;Vista previa de algunos (o todos) los elementos almacenados (&lt;code&gt;1, 7, 2, 9, 0, 2, 4, 6, 8, 1&lt;/code&gt;)&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;Nosotros podemos acceder a todas estas caracetrísticas con diferentes comandos. Por ejemplo, para obtener los nombres de todas las variables almacenadas, podemos usar la función &lt;code&gt;ls()&lt;/code&gt;, que nos da una lista de los objetos en nuestro ambiente.&lt;/p&gt;
-&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;ls()&lt;/code&gt;&lt;/pre&gt;
-&lt;pre&gt;&lt;code&gt;## [1] &amp;quot;numeros&amp;quot;&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Usando el nombre de la variable, podemos acceder a sus propiedades, como la clase y dmiensiones.&lt;/p&gt;
-&lt;p&gt;Para obtener la clase, usamos la función &lt;code&gt;class()&lt;/code&gt;:&lt;/p&gt;
-&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;class(numeros)&lt;/code&gt;&lt;/pre&gt;
-&lt;pre&gt;&lt;code&gt;## [1] &amp;quot;numeric&amp;quot;&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;En este caso, nuestra variable números es de tipo &lt;code&gt;numeric&lt;/code&gt;.&lt;/p&gt;
-&lt;p&gt;Para conocer la longitud del objeto, usamos la función &lt;code&gt;length()&lt;/code&gt;:&lt;/p&gt;
-&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;length(numeros)&lt;/code&gt;&lt;/pre&gt;
-&lt;pre&gt;&lt;code&gt;## [1] 10&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;El resultado es &lt;code&gt;10&lt;/code&gt;, pues es el número de elementos que hemos almacenado en &lt;code&gt;numeros&lt;/code&gt;.&lt;/p&gt;
-&lt;p&gt;También podemos almacenar texto en una variable, por ejemplo:&lt;/p&gt;
-&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;# Guardar texto en una variable llamada dias
-dias &amp;lt;- c(&amp;quot;Lunes&amp;quot;, &amp;quot;Martes&amp;quot;, &amp;quot;Miercoles&amp;quot;, &amp;quot;Jueves&amp;quot;, &amp;quot;Viernes&amp;quot;)&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Cómo reconoce R esta información? Podemos preguntarle usando &lt;code&gt;class()&lt;/code&gt;:&lt;/p&gt;
-&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;class(dias)&lt;/code&gt;&lt;/pre&gt;
-&lt;pre&gt;&lt;code&gt;## [1] &amp;quot;character&amp;quot;&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;R reconoce el texto como objetos de tipo &lt;code&gt;character&lt;/code&gt;, es decir, caracteres.&lt;/p&gt;
-&lt;/div&gt;
-</description>
-    </item>
-    
-    <item>
-      <title>R y RStudio</title>
-      <link>/post/r-y-r-studio/</link>
-      <pubDate>Thu, 14 Jun 2018 00:00:00 +0000</pubDate>
-      
-      <guid>/post/r-y-r-studio/</guid>
-      <description>&lt;div id=&#34;TOC&#34;&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;#el-ambiente-de-trabajo-en-rstudio&#34;&gt;El ambiente de trabajo en RStudio&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;#investigacion-reproducible&#34;&gt;Investigación reproducible&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;#proyectos-de-rstudio&#34;&gt;Proyectos de RStudio&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;#distribucion-de-codigo&#34;&gt;Distribución de código&lt;/a&gt;&lt;ul&gt;
-&lt;li&gt;&lt;a href=&#34;#scripts&#34;&gt;Scripts&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;#documentos-de-rmarkdown&#34;&gt;Documentos de &lt;code&gt;rmarkdown&lt;/code&gt;&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;#paquetes-en-r-base-stats-y-otros-mas&#34;&gt;Paquetes en R: &lt;code&gt;base&lt;/code&gt;, &lt;code&gt;stats&lt;/code&gt; y otros más&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;#conclusiones&#34;&gt;Conclusiones&lt;/a&gt;&lt;/li&gt;
-&lt;/ul&gt;
-&lt;/div&gt;
-
-&lt;p&gt;Este es el primer post de &lt;code&gt;ERRE&lt;/code&gt;. Antes de comenzar a escribir código, creo que es necesario establecer bases sólidas que nos permitan aprovechar R al máximo. En este post hablaremos sobre las generalidades de R y RStudio y las ventajas de trabajar en este ambiente. Daré una introducción al uso de proyectos de RStudio para tener un ambiente de trabajo ordenado y hablaremos brevemente sobre las principales formas de ejecutar código. Finalmente, hablaremos sobre el uso de paquetes para extender la funcionalidad de R.&lt;/p&gt;
-&lt;div id=&#34;el-ambiente-de-trabajo-en-rstudio&#34; class=&#34;section level1&#34;&gt;
-&lt;h1&gt;El ambiente de trabajo en RStudio&lt;/h1&gt;
-&lt;p&gt;¿Cuál es la diferencia entre R y RStudio? Esta pregunta me la han hecho varias veces, y creo que es válido aclarar esta duda antes de comenzar con la parte del código. R es un lenguaje de programación con enfoque estadístico. R es el motor que ejecuta las operaciones que el usuario somete. Hay varias plataformas que permiten la comunicación usuarrio-motor. Una de ellas es utilizar R desde la interfaz de usuario de R:&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;/img/2018-06-04-r-y-r-studio/Rgui.JPG&#34; /&gt;&lt;/p&gt;
-&lt;p&gt;Aunque esta plataforma permite comunicarnos con R y hacer todas las operaciones, no brinda un ambiente de trabajo flexible. Como lo dice Hadley Wickham,&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;No se puede hacer &lt;em&gt;data science&lt;/em&gt; desde una interfaz de usuario &lt;a href=&#34;#fn1&#34; class=&#34;footnote-ref&#34; id=&#34;fnref1&#34;&gt;&lt;sup&gt;1&lt;/sup&gt;&lt;/a&gt;.&lt;/p&gt;
-&lt;/blockquote&gt;
-&lt;p&gt;Es aquí donde RStuido se vuelve importante. RStudio es un Ambiente de Desarrollo Integrado (IDE, &lt;em&gt;Integrated Development Environment&lt;/em&gt;). Esto quiere decir que expande la funcionalidad y flexibilidad de la interfaz de usuario. Esto es muy útil, pues nos evita tener que cambiar de ambientes para hacer diferentes tareas. En resumen, podemos integrar todo nuestro proceso de trabajo en un mismo ambiente. Esto además permite la replicación de análisis, resultados y productos (documentos, imágenes, presentaciones).&lt;/p&gt;
-&lt;p&gt;Puedes descargar R &lt;a href=&#34;https://cran.r-project.org/bin/windows/base/&#34;&gt;R&lt;/a&gt; y &lt;a href=&#34;https://www.rstudio.com/products/rstudio/download/&#34;&gt;RStudio&lt;/a&gt; de manera gratuita. Una vez que los tengas instalados, puedes abrir RStudio y verás algo así:&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;/img/2018-06-04-r-y-r-studio/RStudio.JPG&#34; /&gt;&lt;/p&gt;
-&lt;p&gt;Notarás que hay más divisiones o secciones que en el RGui de la primera figura. En RStudio estas secciones reciben el nombre de &lt;strong&gt;páneles&lt;/strong&gt;. Aquí hay un resumen de las partes principales:&lt;/p&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;code&gt;Console&lt;/code&gt;: Aquí verás un cursos que parpadea a la derecha de un símbolo &lt;code&gt;&amp;gt;&lt;/code&gt; y un cursor parpadeante. Escribe &lt;code&gt;2 + 2&lt;/code&gt; y presiona la tecla &lt;code&gt;Enter&lt;/code&gt;. La computadora responde diciendo &lt;code&gt;[1] 4&lt;/code&gt;. Esta consola nos sirve para comunicarnos con R. Al pedirle la suma, R respondió diciendo que el resultado es &lt;code&gt;4&lt;/code&gt;. Por ahora ignoraremos el valor de &lt;code&gt;[1]&lt;/code&gt; que aparece a la izquierda.&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;Environment&lt;/code&gt;: Este panel mostrará todos los objetos y variables generadas o cargadas. Por ejemplo, en la consola escribe &lt;code&gt;a &amp;lt;- 2 + 2&lt;/code&gt; y presiona &lt;code&gt;Enter&lt;/code&gt;. Verás que esta vez R no respondió, pero en nuestro ambiente ahora hay una variable llamado &lt;code&gt;a&lt;/code&gt;, donde R almacenó el resultado de la operación. Si en la consola escribes &lt;code&gt;a&lt;/code&gt; y presionas &lt;code&gt;Enter&lt;/code&gt;, R dirá: &lt;code&gt;[1] 4&lt;/code&gt;. Toma nota que en R usaremos el operador &lt;code&gt;&amp;lt;-&lt;/code&gt; para asignar valores a una variable.&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;History&lt;/code&gt;: Este pánel te mostrará un historial de las operaciones anteriores. Si haces doble click sobre uno de los renglones, el texto se copiará a la consola para que puedas volver a ejecutar la operación. Desde la consola también puedes acceder a operaciones pasadas. Para esto, debes colocar el cursor en la consola y en tu teclado presionar la tecla que apunta hacia arriba. Cada vez que la presiones regresarás un paso atrás.&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;Files&lt;/code&gt;: Aquí aparecerán los archivos que estén en el directorio de trabajo. En la siguiente sección hablaremos sobre como mantener archivos ordenados mediante el uso de proyectos de RStudio.&lt;/li&gt;
-&lt;li&gt;&lt;code&gt;Help&lt;/code&gt;: Este es probablemente uno de los páneles más útiles. Para conocer cómo se usa una función generalmente recurrimos a la documentación. Por ejemplo, la función para calcular el promedio de una serie de datos es &lt;code&gt;mean()&lt;/code&gt; pero, ¿Cómo le especifico los datos para los cuales quiero el promedio? Puedes conocer más sobre los &lt;code&gt;inputs&lt;/code&gt; y &lt;code&gt;outputs&lt;/code&gt; de una función escribiendo &lt;code&gt;?mean&lt;/code&gt; en la consola y presionando &lt;code&gt;Enter&lt;/code&gt;. Esto abrirá la documentación de la función.&lt;/li&gt;
-&lt;/ul&gt;
-&lt;p&gt;RStudio también te permite modificar el ambiente de trabajo. Puedes mover la posición de los páneles o modificar los esquemas de colores y el tamaño de fuente. Todas estas características las puedes explorar en la pestaña de &lt;code&gt;Herramientas&lt;/code&gt;, bajo la sección de &lt;code&gt;Opciones globales&lt;/code&gt; y &lt;code&gt;Opciones de proyecto&lt;/code&gt;.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div id=&#34;investigacion-reproducible&#34; class=&#34;section level1&#34;&gt;
-&lt;h1&gt;Investigación reproducible&lt;/h1&gt;
-&lt;p&gt;Es importante que nuestros análisis y resultados puedan ser reproducidos y corroborados. Uno de los grandes avances de la humanidad es la capacidad de comunicar información por medio del lenguaje escrito, pues deja un legado que no requiere ser pasado de “boca en boca”. Escribir código nos permite comunicar nuestros procedimientos y contar una historia, pues el código no es más que texto. Aunque tiene su propia estructura, el código no es más que texto que puede ser comprendido por computadoras y humanos al mismo tiempo. Por ejemplo, el siguiente código es muy obvio para humanos y computadoras:&lt;/p&gt;
-&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;2 + 2&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Existen muchos lenguajes de programación, cada uno con sus reglas semánticas y gramaticales. No importa cuan complicado sea el código, la intuición es la misma. Al escribir código generamos una receta o bitácora explícita de nuestros procedimientos, permitiendo que sean replicados.&lt;/p&gt;
-&lt;p&gt;Además, podemos incluir mensajes que sean fáciles de leer por humanos pero que la computadora ignore. En R esto se hace con el uso del símbolo de número o &lt;em&gt;hashtag&lt;/em&gt; (&lt;code&gt;#&lt;/code&gt;). Todo el texto a la derecha de ese símbolo será ignorado por R, pero brinda información al humano que esté leyendo el código, por ejemplo:&lt;/p&gt;
-&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;# Sumamos dos más dos
-2 + 2 # Tambien puedo comentar en la misma línea&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Comentar el código nos ayuda a explicar las operaciones que hacemos. Esto es útil al compartir nuestro código con alguien más, pero también al regresar a código viejo. Más de una vez he regresado a código viejo que no había comentado. Cada una de esas veces me he arrepentido de no haberlo hecho.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div id=&#34;proyectos-de-rstudio&#34; class=&#34;section level1&#34;&gt;
-&lt;h1&gt;Proyectos de RStudio&lt;/h1&gt;
-&lt;p&gt;Utilizar proyectos en R es una de las mejores formas de mantener un ambiente de trabajo ordenado. El proyecto mantiene un directorio de trabajo estable, donde mantenemos nuestros archivos asociados. El directorio de trabajo no es más que la localización de todos los archivos y carpetas. El comando &lt;code&gt;getwd()&lt;/code&gt; (&lt;em&gt;get working directory&lt;/em&gt;) te mostrará el directorio de trabajo. Si es la primera vez que abres RStudio o estás fuera de un proyecto, puede que el resultado sea:&lt;/p&gt;
-&lt;p&gt;&lt;code&gt;[1] &amp;quot;C:/Usuarios/TuUsuario/Documentos&amp;quot;&lt;/code&gt;&lt;/p&gt;
-&lt;p&gt;Supongamos que mantengo todos mis archivos dentro de la carpeta de &lt;code&gt;Documentos&lt;/code&gt;. Por ejemplo, asumamos que tengo dos proyectos de investigación. Uno es sobre peces rojos y otro de pájaros azules. Para cada uno de estos tendré archivos con datos, que mantengo separados en folders con la siguiente estructura:&lt;/p&gt;
-&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;C:/Usuarios/JC/Documentos/Proyectos:
-|
--- PecesRojos/
-|  |
-|  -- datos/
-|    |
-|    -- peces_rojos.csv
-|
--- PajarosAzules/
-    |
-    -- datos/
-      |
-      -- pajaros_azules.csv&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Además, dentro de &lt;code&gt;Documentos&lt;/code&gt; tengo muchos otros archivos, ordenados y desordenados, que pertenecen a muchas otras cosas. Al trabajar en el proyecto de &lt;em&gt;PecesRojos&lt;/em&gt; quiero asegurarme que todo lo que veo en mi pánel de &lt;code&gt;Files&lt;/code&gt; son datos asociados a esto, sin ver datos de &lt;em&gt;PajarosAzules&lt;/em&gt; o fotos de mis vacaciones pasadas. Para esto, usamos los proyectos de RStudio.&lt;/p&gt;
-&lt;p&gt;Estos son los pasos para crear un proyecto de RStudio:&lt;/p&gt;
-&lt;ol style=&#34;list-style-type: decimal&#34;&gt;
-&lt;li&gt;En la parte superior derecha de RStudio verás un ícono como este:&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;&lt;img src=&#34;/img/2018-06-04-r-y-r-studio/Rprojects.JPG&#34; /&gt;&lt;/p&gt;
-&lt;ol start=&#34;2&#34; style=&#34;list-style-type: decimal&#34;&gt;
-&lt;li&gt;Al hacer click, verás las siguientes opciones:&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;&lt;img src=&#34;/img/2018-06-04-r-y-r-studio/Rprojects2.JPG&#34; /&gt;&lt;/p&gt;
-&lt;ol start=&#34;3&#34; style=&#34;list-style-type: decimal&#34;&gt;
-&lt;li&gt;Selecciona la opción de &lt;em&gt;New Project&lt;/em&gt; y verás una nueva ventana así:&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;&lt;img src=&#34;/img/2018-06-04-r-y-r-studio/Rprojects3.JPG&#34; /&gt;&lt;/p&gt;
-&lt;ol start=&#34;4&#34; style=&#34;list-style-type: decimal&#34;&gt;
-&lt;li&gt;En este caso, yo ya tengo carpetas con mis datos, por lo que seleccionaré la opción de &lt;em&gt;Existing Directory&lt;/em&gt;. Al seleccionar esa opción aparece una nueva ventana, pidiéndome que indice el directorio al cual quiero asociar mir poyecto:&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;&lt;img src=&#34;/img/2018-06-04-r-y-r-studio/Rprojects4.JPG&#34; /&gt;&lt;/p&gt;
-&lt;ol start=&#34;5&#34; style=&#34;list-style-type: decimal&#34;&gt;
-&lt;li&gt;Al hacer click en &lt;em&gt;Browse&lt;/em&gt; se abrirá mi explorador de archivos, con el cual puedo navegar a &lt;code&gt;C:/Usuarios/JC/Documentos/Proyectos/PecesRojos&lt;/code&gt;&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;&lt;img src=&#34;/img/2018-06-04-r-y-r-studio/Rprojects5.JPG&#34; /&gt;&lt;/p&gt;
-&lt;ol start=&#34;6&#34; style=&#34;list-style-type: decimal&#34;&gt;
-&lt;li&gt;Seleccionando el folder de &lt;code&gt;PecesRojos&lt;/code&gt; y dando click en &lt;em&gt;Open&lt;/em&gt; la ventana del paso 4 ahora contendrá la dirección del directorio de trabajo:&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;&lt;img src=&#34;/img/2018-06-04-r-y-r-studio/Rprojects6.JPG&#34; /&gt;&lt;/p&gt;
-&lt;ol start=&#34;7&#34; style=&#34;list-style-type: decimal&#34;&gt;
-&lt;li&gt;Finalmente, hacemos click en el botón de &lt;em&gt;Create Project&lt;/em&gt; y RStudio se actualizará.&lt;/li&gt;
-&lt;/ol&gt;
-&lt;p&gt;¿Tantos pasos y todo se ve igual? No, al poner más atención verás algunas diferencias. Por ejemplo, la esquina superior derecha ahora dice &lt;code&gt;PecesRojos&lt;/code&gt;, indicándonos que estamos en ese proyecto. La pestaña de &lt;code&gt;Files&lt;/code&gt; mostrará la carpeta donde tengo los datos y un projecto de R llamado &lt;code&gt;PecesRojos.Rproj&lt;/code&gt;. Además, el pánel con el historial de operaciones está vacío, pues no hemos ejecutado código en este proyecto. Lo más importante es que si ahora ejecuto el comando para obtener el directorio (&lt;code&gt;getwd()&lt;/code&gt;) obtengo:&lt;/p&gt;
-&lt;p&gt;&lt;code&gt;[1] &amp;quot;C:/Usuarios/TuUsuario/Documentos/Proyectos/PecesRojos&amp;quot;&lt;/code&gt;&lt;/p&gt;
-&lt;p&gt;Esto puede parecer trivial, pero tener un directorio asociado a nuestro proyecto nos permite cargar y guardar datos, figuras y tablas más fácilmente sin tener que estar cambiando el directorio. Estos temás se cubrirán más adelante en detalle. Por ahora, procura usar proyectos de RStudio para administrár mejor tu trabajo y mantener todo más ordenado.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div id=&#34;distribucion-de-codigo&#34; class=&#34;section level1&#34;&gt;
-&lt;h1&gt;Distribución de código&lt;/h1&gt;
-&lt;p&gt;Como vimos anteriormente, podemos ejecutar comandos directamente en la consola. Sin embargo, la mayoría de las veces realizaremos varias operaciones simultáneamente y necesitamos tener tódo el código en un mismo lugar. Esto nos ahorra tener que escribir todas las operaciones cada vez, pero también nos da un documento que podemos archivar para futuras referencias o compartir. Aquí exploraremos dos formas de hacerlo.&lt;/p&gt;
-&lt;div id=&#34;scripts&#34; class=&#34;section level2&#34;&gt;
-&lt;h2&gt;Scripts&lt;/h2&gt;
-&lt;p&gt;La forma más sencilla es con el uso de &lt;em&gt;scripts&lt;/em&gt; de R. Estos no son más que documento de texto con extensión &lt;code&gt;.*R&lt;/code&gt; en vez de &lt;code&gt;*.txt&lt;/code&gt;. Para crear un &lt;em&gt;script&lt;/em&gt; haz click en ícono de “Nuevo documento” y selecciona &lt;em&gt;R Script&lt;/em&gt;:&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;/img/2018-06-04-r-y-r-studio/script.JPG&#34; /&gt;&lt;/p&gt;
-&lt;p&gt;También puedes utilizar la combinación de teclas &lt;code&gt;Ctrl&lt;/code&gt; + &lt;code&gt;Shift&lt;/code&gt; + &lt;code&gt;N&lt;/code&gt;. Esto abrirá un documento de texto vacío.&lt;/p&gt;
-&lt;p&gt;Tu ambiente en RStudio ahora debe verse similar a esto:&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;/img/2018-06-04-r-y-r-studio/script2.JPG&#34; /&gt;&lt;/p&gt;
-&lt;p&gt;El panel superior izquierdo contiene el &lt;em&gt;script&lt;/em&gt;, que dice &lt;code&gt;Untitled1&lt;/code&gt;. Aquí podemos escribir varias operaciones seguidas, pero R no las ejecutará hasta que se lo indiquemos. Por ejemplo, el siguiente código genera una serie de 10 números almacenados en la variable &lt;code&gt;num&lt;/code&gt; y después calcula el promedio, la mediana, la varianza y la desviación estándar. Todas estas funciones toman un &lt;em&gt;input&lt;/em&gt; &lt;code&gt;x&lt;/code&gt;, en este caso &lt;code&gt;num&lt;/code&gt; y regresan el valor del estadístico calculado. Copia y pega el código en tu script.&lt;/p&gt;
-&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;# Este script calcula el promedio, mediana, varianza y desviación estándar de
-# 10 números almacenados en la variable num
-
-num &amp;lt;- c(1, 7, 2, 9, 0, 2, 4, 6, 8, 1) # Almacenar 10 números en la variable num
-
-# calcular el promedio de num
-mean(x = num)
-
-# Calcular la media de num
-median(x = num)
-
-# Calcular la varianza de num
-var(x = num)
-
-# Calcular la desviación estándar de num
-sd(x = num)&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Si presionas &lt;code&gt;Enter&lt;/code&gt;, lo único que lograrás es agregar una nueva línea. Para ejecutar el código deberás colocar tu cursor al principio o al final de una línea y presionar &lt;code&gt;Ctrl&lt;/code&gt; + &lt;code&gt;Enter&lt;/code&gt; (También puedes hacer click en el ícono que dice &lt;em&gt;Run&lt;/em&gt; en la esquina superior derecha del &lt;em&gt;script&lt;/em&gt;). Prueba con la línea 4, donde creamos la variable &lt;code&gt;num&lt;/code&gt;. Repite el proceso para las líneas 7, 10, 13 y 16. Notarás que en la consola aparecen los valores correspondientes a cada operación. Hasta ahora no hay mucha diferencia, pues seguimos ejecutando el código una línea a la vez.&lt;/p&gt;
-&lt;p&gt;Ahora, selecciona el código entero y presiona &lt;code&gt;Ctrl&lt;/code&gt; + &lt;code&gt;Enter&lt;/code&gt; o haz click en &lt;em&gt;Run&lt;/em&gt;. Notarás que todas las líneas son ejecutadas automáticamente. Para guardar el documento, simplemente haz click en el ícono del &lt;a href=&#34;https://www.google.com/search?q=disquete&#34;&gt;disquete&lt;/a&gt; o “guardar”. Como con cualquier otro archivo, puedes guardar el &lt;em&gt;R script&lt;/em&gt; en cualquier lugar de tu computadora. Como estamos utilizando proyectos de RStudio, yo sugiero crear una carpeta dentro de &lt;code&gt;PecesRojos&lt;/code&gt; llamda &lt;code&gt;scripts&lt;/code&gt;, donde mantendremos todos estos archivos.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div id=&#34;documentos-de-rmarkdown&#34; class=&#34;section level2&#34;&gt;
-&lt;h2&gt;Documentos de &lt;code&gt;rmarkdown&lt;/code&gt;&lt;/h2&gt;
-&lt;p&gt;Los documentos de &lt;code&gt;rmarkdown&lt;/code&gt; también son documentos de texto, pero con extensión &lt;code&gt;*.Rmd&lt;/code&gt;. Al igual que los &lt;em&gt;scripts&lt;/em&gt;, estos nos permiten tener una serie de operaciones juntas. La principal diferencia es que un documento de &lt;code&gt;rmarkdown&lt;/code&gt; se “teje” para generar archivos &lt;code&gt;*.pdf&lt;/code&gt;, &lt;code&gt;*.docx&lt;/code&gt; o &lt;code&gt;*.html&lt;/code&gt;. Por ejemplo, este sitio entero está generado con &lt;code&gt;rmarkdown&lt;/code&gt;. Más adelante tendremos un post dedicado al uso de &lt;code&gt;rmarkdown&lt;/code&gt;, pero a continuación algunos detalles generales.&lt;/p&gt;
-&lt;p&gt;Crear un documento de &lt;code&gt;rmarkdown&lt;/code&gt;es similar a crear un &lt;em&gt;script&lt;/em&gt;. Sin embargo, seleccionarás la opción que dice &lt;em&gt;R Markdown&lt;/em&gt;. Al hacerlo, deberás ver una ventana así:&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;/img/2018-06-04-r-y-r-studio/rmarkdown.JPG&#34; /&gt;&lt;/p&gt;
-&lt;p&gt;Ingresa un título para tu documento y, si quieres, un nombre para el autor. Selecciona la opción de &lt;code&gt;HTML&lt;/code&gt; y da click en OK. Deberás de ver un documento con el siguiente código:&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;/img/2018-06-04-r-y-r-studio/rmarkdown2.JPG&#34; /&gt;&lt;/p&gt;
-&lt;p&gt;Notarás que en la parte superior se encuentra el título y nombre que ingresaste, además de la fecha y el tipo de formato a generar. Más abjo hay secciones con texto y código. Notarás que el texto no usa &lt;code&gt;#&lt;/code&gt; para los comentarios. Esto es porque ahora separamos el texto del documento y el código usando &lt;em&gt;code chunks&lt;/em&gt;. Estos se crean al presionar el botón que dice &lt;em&gt;Insert&lt;/em&gt; en la esquina superior derecha del documento. Los &lt;em&gt;chunks&lt;/em&gt; contienen el código a ejecutar, y todo lo que está fuera aparecerá como texto en el documento final. Si quieres incluir comentarios en tu código y que no sean visibles, puedes hacerlo dentro de los &lt;em&gt;chunks&lt;/em&gt;.&lt;/p&gt;
-&lt;p&gt;Ve al &lt;em&gt;cunk&lt;/em&gt; que dice &lt;code&gt;summary(cars)&lt;/code&gt; y haz click en la flecha verde en el extremo derecho del &lt;em&gt;chunk&lt;/em&gt;. Esto generará un resumen de los datos &lt;code&gt;cars&lt;/code&gt; que están precargados en la memoria de R. Los datos contienen velocidades y distancias, y la función &lt;code&gt;summary()&lt;/code&gt; calcula el rango, quartiles, mediana y promedio de cada variable.&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;/img/2018-06-04-r-y-r-studio/rmarkdown3.JPG&#34; /&gt;&lt;/p&gt;
-&lt;p&gt;Ahora, para aprovechar al máximo el documento, ve a la parte superior y da click en la bola de estambre que dice &lt;em&gt;Knit&lt;/em&gt; (tejer).&lt;/p&gt;
-&lt;p&gt;&lt;img src=&#34;/img/2018-06-04-r-y-r-studio/rmarkdown4.JPG&#34; /&gt;&lt;/p&gt;
-&lt;p&gt;R te pedirá que indiques un nombre del archivo. Al crear el documento especificamos el &lt;strong&gt;Título&lt;/strong&gt; del archivo, que no necesariamente es el nombre del archivo. Piensa que el título podría ser &lt;em&gt;“El Viejo y el Mar”&lt;/em&gt;, y el nombre del archivo &lt;code&gt;libro_Hemingway.Rmd&lt;/code&gt;. Guarda tu documento dentro de tu carpeta del proyecto; a mi me gusta tener por lo menos carpetas distintas para &lt;code&gt;datos&lt;/code&gt;, &lt;code&gt;scripts&lt;/code&gt; y &lt;code&gt;docs&lt;/code&gt;. Al guardar el documento, R ejecutará todos los &lt;em&gt;chunks&lt;/em&gt; y generará un documento de &lt;code&gt;*.html&lt;/code&gt; que contiene el texto, código, y resultados del código.&lt;/p&gt;
-&lt;p&gt;Ese documento de &lt;code&gt;*.html&lt;/code&gt; contiene todas las imágenes generadas, por lo que puedes compartirlo directamente con alguien que no necesariamente trabaja en R y esta persona podrá abrirlo en cualquier explorador web. En el 98% de los casos, yo prefiero trabajar en un documento de &lt;code&gt;rmarkdown&lt;/code&gt; y recomiendo que tú hagas lo mismo. Más adelante aprenderemos más sobre &lt;code&gt;rmarkdown&lt;/code&gt;, como cambiar formatos de salida y como aprovechar al máximo esta herramienta.&lt;/p&gt;
-&lt;/div&gt;
-&lt;/div&gt;
-&lt;div id=&#34;paquetes-en-r-base-stats-y-otros-mas&#34; class=&#34;section level1&#34;&gt;
-&lt;h1&gt;Paquetes en R: &lt;code&gt;base&lt;/code&gt;, &lt;code&gt;stats&lt;/code&gt; y otros más&lt;/h1&gt;
-&lt;p&gt;En la sección anterior utilizamos las funciones &lt;code&gt;mean()&lt;/code&gt;, &lt;code&gt;median()&lt;/code&gt;, &lt;code&gt;var()&lt;/code&gt; y &lt;code&gt;sd()&lt;/code&gt;. Como estas, hay muchas otras funciones directamente disponibles en R. Sin embargo, la activa comunidad de usuarios de R ha creado otras funciones con aplicaciones específicas. Estas funciones de distribuyen en paquetes, que pueden ser instalados. En el caso de las funciones anteriores, &lt;code&gt;mean()&lt;/code&gt; pertenece al paquete &lt;code&gt;base&lt;/code&gt;, mientras que &lt;code&gt;median()&lt;/code&gt;, &lt;code&gt;var()&lt;/code&gt; y &lt;code&gt;sd()&lt;/code&gt; pertenecen al paquete &lt;code&gt;stats&lt;/code&gt;. Todas las funciones pertenecen a un paquete. Para instalar un paquete nuevo (o la versión más actual de un paquete que ya tienes), utilizamos el comando &lt;code&gt;install.packages()&lt;/code&gt;. Por ejemplo, copia, pega y ejecuta el siguiente código en tu consola:&lt;/p&gt;
-&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;# Instalar paquetes que usaremos en siguientes posts
-install.packages(c(&amp;quot;dplyr&amp;quot;, &amp;quot;raster&amp;quot;))&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;Este código instalará automáticamente &lt;code&gt;dplyr&lt;/code&gt; y &lt;code&gt;raster&lt;/code&gt;, dos paquetes con muchas funciones útiles que usaremos en siguientes posts. Una vez que la instalación haya terminado podemos cargar los paquetes. Aunque los paquetes ya estén instalados, es necesario especificarle a R que usaremos funciones de estos paquetes. Para esto, usamos el comando &lt;code&gt;library()&lt;/code&gt;. El siguiente código carga los paquetes para que podamos usarlos.&lt;/p&gt;
-&lt;pre class=&#34;r&#34;&gt;&lt;code&gt;# Cargar paquetes
-library(raster)
-library(dplyr)&lt;/code&gt;&lt;/pre&gt;
-&lt;p&gt;El comando &lt;code&gt;install.packages()&lt;/code&gt; solamente lo utilizaremos cuando necesitemos instalar un paquete (por lo general, solo una vez). Sin embargo, &lt;code&gt;library()&lt;/code&gt; lo usaremos cada vez que necesitemos usar un paquete.&lt;/p&gt;
-&lt;p&gt;En ocasiones dos paquetes distintos tendrán funciones con el mismo nombre. Por ejemplo, los paquetes &lt;code&gt;dplyr&lt;/code&gt; y &lt;code&gt;raster&lt;/code&gt; (que usaremos en siguientes posts) tienen la función &lt;code&gt;select()&lt;/code&gt;. Esta función hace cosas muy distintas en cada paquete. El &lt;code&gt;select()&lt;/code&gt; de &lt;code&gt;dplyr&lt;/code&gt; selecciona columnas de un &lt;code&gt;data.frame&lt;/code&gt;, mientras que el &lt;code&gt;select()&lt;/code&gt; de &lt;code&gt;raster&lt;/code&gt; sirve para obtener partes de una imagen satelital dibujando sobre una gáfica. Más adelante usaremos estas funcionalidades, pero por ahora el mensaje clave es que dos funciones de dos paquetes pueden tener nombres distintos. De ahora en adelante, cuando presente una función nueva especificaré el paquete del cual proviene utilizando el &lt;code&gt;NAMESPACE&lt;/code&gt;, que se ve así: &lt;code&gt;base::mean()&lt;/code&gt;. Esto indica que la función &lt;code&gt;mean()&lt;/code&gt; proviene del paquete &lt;code&gt;base&lt;/code&gt;. Al utilizar el &lt;code&gt;NAMESPACE&lt;/code&gt; podemos saber de donde viene la función, pero también le indica a R que de todas las posibles funciones que tienen el mismo nombre, le estamos pidiendo que use una en específico.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div id=&#34;conclusiones&#34; class=&#34;section level1&#34;&gt;
-&lt;h1&gt;Conclusiones&lt;/h1&gt;
-&lt;p&gt;En este post aprendimos la diferencia entre R y RStudio, y algunas de las ventajas asociadas a trabajar en el Ambiente de Desarrollo Integrado. Hablamos sobre la importancia de usar código para comunicar y replicar análisis con otras personas y con nosotros mismos. Aprendimos como crear un proyecto de RStudio que nos permite organizar nuestro trabajo y mantener proyectos diferentes aislados. Después, hablamos sobre los formatos que se pueden utilizar para compartir código, y la utilidad de &lt;code&gt;rmarkdown&lt;/code&gt; para compartir texto y análisis en un documento unificado. Finalmente, hablamos sobre los paquetes en R, y aprendimos como instalar y cargar paquetes. Con suerte, estos temas te darán las bases necesarias para usar R y RStudio de manera más fluida en los siguientes blogs, donde nos enfocaremos más en la programación.&lt;/p&gt;
-&lt;/div&gt;
-&lt;div class=&#34;footnotes&#34;&gt;
-&lt;hr /&gt;
-&lt;ol&gt;
-&lt;li id=&#34;fn1&#34;&gt;&lt;p&gt;&lt;a href=&#34;https://www.youtube.com/watch?v=cpbtcsGE0OA&#34;&gt;Video&lt;/a&gt;&lt;a href=&#34;#fnref1&#34; class=&#34;footnote-back&#34;&gt;↩&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
-&lt;/ol&gt;
-&lt;/div&gt;
-</description>
-    </item>
-    
-    <item>
       <title>Feeding ecology of invasive lionfish (Pterois volitans and Pterois miles) in the temperate and tropical western Atlantic</title>
       <link>/publication/peake2018/</link>
       <pubDate>Wed, 11 Apr 2018 00:00:00 +0000</pubDate>
@@ -308,8 +57,9 @@ library(dplyr)&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;Work in progress includes:&lt;/p&gt;
 
 &lt;ul&gt;
-&lt;li&gt;Management and effectiveness of community-based marine reserves in small-scale fisheries (&lt;a href=&#34;https://rawgit.com/jcvdav/ReserveEffect/master/docs/paper/Villasenor-Derbez.pdf&#34; target=&#34;_blank&#34;&gt;working paper&lt;/a&gt;)&lt;/li&gt;
-&lt;li&gt;How does fishing effort redistribute after the implementation of large-scale marine protected areas?&lt;/li&gt;
+&lt;li&gt;Effectiveness of community-based TURF-reserves in Mexican small-scale fisheries (&lt;a href=&#34;https://github.com/jcvdav/ReserveEffect/blob/master/docs/PLoS_manuscript.pdf&#34; target=&#34;_blank&#34;&gt;working paper&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;Large-Scale Marine Protected Areas in the World&amp;rsquo;s Largest Tuna Fisheries (with &lt;a href=&#34;http://www2.hawaii.edu/~lynham/Welcome.html&#34; target=&#34;_blank&#34;&gt;John Lynham&lt;/a&gt; and &lt;a href=&#34;https://christopherjcostello.com/&#34; target=&#34;_blank&#34;&gt;Chris Costello&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;The Economic Impact of the Pacific Marine Monument Expansions (With &lt;a href=&#34;http://www2.hawaii.edu/~lynham/Welcome.html&#34; target=&#34;_blank&#34;&gt;John Lynham&lt;/a&gt;)&lt;/li&gt;
 &lt;/ul&gt;
 </description>
     </item>
@@ -325,9 +75,9 @@ library(dplyr)&lt;/code&gt;&lt;/pre&gt;
 &lt;p&gt;Work in progress includes:&lt;/p&gt;
 
 &lt;ul&gt;
+&lt;li&gt;Large-Scale Marine Protected Areas in the World&amp;rsquo;s Largest Tuna Fisheries (with &lt;a href=&#34;http://www2.hawaii.edu/~lynham/Welcome.html&#34; target=&#34;_blank&#34;&gt;John Lynham&lt;/a&gt; and &lt;a href=&#34;https://christopherjcostello.com/&#34; target=&#34;_blank&#34;&gt;Chris Costello&lt;/a&gt;)&lt;/li&gt;
+&lt;li&gt;ENSO drives foreign fishing (With &lt;a href=&#34;https://sites.google.com/site/kimberlylaioremus/&#34; target=&#34;_blank&#34;&gt;Kimberly Oremus&lt;/a&gt;)&lt;/li&gt;
 &lt;li&gt;Predicting landings based on a boat&amp;rsquo;s history (&lt;em&gt;i.e.&lt;/em&gt; where and when it fished)&lt;/li&gt;
-&lt;li&gt;How does fishing effort redistribute after the implementation of large-scale marine protected areas?&lt;/li&gt;
-&lt;li&gt;What is the effect of ENSO events on fishing behavior?&lt;/li&gt;
 &lt;/ul&gt;
 </description>
     </item>
@@ -447,6 +197,42 @@ library(dplyr)&lt;/code&gt;&lt;/pre&gt;
 
 &lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://www.researchgate.net/project/Natural-history-of-the-giant-sea-bass-Stereolepis-gigas-in-Mexican-waters&#34; target=&#34;_blank&#34;&gt;Project on ResearchGate&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
 &lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Invasive Lionfish</title>
+      <link>/project/lionfish/</link>
+      <pubDate>Wed, 27 Apr 2016 00:00:00 +0000</pubDate>
+      
+      <guid>/project/lionfish/</guid>
+      <description>&lt;p&gt;Lionfish (&lt;em&gt;Pterois volitans&lt;/em&gt;/&lt;em&gt;miles&lt;/em&gt; complex) are an invasive species in the Western Atlantic and the Caribbean, likely introduced through liberation of aquarium-kept organisms. They are the first marine vertebrates to establish in North Atlantic and Caribbean coasts. Lionfish have been widely reported in coral reefs, but also in other habitats such as estuaries, mangroves, areas with hard-bottoms, and mesophotic reefs. Due to their threat to local biodiversity, the speed of their spread, and difficulty of management, their presence in these waters has been labeled as a major marine invasion.&lt;/p&gt;
+
+&lt;figure&gt;
+  &lt;img src=&#34;../../img/lionfish.JPG&#34; alt=&#34;Lionfish (Pterois volitans) in a Mexican coral reef&#34;/&gt;
+  &lt;figcaption&gt;Lionfish (&lt;i&gt;Pterois volitans&lt;/i&gt;) in a Mexican coral reef&lt;/figcaption&gt;
+&lt;/figure&gt;
+
+&lt;p&gt;In order to efficiently manage the invasion, managers must be able to fully understand the biology of the species. This includes understanding what they eat, where they live, how and when they reproduce, and how they grow.&lt;/p&gt;
+
+&lt;p&gt;Work in progress includes:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;Spatial variation in allometric growth of invasive lionfish has management implications
+(With &lt;a href=&#34;https://www.bren.ucsb.edu/research/sean_fitzgerald.htm&#34; target=&#34;_blank&#34;&gt;Sean Fitzgerald&lt;/a&gt;; &lt;a href=&#34;https://rawgit.com/jcvdav/lionfish_biometry/master/docs/Manuscript.pdf&#34; target=&#34;_blank&#34;&gt;working paper&lt;/a&gt;)&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+    </item>
+    
+    <item>
+      <title>Occurrence of Holacanthus clarionensis (Pomacanthidae), Stegastes leucorus, and Stegastes acapulcoensis (Pomacentridae) at Magdalena Bay, B.C.S., Mexico</title>
+      <link>/publication/clarion/</link>
+      <pubDate>Fri, 01 Jan 2016 00:00:00 +0000</pubDate>
+      
+      <guid>/publication/clarion/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;Altmetric&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;script type=&#34;text/javascript&#34; src=&#34;https://d1bxh8uas1mnw7.cloudfront.net/assets/embed.js&#34;&gt;&lt;/script&gt;&lt;div class=&#34;altmetric-embed&#34; data-badge-type=&#34;donut&#34; data-altmetric-id=&#34;14543955&#34; /&gt;&lt;/p&gt;
 </description>
     </item>
     

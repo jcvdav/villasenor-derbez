@@ -32,6 +32,7 @@ caption = ""
 
 Work in progress includes:
 
+  - Large-Scale Marine Protected Areas in the World's Largest Tuna Fisheries (with [John Lynham](http://www2.hawaii.edu/~lynham/Welcome.html) and [Chris Costello](https://christopherjcostello.com/))
+  - ENSO drives foreign fishing (With [Kimberly Oremus](https://sites.google.com/site/kimberlylaioremus/))
   - Predicting landings based on a boat's history (*i.e.* where and when it fished)
-  - How does fishing effort redistribute after the implementation of large-scale marine protected areas?
-  - What is the effect of ENSO events on fishing behavior?
+

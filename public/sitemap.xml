@@ -5,33 +5,6 @@
     
     <url>
     
-      <loc>/post/operaciones-basicas/</loc>
-      <lastmod>2018-06-14T00:00:00+00:00</lastmod>
-    </url>
-    
-  
-    
-    
-    <url>
-    
-      <loc>/post/r-y-r-studio/</loc>
-      <lastmod>2018-06-14T00:00:00+00:00</lastmod>
-    </url>
-    
-  
-    
-    
-    <url>
-    
-      <loc>/post/</loc>
-      <lastmod>2018-06-01T00:00:00-07:00</lastmod>
-    </url>
-    
-  
-    
-    
-    <url>
-    
       <loc>/publication/peake2018/</loc>
       <lastmod>2018-04-11T00:00:00+00:00</lastmod>
     </url>
@@ -298,6 +271,55 @@
     
     <url>
     
+      <loc>/categories/</loc>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <loc>/</loc>
+      <lastmod>2017-10-15T00:00:00-07:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <loc>/project/</loc>
+      <lastmod>2018-01-24T00:00:00+00:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <loc>/publication_types/</loc>
+      <lastmod>2018-03-01T00:00:00+00:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    
+    <url>
+    
+      <loc>/tags/</loc>
+      <lastmod>2017-01-01T00:00:00+00:00</lastmod>
+      <priority>0</priority>
+    </url>
+    
+  
+    
+    
+    <url>
+    
       <loc>/tags/bigdata/</loc>
       <lastmod>2018-01-24T00:00:00+00:00</lastmod>
       <priority>0</priority>
@@ -320,15 +342,6 @@
     
       <loc>/tags/by-catch/</loc>
       <lastmod>2018-01-24T00:00:00+00:00</lastmod>
-      <priority>0</priority>
-    </url>
-    
-  
-    
-    
-    <url>
-    
-      <loc>/categories/</loc>
       <priority>0</priority>
     </url>
     
@@ -397,16 +410,6 @@
     
     <url>
     
-      <loc>/</loc>
-      <lastmod>2017-10-15T00:00:00-07:00</lastmod>
-      <priority>0</priority>
-    </url>
-    
-  
-    
-    
-    <url>
-    
       <loc>/tags/lionfish/</loc>
       <lastmod>2018-04-11T00:00:00+00:00</lastmod>
       <priority>0</priority>
@@ -439,36 +442,6 @@
     
       <loc>/tags/oceanography/</loc>
       <lastmod>2018-01-24T00:00:00+00:00</lastmod>
-      <priority>0</priority>
-    </url>
-    
-  
-    
-    
-    <url>
-    
-      <loc>/project/</loc>
-      <lastmod>2018-01-24T00:00:00+00:00</lastmod>
-      <priority>0</priority>
-    </url>
-    
-  
-    
-    
-    <url>
-    
-      <loc>/publication_types/</loc>
-      <lastmod>2018-03-01T00:00:00+00:00</lastmod>
-      <priority>0</priority>
-    </url>
-    
-  
-    
-    
-    <url>
-    
-      <loc>/tags/</loc>
-      <lastmod>2017-01-01T00:00:00+00:00</lastmod>
       <priority>0</priority>
     </url>
     

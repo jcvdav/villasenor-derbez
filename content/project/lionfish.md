@@ -39,5 +39,6 @@ In order to efficiently manage the invasion, managers must be able to fully unde
 
 Work in progress includes:
 
-  - Regional differences in allometric growth ([working paper](https://rawgit.com/jcvdav/lionfish_biometry/master/docs/Manuscript.pdf))
+  - Spatial variation in allometric growth of invasive lionfish has management implications
+(With [Sean Fitzgerald](https://www.bren.ucsb.edu/research/sean_fitzgerald.htm); [working paper](https://rawgit.com/jcvdav/lionfish_biometry/master/docs/Manuscript.pdf))
 

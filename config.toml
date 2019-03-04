@@ -285,7 +285,7 @@ defaultContentLanguageInSubdir = false
   
 [[menu.main]]
   name = "ERRE (Blog)"
-  url = "#post"
+  url = "https://erre-esp.org"
   weight = 11
   
 [[menu.main]]

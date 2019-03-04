@@ -41,7 +41,8 @@ Through a combination of ecological and economic theory, I aim to better underst
 
 Work in progress includes:
 
-  - Management and effectiveness of community-based marine reserves in small-scale fisheries ([working paper](https://rawgit.com/jcvdav/ReserveEffect/master/docs/paper/Villasenor-Derbez.pdf))
-  - How does fishing effort redistribute after the implementation of large-scale marine protected areas?
+  - Effectiveness of community-based TURF-reserves in Mexican small-scale fisheries ([working paper](https://github.com/jcvdav/ReserveEffect/blob/master/docs/PLoS_manuscript.pdf))
+  - Large-Scale Marine Protected Areas in the World's Largest Tuna Fisheries (with [John Lynham](http://www2.hawaii.edu/~lynham/Welcome.html) and [Chris Costello](https://christopherjcostello.com/))
+  - The Economic Impact of the Pacific Marine Monument Expansions (With [John Lynham](http://www2.hawaii.edu/~lynham/Welcome.html))
 
 

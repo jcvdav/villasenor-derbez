@@ -1,35 +1,0 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>ERRE on Juan Carlos Villaseñor-Derbez</title>
-    <link>/post/</link>
-    <description>Recent content in ERRE on Juan Carlos Villaseñor-Derbez</description>
-    <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
-    <copyright>&amp;copy; 2018 Juan Carlos Villaseñor-Derbez</copyright>
-    <lastBuildDate>Fri, 01 Jun 2018 00:00:00 -0700</lastBuildDate>
-    
-	<atom:link href="/post/index.xml" rel="self" type="application/rss+xml" />
-    
-    
-    <item>
-      <title>Guardando valores: variables, vectores, matrices, listas y tablas de datos</title>
-      <link>/post/operaciones-basicas/</link>
-      <pubDate>Thu, 14 Jun 2018 00:00:00 +0000</pubDate>
-      
-      <guid>/post/operaciones-basicas/</guid>
-      <description>Asignación de valoresAtributosEn el post anterior hablamos sobre R y RStudio, con una introducción a los scripts y documentos de rmarkdown y el uso de proyectos de RStudio para mantener nuestro código ordenado. En este post nos adentraremos más en el uso de R. En concreto, aprenderemos como almacenar valores y datos en objetos en R.
-Asignación de valoresEn la sección de scripts del post anterior habíamos almacenado valores en una variable llamada num.</description>
-    </item>
-    
-    <item>
-      <title>R y RStudio</title>
-      <link>/post/r-y-r-studio/</link>
-      <pubDate>Thu, 14 Jun 2018 00:00:00 +0000</pubDate>
-      
-      <guid>/post/r-y-r-studio/</guid>
-      <description>El ambiente de trabajo en RStudioInvestigación reproducibleProyectos de RStudioDistribución de códigoScriptsDocumentos de rmarkdownPaquetes en R: base, stats y otros másConclusionesEste es el primer post de ERRE. Antes de comenzar a escribir código, creo que es necesario establecer bases sólidas que nos permitan aprovechar R al máximo. En este post hablaremos sobre las generalidades de R y RStudio y las ventajas de trabajar en este ambiente.</description>
-    </item>
-    
-  </channel>
-</rss>
