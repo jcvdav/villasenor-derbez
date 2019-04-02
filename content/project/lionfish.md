@@ -37,8 +37,3 @@ Lionfish (*Pterois volitans*/*miles* complex) are an invasive species in the Wes
 
 In order to efficiently manage the invasion, managers must be able to fully understand the biology of the species. This includes understanding what they eat, where they live, how and when they reproduce, and how they grow.
 
-Work in progress includes:
-
-  - Spatial variation in allometric growth of invasive lionfish has management implications
-(With [Sean Fitzgerald](https://www.bren.ucsb.edu/research/sean_fitzgerald.htm); [working paper](https://rawgit.com/jcvdav/lionfish_biometry/master/docs/Manuscript.pdf))
-
