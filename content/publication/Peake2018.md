@@ -28,7 +28,7 @@ abstract_short = "Numerous location-based diet studies have been published descr
 image_preview = ""
 
 # Is this a selected publication? (true/false)
-selected = true
+selected = false
 
 # Projects (optional).
 #   Associate this publication with one or more of your projects.
