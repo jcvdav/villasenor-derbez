@@ -21,7 +21,7 @@ publication = "*PeerJ*"
 publication_short = "*PeerJ*. [DOI:10.7717/peerj.6667](https://peerj.com/articles/6667/)"
 
 # Abstract and optional shortened version.
-abstract = "Lionfish (Pterois volitans/miles) are an invasive species in the Western Atlantic and the Caribbean. Improving management of invasive lionfish populations requires accurate total biomass estimates, which depend on accurate estimates of allometric growth; sedentary species like lionfish often exhibit high levels of spatial variation in life history characteristics. We reviewed 17 published length-weight relationships for lionfish taken throughout their invasive range and found regional differences that led to significant misestimates when calculating weight from length observations. The spatial pattern we observed is consistent with findings from other studies focused on genetics or length-at-age. Here, the use of ex situ parameter values resulted in total biomass estimates between 76.2% and 140% of true observed biomass, and up to a threefold under- or overestimation of total weight for an individual organism. These findings can have implications for management in terms of predicting effects on local ecosystems, evaluating the effectiveness of removal programs, or estimating biomass available for harvest."
+abstract = "Lionfish (*Pterois volitans/miles*) are an invasive species in the Western Atlantic and the Caribbean. Improving management of invasive lionfish populations requires accurate total biomass estimates, which depend on accurate estimates of allometric growth; sedentary species like lionfish often exhibit high levels of spatial variation in life history characteristics. We reviewed 17 published length-weight relationships for lionfish taken throughout their invasive range and found regional differences that led to significant misestimates when calculating weight from length observations. The spatial pattern we observed is consistent with findings from other studies focused on genetics or length-at-age. Here, the use of ex situ parameter values resulted in total biomass estimates between 76.2% and 140% of true observed biomass, and up to a threefold under- or overestimation of total weight for an individual organism. These findings can have implications for management in terms of predicting effects on local ecosystems, evaluating the effectiveness of removal programs, or estimating biomass available for harvest."
 abstract_short = ""
 
 # Featured image thumbnail (optional)
@@ -38,15 +38,15 @@ projects = ["lionfish"]
 tags = ["invasive_spp", "lionfish", "marine-ecology"]
 
 # Links (optional).
-url_pdf = ""
-url_preprint = ""
-url_code = ""
-url_dataset = ""
+url_pdf = "files/publications/lionfish_biometry.pdf"
+url_preprint = "https://peerj.com/preprints/27360/"
+url_code = "https://github.com/jcvdav/lionfish_biometry"
+url_dataset = "https://github.com/jcvdav/lionfish_biometry/raw_data"
 url_project = ""
 url_slides = ""
 url_video = ""
 url_poster = ""
-url_source = ""
+url_source = "https://peerj.com/articles/6667/"
 
 # Does the content use math formatting?
 math = true
@@ -61,3 +61,8 @@ image = ""
 caption = ""
 
 +++
+
+**Altmetric**
+
+<script type="text/javascript" src="https://d1bxh8uas1mnw7.cloudfront.net/assets/embed.js"></script><div class="altmetric-embed" data-badge-type="donut" data-altmetric-id="58379355" />
+

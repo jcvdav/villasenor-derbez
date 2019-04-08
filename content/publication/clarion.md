@@ -38,7 +38,7 @@ selected = false
 tags = ["biodiversity", "climate-change", "marine-ecology"]
 
 # Links (optional).
-url_pdf = "https://www.researchgate.net/publication/303980886_Occurrence_of_Holacanthus_clarionensis_Pomacanthidae_Stegastes_leucorus_and_Stegastes_acapulcoensis_Pomacentridae_at_Magdalena_Bay_BCS_Mexico"
+url_pdf = "files/publications/clarion.pdf"
 url_preprint = ""
 url_code = ""
 url_dataset = ""

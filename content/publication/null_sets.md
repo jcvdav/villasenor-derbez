@@ -38,7 +38,7 @@ selected = false
 tags = ["fisheries", "climate-change"]
 
 # Links (optional).
-url_pdf = "https://www.researchgate.net/publication/279180758_Analysis_of_null_sets_zero_catch_made_by_the_Mexican_tuna_purse_seine_fleet_2000-2013"
+url_pdf = "files/publications/null_sets.pdf"
 url_preprint = ""
 url_code = ""
 url_dataset = ""

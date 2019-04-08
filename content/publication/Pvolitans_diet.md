@@ -38,7 +38,7 @@ projects = ["lionfish"]
 tags = ["biodiversity", "marine-ecology", "lionfish", "invasive_spp"]
 
 # Links (optional).
-url_pdf = "https://www.researchgate.net/publication/265293117_Brief_description_of_prey_selectivity_and_ontogenetic_changes_in_the_diet_of_the_invasive_lionfish_Pterois_volitans_Actinopterygii_Scorpaenidae_in_the_Mexican_Caribbean"
+url_pdf = "/files/publications/Pvolitans_diet.pdf"
 url_preprint = ""
 url_code = ""
 url_dataset = ""
