@@ -11,6 +11,18 @@
     <atom:link href="/" rel="self" type="application/rss+xml" />
     
     <item>
+      <title>An interdisciplinary evaluation of community-based TURF-reserves</title>
+      <link>/publication/turf_reserves/</link>
+      <pubDate>Fri, 23 Aug 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/publication/turf_reserves/</guid>
+      <description>&lt;p&gt;&lt;strong&gt;Altmetric&lt;/strong&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;script type=&#34;text/javascript&#34; src=&#34;https://d1bxh8uas1mnw7.cloudfront.net/assets/embed.js&#34;&gt;&lt;/script&gt;&lt;div class=&#34;altmetric-embed&#34; data-badge-type=&#34;donut&#34; data-altmetric-id=&#34;58379355&#34; /&gt;&lt;/p&gt;
+</description>
+    </item>
+    
+    <item>
       <title>Mapping status and conservation of global at‐risk marine biodiversity</title>
       <link>/publication/spp_risk/</link>
       <pubDate>Mon, 06 May 2019 00:00:00 +0000</pubDate>
@@ -197,31 +209,6 @@
       
       <guid>/publication/fishers_2_fishers/</guid>
       <description></description>
-    </item>
-    
-    <item>
-      <title>Giant Sea Bass</title>
-      <link>/project/mero_gigante/</link>
-      <pubDate>Wed, 27 Apr 2016 00:00:00 +0000</pubDate>
-      
-      <guid>/project/mero_gigante/</guid>
-      <description>&lt;p&gt;The Giant Sea Bass Project seeks to recover natural history of one of the appex predators in the Kelp Forests of the California Current System: the Giant Sea Bass (GSB; &lt;em&gt;Stereolepis gigas&lt;/em&gt;). For a good part of the 1900´s, GSB were an important fishery in California. The intense fishing pressure drove down ints population to the brink of extinction, and the species was protected in 1981. However, in Baja California (Mexico) it is still allowed to fish for this species. This gives us the opportunity to obtain biological samples that further our understanding of the species.&lt;/p&gt;
-
-&lt;figure&gt;
-  &lt;img src=&#34;../../img/Landings_CA.gif&#34; alt=&#34;GSB landings&#34;/&gt;
-  &lt;figcaption&gt;Giant Sea Bass landings (&#34;Arribos&#34;) by the U.S. fleet from Mexican and U.S. waters &lt;/figcaption&gt;
-&lt;/figure&gt;
-
-&lt;p&gt;Work in progress includes:&lt;/p&gt;
-
-&lt;ul&gt;
-&lt;li&gt;&lt;p&gt;Age and growth of giant sea bass in Mexican waters&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;&lt;a href=&#34;file:///C:/Users/JC/Desktop/OldShit/www.merogigante.org&#34; target=&#34;_blank&#34;&gt;External project page&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
-
-&lt;li&gt;&lt;p&gt;&lt;a href=&#34;https://www.researchgate.net/project/Natural-history-of-the-giant-sea-bass-Stereolepis-gigas-in-Mexican-waters&#34; target=&#34;_blank&#34;&gt;Project on ResearchGate&lt;/a&gt;&lt;/p&gt;&lt;/li&gt;
-&lt;/ul&gt;
-</description>
     </item>
     
   </channel>
