@@ -25,7 +25,7 @@ abstract = "It is commonly agreed that marine conservation should expand conside
 abstract_short = "We simulate and test an international fisheries management scheme with transferable fishing rights that incentivizes, rather than hinders, large-scale marine conservation. We show that transferable fishing rights and a biomass-based allocation rule are pivotal to incentivize conservation under this market-based setting. Our work focuses on the Vessel Day Scheme (VDS)—an environmental market that is employed by the Parties to the Nauru Agreement (a group of nine Pacific Island nations) to manage their tuna fisheries—and areas in which large-scale conservation interventions have taken place."
 
 # Featured image thumbnail (optional)
-image_preview = "img/NatSustain_cover.jpg"
+image_preview = ""
 
 # Is this a selected publication? (true/false)
 selected = true
