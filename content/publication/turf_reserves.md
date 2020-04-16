@@ -29,7 +29,7 @@ abstract_short = "Since 2012, 18 old and new community-based Mexican TURF-reserv
 image_preview = ""
 
 # Is this a selected publication? (true/false)
-selected = true
+selected = false
 
 # Projects (optional).
 #   Associate this publication with one or more of your projects.
