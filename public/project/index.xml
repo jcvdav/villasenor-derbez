@@ -2,49 +2,49 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Projects on Juan Carlos Villaseñor-Derbez</title>
-    <link>https://villasenor-derbez.com/project/</link>
+    <link>/project/</link>
     <description>Recent content in Projects on Juan Carlos Villaseñor-Derbez</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <copyright>&amp;copy; 2018 Juan Carlos Villaseñor-Derbez</copyright>
     <lastBuildDate>Wed, 24 Jan 2018 00:00:00 +0000</lastBuildDate>
     
-	<atom:link href="https://villasenor-derbez.com/project/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="/project/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Fisheries &amp; Marine reserves</title>
-      <link>https://villasenor-derbez.com/project/marine_reserves/</link>
+      <link>/project/marine_reserves/</link>
       <pubDate>Wed, 24 Jan 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://villasenor-derbez.com/project/marine_reserves/</guid>
+      <guid>/project/marine_reserves/</guid>
       <description>Pragmatic solutions for fish and fishers</description>
     </item>
     
     <item>
       <title>Global Fishing Watch</title>
-      <link>https://villasenor-derbez.com/project/gfw/</link>
+      <link>/project/gfw/</link>
       <pubDate>Wed, 24 Jan 2018 00:00:00 +0000</pubDate>
       
-      <guid>https://villasenor-derbez.com/project/gfw/</guid>
+      <guid>/project/gfw/</guid>
       <description>Big Data to solve Big problems</description>
     </item>
     
     <item>
       <title>Giant Sea Bass</title>
-      <link>https://villasenor-derbez.com/project/mero_gigante/</link>
+      <link>/project/mero_gigante/</link>
       <pubDate>Wed, 27 Apr 2016 00:00:00 +0000</pubDate>
       
-      <guid>https://villasenor-derbez.com/project/mero_gigante/</guid>
+      <guid>/project/mero_gigante/</guid>
       <description>Natural history of the king of kelp forests</description>
     </item>
     
     <item>
       <title>Invasive Lionfish</title>
-      <link>https://villasenor-derbez.com/project/lionfish/</link>
+      <link>/project/lionfish/</link>
       <pubDate>Wed, 27 Apr 2016 00:00:00 +0000</pubDate>
       
-      <guid>https://villasenor-derbez.com/project/lionfish/</guid>
+      <guid>/project/lionfish/</guid>
       <description>Understanding the ecological implications of an invation</description>
     </item>
     
