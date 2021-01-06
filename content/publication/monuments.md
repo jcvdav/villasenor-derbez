@@ -3,7 +3,7 @@ title = "Impact of two of the world's largest protected areas on longline fisher
 date = "2020-02-20"
 
 # Authors. Comma separated list, e.g. `["Bob Smith", "David Jones"]`.
-authors = ["John Lynham"," Anton Nikolaev", "Jennifer Raynor", "Thaís Vilela",  "**Juan Carlos Villaseñor-Derbez**"]
+authors = ["J Lynham"," A Nikolaev", "J Raynor", "T Vilela",  "**JC Villaseñor-Derbez**"]
 
 # Publication type.
 # Legend:

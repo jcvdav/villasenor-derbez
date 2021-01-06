@@ -3,7 +3,7 @@ title = "Environmental market design for large-scale marine conservation"
 date = "2020-03-01"
 
 # Authors. Comma separated list, e.g. `["Bob Smith", "David Jones"]`.
-authors = ["**JC Villaseñor-Derbez**", "John Lynham", "Christopher Costello"]
+authors = ["**JC Villaseñor-Derbez**", "J Lynham", "C Costello"]
 
 # Publication type.
 # Legend:

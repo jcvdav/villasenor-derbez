@@ -66,6 +66,8 @@ caption = ""
 
 - [CONACyT Prensa](http://www.conacytprensa.mx/index.php/ciencia/mundo-vivo/21795-lionfish-pez-leon-atlantico) (Mexican Academy of Sciences)
 
+- [Ciencia MX](http://www.cienciamx.com/index.php/ciencia/mundo-vivo/21795-lionfish-pez-leon-atlantico)
+
 **Altmetric**
 
 <script type="text/javascript" src="https://d1bxh8uas1mnw7.cloudfront.net/assets/embed.js"></script><div class="altmetric-embed" data-badge-type="donut" data-altmetric-id="36454318" />
