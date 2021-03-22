@@ -17,7 +17,7 @@ authors = ["J Lynham"," A Nikolaev", "J Raynor", "T Vilela",  "**JC Villaseñor-
 publication_types = ["2"]
 
 # Publication name and optional abbreviated version.
-publication = "Nature Communications"
+publication = "*Nature Communications*"
 publication_short = "*NatCom*. [DOI: 10.1038/s41467-021-21608-3](https://doi.org/10.1038/s41467-021-21608-3)"
 
 # Abstract and optional shortened version.
@@ -28,7 +28,7 @@ abstract_short = ""
 image_preview = ""
 
 # Is this a selected publication? (true/false)
-selected = false
+selected = true
 
 # Projects (optional).
 #   Associate this publication with one or more of your projects.
@@ -61,3 +61,9 @@ image = ""
 caption = ""
 
 +++
+
+**Altmetric**
+
+<script type="text/javascript" src="https://d1bxh8uas1mnw7.cloudfront.net/assets/embed.js"></script><div class="altmetric-embed" data-badge-type="donut" data-altmetric-id="101820027"></div>
+
+
