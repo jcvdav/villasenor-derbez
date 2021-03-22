@@ -39,7 +39,7 @@ projects = ["lionfish"]
 tags = ["invasive_spp", "lionfish", "marine-ecology"]
 
 # Links (optional).
-url_pdf = "files/publications/lionfish_biometry.pdf"
+url_pdf = "files/publications/007_lionfish_biometry.pdf"
 url_preprint = "https://peerj.com/preprints/27360/"
 url_code = "https://github.com/jcvdav/lionfish_biometry"
 url_dataset = "https://github.com/jcvdav/lionfish_biometry/raw_data"

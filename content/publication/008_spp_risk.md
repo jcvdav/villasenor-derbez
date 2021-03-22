@@ -38,7 +38,7 @@ projects = [""]
 tags = ["biodiversity", "marine conservation"]
 
 # Links (optional).
-url_pdf = "files/publications/sp_risk.pdf"
+url_pdf = "files/publications/008_sp_risk.pdf"
 url_preprint = ""
 url_code = "https://github.com/oharac/spp_risk_dists"
 url_dataset = ""

@@ -38,7 +38,7 @@ projects = ["marine_reserves"]
 tags = ["marine-reserves", "conservation", "fisheries", "environmental-markets"]
 
 # Links (optional).
-url_pdf = "files/publications/markets_conservation.pdf"
+url_pdf = "files/publications/011_markets_conservation.pdf"
 url_preprint = ""
 url_code = "https://github.com/emlab-ucsb/vds-mpa-paper"
 url_dataset = "https://github.com/emlab-ucsb/vds-mpa-paper"

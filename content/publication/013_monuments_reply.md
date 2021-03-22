@@ -1,9 +1,9 @@
 +++
-title = "Brief description of prey selectivity and ontogenetic changes in the diet of the invasive lionfish Pterois volitans (Actinopterygii, Scorpaenidae) in the Mexican Caribbean"
-date = "2014-01-01"
+title = "Reply to “Catch rate composition affects assessment of protected area impacts”"
+date = "2021-11-03"
 
 # Authors. Comma separated list, e.g. `["Bob Smith", "David Jones"]`.
-authors = ["**JC Villaseñor-Derbez**", "R Herrera-Pérez"]
+authors = ["J Lynham"," A Nikolaev", "J Raynor", "T Vilela",  "**JC Villaseñor-Derbez**"]
 
 # Publication type.
 # Legend:
@@ -17,28 +17,28 @@ authors = ["**JC Villaseñor-Derbez**", "R Herrera-Pérez"]
 publication_types = ["2"]
 
 # Publication name and optional abbreviated version.
-publication = "*Pan-American Journal of Aquatic Sciences*"
-publication_short = "*PanamJAS*. 9(2):131-135"
+publication = "*Nature Communications*"
+publication_short = "*NatCom*. [DOI: 10.1038/s41467-021-21608-3](https://doi.org/10.1038/s41467-021-21608-3)"
 
 # Abstract and optional shortened version.
-abstract = "Stomach contents were analyzed from 109 individuals. A total of 4 Genera and 14 Species were identified. Crustaceans accounted for %N=67.39% , %IRI= 86.37% of the total identified taxa and Teleosts %N=32.61% (%IRI = 13.63%). An ontogenetic change was observed in *P. volitans* diet."
+abstract = ""
 abstract_short = ""
 
 # Featured image thumbnail (optional)
 image_preview = ""
 
 # Is this a selected publication? (true/false)
-selected = false
+selected = true
 
 # Projects (optional).
 #   Associate this publication with one or more of your projects.
 #   Simply enter the filename (excluding '.md') of your project file in `content/project/`.
-projects = ["lionfish"]
+# projects = [""]
 
-tags = ["biodiversity", "marine-ecology", "lionfish", "invasive_spp"]
+tags = ["conservation", "fisheries"]
 
 # Links (optional).
-url_pdf = "/files/publications/Pvolitans_diet.pdf"
+url_pdf = "files/publication/013_monuments_reply.pdf"
 url_preprint = ""
 url_code = ""
 url_dataset = ""
@@ -46,7 +46,7 @@ url_project = ""
 url_slides = ""
 url_video = ""
 url_poster = ""
-url_source = ""
+url_source = "https://doi.org/10.1038/s41467-021-21608-3"
 
 # Does the content use math formatting?
 math = true
@@ -61,3 +61,9 @@ image = ""
 caption = ""
 
 +++
+
+**Altmetric**
+
+<script type="text/javascript" src="https://d1bxh8uas1mnw7.cloudfront.net/assets/embed.js"></script><div class="altmetric-embed" data-badge-type="donut" data-altmetric-id="101820027"></div>
+
+

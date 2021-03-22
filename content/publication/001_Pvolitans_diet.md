@@ -1,9 +1,9 @@
 +++
-title = ""
-date = "2017-12-01"
+title = "Brief description of prey selectivity and ontogenetic changes in the diet of the invasive lionfish Pterois volitans (Actinopterygii, Scorpaenidae) in the Mexican Caribbean"
+date = "2014-01-01"
 
 # Authors. Comma separated list, e.g. `["Bob Smith", "David Jones"]`.
-authors = ["**JC Villaseñor-Derbez**"]
+authors = ["**JC Villaseñor-Derbez**", "R Herrera-Pérez"]
 
 # Publication type.
 # Legend:
@@ -14,14 +14,14 @@ authors = ["**JC Villaseñor-Derbez**"]
 # 4 = Technical report
 # 5 = Book
 # 6 = Book chapter
-publication_types = ["7"]
+publication_types = ["2"]
 
 # Publication name and optional abbreviated version.
-publication = "**"
-publication_short = "**. []()"
+publication = "*Pan-American Journal of Aquatic Sciences*"
+publication_short = "*PanamJAS*. 9(2):131-135"
 
 # Abstract and optional shortened version.
-abstract = ""
+abstract = "Stomach contents were analyzed from 109 individuals. A total of 4 Genera and 14 Species were identified. Crustaceans accounted for %N=67.39% , %IRI= 86.37% of the total identified taxa and Teleosts %N=32.61% (%IRI = 13.63%). An ontogenetic change was observed in *P. volitans* diet."
 abstract_short = ""
 
 # Featured image thumbnail (optional)
@@ -33,12 +33,12 @@ selected = false
 # Projects (optional).
 #   Associate this publication with one or more of your projects.
 #   Simply enter the filename (excluding '.md') of your project file in `content/project/`.
-projects = [""]
+projects = ["lionfish"]
 
-tags = [""]
+tags = ["biodiversity", "marine-ecology", "lionfish", "invasive_spp"]
 
 # Links (optional).
-url_pdf = ""
+url_pdf = "/files/publications/001_Pvolitans_diet.pdf"
 url_preprint = ""
 url_code = ""
 url_dataset = ""

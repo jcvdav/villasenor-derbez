@@ -35,10 +35,10 @@ selected = true
 #   Simply enter the filename (excluding '.md') of your project file in `content/project/`.
 # projects = ["marine_reserves"]
 
-tags = ["conservation", "fisheries"]
+tags = ["fisheries"]
 
 # Links (optional).
-url_pdf = "files/publications/MFADs.pdf"
+url_pdf = "files/publications/012_MFADs.pdf"
 url_preprint = ""
 url_code = "https://github.com/jcvdav/kuni_fads"
 url_dataset = "https://github.com/jcvdav/kuni_fads"

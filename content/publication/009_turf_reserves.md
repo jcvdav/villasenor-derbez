@@ -39,7 +39,7 @@ projects = ["marine_reserves"]
 tags = ["marine-reserves", "conservation", "fisheries", "biodiversity"]
 
 # Links (optional).
-url_pdf = "files/publications/turf_reserves.pdf"
+url_pdf = "files/publications/009_turf_reserves.pdf"
 url_preprint = "https://www.researchgate.net/publication/335376143_An_interdisciplinary_evaluation_of_community-based_TURF-reserves"
 url_code = "https://github.com/jcvdav/ReserveEffect"
 url_dataset = "https://github.com/jcvdav/ReserveEffect/data"
