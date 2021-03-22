@@ -18,7 +18,7 @@ publication_types = ["2"]
 
 # Publication name and optional abbreviated version.
 publication = "*Nature Communications*"
-publication_short = "*NatCom*. [DOI: 10.1038/s41467-021-21608-3](https://doi.org/10.1038/s41467-021-21608-3)"
+publication_short = "*NatCommun*. [DOI: 10.1038/s41467-021-21608-3](https://doi.org/10.1038/s41467-021-21608-3)"
 
 # Abstract and optional shortened version.
 abstract = ""
@@ -35,7 +35,7 @@ selected = true
 #   Simply enter the filename (excluding '.md') of your project file in `content/project/`.
 # projects = [""]
 
-tags = ["conservation", "fisheries"]
+tags = ["marine-reserves", "conservation", "fisheries"]
 
 # Links (optional).
 url_pdf = "files/publication/013_monuments_reply.pdf"
