@@ -3,7 +3,7 @@ title = ""
 date = "2021-11-03"
 
 # Authors. Comma separated list, e.g. `["Bob Smith", "David Jones"]`.
-authors = ["**JC Villaseñor-Derbez**"]
+authors = ["J Lynham"," A Nikolaev", "J Raynor", "T Vilela",  "**JC Villaseñor-Derbez**"]
 
 # Publication type.
 # Legend:
