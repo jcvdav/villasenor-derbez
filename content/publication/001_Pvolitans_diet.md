@@ -38,7 +38,7 @@ projects = ["lionfish"]
 tags = ["biodiversity", "marine-ecology", "lionfish", "invasive_spp"]
 
 # Links (optional).
-url_pdf = "/files/publications/Pvolitans_diet.pdf"
+url_pdf = "/files/publications/001_Pvolitans_diet.pdf"
 url_preprint = ""
 url_code = ""
 url_dataset = ""

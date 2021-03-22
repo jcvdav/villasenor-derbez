@@ -38,7 +38,7 @@ projects = ["marine_reserves"]
 tags = ["marine-reserves", "conservation", "fisheries", "environmental-markets"]
 
 # Links (optional).
-url_pdf = "files/publications/monuments.pdf"
+url_pdf = "files/publications/010_monuments.pdf"
 url_preprint = ""
 url_code = "https://github.com/lynham/monuments"
 url_dataset = "https://github.com/lynham/monuments"

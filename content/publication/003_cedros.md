@@ -39,7 +39,7 @@ tags = ["biodiversity", "marine-ecology"]
 
 
 # Links (optional).
-url_pdf = "/files/publications/cedros.pdf"
+url_pdf = "/files/publications/003_cedros.pdf"
 url_preprint = ""
 url_code = ""
 url_dataset = ""

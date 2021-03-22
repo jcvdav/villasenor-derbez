@@ -38,7 +38,7 @@ selected = false
 tags = ["biodiversity", "climate-change", "marine-ecology"]
 
 # Links (optional).
-url_pdf = "files/publications/clarion.pdf"
+url_pdf = "files/publications/004_clarion.pdf"
 url_preprint = ""
 url_code = ""
 url_dataset = ""

@@ -14,11 +14,11 @@ authors = ["**JC Villaseñor-Derbez**"]
 # 4 = Technical report
 # 5 = Book
 # 6 = Book chapter
-publication_types = ["7"]
+publication_types = ["2"]
 
 # Publication name and optional abbreviated version.
-publication = "**"
-publication_short = "**. []()"
+publication = "Nature Communications"
+publication_short = "*NatCom*. [DOI: 10.1038/s41467-021-21608-3](https://doi.org/10.1038/s41467-021-21608-3)"
 
 # Abstract and optional shortened version.
 abstract = ""
@@ -33,12 +33,12 @@ selected = false
 # Projects (optional).
 #   Associate this publication with one or more of your projects.
 #   Simply enter the filename (excluding '.md') of your project file in `content/project/`.
-projects = [""]
+# projects = [""]
 
-tags = [""]
+tags = ["conservation", "fisheries"]
 
 # Links (optional).
-url_pdf = ""
+url_pdf = "files/publication/013_monuments_reply.pdf"
 url_preprint = ""
 url_code = ""
 url_dataset = ""
@@ -46,7 +46,7 @@ url_project = ""
 url_slides = ""
 url_video = ""
 url_poster = ""
-url_source = ""
+url_source = "https://doi.org/10.1038/s41467-021-21608-3"
 
 # Does the content use math formatting?
 math = true

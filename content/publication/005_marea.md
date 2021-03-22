@@ -39,7 +39,7 @@ tags = ["marine-reserves", "conservation", "fisheries", "biodiversity"]
 
 
 # Links (optional).
-url_pdf = "files/publications/marea.pdf"
+url_pdf = "files/publications/005_marea.pdf"
 url_preprint = "https://cdn.rawgit.com/jcvdav/MAREAmanuscript/4740f95d/plostemplate/ManuscriptPLOS.pdf"
 url_code = "https://github.com/jcvdav/MAREAmanuscript"
 url_dataset = "https://github.com/jcvdav/MAREAmanuscript/tree/master/Data"
