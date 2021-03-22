@@ -1,6 +1,6 @@
 +++
 title = "Reply to “Catch rate composition affects assessment of protected area impacts”"
-date = "2021-11-03"
+date = "2021-03-11"
 
 # Authors. Comma separated list, e.g. `["Bob Smith", "David Jones"]`.
 authors = ["J Lynham"," A Nikolaev", "J Raynor", "T Vilela",  "**JC Villaseñor-Derbez**"]
