@@ -70,3 +70,8 @@ caption = ""
 **Altmetric**
 
 <script type="text/javascript" src="https://d1bxh8uas1mnw7.cloudfront.net/assets/embed.js"></script><div class="altmetric-embed" data-badge-type="donut" data-altmetric-id="76393902"></div>
+
+**This article has a _Matters arising_**
+
+- [Catch rate composition affects assessment of protected area impacts](https://www.nature.com/articles/s41467-021-21607-4) by Jonathan R. Sweeney
+- [Reply to “Catch rate composition affects assessment of protected area impacts”](https://www.nature.com/articles/s41467-021-21608-3)
