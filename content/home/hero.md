@@ -24,7 +24,7 @@ weight = 3
   # label = '<i class="fa fa-download"></i> Install Now'
 +++
 
-# <br />
+<br />
 # <br />
 # <br />
 # <br />
