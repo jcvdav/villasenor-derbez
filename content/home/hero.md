@@ -24,6 +24,11 @@ weight = 3
   # label = '<i class="fa fa-download"></i> Install Now'
 +++
 
+</ br>
+</ br>
+</ br>
+</ br>
+
 <script type="text/javascript">
   (function defer() {
     if (window.jQuery) {
