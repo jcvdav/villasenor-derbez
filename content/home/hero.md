@@ -2,7 +2,7 @@
 # Hero widget.
 widget = "hero"
 active = true
-date = 2017-10-15
+date = 2021-04-12
 
 title = "Marine Scientist | Diver | Fisher"
 
