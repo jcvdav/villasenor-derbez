@@ -30,10 +30,7 @@ caption = ""
 
 Lionfish (*Pterois volitans*/*miles* complex) are an invasive species in the Western Atlantic and the Caribbean, likely introduced through liberation of aquarium-kept organisms. They are the first marine vertebrates to establish in North Atlantic and Caribbean coasts. Lionfish have been widely reported in coral reefs, but also in other habitats such as estuaries, mangroves, areas with hard-bottoms, and mesophotic reefs. Due to their threat to local biodiversity, the speed of their spread, and difficulty of management, their presence in these waters has been labeled as a major marine invasion.
 
-<figure>
-  <img src="../../img/lionfish.JPG" alt="Lionfish (Pterois volitans) in a Mexican coral reef"/>
-  <figcaption>Lionfish (<i>Pterois volitans</i>) in a Mexican coral reef</figcaption>
-</figure>
+![Lionfish (*Pterois volitans*) in a Mexican coral reef](/project/lionfish_files/lionfish.JPG)
 
 In order to efficiently manage the invasion, managers must be able to fully understand the biology of the species. This includes understanding what they eat, where they live, how and when they reproduce, and how they grow.
 

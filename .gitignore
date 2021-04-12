@@ -6,3 +6,5 @@ public
 .Rproj.user
 .Rproj.user/*
 content/publication/template.md
+*.DS_Store
+public/
