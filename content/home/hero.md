@@ -14,7 +14,7 @@ weight = 3
 [header]
   overlay_color = "#666"  # An HTML color value.
   overlay_img = "softcoral.JPG"  # Image path relative to your `static/img/` folder.
-  overlay_filter = 0  # Darken the image. Value in range 0-1.
+  overlay_filter = 0.10  # Darken the image. Value in range 0-1.
 
 # Call to action button (optional).
 #   Activate the button by specifying a URL and button label below.
@@ -24,22 +24,22 @@ weight = 3
   # label = '<i class="fa fa-download"></i> Install Now'
 +++
 
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
-<br />
+# <br />
+# <br />
+# <br />
+# <br />
+# <br />
+# <br />
+# <br />
+# <br />
+# <br />
+# <br />
+# <br />
+# <br />
+# <br />
+# <br />
+# <br />
+# <br />
 
 <script type="text/javascript">
   (function defer() {
