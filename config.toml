@@ -48,6 +48,8 @@ defaultContentLanguageInSubdir = false
   # Font style.
   #   Choose from `default`, `classic`, or `playfair`.
   font = "classic"
+  
+  body_classes = "georgia bg-near-white"
 
   # Your details.
   name = "Juan Carlos Villaseñor-Derbez"
