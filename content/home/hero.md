@@ -1,7 +1,7 @@
 +++
 # Hero widget.
 widget = "hero"
-active = false
+active = true
 date = 2021-04-12
 
 title = "Marine Scientist | Diver | Fisher"
@@ -14,7 +14,7 @@ weight = 3
 [header]
   overlay_color = "#666"  # An HTML color value.
   overlay_img = "./hero.jpg"  # Image path relative to your `static/img/` folder.
-  overlay_filter = 0  # Darken the image. Value in range 0-1.
+  overlay_filter = 0.3  # Darken the image. Value in range 0-1.
 
 # Call to action button (optional).
 #   Activate the button by specifying a URL and button label below.
@@ -24,9 +24,6 @@ weight = 3
   # label = '<i class="fa fa-download"></i> Install Now'
 +++
 
-<br />
-<br />
-<br />
 <br />
 <br />
 <br />
