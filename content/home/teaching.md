@@ -17,7 +17,8 @@ weight = 60
 
 Tutorials and short instruction sessions:
 
-- March, 2019 - **GitHub for collaboration** as an [eco-data-science](https://eco-data-science.github.io/) workshop. *Santa Barbara, USA*
+- Apr, 2021 - [**`GNU make` for reproducible workflows**](https://github.com/jcvdav/make_tutorial) as an [eco-data-science](https://eco-data-science.github.io/) workshop. *Santa Barbara, USA*
+- March, 2019 - [**GitHub for collaboration**](https://github.com/jcvdav/GitHubCollab) as an  [eco-data-science](https://eco-data-science.github.io/) workshop. *Santa Barbara, USA*
 - February, 2018 - [**Advanced RMarkdown**](https://github.com/jcvdav/LAFF_R) for the [LAFF](http://www.laff.bren.ucsb.edu) group. *Santa Barbara, USA*
 - September, 2017 - [**Intro to RMarkdown**](https://jcvdav.github.io/intro2Rmd/) as an [eco-data-science](https://eco-data-science.github.io/) workshop. *Santa Barbara, USA*
 

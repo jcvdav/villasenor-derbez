@@ -47,7 +47,9 @@ defaultContentLanguageInSubdir = false
 
   # Font style.
   #   Choose from `default`, `classic`, or `playfair`.
-  font = "default"
+  font = "classic"
+  
+  body_classes = "georgia bg-near-white"
 
   # Your details.
   name = "Juan Carlos Villaseñor-Derbez"
@@ -59,7 +61,7 @@ defaultContentLanguageInSubdir = false
 
   gravatar = false  # Get your avatar from Gravatar.com? (true/false)
   avatar = "headshot.jpg"  # Specify an avatar image (in `static/img/` folder) or delete value to disable avatar.
-  email = "jvillasenor@bren.ucsb.edu"
+  email = "juancarlos@ucsb.edu"
   address = "2400 Bren Hall, University of California, Santa Barbara, CA, US, 93106"
   office_hours = ""
   phone = "+1 207 205 8435"
