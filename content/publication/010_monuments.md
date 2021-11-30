@@ -28,7 +28,7 @@ abstract_short = "Two of the largest protected areas on earth are U.S. National 
 image_preview = ""
 
 # Is this a selected publication? (true/false)
-selected = true
+selected = false
 
 # Projects (optional).
 #   Associate this publication with one or more of your projects.
