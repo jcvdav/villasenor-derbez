@@ -1,9 +1,9 @@
 +++
-title = "Los Bosques Sumergidos de México"
-date = "2018-03-01"
+title = "El Pez León invasor en el Caribe Mexicano"
+date = "2020-03-01"
 
 # Authors. Comma separated list, e.g. `["Bob Smith", "David Jones"]`.
-authors = ["A Hernández-Velazco", "R Beas-Luna", "**JC Villaseñor-Derbez**", "I Domínguez-Guerrero", "M Precoma de la Mora", "A Gómez-Gómez"]
+authors = ["**JC Villaseñor-Derbez**"]
 
 # Publication type.
 # Legend:
@@ -21,7 +21,7 @@ publication = "*Biodiversitas*"
 publication_short = "*Biodiversitas*"
 
 # Abstract and optional shortened version.
-abstract = "En México hay una gran variedad de ecosistemas marinos, entre ellos destacan por su belleza y función ecológica los arrecifes coralinos y rocosos, los manglares, los montes submarinos y las praderas de pastos marinos. Sin embargo, otro ecosistema muy poco conocido pero de singular belleza y de gran importancia ecológica y socioeconómica son los bosques de kelp o bosques de macroalgas."
+abstract = "Se considera como especie invasora a la no nativa de una región. La mayoría de las especies invasoras son introducidas intencionalmente, con algún objetivo económico. Sin embargo, esta introducción puede tener impactos negativos no previstos."
 abstract_short = ""
 
 # Featured image thumbnail (optional)
@@ -35,10 +35,10 @@ selected = false
 #   Simply enter the filename (excluding '.md') of your project file in `content/project/`.
 projects = []
 
-tags = ["biodiversity", "marine-ecology", "fisheries", "conservation"]
+tags = ["biodiversity", "marine-ecology", "fisheries", "lionfish"]
 
 # Links (optional).
-url_pdf = "files/publications/bosques_sumergidos.pdf"
+url_pdf = "files/publications/pez_leon.pdf"
 url_preprint = ""
 url_code = ""
 url_dataset = ""

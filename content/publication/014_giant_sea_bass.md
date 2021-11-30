@@ -3,7 +3,7 @@ title = "Asymmetry across international borders: Research, fishery and managemen
 date = "2021-08-04"
 
 # Authors. Comma separated list, e.g. `["Bob Smith", "David Jones"]`.
-authors = [""A Ramírez-Valdez", "TJ Rowell", "KE Dale", "MT Craig", "LG Allen", **JC Villaseñor-Derbez**", "AM Cisneros-Montemayor", "A Hernández-Velaso", "J Torre", "J Hofmeister", "BE Erisman"]
+authors = ["A Ramírez-Valdez", "TJ Rowell", "KE Dale", "MT Craig", "LG Allen", "**JC Villaseñor-Derbez**", "AM Cisneros-Montemayor", "A Hernández-Velaso", "J Torre", "J Hofmeister", "BE Erisman"]
 
 # Publication type.
 # Legend:
@@ -17,7 +17,7 @@ authors = [""A Ramírez-Valdez", "TJ Rowell", "KE Dale", "MT Craig", "LG Allen",
 publication_types = ["2"]
 
 # Publication name and optional abbreviated version.
-publication = "*FIsh and Fisheries*"
+publication = "*Fish and Fisheries*"
 publication_short = "*Fish and Fisheries*. [DOI 10.1111/faf.12594](https://doi.org/10.1111/faf.12594)"
 
 # Abstract and optional shortened version.
@@ -28,7 +28,7 @@ abstract_short = "We present a case study of asymetries in management using the 
 image_preview = ""
 
 # Is this a selected publication? (true/false)
-selected = false
+selected = true
 
 # Projects (optional).
 #   Associate this publication with one or more of your projects.
@@ -38,7 +38,7 @@ projects = ["mero_gigante"]
 tags = ["giant-sea-bass", "fisheries"]
 
 # Links (optional).
-url_pdf = "https://onlinelibrary.wiley.com/doi/epdf/10.1111/faf.12594"
+url_pdf = "files/publications/giant_sea_bass.pdf"
 url_preprint = ""
 url_code = ""
 url_dataset = ""
