@@ -4,7 +4,7 @@ widget = "hero"
 active = true
 date = 2021-04-12
 
-title = "Marine Scientist | Diver | Fisher"
+title = "Environmental Scientist"
 
 # Order that this section will appear in.
 weight = 3
@@ -24,6 +24,7 @@ weight = 3
   # label = '<i class="fa fa-download"></i> Install Now'
 +++
 
+<br />
 <br />
 <br />
 <br />
