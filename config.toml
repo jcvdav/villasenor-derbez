@@ -277,7 +277,7 @@ defaultContentLanguageInSubdir = false
   
 [[menu.main]]
   name = "CV"
-  url = https://villasenor-derbez.com/files/CV_VillasenorDerbez.pdf
+  url = "https://villasenor-derbez.com/files/CV_VillasenorDerbez.pdf"
   weight = 4
 
 [[menu.main]]
