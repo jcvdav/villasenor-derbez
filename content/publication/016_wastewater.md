@@ -40,7 +40,7 @@ tags = ["marine-conservation", "human-impacts"]
 # Links (optional).
 url_pdf = "files/publications/016_wastewater.pdf"
 url_preprint = ""
-url_code = ""
+url_code = "https://github.com/OHI-Science/GlobalWasteWater"
 url_dataset = ""
 url_project = ""
 url_slides = ""
