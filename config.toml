@@ -271,13 +271,13 @@ defaultContentLanguageInSubdir = false
   weight = 2
   
 [[menu.main]]
-  name = "Projects"
+  name = "Research"
   url = "#projects"
   weight = 3
   
 [[menu.main]]
-  name = "Publications"
-  url = "#pr_publications"
+  name = "CV"
+  url = https://villasenor-derbez.com/files/CV_VillasenorDerbez.pdf
   weight = 4
 
 [[menu.main]]
