@@ -37,7 +37,7 @@ defaultContentLanguageInSubdir = false
 #   See: https://gohugo.io/readfiles/bfconfig/
 [blackfriday]
   hrefTargetBlank = true  # `true` opens external links in a new tab.
-  fractions = true  # `false` disables smart fractions (e.g. 5/12 formatted as a fraction).
+  fractions = false  # `false` disables smart fractions (e.g. 5/12 formatted as a fraction).
   smartypants = true  # `false` disables all smart punctuation substitutions (e.g. smart quotes, dashes, fractions).
 
 [params]
@@ -271,13 +271,13 @@ defaultContentLanguageInSubdir = false
   weight = 2
   
 [[menu.main]]
-  name = "Projects"
+  name = "Research"
   url = "#projects"
   weight = 3
   
 [[menu.main]]
-  name = "Publications"
-  url = "#pr_publications"
+  name = "CV"
+  url = "https://villasenor-derbez.com/files/CV_VillasenorDerbez.pdf"
   weight = 4
 
 [[menu.main]]

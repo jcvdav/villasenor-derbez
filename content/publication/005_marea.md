@@ -40,9 +40,9 @@ tags = ["marine-reserves", "conservation", "fisheries", "biodiversity"]
 
 # Links (optional).
 url_pdf = "files/publications/005_marea.pdf"
-url_preprint = "https://cdn.rawgit.com/jcvdav/MAREAmanuscript/4740f95d/plostemplate/ManuscriptPLOS.pdf"
+url_preprint = ""
 url_code = "https://github.com/jcvdav/MAREAmanuscript"
-url_dataset = "https://github.com/jcvdav/MAREAmanuscript/tree/master/Data"
+url_dataset = ""
 url_project = ""
 url_slides = ""
 url_video = "https://www.openchannels.org/webinars/2017/general-approach-and-tool-evaluate-effectiveness-no-take-marine-reserves"

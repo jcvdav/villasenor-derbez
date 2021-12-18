@@ -10,10 +10,10 @@ weight = 5
 # List your academic interests.
 [interests]
   interests = [
+    "Biodiversity conservation",
+    "Marine policy",
     "Data science",
-    "Marine ecology",
-    "Marine conservation",
-    "Fisheries management"
+    "Causal inference"
   ]
 
 # List your qualifications (such as academic degrees).
@@ -37,8 +37,6 @@ weight = 5
 
 # About me
 
-I am a Ph.D. Candidate working with [Christopher Costello](https://christopherjcostello.com/) and [Steve Gaines](http://gaineslab.msi.ucsb.edu/) at the [Bren School of Environmental Science & Management](bren.ucsb.edu) in UC, Santa Barbara. As a [Latin American Fisheries Fellow](http://www.laff.bren.ucsb.edu) and [UC MEXUS - CONACyT](https://ucmexus.ucr.edu/), I work in Quantitative Marine Conservation and Conservation Economics. My research combines Ecological and Economic theory with Data Science. I believe today's available technology can allow us to revolutionize the way in which we design marine conservation policies. 
+I am a Ph.D. Candidate working with [Christopher Costello](https://christopherjcostello.com/) and [Steve Gaines](http://gaineslab.msi.ucsb.edu/) at the [Bren School of Environmental Science & Management](bren.ucsb.edu) in UC, Santa Barbara. I am broadly interested in the Economics of Marine Conservation, and ask questions around the design and effectiveness of policy interventions that seek to conserve and manage marine resources. I believe today's available technology can allow us to revolutionize the way in which we design and evaluate marine conservation policies. My research is supported by the [Latin American Fisheries Fellowship Program](http://www.laff.bren.ucsb.edu), [UC MEXUS - CONACyT](https://ucmexus.ucr.edu/), [The Schmidt Environmental Fellows Program](https://ucmexus.ucr.edu/), and the [Institute on Global Conflict nd Cooperation ](https://igcc.ucsd.edu/funding/who-igcc-funds/fellows.html)
 
-Along with [Camila Vargas](https://www.laff.bren.ucsb.edu/laff-network/camila-vargas) I run [ERRE](https://www.erre-esp.org/), a blog about all things R and RStudio in Spanish.
-
-- [Curriculum Vitae](./files/CV_VillasenorDerbez.pdf)
+I run [ERRE](https://www.erre-esp.org/), a blog about all things R and RStudio in Spanish, and help organize [EcoDataScience](http://eco-data-science.github.io/) a community of Environmental Data Science at UCSB and [beyond](https://github.com/eco-data-science/community_survey).

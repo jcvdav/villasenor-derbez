@@ -40,7 +40,7 @@ tags = ["marine-conservation", "fisheries", "environmental-markets"]
 # Links (optional).
 url_pdf = "files/publications/015_blue_halos.pdf"
 url_preprint = ""
-url_code = ""
+url_code = "https://github.com/emlab-ucsb/CFA-concept-paper"
 url_dataset = ""
 url_project = ""
 url_slides = ""
