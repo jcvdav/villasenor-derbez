@@ -13,7 +13,7 @@ image_preview = "pescadores.JPG"
 
 # Tags: can be used for filtering projects.
 # Example: `tags = ["machine-learning", "deep-learning"]`
-tags = ["mpa", "conservation", "biodiversity"]
+tags = ["mpa", "conservation", "biodiversity", "markets"]
 
 # Optional external URL for project (replaces project detail page).
 external_link = ""

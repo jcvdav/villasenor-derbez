@@ -3,10 +3,10 @@
 date = "2016-04-27"
 
 # Project title.
-title = "Invasive Lionfish"
+title = "Invasive species"
 
 # Project summary to display on homepage.
-summary = "Understanding the ecological implications of an invation"
+summary = "Ecological implications and environmental institutions"
 
 # Optional image to display on homepage (relative to `static/img/` folder).
 image_preview = "./lionfish.JPG"
