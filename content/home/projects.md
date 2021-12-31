@@ -35,34 +35,30 @@ filter_default = 0
 [[filter]]
   name = "Biodiversity"
   tag = ".biodiversity"
-
-[[filter]]
-  name = "By-catch"
-  tag = ".by-catch"
   
 [[filter]]
-  name = "Big Data"
-  tag = ".bigdata"
-  
-[[filter]]
-  name = "Climate change"
-  tag = ".climate-change"
+  name = "Marine Protected Areas"
+  tag = ".mpa"
 
 [[filter]]
   name = "Conservation"
   tag = ".conservation"
   
 [[filter]]
+  name = "Environmental Markets"
+  tag = ".markets"
+  
+[[filter]]
   name = "Fisheries"
   tag = ".fisheries"
 
 [[filter]]
-  name = "Giant Sea Bass"
-  tag = ".gsb"
-
+  name = "Vessel-tracking data"
+  tag = ".tracking"
+  
 [[filter]]
-  name = "Global Fishing Watch"
-  tag = ".gfw"
+  name = "Big Data"
+  tag = ".bigdata"
   
 [[filter]]
   name = "Invasive Species"
@@ -71,18 +67,6 @@ filter_default = 0
 [[filter]]
   name = "Lionfish"
   tag = ".lionfish"
-
-[[filter]]
-  name = "Marine Ecology"
-  tag = ".marine-ecology"
-
-[[filter]]
-  name = "Marine Reserves"
-  tag = ".marine-reserves"
-
-[[filter]]
-  name = "Oceanography"
-  tag = ".oceanography"
 
 +++
 

@@ -1,5 +1,5 @@
 +++
-title = "Asymmetry across international borders: Research, fishery and management trends and economic value of the giant sea bass (_Stereolepis gigas_)"
+title = "Asymmetry across international borders: Research, fishery and management trends and economic value of the giant sea bass (*Stereolepis gigas*)"
 date = "2021-08-04"
 
 # Authors. Comma separated list, e.g. `["Bob Smith", "David Jones"]`.
@@ -28,7 +28,7 @@ abstract_short = "We present a case study of asymetries in management using the 
 image_preview = ""
 
 # Is this a selected publication? (true/false)
-selected = true
+selected = false
 
 # Projects (optional).
 #   Associate this publication with one or more of your projects.
