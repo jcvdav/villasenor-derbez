@@ -33,9 +33,9 @@ selected = true
 # Projects (optional).
 #   Associate this publication with one or more of your projects.
 #   Simply enter the filename (excluding '.md') of your project file in `content/project/`.
-projects = ["marine_reserves"]
+projects = ["mpas"]
 
-tags = ["marine-conservation", "fisheries", "environmental-markets"]
+tags = ["mpa", "conservation", "biodiversity", "fisheries", "markets"]
 
 # Links (optional).
 url_pdf = "files/publications/015_blue_halos.pdf"
