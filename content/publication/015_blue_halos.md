@@ -61,3 +61,13 @@ image = ""
 caption = ""
 
 +++
+
+**Media coverage**
+
+- [Science News](https://www.science.org/content/article/provocative-proposal-sell-fishing-rights-protected-seas-prevent-poaching)
+- [Hakai Magazine](https://hakaimagazine.com/news/how-mpas-can-pay-for-their-own-protection/)
+
+
+**Altmetric**
+
+<script type="text/javascript" src="https://d1bxh8uas1mnw7.cloudfront.net/assets/embed.js"></script><div class="altmetric-embed" data-badge-type="donut" data-altmetric-id="116912379"></div>

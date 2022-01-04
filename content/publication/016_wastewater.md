@@ -61,3 +61,12 @@ image = ""
 caption = ""
 
 +++
+
+**Media coverage**
+
+- [Scientific american](https://www.scientificamerican.com/article/half-of-the-worlds-coastal-sewage-pollution-flows-from-few-dozen-places/)
+- [EOS](https://eos.org/articles/a-global-map-of-human-sewage-in-coastal-ecosystems)
+
+**Altmetric**
+
+<script type="text/javascript" src="https://d1bxh8uas1mnw7.cloudfront.net/assets/embed.js"></script><div class="altmetric-embed" data-badge-type="donut" data-altmetric-id="116580709"></div>
