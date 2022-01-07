@@ -14,7 +14,7 @@
 class: center, middle, inverse, title-slide
 
 # Instrumental Variables in the Environmental Sciences
-## FRE - 474
+## Causal estimates from observational data
 ### Villaseñor-Derbez, J.C.
 ### UBC Teaching Semminar
 ### 01/14/2022
@@ -217,7 +217,7 @@ $$
 .center[What would exogenous variation in deforestation mean?]
 
 ---
-# Endogoneity: Solutions 
+# Endogoneity: Solutions
 
 .center[What would exogenous variation in deforestation mean?]
 
@@ -268,17 +268,20 @@ Some examples
 --
 .pull-left[Potential instrument] .pull-right[Relevant?]
 
-.pull-left[A]
+.pull-left[Social security number of plot owner]
 --
-.pull-right[B]
+.pull-right[**Probably not relevant**]
+.pull-right[Uncorrelated with deforestation]
 --
-.pull-left[C]
+.pull-left[Quality of timber]
 --
-.pull-right[D]
+.pull-right[**Probably relevant**]
+.pull-right[Quality may correlate with incentives to cut]
 --
-.pull-left[E]
+.pull-left[Aerosol pollution]
 --
-.pull-right[F]
+.pull-right[**Relevant**]
+.pull-right[Highly correlated with deforestation]
 
 ---
 # Instrumental Variables
@@ -292,27 +295,73 @@ Some examples
 
 
 --
-.pull-left[Potential instrument] .pull-right[Relevant?]
+.pull-left[Potential instrument] .pull-right[Exogenous?]
 
-.pull-left[A]
+.pull-left[Social security number of plot owner]
 --
-.pull-right[B]
+.pull-right[**Exogenous**]
+.pull-right[Independent of other factors of deforestation]
 --
-.pull-left[C]
+.pull-left[Quality of timber]
 --
-.pull-right[D]
+.pull-right[**Not exogenous**]
+.pull-right[Access to better quality = beter revenues = better health status]
 --
-.pull-left[E]
+.pull-left[Aerosol pollution]
 --
-.pull-right[F]
+.pull-right[**Exogenous**]
+.pull-right[It's as-if random,a t least w.r.t. malaria transmission]
 
 ---
 # Instrumental Variables: Recap
 
+
+- Our instrument must be **correlated with our endogenous variable**
+
+--
+
+
+- Our instrument must be **uncorrelated with any other variable that affects the outcome**
+
+--
+
+
+- You must be able to form a cohesive story
+
+
+--
+
+.center[The instrument only affects our outcome through the endogenous variable]
+
+---
+# Instrumental Variables: Back to deforestation and malaria
+
+Our potential instruments were:
+
+.pull-left[Social security number of plot owner]
+--
+.pull-right[**Probably not relevant**]
+.pull-right[**Exogenous**]
+--
+.pull-left[Quality of timber]
+--
+.pull-right[**Probably relevant**]
+.pull-right[**Not exogenous**]
+--
+.pull-left[Aerosol pollution]
+--
+.pull-right[**Relevant**]
+.pull-right[**Exogenous**]
+
+
+---
+class:inverse,center,middle
+# If we have a valid instrument, how do we use it?
+
 ---
 # Estimation
 
--2SLS
+## Two-stage least squares: 2SLS
 
 Why does this work?
 
@@ -322,9 +371,18 @@ $$
 X_i = \pi_0 +\pi_1 Z_i + \omega_i
 $$
 
+--
+
 $$
 \hat{X_i} = \hat{\pi_0} + \hat{\pi_1} Z_i
 $$
+
+--
+
+Note that `\(\hat{X_i}\)` no longer contains an error term (  `\(\varepsilon_i = \gamma Y_i + \epsilon_i\)` )
+
+--
+
 Second stage:
 
 $$
@@ -332,10 +390,27 @@ Y_i = \alpha + \beta\hat{X_i} + \epsilon_i
 $$
 
 
----
-# Next class
+.right[[Show me how](2SLS)]
 
-IV with heterogenous treatment effects
+---
+# App
+
+---
+# Admin
+
+## Assignment:
+
+- Blah
+
+- Blah
+
+## Next class:
+
+- Whatever made up stuff in here
+
+---
+class:center,middle,inverse
+#&lt;\LECTURE&gt;
 
 ---
 class:inverse,center
@@ -343,6 +418,7 @@ class:inverse,center
 # Extra
 
 -[Simultaneity bias](#simultaneity-bias)
+
 -[OBV example](#obv-example)
 
 ---
@@ -372,11 +448,6 @@ $$
 name:obv-example
 # OBV Example: Conservation and elephant abundance
 
-
-```r
-knitr::include_graphics("elephants1.png")
-```
-
 &lt;img src="elephants1.png" height="350" /&gt;
 
 ---
@@ -398,28 +469,6 @@ But what if **this** was the past?
 
 - Our estimate = 5
 - Treatment effect = 6
-
-
-----
-
-# Consider two plots of land
---
-- Single binary treatment ("conservation")
-- We are interested in the effect of conservation on number of elephants
-
---
-`\(Y_{1,0} = 10\)`
-`\(Y_{1,1} = 40\)`
-`\(Y_{2,0} = 40\)`
-`\(Y_{2,1} = 70\)`
-
---
-
-Since the goal of the conservation program is to maximize the number of elephants in the world, we would want conserve plot 2
-
-The only thing you observe is this world:
-
-
 
 ---
 # Endogeneity
@@ -470,48 +519,9 @@ DAG here
 
 Biased estimates = poorly informed policy
 
----
-# Endogeneity
 
-Something here
-
----
-# A solution
-
-Enter the `Instrumental Variable`
-
-Conditions necessary for a valid instrument:
-
-- Relevance
-
-- Exclusion-restriction
-
-- A good story
-
-The IV affects outcome only through the treatment
-
----
-Sow how this solves the issue
-
----
-# Estimation
-
-Two-stage least squares
-
-# Today's causal effect of interest
-
----
-class: inverse, middle
-
-# Next class
-
-## Moving in time: Difference-in-Differences
-
----
-#Yet more old stuff
-
---
-
+--- 
+.name:2SLS
 # Instrumental Variables
 
 ## Example
