@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="" xml:lang="">
   <head>
-    <title>Instrumental Variables in Environmental Science</title>
+    <title>Instrumental Variables in the Environmental Sciences</title>
     <meta charset="utf-8" />
     <meta name="author" content="Villaseñor-Derbez, J.C." />
     <meta name="date" content="2022-01-14" />
@@ -13,7 +13,7 @@
     <textarea id="source">
 class: center, middle, inverse, title-slide
 
-# Instrumental Variables in Environmental Science
+# Instrumental Variables in the Environmental Sciences
 ## FRE - 474
 ### Villaseñor-Derbez, J.C.
 ### UBC Teaching Semminar
@@ -60,33 +60,327 @@ About the job:
   - 25 min for audience (search committee, LFS and IRES faculty, and students) to ask questions about your approach to teaching
 
 ---
-
 # Today's class:
 
-## Illustrate the use of IV for answering environmental questions
+One-sentence summary: 
 
+&gt;**IV regression** is a general way to obtain a consistent estimator of the unknown coefficients of the population regression function when the **regressor `\(X\)` is correlated with the error term `\(u\)`** (_i.e._ `\(X\)` is endogenous!).
 
-- Motivation for IV
-
-- Review of causality
-
-- Review on endogeneity
-
-- IV implementation
-
----
-# Motivation
-
-&lt;img src="elephants1.png" height="350" style="display: block; margin: auto;" /&gt;
 
 --
 
-What is the effect of **conservation** on Elephant **abundance**?
+- Think of the variation in `\(X\)` as having two parts:
 
-Conclusion: Conservation = 5 elephants
+  - endogenous (bad, biases our results)
+  - exogenous (good)
+
+
+--
+- The *instrument* (some other variable, `\(Z\)`) allows us to isolate the **exogenous** variation in `\(X\)`
+
+
+--
+- No free lunch. A _valid_ instrument must meet some necessary conditions
+
+---
+# Today's class:
+
+- Motivation for IV
+
+--
+- Review of causality and endogeneity
+
+--
+- IV implementation:
+
+  - Why and how IV regression works
+  
+  - Conditions for a valid instrument
+  
+  - Estimation via 2SLS
+
+---
+# Endogeneity
+
+Endogeneity arises:
+
+- Omitted variables
+
+- Errors in variables
+
+- Simultaneous causality
+
+  - Nature is full of feedbacks
+  
+  - Causality runs _both ways_
+  
+  - Even if we observe the entire system, multiple regression cannot eliminate bias
 
 ---
 # Motivation
+
+## Deforestation &amp; Malaria (McDonald &amp; Mordecai, 2019)
+
+&lt;!-- Importantly, ignoring this statistically well supported feedback leads to substantial underestimates of the true effect of deforestation on malaria transmission, which may have confounded the results of earlier studies --&gt;
+
+What is the effect of deforestation on malaria incidence?
+
+&lt;img src="mosquito1.png" height="200" style="display: block; margin: auto;" /&gt;
+
+--
+
+$$
+\Large{Y_i = \alpha + \beta X_i + \epsilon_i}
+$$
+
+- `\(X_i\)` Deforestation (area of forest lost in `\(i\)`)
+- `\(Y_i\)` Malaria incidence (number of Malaria cases in `\(i\)`)
+
+---
+# Motivation
+
+## Deforestation &amp; Malaria (McDonald &amp; Mordecai, 2019)
+
+Bidirectional feedback between deforestation and malaria
+
+&lt;img src="mosquito2.png" height="200" style="display: block; margin: auto;" /&gt;
+
+--
+&gt; Deforestation promotes malaria via ecological mechanisms, but **local epidemics of malaria reduce forest clearing** because poor health reduces economic activity
+
+--
+
+Sounds like simultaneity bias
+
+---
+# Endogeneity: Problem
+
+The deforestation-malaria system:
+
+$$
+`\begin{split}
+Y_i &amp;= \alpha + \beta X_i + \epsilon_i \\
+X_i &amp;= \theta + \gamma Y_i + \mu_i
+\end{split}`
+$$
+
+- Imagine `\(\epsilon_i &gt; 0\)`
+
+--
+
+- This increases `\(Y_i\)`
+
+--
+
+- A higher `\(Y_i\)` _decreases_ `\(X_i\)` (because `\(\gamma &lt; 0\)`)
+
+--
+
+- `\(X_i\)` and `\(\epsilon_i\)` are correlated:  `\(\mathrm{cov}(X_i, \epsilon_i) = \frac{\gamma\sigma_\epsilon^2}{1 - \gamma\beta}\)` .right[[Show me how](#simultaneity-bias)]
+
+--
+
+.center[How do we estimate the effect of deforestation on malaria incidence?]
+
+
+---
+# Endogeneity: Solutions
+
+Two solutions exist:
+
+--
+
+- Randomized controlled experiment (unethical and unfeasible)
+
+--
+
+- Separate the exogenous part of `\(X\)` from the endogenous part of `\(X\)`:
+
+--
+
+  - Imagine that we can split deforestation into an exogenous part and an endogenous part:
+
+$$
+`\begin{split}
+Y_i &amp;= \alpha + \beta X_i + \epsilon_i \\
+&amp;= \alpha + \beta \left(X_i^{\text{Exo}} + X_i^{\text{Endo}}\right) + \epsilon_i \\
+&amp;= \alpha + \beta X_i^{\text{Exo}} + \underbrace{\beta X_i^{\text{Endo}} + \epsilon_i}_{\varepsilon_i}\\
+Y_i &amp;= \alpha + \beta X_i^{\text{Exo}} + \varepsilon_i
+\end{split}`
+$$
+--
+
+  - We could use this exogenous variation in deforestation to consistently estimate `\(\beta\)`
+
+--
+
+.center[What would exogenous variation in deforestation mean?]
+
+---
+# Endogoneity: Solutions 
+
+.center[What would exogenous variation in deforestation mean?]
+
+--
+
+&gt; Changes in deforestation that are random — or at least not caused by malaria incidence
+
+--
+
+.center[How do we isolate this exogenous variation in our deforestation?]
+
+--
+
+&gt;Find an instrument (an instrumental variable): `\(Z\)`
+
+--
+
+$$
+Y_i = \alpha + \beta X_i + \epsilon_i
+$$
+
+
+An instrument is a variable that is:
+
+- **Correlated** with the explanatory variable of interest (relevant)
+
+$$
+\mathrm{cov}(X_i, Z_i) \neq 0
+$$
+
+- **Uncorrelated** with the disturbance (exogenous)
+
+$$
+\mathrm{cov}(Z_i,\epsilon_i) = 0
+$$
+
+---
+# Instrumental Variables
+
+*Relevance:* We need the instrument to cause a change in (correlate with) our endogenous explanatory variable.
+
+
+--
+Some examples
+
+
+
+--
+.pull-left[Potential instrument] .pull-right[Relevant?]
+
+.pull-left[A]
+--
+.pull-right[B]
+--
+.pull-left[C]
+--
+.pull-right[D]
+--
+.pull-left[E]
+--
+.pull-right[F]
+
+---
+# Instrumental Variables
+
+*Exogenous:* The instrument has to be independent of omitted factors that affect our outcome variable — as good as randomly assigned
+
+
+--
+Some examples
+
+
+
+--
+.pull-left[Potential instrument] .pull-right[Relevant?]
+
+.pull-left[A]
+--
+.pull-right[B]
+--
+.pull-left[C]
+--
+.pull-right[D]
+--
+.pull-left[E]
+--
+.pull-right[F]
+
+---
+# Instrumental Variables: Recap
+
+---
+# Estimation
+
+-2SLS
+
+Why does this work?
+
+First stage:
+
+$$
+X_i = \pi_0 +\pi_1 Z_i + \omega_i
+$$
+
+$$
+\hat{X_i} = \hat{\pi_0} + \hat{\pi_1} Z_i
+$$
+Second stage:
+
+$$
+Y_i = \alpha + \beta\hat{X_i} + \epsilon_i
+$$
+
+
+---
+# Next class
+
+IV with heterogenous treatment effects
+
+---
+class:inverse,center
+
+# Extra
+
+-[Simultaneity bias](#simultaneity-bias)
+-[OBV example](#obv-example)
+
+---
+name: simultaneity-bias
+# Simultaneity bias
+
+Recall:
+
+$$
+`\begin{align}
+Y_i &amp;= \alpha + \beta X_i + \epsilon_i \\
+X_i &amp;= \theta + \gamma Y_i + \mu_i
+\end{align}`
+$$
+
+$$
+`\begin{align}
+\mathrm{cov}(X_i, \epsilon_i) &amp;= \mathrm{cov}(\theta + \gamma Y_i + \mu_i, \epsilon_i)\\
+&amp;= \gamma\mathrm{cov}(Y_i,\epsilon_i) + \mathrm{cov}(\mu_i, \epsilon_i) \: \text{...................Assume } \mathrm{cov}(\mu_i, \epsilon_i) = 0 \: \text{, and substitute } Y_i\\
+&amp;= \gamma\mathrm{cov}(\alpha + \beta X_i + \epsilon_i, \epsilon_i) \\
+&amp;= \gamma\beta\mathrm{cov}(X_i,\epsilon_i) + \gamma\sigma_\epsilon^2\\
+\mathrm{cov}(X_i, \epsilon_i) &amp;= \frac{\gamma\sigma_\epsilon^2}{1 - \gamma\beta}
+\end{align}`
+$$
+
+---
+name:obv-example
+# OBV Example: Conservation and elephant abundance
+
+
+```r
+knitr::include_graphics("elephants1.png")
+```
+
+&lt;img src="elephants1.png" height="350" /&gt;
+
+---
+# OBV Example: Conservation and elephant abundance
 
 &lt;img src="elephants2.png" height="350" style="display: block; margin: auto;" /&gt;
 
@@ -96,7 +390,7 @@ But what if this was the past?
 - Treatment effect = 3
 
 ---
-# Motivation
+# OBV Example: Conservation and elephant abundance
 
 &lt;img src="elephants3.png" height="350" style="display: block; margin: auto;" /&gt;
 
@@ -105,213 +399,12 @@ But what if **this** was the past?
 - Our estimate = 5
 - Treatment effect = 6
 
----
-class: inverse, middle
 
-# Causality
-
-## A quick review
-
----
-
-# Review: Causality
-
-## Notation
-
-`\(y_{1i}\)`: The outcome for unit `\(i\)` if it had received treatment (_i.e._ `\(D_i = 1\)`)
-
-`\(y_{0i}\)`: The outcome for unit `\(i\)` if it **did not** receive the treatment (_i.e._ `\(D_i = 0\)`)
-
---
-
-## The fundamental problem of causal inference:
-
---
-
-- We do not observe `\(y_{1i}\)` and `\(y_{0i}\)`
-
---
-
-- We considered comparing the outcomes of treated vs untreated units:
-
-`$$\tau = Avg(y_i | D_i = 1) - Avg(y_i | D_i = 0)$$`
---
-
-- We covered a series of assumptions that would allow us to do that
-
----
-
-# Review: Causality
-
-## Selection bias
-
-&lt;!-- The average untreated outcome for a member of our treatment group (which we cannot observe) differs from the average untreated outcome for a member of our control group --&gt;
-
-
-`$$Avg(y_i | D_i = 1) - Avg(y_i | D_i = 0) = \tau + Avg(y_{0,i} | D_i = 1) - Avg(y_{0,i} | D_i = 0)$$`
-
---
-
-- Our treatment variable is correlated with *something* that makes the two groups different.
-
---
-
-- We don't observe this *something*
-
---
-
-- Selection bias means our treatment and control groups differ on some unobserved/omitted dimension. (Endogeneity)
-
---
-
-- How big of a problem is this?
-
----
-class: inverse, middle
-
-# Unfortunately, humans are quite good at optimizing
-
-## Endogeneity is prevalent
-
-## Biases our results
-
----
-
-# Instrumental Variables
-
-- **Instrumental variables** (IV) is one way of estimating the _causal effect_ of a treatment or program
-
---
-
-- Instrumental variables attempts to separate out: 
-
-  - The endogenous part of `\(D_i\)`, which biases our results
-
---
-
-  - The exogenous part of `\(D_i\)`, which gives us unbiased estimates (what we care about)
-
---
-
-If we use only the exogenous (good) variation in `\(x\)`, then we can avoid selection bias/omitted-variable bias
-
----
-
-# Instrumental Variables
-
-## Example
-
-If we want to estimate the effect of conservation on elephant abundance:
-
-$$
-N_i = \beta_0 + \beta_1D_i + u_i
-$$
-
---
-
-We would love to calculate `\(N_{1,i} - N_{0,i}\)`, but we can't.
-
---
-
-And OLS will likely be biased due to selection/omitted-variable bias.
-
----
-
----
-# Instrumental Variables
-
-## Example 
-
-The real data-generating process is
-
-$$
-N_i = \beta_0 + \beta_1D_i + \beta_2Q_i + \epsilon_i
-$$
-
-But we typically would do:
-
-$$
-N_i = \beta_0 + \beta_1D_i+ u_i
-$$
-
---
-
-Recall
-
-$$
-\hat{\beta_1} = \frac{C(N,D)}{V(D)} = \frac{E[ND]-E[N]E[D]}{V(S)}
-$$
-
----
-# Instrumental Variables
-
-## Example
-
-$$
-\hat{\beta_1} = \frac{C(N,D)}{V(D)} = \frac{E[ND]-E[N]E[D]}{V(S)}
-$$
---
-Let's substitute `\(N\)`:
-
-$$
-`\begin{split}
-\hat{\beta_1} &amp;= \frac{E[\beta_0D + \beta_1D^2 + D\beta_2Q + \epsilon]-E[N]E[\beta_0 + \beta_1D + \beta_2Q + \epsilon]}{V(S)}\\
-&amp;= \frac{\beta_1 E(D^2) - \beta_1E(D)^2 + \beta_2E(QD) -\beta_2 E(D)E(Q) + E(Du) - E(D)E(u)}{V(S)}\\
-&amp;=\beta_1 + \beta_2\frac{C(QD)}{V(D)}
-\end{split}`
-$$
---
-If `\(\beta_2 \neq 0\)` and `\(C(QD) &gt; 0\)`, we're in trouble
-
----
-# Instrumental Variables
-
-Let’s assume that you have found a really great weird instrument `\(Z_i\)` that causes land owners to conserve, but that is independent of habitat quality and the structural error term.
-
-$$
-`\begin{split}
-C(NZ) &amp;= C((\beta_0D + \beta_1D^2 + D\beta_2Q + \epsilon),Z)\\
-&amp;= E((\beta_0D + \beta_1D^2 + D\beta_2Q + \epsilon)Z) - E(D)E(S)\\
-&amp;= \beta_0[E(Z)-\beta_0E(Z)] + \beta_1[E(DZ) - E(D)E(Z)] + \beta_2[E(QZ)-E(Q)E(Z)] + [E(uZ) - E(u)E(Z)]\\
-&amp;= \beta_1C(DZ) + \beta_2C(QZ) +C(uZ)
-\end{split}`
-$$
-
---
-
-If `\(C(DZ) = 0\)` and `\(C(uZ) = 0\)`
-
---
-
-Then
-
-$$
-`\begin{split}
-C(NZ) &amp;= \beta_1C(DZ)\\
-\beta_1 &amp;= \frac{C(NZ)}{C(DZ)}
-\end{split}`
-$$
-
----
-# Estimation
-
--2SLS
-
----
-# Next class
-
-IV with heterogenous treatment effects
-
----
-class:center
-
-Extra
-
----
+----
 
 # Consider two plots of land
 --
-- Single binary treatment ("consrvation")
+- Single binary treatment ("conservation")
 - We are interested in the effect of conservation on number of elephants
 
 --
@@ -414,6 +507,59 @@ class: inverse, middle
 
 ## Moving in time: Difference-in-Differences
 
+---
+#Yet more old stuff
+
+--
+
+# Instrumental Variables
+
+## Example
+
+$$
+\hat{\beta_1} = \frac{C(N,D)}{V(D)} = \frac{E[ND]-E[N]E[D]}{V(S)}
+$$
+--
+Let's substitute `\(N\)`:
+
+$$
+`\begin{split}
+\hat{\beta_1} &amp;= \frac{E[\beta_0D + \beta_1D^2 + D\beta_2Q + \epsilon]-E[N]E[\beta_0 + \beta_1D + \beta_2Q + \epsilon]}{V(S)}\\
+&amp;= \frac{\beta_1 E(D^2) - \beta_1E(D)^2 + \beta_2E(QD) -\beta_2 E(D)E(Q) + E(Du) - E(D)E(u)}{V(S)}\\
+&amp;=\beta_1 + \beta_2\frac{C(QD)}{V(D)}
+\end{split}`
+$$
+--
+If `\(\beta_2 \neq 0\)` and `\(C(QD) &gt; 0\)`, we're in trouble
+
+---
+# Instrumental Variables
+
+Let’s assume that you have found a really great weird instrument `\(Z_i\)` that causes land owners to conserve, but that is independent of habitat quality and the structural error term.
+
+$$
+`\begin{split}
+C(NZ) &amp;= C((\beta_0D + \beta_1D^2 + D\beta_2Q + \epsilon),Z)\\
+&amp;= E((\beta_0D + \beta_1D^2 + D\beta_2Q + \epsilon)Z) - E(D)E(S)\\
+&amp;= \beta_0[E(Z)-\beta_0E(Z)] + \beta_1[E(DZ) - E(D)E(Z)] + \beta_2[E(QZ)-E(Q)E(Z)] + [E(uZ) - E(u)E(Z)]\\
+&amp;= \beta_1C(DZ) + \beta_2C(QZ) +C(uZ)
+\end{split}`
+$$
+
+--
+
+If `\(C(DZ) = 0\)` and `\(C(uZ) = 0\)`
+
+--
+
+Then
+
+$$
+`\begin{split}
+C(NZ) &amp;= \beta_1C(DZ)\\
+\beta_1 &amp;= \frac{C(NZ)}{C(DZ)}
+\end{split}`
+$$
 
 
 
