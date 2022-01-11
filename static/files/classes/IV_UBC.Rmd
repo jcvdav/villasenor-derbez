@@ -340,13 +340,7 @@ An instrument is a variable that is:
 
 
 ---
-# Instrumental variables
-
->An instrument is a variable that is:
-- **correlated** with the explanatory variable of interest (**relevant**), _and_
-- **uncorrelated** with the disturbance (**exogenous**)
-
---
+# Instrumental Variables: Validity
 
 With the model being:
 
@@ -367,7 +361,7 @@ A valid instrument has to meet two necesary conditions:
 
 
 ---
-# Instrumental Variables
+# Instrumental Variables: Validity
 
 
 ## Why must the instrument be **relevant _and_ exogenous**?
@@ -441,7 +435,7 @@ Some examples
 .pull-right[It's as-if random, at least w.r.t. malaria transmission]
 
 ---
-# Instrumental Variables: Back to deforestation and malaria
+# Instrumental Variables: Examples
 
 Our potential instruments were:
 
@@ -480,14 +474,13 @@ Our potential instruments were:
 
 ## Agricultural earnings potential is a valid instrument because:
 
-- It induces deforestation
+- It induces deforestation, and
 
 - It is independent of malaria incidence
 
 ---
 class:inverse,center,middle
-# Agricultural earnings potential is a valid instrument
-## If we have a valid instrument, how do we use it?
+# Now that we have a valid instrument, how do we use it?
 
 ---
 # Estimation: Two-stage least squares (2SLS)
@@ -564,7 +557,7 @@ $$
 
 --
 
-Replace the problematic $X_i$ with the problem-free $\hat X_i$:
+Replace the problematic $X$ with the problem-free $\hat X$:
 
 --
 
@@ -574,7 +567,7 @@ $$
 
 --
 
-Estimate $\alpha$ and $\beta$ via OLS
+Estimate $\alpha$ and $\beta$ via OLS, as originally intended
 
 
 
@@ -583,9 +576,11 @@ Estimate $\alpha$ and $\beta$ via OLS
 ---
 # Concluding remarks
 
-The problem with the use of OLS when estimating the coefficient on an endogenous regressor and:
+The problem with using OLS to estimate the coefficient on an endogenous regressor and:
 
 - It makes $\hat \beta$ a biased estimate of $\beta$
+
+--
 
 The conditions necessary for a valid instrument for an endogenous regressor:
 
