@@ -1,6 +1,6 @@
 ---
 title: "Instrumental Variables in the Environmental Sciences"
-subtitle: "Causal estimates from observational data and an endogenous regressor"
+subtitle: ""
 author: "Villaseñor-Derbez, J.C."
 institute: "UBC Teaching Seminar"
 date: "01/14/2022"
