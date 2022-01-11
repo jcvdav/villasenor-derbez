@@ -14,9 +14,9 @@
 class: center, middle, inverse, title-slide
 
 # Instrumental Variables in the Environmental Sciences
-## Causal estimates from observational data
+## Causal estimates from observational data and an endogenous regressor
 ### Villaseñor-Derbez, J.C.
-### UBC Teaching Semminar
+### UBC Teaching Seminar
 ### 01/14/2022
 
 ---
@@ -26,100 +26,97 @@ class: center, middle, inverse, title-slide
 
 # Background
 
-About the job:
+- Intended for an upper-level undergraduate class (e.g. FRE 474 by Sumeet Gulati)
 
-- Asst Prof in Human Dimensions of Biodiversity Concervation at UBC
-
-- Joint appointment at:
-  - Food and Resource Economics (FRE; mostly economists)
-  - Institute for Resources, Environment and Sustainability (IRES; mostly non-economists)
-
-- Part of a 5-person cluster hire
-  - 4 already hired last year
-  - Failed search last year
-
----
-
-# Background
-
-- Intended for an upper-level undergraduate class (e.g. FRE 474)
+--
 
 - The use of Instrumental Variables as a quasi-experimental method for causal inference
 
+--
+
 - The use of this method for understanding environmental solutions, either from your own research or from other published work.
 
-- Assume your “students” have a basic understanding of the method.
+--
+
+- Assume your “students” have a basic understanding of the method
+
+--
 
 - Highlight:
-  - the problems with the use of ordinary least square regression while estimating the coefficient on an endogenous regressor and,
-  - the conditions necessary for a valid instrument for an endogenous regressor
-  
+  - The problems with the use of ordinary least square regression while estimating the coefficient on an endogenous regressor and,
+  - The conditions necessary for a valid instrument for an endogenous regressor
+
+--
+
 - Timeline:
   - 20 min for mock lecture
   - 5 min for clarifying questions from the class
   - 25 min for audience (search committee, LFS and IRES faculty, and students) to ask questions about your approach to teaching
 
 ---
-# Today's class:
+# Today's lecture:
 
-One-sentence summary: 
+- Motivation for IV: Review of endogeneity
 
-&gt;**IV regression** is a general way to obtain a consistent estimator of the unknown coefficients of the population regression function when the **regressor `\(X\)` is correlated with the error term `\(u\)`** (_i.e._ `\(X\)` is endogenous!).
+  - When does it arise?
 
+  - Why is it problematic for OLS?
+  
+  - How do we get around it?
+
+--
+
+- Instrumental Variables:
+
+  - What is an instrumental variable
+  
+  - Conditions necessary for a valid instrument
 
 --
 
-- Think of the variation in `\(X\)` as having two parts:
-
-  - endogenous (bad, biases our results)
-  - exogenous (good)
-
-
---
-- The *instrument* (some other variable, `\(Z\)`) allows us to isolate the **exogenous** variation in `\(X\)`
-
-
---
-- No free lunch. A _valid_ instrument must meet some necessary conditions
-
----
-# Today's class:
-
-- Motivation for IV
-
---
-- Review of causality and endogeneity
-
---
 - IV implementation:
 
   - Why and how IV regression works
   
-  - Conditions for a valid instrument
-  
   - Estimation via 2SLS
 
 ---
-# Endogeneity
+# Endogeneity: Review
+
+### **Endogeneity**: When a variable is determined within the system
+
+--
 
 Endogeneity arises:
 
+--
+
 - Omitted variables
 
-- Errors in variables
+--
+
+- Measurement errors in variables
+
+--
 
 - Simultaneous causality
 
-  - Nature is full of feedbacks
-  
+--
+
   - Causality runs _both ways_
-  
-  - Even if we observe the entire system, multiple regression cannot eliminate bias
+
+--
+
+  - Nature is full of feedbacks
+
+--
+
+  - Even if we observe the entire system, OLS will produce biased estimates
 
 ---
-# Motivation
+# Endogeneity: Example
 
-## Deforestation &amp; Malaria (McDonald &amp; Mordecai, 2019)
+## Deforestation &amp; Malaria (MacDonald &amp; Mordecai, 2019)
 
 &lt;!-- Importantly, ignoring this statistically well supported feedback leads to substantial underestimates of the true effect of deforestation on malaria transmission, which may have confounded the results of earlier studies --&gt;
 
@@ -133,13 +130,13 @@ $$
 \Large{Y_i = \alpha + \beta X_i + \epsilon_i}
 $$
 
-- `\(X_i\)` Deforestation (area of forest lost in `\(i\)`)
 - `\(Y_i\)` Malaria incidence (number of Malaria cases in `\(i\)`)
+- `\(X_i\)` Deforestation (area of forest lost in `\(i\)`)
 
 ---
-# Motivation
+# Endogeneity: Example
 
-## Deforestation &amp; Malaria (McDonald &amp; Mordecai, 2019)
+## Deforestation &amp; Malaria (MacDonald &amp; Mordecai, 2019)
 
 Bidirectional feedback between deforestation and malaria
 
@@ -148,21 +145,20 @@ Bidirectional feedback between deforestation and malaria
 --
 &gt; Deforestation promotes malaria via ecological mechanisms, but **local epidemics of malaria reduce forest clearing** because poor health reduces economic activity
 
---
-
-Sounds like simultaneity bias
-
 ---
-# Endogeneity: Problem
+# Endogeneity: Problematic
+
+## Simultaneous causality makes `\(X\)` endogenous
 
 The deforestation-malaria system:
 
 $$
 `\begin{split}
 Y_i &amp;= \alpha + \beta X_i + \epsilon_i \\
-X_i &amp;= \theta + \gamma Y_i + \mu_i
+X_i &amp;= \theta - \gamma Y_i + \mu_i
 \end{split}`
 $$
+--
 
 - Imagine `\(\epsilon_i &gt; 0\)`
 
@@ -172,15 +168,98 @@ $$
 
 --
 
-- A higher `\(Y_i\)` _decreases_ `\(X_i\)` (because `\(\gamma &lt; 0\)`)
+- A higher `\(Y_i\)` _decreases_ `\(X_i\)`
 
 --
 
-- `\(X_i\)` and `\(\epsilon_i\)` are correlated:  `\(\mathrm{cov}(X_i, \epsilon_i) = \frac{\gamma\sigma_\epsilon^2}{1 - \gamma\beta}\)` .right[[Show me how](#simultaneity-bias)]
+- `\(X_i\)` and `\(\epsilon_i\)` are related
 
 --
 
-.center[How do we estimate the effect of deforestation on malaria incidence?]
+- An endogenous regressor biases `\(\hat \beta\)`
+
+---
+# Endogeneity: biases `\(\hat \beta\)`
+
+Recall: `\(\hat{\beta} = \frac{\mathrm{cov}(Y,X)}{\mathrm{var}(X)}\)`
+
+--
+
+Let's substitute `\(Y_i = \alpha + \beta X_i + \epsilon_i\)`:
+
+$$
+\hat{\beta} = \frac{\mathrm{cov}(\alpha + \beta X + \epsilon, X)}{\mathrm{var(X)}}
+$$
+
+--
+
+$$
+\hat{\beta}= \frac{\mathrm{cov}(\alpha, X) + \beta \mathrm{cov}(X, X) + \mathrm{cov}(\epsilon, X)}{\mathrm{var(X)}}
+$$
+--
+
+$$
+\hat{\beta} = \frac{0 + \beta \mathrm{var}(X) + \mathrm{cov}(\epsilon, X)}{\mathrm{var(X)}}
+$$
+
+--
+
+$$
+\hat \beta= \beta + \frac{\mathrm{cov}(\epsilon, X)}{\mathrm{var(X)}}
+$$
+
+--
+
+We need `\(\mathrm{cov}(\epsilon, X) = 0\)`, but is this true?
+
+---
+# Endogeneity: biases `\(\hat \beta\)`
+Recall:
+$$
+`\begin{align}
+Y_i &amp;= \alpha + \beta X_i + \epsilon_i \\
+X_i &amp;= \theta - \gamma Y_i + \mu_i
+\end{align}`
+$$
+
+Calculate `\(\mathrm{cov}(X,\epsilon)\)`:
+
+$$
+\mathrm{cov}(X, \epsilon) = \mathrm{cov}(\theta - \gamma Y + \mu, \epsilon)
+$$
+
+--
+
+$$
+\mathrm{cov}(X, \epsilon)=-\gamma\mathrm{cov}(Y,\epsilon) + \mathrm{cov}(\mu, \epsilon)
+$$
+
+--
+$$
+\mathrm{cov}(X, \epsilon)= -\gamma\mathrm{cov}(\alpha + \beta X + \epsilon, \epsilon)
+$$
+
+--
+
+$$
+\mathrm{cov}(X, \epsilon)= -\gamma\beta\mathrm{cov}(X,\epsilon) - \gamma\mathrm{var}(\epsilon)
+$$
+
+--
+
+$$
+\mathrm{cov}(X, \epsilon) = \frac{-\gamma\mathrm{var}(\epsilon)}{1 + \gamma\beta}
+$$
+
+--
+
+Since `\(\hat \beta = \beta + \frac{\mathrm{cov}(\epsilon_i, X)}{\mathrm{var(X)}}\)` and `\(\mathrm{cov}(X, \epsilon) \neq 0\)`, `\(\hat \beta \neq \beta\)`
+
+
+---
+class:inverse,center,middle
+
+## How do we estimate the effect of deforestation on malaria incidence?
 
 
 ---
@@ -190,7 +269,15 @@ Two solutions exist:
 
 --
 
-- Randomized controlled experiment (unethical and unfeasible)
+- Randomized controlled experiment:
+
+--
+
+  - Unethical
+
+--
+
+  - Unfeasible
 
 --
 
@@ -198,28 +285,34 @@ Two solutions exist:
 
 --
 
-  - Imagine that we can split deforestation into an exogenous part and an endogenous part:
-
+  - Imagine that we can split deforestation into an exogenous part and an endogenous part
+  
 $$
 `\begin{split}
 Y_i &amp;= \alpha + \beta X_i + \epsilon_i \\
 &amp;= \alpha + \beta \left(X_i^{\text{Exo}} + X_i^{\text{Endo}}\right) + \epsilon_i \\
-&amp;= \alpha + \beta X_i^{\text{Exo}} + \underbrace{\beta X_i^{\text{Endo}} + \epsilon_i}_{\varepsilon_i}\\
-Y_i &amp;= \alpha + \beta X_i^{\text{Exo}} + \varepsilon_i
+&amp;= \alpha + \beta X_i^{\text{Exo}} + \underbrace{\beta X_i^{\text{Endo}} + \epsilon_i}_{\varepsilon_i}
 \end{split}`
 $$
---
-
-  - We could use this exogenous variation in deforestation to consistently estimate `\(\beta\)`
 
 --
+$$
+Y_i = \alpha + \beta X_i^{\text{Exo}} + \varepsilon_i
+$$
 
-.center[What would exogenous variation in deforestation mean?]
+
+--
+
+We could use this exogenous variation in deforestation to consistently estimate `\(\beta\)`
 
 ---
-# Endogoneity: Solutions
+class:inverse,center,middle
+# What does **exogenous variation** in deforestation mean, and how do we get it?
 
-.center[What would exogenous variation in deforestation mean?]
+---
+# Instrumental Variables
+
+What does **exogenous variation** in deforestation mean?
 
 --
 
@@ -227,37 +320,76 @@ $$
 
 --
 
-.center[How do we isolate this exogenous variation in our deforestation?]
+How do we **isolate** it?
 
 --
 
-&gt;Find an instrument (an instrumental variable): `\(Z\)`
+&gt;Find an instrument `\(Z\)` that predicts `\(X\)`
 
 --
+
+What is an instrument?
+
+
+--
+
+
+An instrument is a variable that is:
+
+- **correlated** with the explanatory variable of interest (**relevant**), _and_
+
+--
+
+- **uncorrelated** with the disturbance (**exogenous**)
+
+
+---
+# Instrumental variables
+
+&gt;An instrument is a variable that is:
+- **correlated** with the explanatory variable of interest (**relevant**), _and_
+- **uncorrelated** with the disturbance (**exogenous**)
+
+--
+
+With the model being:
 
 $$
 Y_i = \alpha + \beta X_i + \epsilon_i
 $$
 
+A valid instrument has to meet two necesary conditions:
 
-An instrument is a variable that is:
+--
 
-- **Correlated** with the explanatory variable of interest (relevant)
+- **Relevance:** `\(\mathrm{cov}(X, Z) \neq 0\)` (testable)
 
-$$
-\mathrm{cov}(X_i, Z_i) \neq 0
-$$
 
-- **Uncorrelated** with the disturbance (exogenous)
+--
 
-$$
-\mathrm{cov}(Z_i,\epsilon_i) = 0
-$$
+- **Exogeneity:** `\(\mathrm{cov}(Z,\epsilon) = 0\)` (not testable)
+
 
 ---
 # Instrumental Variables
 
-*Relevance:* We need the instrument to cause a change in (correlate with) our endogenous explanatory variable.
+
+## Why must the instrument be **relevant _and_ exogenous**?
+
+--
+###  A **relevant instrument** causes changes in `\(X\)`
+
+
+--
+### If the **instrument is exogenous**, then part of the changes in `\(X\)` are exogenous
+
+--
+### This exogenous variation in `\(X\)` can be used to estimate `\(\beta\)`
+
+---
+# Instrumental Variables: Examples
+
+**Relevance:** We need the instrument to cause a change in our endogenous explanatory variable ([Show me why](#relevance))
 
 
 --
@@ -268,49 +400,69 @@ Some examples
 --
 .pull-left[Potential instrument] .pull-right[Relevant?]
 
-.pull-left[Social security number of plot owner]
+--
+
+.pull-left[SSN of municipality mayor]
 --
 .pull-right[**Probably not relevant**]
 .pull-right[Uncorrelated with deforestation]
 --
-.pull-left[Quality of timber]
+.pull-left[Agricultural subsidies]
 --
 .pull-right[**Probably relevant**]
-.pull-right[Quality may correlate with incentives to cut]
+.pull-right[Subsidy reception may lead to deforestation]
 --
-.pull-left[Aerosol pollution]
+.pull-left[Agricultural earning potential]
 --
 .pull-right[**Relevant**]
 .pull-right[Highly correlated with deforestation]
 
 ---
-# Instrumental Variables
+# Instrumental Variables: Examples
 
-*Exogenous:* The instrument has to be independent of omitted factors that affect our outcome variable — as good as randomly assigned
+**Exogenous:** The instrument has to be independent of omitted factors that affect our outcome variable — as good as randomly assigned ([Show me why](#exclusion))
 
 
 --
 Some examples
 
-
-
---
 .pull-left[Potential instrument] .pull-right[Exogenous?]
 
-.pull-left[Social security number of plot owner]
+--
+.pull-left[SSN of municipality mayor]
 --
 .pull-right[**Exogenous**]
 .pull-right[Independent of other factors of deforestation]
 --
-.pull-left[Quality of timber]
+.pull-left[Agricultural subsidies]
 --
 .pull-right[**Not exogenous**]
-.pull-right[Access to better quality = beter revenues = better health status]
+.pull-right[Subsidy allocation might be correlated with malaria incidence]
 --
-.pull-left[Aerosol pollution]
+.pull-left[Agricultural earnings potential]
 --
 .pull-right[**Exogenous**]
-.pull-right[It's as-if random,a t least w.r.t. malaria transmission]
+.pull-right[It's as-if random, at least w.r.t. malaria transmission]
+
+---
+# Instrumental Variables: Back to deforestation and malaria
+
+Our potential instruments were:
+
+.pull-left[SSN of municipality mayor]
+--
+.pull-right[Probably not relevant]
+.pull-right[**Exogenous**]
+--
+.pull-left[Agricultural subsidy]
+--
+.pull-right[**Probably relevant**]
+.pull-right[Not exogenous]
+--
+.pull-left[Agricultural earnings potential]
+--
+.pull-right[**Relevant**]
+.pull-right[**Exogenous**]
 
 ---
 # Instrumental Variables: Recap
@@ -328,48 +480,73 @@ Some examples
 
 - You must be able to form a cohesive story
 
-
 --
 
-.center[The instrument only affects our outcome through the endogenous variable]
+## Agricultural earnings potential is a valid instrument because:
 
----
-# Instrumental Variables: Back to deforestation and malaria
+- It induces deforestation
 
-Our potential instruments were:
-
-.pull-left[Social security number of plot owner]
---
-.pull-right[**Probably not relevant**]
-.pull-right[**Exogenous**]
---
-.pull-left[Quality of timber]
---
-.pull-right[**Probably relevant**]
-.pull-right[**Not exogenous**]
---
-.pull-left[Aerosol pollution]
---
-.pull-right[**Relevant**]
-.pull-right[**Exogenous**]
-
+- It is independent of malaria incidence
 
 ---
 class:inverse,center,middle
-# If we have a valid instrument, how do we use it?
+# Agricultural earnings potential is a valid instrument
+## If we have a valid instrument, how do we use it?
 
 ---
-# Estimation
+# Estimation: Two-stage least squares (2SLS)
 
-## Two-stage least squares: 2SLS
+## Why is it called 2SLS?
 
-Why does this work?
+--
 
-First stage:
+It has two stages, parts, or steps:
+
+--
+
+- The first step uses the instrument `\(Z\)` to decompose `\(X\)` into:
+  
+  - A problematic (endogenous) component
+  
+  - A problem-free (**exogenous**) component
+  
+--
+  
+- The second stage
+
+  - Uses the **exogenous** component to estimate `\(\beta\)`
+
+---
+# Estimation: 2SLS
+
+## First stage:
 
 $$
 X_i = \pi_0 +\pi_1 Z_i + \omega_i
 $$
+
+---
+# Estimation: 2SLS
+
+## First stage:
+
+$$
+`\begin{split}
+X_i= \underbrace{\pi_0 +\pi_1 Z_i}_{\text{Exogenous}} + \underbrace{\omega_i}_{\text{Endogenous}}
+\end{split}`
+$$
+
+--
+
+-  **Exogenous component**: The part of `\(X_i\)` that can be predicted by `\(Z_i\)`
+
+--
+
+- **Endogenous component**: The part of `\(X_i\)` that may be correlated with `\(\epsilon_i\)`
+
+--
+
+How do we get the exogenous part?
 
 --
 
@@ -377,78 +554,129 @@ $$
 \hat{X_i} = \hat{\pi_0} + \hat{\pi_1} Z_i
 $$
 
+---
+# Estimation: 2SLS
+## Second stage:
+
 --
 
-Note that `\(\hat{X_i}\)` no longer contains an error term (  `\(\varepsilon_i = \gamma Y_i + \epsilon_i\)` )
+With out estimation model being:
+
+$$
+Y_i = \alpha + \beta X_i + \epsilon_i
+$$
 
 --
 
-Second stage:
+Replace the problematic `\(X_i\)` with the problem-free `\(\hat X_i\)`:
+
+--
 
 $$
 Y_i = \alpha + \beta\hat{X_i} + \epsilon_i
 $$
 
+--
 
-.right[[Show me how](2SLS)]
+Estimate `\(\alpha\)` and `\(\beta\)` via OLS
+
+
+
+.right[[Show me why](2SLS)]
 
 ---
-# App
+# Concluding remarks
 
----
-# Admin
+The problem with the use of OLS when estimating the coefficient on an endogenous regressor and:
 
-## Assignment:
+- It makes `\(\hat \beta\)` a biased estimate of `\(\beta\)`
 
-- Blah
+The conditions necessary for a valid instrument for an endogenous regressor:
 
-- Blah
+- Relevant: `\(\mathrm{cov}(Z,X) \neq 0\)`
 
-## Next class:
-
-- Whatever made up stuff in here
+- Exogenous: `\(\mathrm{cov}(Z,\epsilon)\)` is not related to any other variables in the model
 
 ---
 class:center,middle,inverse
 #&lt;\LECTURE&gt;
 
 ---
-class:inverse,center
+class:inverse
 
 # Extra
 
 -[Simultaneity bias](#simultaneity-bias)
 
+-[Endogeneity biases estimate](#endogenous)
+
+-[Relevance assumption](#relevant)
+
+-[Exogeneity assumption](#exlusion)
+
 -[OBV example](#obv-example)
 
 ---
-name: simultaneity-bias
-# Simultaneity bias
+name:relevance
+# Assumption #1: Instrument relevant
 
-Recall:
+---
+name:exclusion
+# Assumption #2: Instrument Exogeneity
+
+Let’s assume that you have found a really great weird instrument `\(Z_i\)` that causes land owners to deforest, but that is independent of malaria and the structural error term
+
+With:
 
 $$
-`\begin{align}
-Y_i &amp;= \alpha + \beta X_i + \epsilon_i \\
-X_i &amp;= \theta + \gamma Y_i + \mu_i
-\end{align}`
+Y_i = \alpha + \beta X_i + \epsilon_i
 $$
 
+Calculate covariance of outcome variable `\(Y\)` and instrument `\(Z\)`:
+
 $$
-`\begin{align}
-\mathrm{cov}(X_i, \epsilon_i) &amp;= \mathrm{cov}(\theta + \gamma Y_i + \mu_i, \epsilon_i)\\
-&amp;= \gamma\mathrm{cov}(Y_i,\epsilon_i) + \mathrm{cov}(\mu_i, \epsilon_i) \: \text{...................Assume } \mathrm{cov}(\mu_i, \epsilon_i) = 0 \: \text{, and substitute } Y_i\\
-&amp;= \gamma\mathrm{cov}(\alpha + \beta X_i + \epsilon_i, \epsilon_i) \\
-&amp;= \gamma\beta\mathrm{cov}(X_i,\epsilon_i) + \gamma\sigma_\epsilon^2\\
-\mathrm{cov}(X_i, \epsilon_i) &amp;= \frac{\gamma\sigma_\epsilon^2}{1 - \gamma\beta}
-\end{align}`
+`\begin{split}
+\mathrm{cov}(Y,Z) &amp;= \mathrm{cov}(\alpha + \beta X,Z)\\
+&amp;= \mathrm{cov}(\alpha,Z) + \mathrm{cov}(\beta X, Z) + \mathrm{cov}(\epsilon, Z)\\
+&amp;= 0 + \beta\mathrm{cov}(X,Z) + \mathrm{cov}(\epsilon,z)
+\end{split}`
 $$
+
+**Exclusion assumption**: The instrument, `\(Z\)`, only affects the outcome through changes in the endogenous variable, `\(X\)`: `\(\mathrm{cov}(\epsilon,z) = 0\)`
+
+Then:
+
+$$
+`\begin{split}
+\mathrm{cov}(Y,Z) &amp;= \beta\mathrm{cov}(X,Z)\\
+\beta_{IV} &amp;= \frac{\mathrm{cov}(Y,Z)}{\mathrm{cov}(X,Z)}
+\end{split}`
+$$
+
+
+
+
+&lt;!-- Other stuff below--&gt;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 ---
 name:obv-example
 # OBV Example: Conservation and elephant abundance
 
-&lt;img src="elephants1.png" height="350" /&gt;
+&lt;img src="elephants1.png" height="350" style="display: block; margin: auto;" /&gt;
 
 ---
 # OBV Example: Conservation and elephant abundance
@@ -491,7 +719,7 @@ The data-generating process is:
 
 # How real is this example?
 
-Consider the problem faced by McDonald et al
+Consider the problem faced by MacDonald et al
 
 - `\(D_i\)` is observable (*i.e.* purple areas imply `\(D_i = 1\)`)
 - `\(Y_i\)` is observable (*i.e.* Let's go to Mexico an do ecological surveys)
@@ -507,69 +735,19 @@ Since we don't observe `\(A\)`, and our estimation model is:
 
 `$$Y = \alpha + \beta_1 D + \mu$$`
 
-With beause `\(\mu = \beta_2 A + \epsilon\)`
+With because `\(\mu = \beta_2 A + \epsilon\)`
 
 Because `\(D\)` is a function of `\(A\)`
 
---
 
-DAG here
-
---
-
-Biased estimates = poorly informed policy
-
-
---- 
-.name:2SLS
-# Instrumental Variables
-
-## Example
-
-$$
-\hat{\beta_1} = \frac{C(N,D)}{V(D)} = \frac{E[ND]-E[N]E[D]}{V(S)}
-$$
---
-Let's substitute `\(N\)`:
-
-$$
-`\begin{split}
-\hat{\beta_1} &amp;= \frac{E[\beta_0D + \beta_1D^2 + D\beta_2Q + \epsilon]-E[N]E[\beta_0 + \beta_1D + \beta_2Q + \epsilon]}{V(S)}\\
-&amp;= \frac{\beta_1 E(D^2) - \beta_1E(D)^2 + \beta_2E(QD) -\beta_2 E(D)E(Q) + E(Du) - E(D)E(u)}{V(S)}\\
-&amp;=\beta_1 + \beta_2\frac{C(QD)}{V(D)}
-\end{split}`
-$$
---
-If `\(\beta_2 \neq 0\)` and `\(C(QD) &gt; 0\)`, we're in trouble
 
 ---
-# Instrumental Variables
+name:2SLS
+# Two-stage least squares
 
-Let’s assume that you have found a really great weird instrument `\(Z_i\)` that causes land owners to conserve, but that is independent of habitat quality and the structural error term.
 
-$$
-`\begin{split}
-C(NZ) &amp;= C((\beta_0D + \beta_1D^2 + D\beta_2Q + \epsilon),Z)\\
-&amp;= E((\beta_0D + \beta_1D^2 + D\beta_2Q + \epsilon)Z) - E(D)E(S)\\
-&amp;= \beta_0[E(Z)-\beta_0E(Z)] + \beta_1[E(DZ) - E(D)E(Z)] + \beta_2[E(QZ)-E(Q)E(Z)] + [E(uZ) - E(u)E(Z)]\\
-&amp;= \beta_1C(DZ) + \beta_2C(QZ) +C(uZ)
-\end{split}`
-$$
 
---
 
-If `\(C(DZ) = 0\)` and `\(C(uZ) = 0\)`
-
---
-
-Then
-
-$$
-`\begin{split}
-C(NZ) &amp;= \beta_1C(DZ)\\
-\beta_1 &amp;= \frac{C(NZ)}{C(DZ)}
-\end{split}`
-$$
 
 
 
