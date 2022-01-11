@@ -588,6 +588,12 @@ The conditions necessary for a valid instrument for an endogenous regressor:
 
 - Exogenous: $\mathrm{cov}(Z,\epsilon)$ is not related to any other variables in the model
 
+--
+
+App is live:
+
+[Link here](https://jcvdav.shiniapps.io/IV)
+
 ---
 class:center,middle,inverse
 #<\LECTURE>
