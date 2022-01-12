@@ -155,7 +155,7 @@ Endogeneity arises:
   - Even if we observe the entire system, OLS will produce biased estimates
   
 ---
-
+# Endogeneity: Example
 ## Simultaneous causality makes `\(X\)` endogenous
 
 The deforestation-malaria system:
@@ -187,7 +187,7 @@ $$
 - An endogenous regressor biases `\(\hat \beta\)`
 
 ---
-# Endogeneity: biases `\(\hat \beta\)`
+# Endogeneity: The problem
 
 Recall: `\(\hat{\beta} = \frac{\mathrm{cov}(Y,X)}{\mathrm{var}(X)}\)`
 
@@ -221,13 +221,10 @@ $$
 We need `\(\mathrm{cov}(\epsilon, X) = 0\)`, but is this true?
 
 ---
-# Endogeneity: biases `\(\hat \beta\)`
+# Endogeneity: The problem
 Recall:
 $$
-`\begin{align}
-Y_i &amp;= \alpha + \beta X_i + \epsilon_i \\
-X_i &amp;= \theta - \gamma Y_i + \mu_i
-\end{align}`
+Y_i = \alpha + \beta X_i + \epsilon_i\;\;\;\;\; \mathrm{and} \;\;\;\;\;X_i = \theta - \gamma Y_i + \mu_i
 $$
 
 Calculate `\(\mathrm{cov}(X,\epsilon)\)`:
@@ -267,7 +264,7 @@ Since `\(\hat \beta = \beta + \frac{\mathrm{cov}(\epsilon_i, X)}{\mathrm{var(X)}
 ---
 class:inverse,center,middle
 
-## How do we estimate the effect of deforestation on malaria incidence?
+## Can we estimate the effect of deforestation on malaria incidence?
 
 
 ---
@@ -282,6 +279,10 @@ Before, we covered:
 --
 
   - Not feasible
+
+--
+
+Today:
 
 --
 
@@ -464,9 +465,6 @@ Our potential instruments were:
 
 - You must be able to tell a coherent story
 
---
-
-- Coming up with a **valid instrument** is tough
 
 --
 
@@ -611,15 +609,15 @@ class:inverse
 
 # Extra
 
--[Simultaneity bias](#simultaneity-bias)
+- [Simultaneity bias](#simultaneity-bias)
 
--[Endogeneity biases estimate](#endogenous)
+- [Endogeneity biases estimate](#endogenous)
 
--[Relevance assumption](#relevant)
+- [Relevance assumption](#relevant)
 
--[Exogeneity assumption](#exlusion)
+- [Exogeneity assumption](#exlusion)
 
--[OBV example](#obv-example)
+- [OBV example](#obv-example)
 
 ---
 name:relevance
@@ -629,13 +627,7 @@ name:relevance
 name:exclusion
 # Assumption #2: Instrument Exogeneity
 
-Let’s assume that you have found a really great weird instrument `\(Z_i\)` that causes land owners to deforest, but that is independent of malaria and the structural error term
-
-With:
-
-$$
-Y_i = \alpha + \beta X_i + \epsilon_i
-$$
+Recall: `\(Y_i = \alpha + \beta X_i + \epsilon_i\)`
 
 Calculate covariance of outcome variable `\(Y\)` and instrument `\(Z\)`:
 
