@@ -9,15 +9,28 @@ output:
     lib_dir: libs
     nature:
       ratio: '16:9'
+      slideNumberFormat: "%current%"
       highlightStyle: github
       highlightLines: true
       countIncrementalSlides: false
+    css: xaringan-themer.css
 ---
 
-```{r, echo = F}
+```{r, echo = F, include = F, warnings = F}
 knitr::opts_chunk$set(echo = F,
                       warnings = F,
                       message = F)
+
+library(xaringanthemer)
+style_mono_accent(
+  base_color = "#1c5253",
+  header_font_google = google_font("Josefin Sans"),
+  text_font_google   = google_font("Montserrat", "300", "300i"),
+  code_font_google   = google_font("Fira Mono"),
+  header_h1_font_size = "2.5rem",
+  header_h2_font_size = "2rem",
+  text_font_size = "1.15rem"
+)
 ```
 
 
@@ -65,7 +78,7 @@ data <- tibble(
 
 p <- ggplot(data = data,
        mapping = aes(x = x, y = y)) +
-  geom_point(fill = "steelblue", color = "black", shape = 21, size = 3) +
+  geom_point(fill = "gray", color = "black", shape = 21, size = 4) +
   theme_bw(base_size = 20) +
   labs(x = "Forest loss (hectares)", y = "Malaria incidence (# cases)")
 
@@ -119,7 +132,7 @@ An endogenous regressor biases our estimates of $\beta$
 ---
 # Feedbacks are prevalent
 
-Coupled Human-Natural systems have feedbacks
+.center[Coupled Human-Natural systems have feedbacks]
 
 ```{r, echo = F, out.height=200, fig.align='center'}
 knitr::include_graphics("feedbacks.png")
@@ -300,7 +313,7 @@ class:inverse,center,middle
 ---
 # Endogeneity: Solutions
 
-Two ideas exist:
+Before, we covered:
 
 --
 
