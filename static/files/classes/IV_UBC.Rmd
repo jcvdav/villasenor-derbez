@@ -29,7 +29,8 @@ style_mono_accent(
   code_font_google   = google_font("Fira Mono"),
   header_h1_font_size = "2.5rem",
   header_h2_font_size = "2rem",
-  text_font_size = "1.15rem"
+  text_font_size = "1.15rem",
+  link_color = "#808080"
 )
 ```
 
@@ -337,7 +338,7 @@ Before, we covered:
 
 ---
 class:inverse,center,middle
-# What does **exogenous variation** in deforestation mean, and how do we get it?
+# What does _exogenous variation_ in deforestation mean, and how do we get it?
 
 ---
 # Instrumental Variables
@@ -502,7 +503,11 @@ Our potential instruments were:
 --
 
 
-- You must be able to form a cohesive story
+- You must be able to tell a coherent story
+
+--
+
+- Coming up with a **valid instrument** is tough
 
 --
 
