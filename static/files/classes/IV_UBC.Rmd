@@ -14,41 +14,121 @@ output:
       countIncrementalSlides: false
 ---
 
-<!-- https://raw.githack.com/edrubin/EC421W19/master/LectureNotes/11InstrumentalVariables/11_instrumental_variables.html#38 -->
+```{r, echo = F}
+knitr::opts_chunk$set(echo = F,
+                      warnings = F,
+                      message = F)
+```
 
-# Background
 
-- Intended for an upper-level undergraduate class (e.g. FRE 474 by Sumeet Gulati)
+# Example: Deforestation and malaria
+
+<!-- Importantly, ignoring this statistically well supported feedback leads to substantial underestimates of the true effect of deforestation on malaria transmission, which may have confounded the results of earlier studies -->
+
+## What is the effect of deforestation on malaria incidence?
+
+```{r, echo = F, out.height=200, fig.align='center'}
+knitr::include_graphics("mosquito1.png")
+```
+
+.center[$$\LARGE{X \rightarrow Y}$$]
+
+---
+# Example: Deforestation and malaria
+
+## What is the effect of deforestation on malaria incidence?
+
+```{r, echo = F, out.height=200, fig.align='center'}
+knitr::include_graphics("mosquito_data.png")
+```
+
+
+.center[$$\LARGE{X \rightarrow Y}$$]
+
+
+---
+# Example: Deforestation and malaria
+
+## What is the effect of deforestation on malaria incidence?
+
+```{r, echo = F, fig.align='center', fig.width = 5.5, fig.height = 4}
+suppressPackageStartupMessages({
+  library(tidyverse)
+})
+
+set.seed(43)
+
+data <- tibble(
+  x = rnorm(30, 10, 1),
+  y = 0.5 * x + rnorm(30, 0, 1)
+)
+
+p <- ggplot(data = data,
+       mapping = aes(x = x, y = y)) +
+  geom_point(fill = "steelblue", color = "black", shape = 21, size = 3) +
+  theme_bw(base_size = 20) +
+  labs(x = "Forest loss (hectares)", y = "Malaria incidence (# cases)")
+
+p
+```
+
+
+
+---
+# Example: Deforestation and malaria
+
+## What is the effect of deforestation on malaria incidence?
+
+
+```{r, echo = F, fig.align='center', fig.width = 5.5, fig.height = 4}
+p + geom_smooth(method = "lm", fill = "transparent", color = "black", se = F)
+```
 
 --
 
-- The use of Instrumental Variables as a quasi-experimental method for causal inference
+$$
+\Large{Y_i = \alpha + \beta X_i + \epsilon_i}
+$$
+- $Y_i$ Malaria incidence (number of Malaria cases in $i$)
+- $X_i$ Deforestation (area of forest lost in $i$)
+
+---
+class:inverse,middle,center
+# Are we _really_ done here?
+
+---
+# Example: Deforestation and malaria
+
+Bidirectional feedback between deforestation and malaria
+
+```{r, echo = F, out.height=200, fig.align='center'}
+knitr::include_graphics("mosquito2.png")
+```
+
+--
+> Deforestation promotes malaria via ecological mechanisms, but **local epidemics of malaria reduce forest clearing** because poor health reduces economic activity (MacDonald & Mordecai, 2019)
 
 --
 
-- The use of this method for understanding environmental solutions, either from your own research or from other published work.
+This means $X$ is endogenous
 
 --
 
-- Assume your “students” have a basic understanding of the method
+An endogenous regressor biases our estimates of $\beta$
 
---
+---
+# Feedbacks are prevalent
 
-- Highlight:
-  - The problems with the use of ordinary least square regression while estimating the coefficient on an endogenous regressor and,
-  - The conditions necessary for a valid instrument for an endogenous regressor
+Coupled Human-Natural systems have feedbacks
 
---
-
-- Timeline:
-  - 20 min for mock lecture
-  - 5 min for clarifying questions from the class
-  - 25 min for audience (search committee, LFS and IRES faculty, and students) to ask questions about your approach to teaching
+```{r, echo = F, out.height=200, fig.align='center'}
+knitr::include_graphics("feedbacks.png")
+```
 
 ---
 # Today's lecture:
 
-- Motivation for IV: Review of endogeneity
+- Review of endogeneity:
 
   - When does it arise?
 
@@ -87,10 +167,6 @@ Endogeneity arises:
 
 --
 
-- Measurement errors in variables
-
---
-
 - Simultaneous causality
 
 --
@@ -104,45 +180,8 @@ Endogeneity arises:
 --
 
   - Even if we observe the entire system, OLS will produce biased estimates
-
+  
 ---
-# Endogeneity: Example
-
-## Deforestation & Malaria (MacDonald & Mordecai, 2019)
-
-<!-- Importantly, ignoring this statistically well supported feedback leads to substantial underestimates of the true effect of deforestation on malaria transmission, which may have confounded the results of earlier studies -->
-
-What is the effect of deforestation on malaria incidence?
-
-```{r, echo = F, out.height=200, fig.align='center'}
-knitr::include_graphics("mosquito1.png")
-```
-
---
-
-$$
-\Large{Y_i = \alpha + \beta X_i + \epsilon_i}
-$$
-
-- $Y_i$ Malaria incidence (number of Malaria cases in $i$)
-- $X_i$ Deforestation (area of forest lost in $i$)
-
----
-# Endogeneity: Example
-
-## Deforestation & Malaria (MacDonald & Mordecai, 2019)
-
-Bidirectional feedback between deforestation and malaria
-
-```{r, echo = F, out.height=200, fig.align='center'}
-knitr::include_graphics("mosquito2.png")
-```
-
---
-> Deforestation promotes malaria via ecological mechanisms, but **local epidemics of malaria reduce forest clearing** because poor health reduces economic activity
-
----
-# Endogeneity: Problematic
 
 ## Simultaneous causality makes $X$ endogenous
 
@@ -261,7 +300,7 @@ class:inverse,center,middle
 ---
 # Endogeneity: Solutions
 
-Two solutions exist:
+Two ideas exist:
 
 --
 
@@ -269,11 +308,7 @@ Two solutions exist:
 
 --
 
-  - Unethical
-
---
-
-  - Unfeasible
+  - Not feasible
 
 --
 
@@ -283,23 +318,9 @@ Two solutions exist:
 
   - Imagine that we can split deforestation into an exogenous part and an endogenous part
   
-$$
-\begin{split}
-Y_i &= \alpha + \beta X_i + \epsilon_i \\
-&= \alpha + \beta \left(X_i^{\text{Exo}} + X_i^{\text{Endo}}\right) + \epsilon_i \\
-&= \alpha + \beta X_i^{\text{Exo}} + \underbrace{\beta X_i^{\text{Endo}} + \epsilon_i}_{\varepsilon_i}
-\end{split}
-$$
-
---
-$$
-Y_i = \alpha + \beta X_i^{\text{Exo}} + \varepsilon_i
-$$
-
-
 --
 
-We could use this exogenous variation in deforestation to consistently estimate $\beta$
+  - We could use this exogenous variation in deforestation to consistently estimate $\beta$
 
 ---
 class:inverse,center,middle
@@ -394,15 +415,15 @@ Some examples
 
 .pull-left[SSN of municipality mayor]
 --
-.pull-right[**Probably not relevant**]
+.pull-right[Not relevant]
 .pull-right[Uncorrelated with deforestation]
 --
 .pull-left[Agricultural subsidies]
 --
-.pull-right[**Probably relevant**]
+.pull-right[**Relevant**]
 .pull-right[Subsidy reception may lead to deforestation]
 --
-.pull-left[Agricultural earning potential]
+.pull-left[Random shock in price of soy beans]
 --
 .pull-right[**Relevant**]
 .pull-right[Highly correlated with deforestation]
@@ -429,7 +450,7 @@ Some examples
 .pull-right[**Not exogenous**]
 .pull-right[Subsidy allocation might be correlated with malaria incidence]
 --
-.pull-left[Agricultural earnings potential]
+.pull-left[Random shock in price of soy beans]
 --
 .pull-right[**Exogenous**]
 .pull-right[It's as-if random, at least w.r.t. malaria transmission]
@@ -441,7 +462,7 @@ Our potential instruments were:
 
 .pull-left[SSN of municipality mayor]
 --
-.pull-right[Probably not relevant]
+.pull-right[Not relevant]
 .pull-right[**Exogenous**]
 --
 .pull-left[Agricultural subsidy]
@@ -449,7 +470,7 @@ Our potential instruments were:
 .pull-right[**Probably relevant**]
 .pull-right[Not exogenous]
 --
-.pull-left[Agricultural earnings potential]
+.pull-left[Random shock in price of soy beans]
 --
 .pull-right[**Relevant**]
 .pull-right[**Exogenous**]
@@ -483,7 +504,13 @@ class:inverse,center,middle
 # Now that we have a valid instrument, how do we use it?
 
 ---
-# Estimation: Two-stage least squares (2SLS)
+# Estimation
+
+--
+
+One estimation strategy is vis **Two-stage least squares (2SLS)**
+
+--
 
 ## Why is it called 2SLS?
 
@@ -557,7 +584,7 @@ $$
 
 --
 
-Replace the problematic $X$ with the problem-free $\hat X$:
+Replace the problematic $X_i$ with the problem-free $\hat X_i$:
 
 --
 
