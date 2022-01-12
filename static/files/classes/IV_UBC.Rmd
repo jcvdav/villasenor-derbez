@@ -29,7 +29,7 @@ style_mono_accent(
   code_font_google   = google_font("Fira Mono"),
   header_h1_font_size = "2.5rem",
   header_h2_font_size = "2rem",
-  text_font_size = "1.15rem",
+  text_font_size = "1.1rem",
   link_color = "#808080"
 )
 ```
@@ -511,7 +511,7 @@ Our potential instruments were:
 
 --
 
-## Agricultural earnings potential is a valid instrument because:
+## Agricultural earnings potential is a **valid instrument** because:
 
 - It induces deforestation, and
 
@@ -519,7 +519,7 @@ Our potential instruments were:
 
 ---
 class:inverse,center,middle
-# Now that we have a valid instrument, how do we use it?
+# Now that we have a _valid instrument_, how do we use it?
 
 ---
 # Estimation
@@ -635,9 +635,13 @@ The conditions necessary for a valid instrument for an endogenous regressor:
 
 --
 
-App is live:
+Not covered:
 
-[Link here](https://jcvdav.shiniapps.io/IV)
+- Multiple explanatory variables
+
+- Heterogeneous treatment effects
+
+- Problems with a weak instrument
 
 ---
 class:center,middle,inverse
