@@ -520,7 +520,7 @@ class:inverse,center,middle
 
 --
 
-One estimation strategy is vis **Two-stage least squares (2SLS)**
+One estimation strategy is via **Two-stage least squares (2SLS)**
 
 --
 
