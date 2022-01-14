@@ -1,9 +1,9 @@
 ---
 title: "Instrumental Variables in the Environmental Sciences"
-subtitle: ""
+subtitle: "Solutions to endogeneity"
 author: "Villaseñor-Derbez, J.C."
 institute: "UBC Teaching Seminar"
-date: "01/14/2022"
+date: "Jan 14, 2022"
 output:
   xaringan::moon_reader:
     lib_dir: libs
@@ -31,7 +31,8 @@ style_mono_accent(
   header_h2_font_size = "2rem",
   text_font_size = "1.1rem",
   link_color = "#808080",
-  header_background_auto = T
+  header_background_auto = T,
+  footnote_font_size = "0.75rem"
 )
 ```
 
@@ -60,7 +61,7 @@ knitr::include_graphics("mosquito_data.png")
 
 .center[$$\LARGE{X \rightarrow Y}$$]
 
-
+.footnote[Modified from EarthObservatory, NASA]
 ---
 # Example: Deforestation and malaria
 
@@ -170,7 +171,7 @@ knitr::include_graphics("feedbacks.png")
 ---
 # Endogeneity: Review
 
-### **Endogeneity**: When a variable is determined within the system
+### **Endogeneity**: Explanatory variable is correlated with the error term
 
 --
 
@@ -230,40 +231,6 @@ $$
 
 ---
 # Endogeneity: The problem
-
-Recall: $\hat{\beta} = \frac{\mathrm{cov}(Y,X)}{\mathrm{var}(X)}$
-
---
-
-Let's substitute $Y_i = \alpha + \beta X_i + \epsilon_i$:
-
-$$
-\hat{\beta} = \frac{\mathrm{cov}(\alpha + \beta X + \epsilon, X)}{\mathrm{var(X)}}
-$$
-
---
-
-$$
-\hat{\beta}= \frac{\mathrm{cov}(\alpha, X) + \beta \mathrm{cov}(X, X) + \mathrm{cov}(\epsilon, X)}{\mathrm{var(X)}}
-$$
---
-
-$$
-\hat{\beta} = \frac{0 + \beta \mathrm{var}(X) + \mathrm{cov}(\epsilon, X)}{\mathrm{var(X)}}
-$$
-
---
-
-$$
-\hat \beta= \beta + \frac{\mathrm{cov}(\epsilon, X)}{\mathrm{var(X)}}
-$$
-
---
-
-We need $\mathrm{cov}(\epsilon, X) = 0$, but is this true?
-
----
-# Endogeneity: The problem
 Recall:
 $$
 Y_i = \alpha + \beta X_i + \epsilon_i\;\;\;\;\; \mathrm{and} \;\;\;\;\;X_i = \theta - \gamma Y_i + \mu_i
@@ -300,7 +267,36 @@ $$
 
 --
 
-Since $\hat \beta = \beta + \frac{\mathrm{cov}(\epsilon_i, X)}{\mathrm{var(X)}}$ and $\mathrm{cov}(X, \epsilon) \neq 0$, $\hat \beta \neq \beta$
+---
+# Endogeneity: The Problem
+
+Recall: $\hat{\beta} = \frac{\mathrm{cov_s}(Y,X)}{\mathrm{var_s}(X)}$
+
+--
+
+Let's substitute $Y_i = \alpha + \beta X_i + \epsilon_i$:
+
+$$
+\hat{\beta} = \frac{\mathrm{cov}(\alpha + \beta X + \epsilon, X)}{\mathrm{var(X)}}
+$$
+
+--
+
+$$
+\hat{\beta}= \frac{\mathrm{cov}(\alpha, X) + \beta \mathrm{cov}(X, X) + \mathrm{cov}(\epsilon, X)}{\mathrm{var(X)}}
+$$
+--
+
+$$
+\hat{\beta} = \frac{0 + \beta \mathrm{var}(X) + \mathrm{cov}(\epsilon, X)}{\mathrm{var(X)}}
+$$
+
+--
+
+$$
+\hat \beta= \beta + \frac{\mathrm{cov}(\epsilon, X)}{\mathrm{var(X)}}
+$$
+
 
 
 ---
@@ -494,6 +490,7 @@ Our potential instruments were:
 ---
 # Instrumental Variables: Recap
 
+## The two necessary conditions for a valid instrument:
 
 - Our instrument must be **correlated with our endogenous variable**
 
@@ -548,6 +545,11 @@ It has two stages, parts, or steps:
 - The second stage
 
   - Uses the **exogenous** component to estimate $\beta$
+  
+---
+# Estimation: 2SLS
+
+
 
 ---
 # Estimation: 2SLS
@@ -646,200 +648,130 @@ Not covered:
 class:center,middle,inverse
 #<\LECTURE>
 
----
-class:inverse
-
-# Extra
-
-- [Simultaneity bias](#simultaneity-bias)
-
-- [Endogeneity biases estimate](#endogenous)
-
-- [Relevance assumption](#relevant)
-
-- [Exogeneity assumption](#exlusion)
-
-- [OBV example](#obv-example)
 
 ---
-name:relevance
-# Assumption #1: Instrument relevant
+# Heterogeneous treatment effects
+- Requires to build up with potential outcomes model
 
----
-name:exclusion
-# Assumption #2: Instrument Exogeneity
-
-Recall: $Y_i = \alpha + \beta X_i + \epsilon_i$
-
-Calculate covariance of outcome variable $Y$ and instrument $Z$:
-
-$$
-\begin{split}
-\mathrm{cov}(Y,Z) &= \mathrm{cov}(\alpha + \beta X,Z)\\
-&= \mathrm{cov}(\alpha,Z) + \mathrm{cov}(\beta X, Z) + \mathrm{cov}(\epsilon, Z)\\
-&= 0 + \beta\mathrm{cov}(X,Z) + \mathrm{cov}(\epsilon,z)
-\end{split}
-$$
-
-**Exclusion assumption**: The instrument, $Z$, only affects the outcome through changes in the endogenous variable, $X$: $\mathrm{cov}(\epsilon,z) = 0$
-
-Then:
-
-$$
-\begin{split}
-\mathrm{cov}(Y,Z) &= \beta\mathrm{cov}(X,Z)\\
-\beta_{IV} &= \frac{\mathrm{cov}(Y,Z)}{\mathrm{cov}(X,Z)}
-\end{split}
-$$
-
-
-
-
-<!-- Other stuff below-->
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
----
-name:obv-example
-# OBV Example: Conservation and elephant abundance
-
-```{r, echo = F, out.height=350, fig.align='center'}
-knitr::include_graphics("elephants1.png")
-```
-
----
-# OBV Example: Conservation and elephant abundance
-
-```{r, echo = F, out.height=350, fig.align='center'}
-knitr::include_graphics("elephants2.png")
-```
-
-But what if this was the past?
-
-- Our estimate = 5 
-- Treatment effect = 3
-
----
-# OBV Example: Conservation and elephant abundance
-
-```{r, echo = F, out.height=350, fig.align='center'}
-knitr::include_graphics("elephants3.png")
-```
-
-But what if **this** was the past?
-
-- Our estimate = 5
-- Treatment effect = 6
-
----
-# Endogeneity
-
-## Consider the following DAG
-
-```{r, echo = FALSE, fig.height=3, eval = F}
-library(ggdag)
-library(ggplot2)
-
-dagify(Y ~ D,
-       Y ~ e,
-       D ~ A,
-       #D ~ Z,
-       outcome = "Y",
-       exposure = "D",
-       latent = "A") %>%
-  ggdag(layout = "circle", stylized = F) +
-  theme_void()
-```
-
-
+- More assumptions necessary:
+  
+  - Stable Unit Treatment Value (SUTVA)
+  
+  - Independence assumption (IV is independent of potential outcomes)
+  
+      - Causal interpretation of the reduced form, $Y_i = \sigma_0 + \sigma_1 Z_i + \nu_i$
+  
+  - Exclusion restriction (Any effect of $Z$ on $Y$ must be only through $D$)
+  
+  - Relevant first stage, $X_i = \pi_0 + \pi_1 Z_i + \omega_i$
+  
+  - Monotonicity assumption
+  
 --
 
+- LATE: Local Average Treatment Effect
 
-The data-generating process is:
-
-$$Y = \alpha + \beta_1 D + \beta_2 A + \epsilon$$
-
---
+  - ATE for compliers only
 
 ---
+# Weak instruments
 
-# How real is this example?
+Recall: 
 
-Consider the problem faced by MacDonald et al
+$$
+\hat{\beta}_{TSLS} = \frac{\mathrm{cov_s}(Z,Y)}{\mathrm{cov_s}(Z,X)} \rightarrow_p \frac{\mathrm{cov}(Z,Y)}{\mathrm{cov}(Z,X)} = \beta
+$$
 
-- $D_i$ is observable (*i.e.* purple areas imply $D_i = 1$)
-- $Y_i$ is observable (*i.e.* Let's go to Mexico an do ecological surveys)
-- We don't know why $D_i = 1$ for some
-- We don't observe $A_i$ (*i.e.* We have no idea of the decision-making process that led owners to conserve)
+
+- If $\mathrm{cov}(Z,X)$, then $\mathrm{cov_s}(Z,X)$, therefore:
+
+$$
+\hat{\beta}_{TSLS} = \frac{\mathrm{cov_s}(Z,Y)}{0} = !
+$$
+
 
 ---
-# Endogeneity
+# Covariates and multiple endogenous regressors
 
-## What does it mean to say we have an **endogenous regressor**?
+General IV regression model has 4 variables:
 
-Since we don't observe $A$, and our estimation model is:
+- Dependent variable: $Y$
+- Endogenous regressor: $X$
+- Included exogenous variables: $W$
+- Instrumental variables: $Z$
 
-$$Y = \alpha + \beta_1 D + \mu$$
+$$Y_i = \beta_0 + \beta_1 X_{1i} + \beta_k X_{ki} + \beta_{k+1} W_{i1} + \beta_{k+r} W_{ri} + u_i$$
 
-With because $\mu = \beta_2 A + \epsilon$
+If we have multiple endogenous regressors, we need **at least as many instruments**
 
-Because $D$ is a function of $A$
+- Each endogenous regressor requries its own first-stage regression (regressed on all instruments and all other exogenous variables)
 
 
+---
+# Other estimation strategies
 
 ---
 name:2SLS
-# Two-stage least squares
+# Deriving the 2SLS estimator
 
+The TSLS estimator is: $\hat{\beta}_{TSLS} = \frac{\mathrm{cov_s}(Z,Y)}{\mathrm{cov_s}(Z,X)}$
 
+Recall: $Y_i = \alpha + \beta_i X_i + \epsilon_i$
 
+$$
+\begin{split}
+\mathrm{cov}(Z,Y) &= \mathrm{cov}(Z,(\alpha + \beta X))\\
+&= \mathrm{cov}(Z,\alpha) + \mathrm{cov}(Z, \beta X) + \mathrm{cov}(Z,\epsilon)\\
+&= 0 + \beta\mathrm{cov}(Z,X) + \mathrm{cov}(\epsilon,z) \\
+\end{split}
+$$
 
+By the instrument **exogeneity assumption**, $\mathrm{cov}(Z,\epsilon) = 0$
 
+and by instrument **relevance assumption**, $\mathrm{cov}(Z,X) \neq 0$:
 
+$$
+\beta = \frac{\mathrm{cov}(Z,Y)}{\mathrm{cov}(Z,X)}
+$$
 
+---
+#Deriving the 2SLS estimator (cont.)
 
+$$
+\beta = \frac{\mathrm{cov}(Z,Y)}{\mathrm{cov}(Z,X)}
+$$
 
+Since $\mathrm{cov_s}(Z,Y) \rightarrow_p \mathrm{cov}(Z,Y)$ 
 
+$$
+\hat{\beta}_{TSLS} = \frac{\mathrm{cov_s}(Z,Y)}{\mathrm{cov_s}(Z,X)} \rightarrow_p \frac{\mathrm{cov}(Z,Y)}{\mathrm{cov}(Z,X)} = \beta
+$$
 
+The **numerator** is the _reduced form_. The **denominator** is the _first stage_.
 
+With some manipulation
 
+$$
+\beta = \frac{\frac{\mathrm{cov}(Z,Y)}{\mathrm{var}(Z)}}{\frac{\mathrm{cov}(Z,X)}{\mathrm{var}(Z)}}
+$$
+---
+# Deriving the 2SLS estimator (cont.)
 
+Recall: $X_i = \pi_0 + \pi_1 Z_i + \omega_i$, the first stage
 
+Consider: $Y_i = \sigma_0 + \sigma_1 Z_i + \nu_i$, the reduced form
 
+We can express the coefficients of interest as:
+$$
+\begin{split}
+\pi_1 = \frac{\mathrm{cov}(Z,Y)}{\mathrm{var}(Z)}\\
+\sigma_1 = \frac{\mathrm{cov}(Z,X)}{\mathrm{var}(Z)}
+\end{split}
+$$
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+$$
+\begin{split}
+\beta &= \frac{\frac{\mathrm{cov}(Z,Y)}{\mathrm{var}(Z)}}{\frac{\mathrm{cov}(Z,X)}{\mathrm{var}(Z)}}\\
+\beta = \frac{\pi_1}{\sigma_1}
+\end{split}
+$$
