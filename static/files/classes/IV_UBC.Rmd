@@ -265,8 +265,6 @@ $$
 \mathrm{cov}(X, \epsilon) = \frac{-\gamma\mathrm{var}(\epsilon)}{1 + \gamma\beta}
 $$
 
---
-
 ---
 # Endogeneity: The Problem
 
@@ -316,23 +314,23 @@ Before, we covered:
 
 --
 
-  - Not feasible
+- Not feasible
 
 --
 
-Today:
+
+Today
+
+
+- Separate the exogenous part of $X$ from the endogenous part of $X$
 
 --
 
-- Separate the exogenous part of $X$ from the endogenous part of $X$:
-
---
-
-  - Imagine that we can split deforestation into an exogenous part and an endogenous part
+- Imagine that we can split deforestation into an exogenous part and an endogenous part
   
 --
 
-  - We could use this exogenous variation in deforestation to consistently estimate $\beta$
+- We could use this exogenous variation in deforestation to consistently estimate $\beta$
 
 ---
 class:inverse,center,middle
@@ -435,7 +433,7 @@ Some examples
 .pull-right[**Relevant**]
 .pull-right[Subsidy reception may lead to deforestation]
 --
-.pull-left[Random shock in price of soy beans]
+.pull-left[Random shock in price of soybeans]
 --
 .pull-right[**Relevant**]
 .pull-right[Highly correlated with deforestation]
@@ -462,7 +460,7 @@ Some examples
 .pull-right[**Not exogenous**]
 .pull-right[Subsidy allocation might be correlated with malaria incidence]
 --
-.pull-left[Random shock in price of soy beans]
+.pull-left[Random shock in price of soybeans]
 --
 .pull-right[**Exogenous**]
 .pull-right[It's as-if random, at least w.r.t. malaria transmission]
@@ -479,10 +477,10 @@ Our potential instruments were:
 --
 .pull-left[Agricultural subsidy]
 --
-.pull-right[**Probably relevant**]
+.pull-right[**Relevant**]
 .pull-right[Not exogenous]
 --
-.pull-left[Random shock in price of soy beans]
+.pull-left[Random shock in price of soybeans]
 --
 .pull-right[**Relevant**]
 .pull-right[**Exogenous**]
@@ -507,7 +505,7 @@ Our potential instruments were:
 
 --
 
-## Agricultural earnings potential is a **valid instrument** because:
+## Random shock in price of soybeans is a **valid instrument** because:
 
 - It induces deforestation, and
 
