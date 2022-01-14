@@ -367,7 +367,7 @@ A valid instrument has to meet two necesary conditions:
 ---
 # Instrumental Variables: Examples
 
-**Relevance:** We need the instrument to cause a change in our endogenous explanatory variable ([Show me why](#relevance))
+**Relevance:** We need the instrument to cause a change in our endogenous explanatory variable ([Show me why](#2SLS))
 
 
 --
@@ -398,7 +398,7 @@ Some examples
 ---
 # Instrumental Variables: Examples
 
-**Exogenous:** The instrument has to be independent of omitted factors that affect our outcome variable — as good as randomly assigned ([Show me why](#exclusion))
+**Exogenous:** The instrument has to be independent of omitted factors that affect our outcome variable — as good as randomly assigned ([Show me why](#2SLS))
 
 
 --
@@ -572,7 +572,7 @@ Estimate `\(\alpha\)` and `\(\beta\)` via OLS, as originally intended
 
 
 
-.right[[Show me why](2SLS)]
+.right[[Show me why](#2SLS)]
 
 ---
 # Concluding remarks
@@ -587,7 +587,7 @@ The conditions necessary for a valid instrument for an endogenous regressor:
 
 - Relevant: `\(\mathrm{cov}(Z,X) \neq 0\)`
 
-- Exogenous: `\(\mathrm{cov}(Z,\epsilon)\)` is not related to any other variables in the model
+- Exogenous: `\(\mathrm{cov}(Z,\epsilon) = 0\)`
 
 --
 
