@@ -1,0 +1,272 @@
+---
+title: "Innovations in Small-scale fisheries & Aquaculture"
+subtitle: "Solutions at the intersection of society, science, and technology"  
+author: "Juan Carlos Vilalseñor-Derbez"
+institute: "Bren School, UCSB"
+date: 'January 27, 2022'
+output:
+  xaringan::moon_reader:
+    css: xaringan-themer.css
+    nature:
+      slideNumberFormat: "%current%"
+      highlightStyle: github
+      highlightLines: true
+      ratio: 16:9
+      countIncrementalSlides: false
+---
+
+```{r setup, include=FALSE}
+options(htmltools.dir.version = FALSE)
+knitr::opts_chunk$set(
+  fig.width=9, fig.height=3.5, fig.retina=3,
+  out.width = "100%",
+  cache = FALSE,
+  echo = TRUE,
+  message = FALSE, 
+  warning = FALSE,
+  hiline = TRUE
+)
+```
+
+```{r xaringan-themer, include=FALSE, warning=FALSE}
+library(xaringanthemer)
+style_mono_accent(
+  base_color = "#1c5253",
+  header_font_google = google_font("Josefin Sans"),
+  text_font_google   = google_font("Roboto", "400", "300i", "300b"),
+  code_font_google   = google_font("Fira Mono"),
+  header_h1_font_size = "2.2rem",
+  header_h2_font_size = "2rem",
+  text_font_size = "1.1rem",
+  link_color = "#808080",
+  header_background_auto = T,
+  footnote_font_size = "0.75rem"
+)
+```
+
+
+# Outline
+
+- Background
+
+--
+
+- My take on the prompt:
+
+--
+
+  - Example
+
+--
+
+  - Concrete ideas
+  
+--
+
+- My vision as an André Hoffmann Fellow
+
+<!-- --- -->
+<!-- # Background -->
+
+<!-- .center[##**Design and evaluation** of policy interventions and technology adoptions in the marine realm] -->
+
+
+<!-- -- -->
+
+<!-- How do these **shape human behavior** and environmental and economic **outcomes**? -->
+
+<!-- -- -->
+
+<!-- Two approaches: -->
+
+<!-- - Bio-economic modelling -->
+
+<!-- - Modern econometric techniques -->
+
+---
+class:inverse,center,middle
+# How can _emerging data and technology_ help actors in the small-scale fishery and aquaculture sectors equitably _improve their livelihoods and sustainably manage_ their resources?
+
+--
+
+## Institutions
+
+
+
+## Incentives
+
+
+
+## Outcomes
+
+---
+class:inverse,center,middle
+# Why might institutions matter?
+
+> The same _"intervention"_ can have vastly different outcomes, depending on institutional setting
+
+--
+
+> Technology and data are not a replacement of management
+
+---
+# Example: Moored Fish Aggregating Devices <sup>1</sup>
+
+.footnote[[1] Wilson et al., _In Press_, _Front in Mar Sci_]
+
+.pull-right[![](mFADs.png)]
+
+--
+
+.pull-left[- Transfer fishing pressure from coastal to pelagic resources]
+
+--
+
+.pull-left[- Reduce costs of fishing for pelagics]
+
+--
+
+.pull-left[- No management = mFADs exacerbate the issue]
+
+--
+
+.pull-left[- Output control = mFADs increase profitability of the activity]
+
+--
+
+> Are institutions prepared for emerging data and technology?
+
+
+--
+
+
+> How does the diversity of actors in SSFA interact with these?
+
+---
+class:inverse,center,middle
+### How can _emerging data and technology_ help actors in the small-scale fishery and aquaculture sectors equitably _improve their livelihoods and sustainably manage_ their resources?
+
+---
+# Access to markets & access to credit
+
+.footnote[[2]Kimai et al., 2020, _Mar Pol_; [3] Noack et al., , 2020. _Working paper_]
+
+--
+
+.pull-left[
+- Consistently identified as a constraint<sup>2</sup>
+
+- Inherently difference, but similar limitations
+
+-	What’s missing?
+    
+    - Buyers
+    
+    - Within-app payment methods (PayPal, Venmo)
+
+-	Traceability, ready-supply chain
+]
+
+
+--
+
+.pull-right[- Platforms:
+
+  - [PescaData]()
+
+  - [Tracey](https://tx.company/projects/tracey/) 
+  
+  - [Global Dialogue on Seafood Traceability](https://traceability-dialogue.org/what-is-the-global-dialogue/)
+]
+
+.pull-right[
+- Access to credit<sup>3</sup>
+
+  - **Increases** resource harvesting under insecure property rights
+  
+  - **Reduces** resource harvesting under secure property rights
+]
+
+---
+# Smart intensification
+
+.footnote[[4] Short et al., 2021. _Nature_]
+
+- Level of investment and technology is highly variable <sup>4</sup>
+
+- Scoot Science for aquaculture
+
+- Oceanographic monitoring
+
+
+
+---
+# New institutions
+
+- Index insurance
+
+---
+# A common thread
+
+I think about:
+
+- Incentives
+
+- Institutions
+
+- Markets
+
+- Endogeneity and Scalability
+
+---
+class:inverse,center,middle
+# Three concrete angles
+
+---
+class:inverse, center, middle
+# Angle 1
+## Fisheries sand aquaculture: One and the same?
+
+---
+# Fisheries sand aquaculture: One and the same?
+
+---
+class:inverse, center, middle
+# Angle 2
+## Current uses of technology
+
+---
+#Current uses of technology
+
+- How are they using it?
+
+    - Cost-reduction
+    
+    - Value increasing
+
+- What benefits do they perceive?
+
+- What trends do we observe?
+
+---
+class:inverse, center, middle
+#Angle 3
+# Future uses of technology
+
+---
+# Future use of technology
+
+- Given observed trends, what sectors are most ripe for assimilation?
+
+- What are the clear needs?
+
+- Where is the market saturated
+
+---
+# My vision as a fellow
+
+
+
+---
+class:inverse,center,middle
+# Thanks
