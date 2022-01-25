@@ -6,22 +6,37 @@ institute: "Bren School, UCSB"
 date: 'January 27, 2022'
 output:
   xaringan::moon_reader:
-    css: xaringan-themer.css
+    lib_dir: libs
     nature:
+      ratio: '16:9'
       slideNumberFormat: "%current%"
       highlightStyle: github
       highlightLines: true
-      ratio: 16:9
       countIncrementalSlides: false
+    css: xaringan-themer.css
 ---
 
-```{r setup, include=FALSE}
+<style type="text/css">
+.small {
+    font-size: 70%;
+    padding: 1em 4em 1em 4em;
+}
+</style>
+
+<style type="text/css">
+.large {
+    font-size: 2rem;
+    padding: 1em 1em 1em 1em;
+}
+</style>
+
+```{r setup, include=FALSE, eval = T}
 options(htmltools.dir.version = FALSE)
 knitr::opts_chunk$set(
   fig.width=9, fig.height=3.5, fig.retina=3,
-  out.width = "100%",
+  out.width = "10%",
   cache = FALSE,
-  echo = TRUE,
+  echo = FALSE,
   message = FALSE, 
   warning = FALSE,
   hiline = TRUE
@@ -38,7 +53,7 @@ style_mono_accent(
   header_h1_font_size = "2.2rem",
   header_h2_font_size = "2rem",
   text_font_size = "1.1rem",
-  link_color = "#808080",
+  # link_color = "e3adac",
   header_background_auto = T,
   footnote_font_size = "0.75rem"
 )
@@ -47,7 +62,15 @@ style_mono_accent(
 
 # Outline
 
-- Background
+- Background:
+
+--
+
+  - My motivations
+  
+  - How I think about environmental problems and solutions
+  
+  - Example: Recent technological adoption in the Caribbean
 
 --
 
@@ -55,66 +78,58 @@ style_mono_accent(
 
 --
 
-  - Example
+  - **Access to markets & credit**
 
 --
 
-  - Concrete ideas
-  
+  - Other pathways
+
+---
+# Background
+
+.center[.large[**Design and evaluation** of policy interventions and technology adoptions in the marine realm]]
+
+
 --
 
-- My vision as an André Hoffmann Fellow
+How do these **shape human behavior** and environmental and economic **outcomes**?
 
-<!-- --- -->
-<!-- # Background -->
+--
 
-<!-- .center[##**Design and evaluation** of policy interventions and technology adoptions in the marine realm] -->
+I think about:
 
+- Markets
 
-<!-- -- -->
+- Endogeneity and Scalability
 
-<!-- How do these **shape human behavior** and environmental and economic **outcomes**? -->
+- Incentives (and unintended consequences)
 
-<!-- -- -->
-
-<!-- Two approaches: -->
-
-<!-- - Bio-economic modelling -->
-
-<!-- - Modern econometric techniques -->
+- Institutions
 
 ---
 class:inverse,center,middle
-# How can _emerging data and technology_ help actors in the small-scale fishery and aquaculture sectors equitably _improve their livelihoods and sustainably manage_ their resources?
+# Why might these matter?
 
 --
-
-## Institutions
-
-
-
-## Incentives
-
-
-
-## Outcomes
-
----
-class:inverse,center,middle
-# Why might institutions matter?
 
 > The same _"intervention"_ can have vastly different outcomes, depending on institutional setting
+
+--
+
+> Self-selection confounds effect
 
 --
 
 > Technology and data are not a replacement of management
 
 ---
-# Example: Moored Fish Aggregating Devices <sup>1</sup>
+# Example: Technological addoption in the Caribbean
 
 .footnote[[1] Wilson et al., _In Press_, _Front in Mar Sci_]
 
 .pull-right[![](mFADs.png)]
+
+Moored Fish Aggregating Devices<sup>1</sup>
 
 --
 
@@ -122,151 +137,228 @@ class:inverse,center,middle
 
 --
 
-.pull-left[- Reduce costs of fishing for pelagics]
+.pull-left[- Reduce costs and risks of fishing for pelagics]
 
 --
 
-.pull-left[- No management = mFADs exacerbate the issue]
+.pull-left[- With proper institutions, mFADs increase profitability of the activity]
 
 --
 
-.pull-left[- Output control = mFADs increase profitability of the activity]
+.pull-left[- Without proper institutions, mFADs can exacerbate the problem]
 
 --
-
-> Are institutions prepared for emerging data and technology?
-
-
---
-
-
-> How does the diversity of actors in SSFA interact with these?
+<br>
+>Are institutions prepared for emerging data and technology?
 
 ---
 class:inverse,center,middle
+# The prompt:
+
 ### How can _emerging data and technology_ help actors in the small-scale fishery and aquaculture sectors equitably _improve their livelihoods and sustainably manage_ their resources?
 
 ---
-# Access to markets & access to credit
+# Access to markets & credit: The challenges
 
-.footnote[[2]Kimai et al., 2020, _Mar Pol_; [3] Noack et al., , 2020. _Working paper_]
-
---
+.footnote[[1]Kimai et al., 2020, _Mar Pol_; [2] Short et al., 2021, _Nature Food_; [3] Lindgren et al., 2019 _Rapid Asia_]
 
 .pull-left[
-- Consistently identified as a constraint<sup>2</sup>
+The challenges:
 
-- Inherently difference, but similar limitations
-
--	What’s missing?
-    
-    - Buyers
-    
-    - Within-app payment methods (PayPal, Venmo)
-
--	Traceability, ready-supply chain
+- Consistently identified as a constraint<sup>1</sup>
+{{content}}
 ]
-
 
 --
 
-.pull-right[- Platforms:
+- Diverse range of levels of adoption<sup>2</sup>
+{{content}}
 
-  - [PescaData]()
+--
 
-  - [Tracey](https://tx.company/projects/tracey/) 
+- Inherently different, but similar limitations and implications
+{{content}}
+
+--
+
+  - Gives SSFA actors little bargainng power
   
-  - [Global Dialogue on Seafood Traceability](https://traceability-dialogue.org/what-is-the-global-dialogue/)
+  - Promotes "thin" markets
+  
+  - Perpetuates dependencies
+
+---
+# Access to markets & credit: The _potential_ solutions
+
+.pull-left[
+![](WeChat.png)
+.small[Dreamtimes.com]
 ]
 
 .pull-right[
-- Access to credit<sup>3</sup>
+Digital platforms:
+- General:
 
-  - **Increases** resource harvesting under insecure property rights
+  - e-banking
+{{content}}
+]
+
+--
+
+
+  - e-payment (e.g. PayPal, Venmo, AliPay)
+  {{content}}
   
-  - **Reduces** resource harvesting under secure property rights
+--
+
+  - Within-app payment methods (WeChat)
+  {{content}}
+
+--
+
+- SSFA sectors:
+
+  - [Tracey](https://tx.company/projects/tracey/) (Philipines)
+  {{content}}
+
+--
+
+  - [PescaData](https://pescadata.org/) (Mexico --> Latin America)
+  {{content}}
+
+--
+
+  - [Global Dialogue on Seafood Traceability](https://traceability-dialogue.org/what-is-the-global-dialogue/)
+
+---
+# Access to markets & credit: The _potential_ outcomes
+
+.pull-left[
+Digital platforms can:
+
+- Connect producers with consumers at various stages (ready-supply chain)
+{{content}}
+]
+
+--
+
+- Reward sustainable practices
+{{content}}
+
+--
+
+- Help build a data-backed financial history
+{{content}}
+--
+
+- Facilitate payments and micro-loans
+{{content}}
+
+--
+
+- Incentivize adoption of formal banking
+{{content}}
+
+--
+
+-	Aid in reduction of forced labor and monitor wage compliance<sup>3</sup>
+
+
+
+---
+# Access to markets & credit
+
+.footnote[[1] Clark & Munro 1975, _JEEM_, [2]Noack et al., , 2020. _Working paper_]
+
+###Are institutions prepared for emerging data and technology?
+
+--
+.pull-left[
+Access to capital<sup>1</sup> and credit<sup>2</sup>:
+
+  - **Increases** harvesting under insecure property rights
+  
+  - **Reduces** harvesting under secure property rights
+]
+
+--
+
+.pull-right[
+Under unregulated e-markets:
+
+- Tracability
+
+- IUU
 ]
 
 ---
-# Smart intensification
+# Other pathways
 
-.footnote[[4] Short et al., 2021. _Nature_]
-
-- Level of investment and technology is highly variable <sup>4</sup>
-
-- Scoot Science for aquaculture
-
-- Oceanographic monitoring
-
+```{r, out.width=600, fig.align="center"}
+knitr::include_graphics("pathways.png")
+```
 
 
 ---
-# New institutions
-
-- Index insurance
-
----
-# A common thread
+# A common approach
 
 I think about:
-
-- Incentives
-
-- Institutions
 
 - Markets
 
 - Endogeneity and Scalability
 
----
-class:inverse,center,middle
-# Three concrete angles
+- Incentives (and unintended consequences)
+
+- Institutions
 
 ---
-class:inverse, center, middle
-# Angle 1
-## Fisheries sand aquaculture: One and the same?
+# My vision as a fellow
 
 ---
 # Fisheries sand aquaculture: One and the same?
 
 ---
-class:inverse, center, middle
-# Angle 2
-## Current uses of technology
-
----
-#Current uses of technology
-
-- How are they using it?
-
-    - Cost-reduction
-    
-    - Value increasing
-
-- What benefits do they perceive?
-
-- What trends do we observe?
-
----
-class:inverse, center, middle
-#Angle 3
-# Future uses of technology
-
----
-# Future use of technology
-
-- Given observed trends, what sectors are most ripe for assimilation?
-
-- What are the clear needs?
-
-- Where is the market saturated
-
----
-# My vision as a fellow
-
-
-
----
 class:inverse,center,middle
 # Thanks
+
+---
+# _Sustainable_ intensification of aquaculture
+
+.footnote[[1] Tilman et al., 2011, _PNAS_; [2] Short et al., 2021, _Nature Food_]
+
+.pull-left[
+- The concept comes from agriculture, seeking to "close the yield gap" <sup>1</sup>
+{{content}}
+]
+
+--
+
+- Combination of:
+
+  - New technological developments
+  
+  - Adoption (transfer) of existing technological developments
+{{content}}
+--
+
+> How can technology transfer & improvement help close the gap?
+
+--
+
+.pull-right[
+
+Level of technology is highly variable <sup>2</sup>
+{{content}}
+
+]
+
+--
+
+---
+# New institutions
+
+- Vessel tracking and transparency and fisherie smanagement
+
+- Global Dialogue on Seafood Traceability
+
