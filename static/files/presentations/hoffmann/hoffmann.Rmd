@@ -1,8 +1,8 @@
 ---
 title: "Innovations in Small-scale fisheries & Aquaculture"
-subtitle: "Solutions at the intersection of society, science, and technology"  
-author: "Juan Carlos Vilalseñor-Derbez"
-institute: "Bren School, UCSB"
+# subtitle: "Solutions at the intersection of society, science, and technology"  
+author: "Juan Carlos Villaseñor-Derbez"
+institute: "Bren School of Environmental Science & Management, UCSB"
 date: 'January 27, 2022'
 output:
   xaringan::moon_reader:
@@ -20,6 +20,13 @@ output:
 .small {
     font-size: 70%;
     padding: 1em 4em 1em 4em;
+}
+</style>
+
+<style type="text/css">
+.medium {
+    font-size: 1.5rem;
+    padding: 1em 1em 1em 1em;
 }
 </style>
 
@@ -62,7 +69,7 @@ style_mono_accent(
 
 # Two parts
 
-## Part 1: My approach to soilving environmental problems
+## Part 1: My approach to solving environmental problems
 
 --
 
@@ -76,15 +83,12 @@ style_mono_accent(
 
 
 --
-
+<br>
 >How do these **shape human behavior** and environmental and economic **outcomes**?
 
 --
 
->New ways to "sense" and "measure" **shape human behavior** and environmental and economic **outcomes**
-
---
-
+<br>
 I think about:
 
 - Incentives (and unintended consequences)
@@ -93,21 +97,21 @@ I think about:
 
 - Institutions
 
-- Endogeneity and Scalability
+- Endogeneity and Scaleability
 
 ---
 class:inverse, middle, center
 # Why might these matter?
 
 ---
-# Unintended consequences
+# Example: Technological adoption in the Caribbean
 
 .footnote[Wilson et al., _In Press_, _Front in Mar Sci_]
 
 .pull-right[![](mFADs.png).small[Credit: noaa.gov]]
 
 
-Technological addoption in the Caribbean
+Moored Fish Aggregating devices
 
 --
 
@@ -125,11 +129,6 @@ Technological addoption in the Caribbean
 
 .pull-left[- Without proper institutions and access to markets, mFADs can exacerbate the problem]
 
---
-<br>
->Are **institutions** and **markets** prepared for emerging data and technology?
-
-
 
 ---
 class:inverse,middle
@@ -141,15 +140,15 @@ class:inverse,middle
 class:inverse,middle
 # My take
 
-###1. Access to markets (livelihoods)
+###1. Access to markets and credit
 
-###2. New institutions (management)
+###2. (Re)Designing institutions
 
 
 <!-- --- -->
 <!-- # 1 - Access to markets and credit -->
 
-<!-- .footnote[[1]Kimai et al., 2020, _Mar Pol_;  Short et al., 2021, _Nature Food_] -->
+<!-- .footnote[Kimai et al., 2020, _Mar Pol_;  Short et al., 2021, _Nature Food_] -->
 
 <!-- .pull-right[![](access.png)] -->
 
@@ -169,7 +168,7 @@ class:inverse,middle
 <!-- --- -->
 <!-- # 1 - Access to markets and credit -->
 
-<!-- .footnote[[1]Kimai et al., 2020, _Mar Pol_;  Short et al., 2021, _Nature Food_] -->
+<!-- .footnote[Kimai et al., 2020, _Mar Pol_;  Short et al., 2021, _Nature Food_] -->
 
 <!-- .pull-right[![](Marketplace.png)] -->
 
@@ -188,7 +187,7 @@ class:inverse,middle
 <!-- --- -->
 <!-- # 1 - Access to markets and credit -->
 
-<!-- .footnote[[1]Kimai et al., 2020, _Mar Pol_;  Short et al., 2021, _Nature Food_] -->
+<!-- .footnote[Kimai et al., 2020, _Mar Pol_;  Short et al., 2021, _Nature Food_] -->
 
 <!-- .pull-right[![](WeChat2.png)] -->
 
@@ -223,7 +222,7 @@ class:inverse,middle
 ---
 # 1 - Access to markets & credit: The challenges
 
-.footnote[[1]Kimai et al., 2020, _Mar Pol_;  Short et al., 2021, _Nature Food_]
+.footnote[Kimai et al., 2020, _Mar Pol_;  Short et al., 2021, _Nature Food_]
 
 .pull-right[![](access.png)]
 
@@ -246,7 +245,7 @@ class:inverse,middle
 ---
 # 1 - Access to markets & credit: The challenges
 
-.footnote[[1]Kimai et al., 2020, _Mar Pol_;  Short et al., 2021, _Nature Food_]
+.footnote[Kimai et al., 2020, _Mar Pol_;  Short et al., 2021, _Nature Food_]
 
 .pull-right[![](access2.png)]
 
@@ -265,11 +264,11 @@ class:inverse,middle
 
 --
 
-  - SSFA need to be able to prove credit-worthiness
+  - SSFA need to be able to prove creditworthiness
 
 ---
 # 1 - Access to markets & credit: Digital platforms
-.footnote[[1]Kimai et al., 2020, _Mar Pol_;  Short et al., 2021, _Nature Food_]
+.footnote[Kimai et al., 2020, _Mar Pol_;  Short et al., 2021, _Nature Food_]
 
 .pull-right[![](Marketplace.png)]
 
@@ -280,7 +279,7 @@ Ahead of us
 ---
 # 1 - Access to markets & credit: Digital platforms
 
-.footnote[[1]Kimai et al., 2020, _Mar Pol_;  Short et al., 2021, _Nature Food_]
+.footnote[Kimai et al., 2020, _Mar Pol_;  Short et al., 2021, _Nature Food_]
 
 .pull-right[![](PD.png)]
 
@@ -294,7 +293,7 @@ Ahead of us
 ---
 # 1 - Access to markets & credit: Digital platforms
 
-.footnote[[1]Kimai et al., 2020, _Mar Pol_;  Short et al., 2021, _Nature Food_]
+.footnote[Kimai et al., 2020, _Mar Pol_;  Short et al., 2021, _Nature Food_]
 
 .pull-right[![](WeChat2.png).small[Credit: Bloomberg]]
 
@@ -309,7 +308,7 @@ Ahead of us
 
 --
 
-- Help build a data-backed financial history
+- Help build a data-backed financial history (micro-loans)
 
 --
 
@@ -321,124 +320,136 @@ Additionally
 
 --
 
-- Better-suited for traceability protocols (_e.g._ [GDST](https://traceability-dialogue.org/what-is-the-global-dialogue/))
+- Better-suited for traceability protocols
 
 ---
-# 1 - Access to markets & credit: The _potential_ downsides
+# 1 - Access to markets & credit: Takeaways
 
-.footnote[Clark & Munro 1975, _JEEM_, Noack et al., , 2020. _Working paper_]
+.footnote[Clark & Munro, 1975, _JEEM_; Noack et al. 2020, _Working paper_]
 
-.center[**Are institutions prepared for emerging data and technology?**]
-
-<br>
-
-Access to capital and credit:
-
-<br>
+- SSFA actors are ahead of us
 
 --
 
-.pull-left[**Increases** harvesting under insecure property rights]
+- Digital platforms provide:
+
+  - Access to markets
+  
+  - Financial history
+  
+  - Access to credit
 
 --
 
-.pull-right[**Reduces** harvesting under secure property rights]
+- Are institutions ready?
+
+--
+
+  - **Weak institutions** + capital or credit = **Overharvesting**
+  
+--
+  
+  - **Strong institutions** + capital or credit = **Underharvesting**
+
 
 
 ---
-# 2 - New institutions
+# 2 - (Re)Designing institutions: Example
 
-Vessel-tracking, transparency, ocean space
 
+```{r, out.width=550, fig.align="center"}
+knitr::include_graphics("PNA_map.png")
+```
+
+
+
+.center[.large[Vessel-tracking **enabled** vessel-day scheme in the PNA]]
+
+---
+# 2 - (Re)Designing institutions
+
+<!-- .pull-right[![](PNA_map.png)] -->
+
+.center[.large[We can now observe **inputs & outputs** like never before]]
+
+
+--
+  
 .pull-left[
-- Vessel-day scheme
+**Supply chain**
 {{content}}
 ]
 
 --
 
-- Observe inputs & outputs
+- Increase traceability (_e.g._ [GDST](https://traceability-dialogue.org/what-is-the-global-dialogue/))
+
+![](gdst.png)
+
 {{content}}
+
 --
 
-- Conservation-finance areas
+- Proof of product provenance
+
+  - Harmfull algal blooms
+  
+  - Environmental variation
 
 --
 
 .pull-right[
-Generally:
-
-- Improved data = improved fisheries management
-
-- Reduce labor violations
-
-Space:
-
-  - Reduce costs of spatio-temporal management
-
-  - Distributional impacts
-  
-Transparency
-
-- Traceability
-
-- "Clean ports" and "Dirty ports"
-
+**Management**
+{{content}}
 ]
 
----
-# Others
+--
 
-- Improved environmental monitoring
+- Real time monitoring
+![](peskas_timor.png)
+{{content}}
+--
+
+- Distributional impacts and retrospective evaluations
+
+
+
+---
+# Other pathways
+
+Emerging **data** and **technology** can also:
+
+- Improve environmental monitoring
 
 - Surveillance and enforcement
 
-- Index insurance
-
 - Sustainable intensification
 
-- e-Monitoring
+- Inform insurance mechanisms and limit moral hazard
 
 ---
-# A common approach
+# My approach
 
-I think about:
+- .large[Markets]
 
-- Markets
+- .large[Incentives (and unintended consequences)]
 
-- Incentives (and unintended consequences)
+- .large[Endogeneity and Scalability]
 
-- Institutions
-
-- Endogeneity and Scalability
-
-- Sustainable intensification _a la_ Tilman et al., 2011
+- .large[Institutions]
 
 
 ---
 class:inverse,center,middle
-# END
-
-
-
-
-
-
-
-
-
-
-
-
-
+# Thanks
 
 
 
 
 ---
-name:intensification
 class:inverse,center,middle
-# Sustainable intensification
+
+
 
 ---
 name:unintended
@@ -446,42 +457,3 @@ class:inverse,center,middle
 # mFADs in the Caribbean
 
 ![](fads.png)
----
-# Sustainable intensification
-
-.footnote[[1] Tilman et al., 2011, _PNAS_; [2] Short et al., 2021, _Nature Food_]
-
-.pull-left[
-- The concept comes from agriculture, seeking to "close the yield gap" <sup>1</sup>
-{{content}}
-]
-
---
-
-- Combination of:
-
-  - New technological developments
-  
-  - **Transfer of technoilogy**
-{{content}}
---
-
-> How can technology transfer & improvement help close the gap?
---
-
-.pull-right[
-
-Level of technology is highly variable <sup>2</sup>
-{{content}}
-
-]
-
---
-- Scoot?
-
----
-name:actors
-class:inverse,center,middle
-# Identifying actors
-
-### Fisheries sand aquaculture: One and the same?
