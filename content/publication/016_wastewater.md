@@ -66,6 +66,8 @@ caption = ""
 
 - [Scientific american](https://www.scientificamerican.com/article/half-of-the-worlds-coastal-sewage-pollution-flows-from-few-dozen-places/)
 - [EOS](https://eos.org/articles/a-global-map-of-human-sewage-in-coastal-ecosystems)
+- [Mongabay en español](https://es.mongabay.com/2022/02/nuevo-informe-revela-cadena-de-danos-que-provocan-las-aguas-residuales-al-planeta/)
+- [Mongabay](https://news.mongabay.com/2022/01/the-thick-of-it-delving-into-the-neglected-global-impacts-of-human-waste/)
 
 **Altmetric**
 
