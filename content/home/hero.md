@@ -7,7 +7,7 @@ date = 2021-04-12
 title = "Environmental Scientist"
 
 # Order that this section will appear in.
-weight = 3
+weight = 6
 
 # Overlay a color or image (optional).
 #   Deactivate an option by commenting out the line, prefixing it with `#`.
