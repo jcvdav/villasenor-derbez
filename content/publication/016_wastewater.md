@@ -22,18 +22,18 @@ publication_short = "*PLoS ONE*. [DOI 10.1371/journal.pone.0258898](https://doi.
 
 # Abstract and optional shortened version.
 abstract = "Coastal marine ecosystems face a host of pressures from both offshore and land-based human activity. Research on terrestrial threats to coastal ecosystems has primarily focused on agricultural runoff, specifically showcasing how fertilizers and livestock waste create coastal eutrophication, harmful algae blooms, or hypoxic or anoxic zones. These impacts not only harm coastal species and ecosystems but also impact human health and economic activities. Few studies have assessed impacts of human wastewater on coastal ecosystems and community health. As such, we lack a comprehensive, fine-resolution, global assessment of human sewage inputs that captures both pathogens and nutrient flows to coastal waters and the potential impacts on coastal ecosystems. To address this gap, we use a new high-resolution geospatial model to measure and map nitrogen (N) and pathogen—fecal indicator organisms (FIO)—inputs from human sewage for ~135,000 watersheds globally. Because solutions depend on the source, we separate nitrogen and pathogen inputs from sewer, septic, and direct inputs. Our model indicates that wastewater adds 6.2Tg nitrogen into coastal waters, which is approximately 40% of total nitrogen from agriculture. Of total wastewater N, 63% (3.9Tg N) comes from sewered systems, 5% (0.3Tg N) from septic, and 32% (2.0Tg N) from direct input. We find that just 25 watersheds contribute nearly half of all wastewater N, but wastewater impacts most coastlines globally, with sewered, septic, and untreated wastewater inputs varying greatly across watersheds and by country. Importantly, model results find that 58% of coral and 88% of seagrass beds are exposed to wastewater N input. Across watersheds, N and FIO inputs are generally correlated. However, our model identifies important fine-grained spatial heterogeneity that highlight potential tradeoffs and synergies essential for management actions. Reducing impacts of nitrogen and pathogens on coastal ecosystems requires a greater focus on where wastewater inputs vary across the planet. Researchers and practitioners can also overlay these global, high resolution, wastewater input maps with maps describing the distribution of habitats and species, including humans, to determine the where the impacts of wastewater pressures are highest. This will help prioritize conservation efforts.Without such information, coastal ecosystems and the human communities that depend on them will remain imperiled."
-abstract_short = ""
+abstract_short = "Coastal marine ecosystems face a host of pressures from both offshore and land-based human activity. We use a new high-resolution geospatial model to measure and map nitrogen (N) and pathogen—fecal indicator organisms (FIO)—inputs from human sewage for ~135,000 watersheds globally. Our model indicates that wastewater adds 6.2Tg nitrogen into coastal waters, which is approximately 40% of total nitrogen from agriculture."
 
 # Featured image thumbnail (optional)
 image_preview = ""
 
 # Is this a selected publication? (true/false)
-selected = false
+selected = true
 
 # Projects (optional).
 #   Associate this publication with one or more of your projects.
 #   Simply enter the filename (excluding '.md') of your project file in `content/project/`.
-projects = ["marine_reserves"]
+projects = []
 
 tags = ["marine-conservation", "human-impacts"]
 
@@ -66,6 +66,8 @@ caption = ""
 
 - [Scientific american](https://www.scientificamerican.com/article/half-of-the-worlds-coastal-sewage-pollution-flows-from-few-dozen-places/)
 - [EOS](https://eos.org/articles/a-global-map-of-human-sewage-in-coastal-ecosystems)
+- [Mongabay en español](https://es.mongabay.com/2022/02/nuevo-informe-revela-cadena-de-danos-que-provocan-las-aguas-residuales-al-planeta/)
+- [Mongabay](https://news.mongabay.com/2022/01/the-thick-of-it-delving-into-the-neglected-global-impacts-of-human-waste/)
 
 **Altmetric**
 
