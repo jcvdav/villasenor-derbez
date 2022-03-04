@@ -3,7 +3,7 @@
 date = "2018-01-24"
 
 # Project title.
-title = "Distributional effects"
+title = "Distributional effects of conservation"
 
 # Project summary to display on homepage.
 summary = "Interactions between biodiversity and economic use of the oceans"
