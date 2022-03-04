@@ -28,8 +28,6 @@ caption = "Small-scale fishers set at sea to collect lobsters. \n Photo by: Sean
 
 +++
 
-I have worked in topics related to marine conservation.
-
 
 ## Two decades
 
