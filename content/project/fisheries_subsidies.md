@@ -6,7 +6,7 @@ date = "2021-06-01"
 title = "Fuel fishery subsidies"
 
 # Project summary to display on homepage.
-summary = ""
+summary = "Environmental institutions and Ecological implications"
 
 # Optional image to display on homepage (relative to `static/img/` folder).
 image_preview = "temp.gif"
