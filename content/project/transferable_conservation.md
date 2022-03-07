@@ -3,7 +3,7 @@
 date = "2022-03-07"
 
 # Project title.
-title = "Conservation credits"
+title = "Conservation markets"
 
 # Project summary to display on homepage.
 summary = ""
