@@ -229,7 +229,7 @@ defaultContentLanguageInSubdir = false
   [[params.social]]
     icon = "github"
     icon_pack = "ai"
-    link = "//github.com/jcvdav"
+    link = "https://github.com/jcvdav"
 
   [[params.social]]
     icon = "orcid"
