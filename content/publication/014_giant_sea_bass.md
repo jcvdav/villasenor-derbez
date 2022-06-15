@@ -38,7 +38,7 @@ projects = ["fisheries"]
 tags = ["biodiversity", "conservation", "fisheries"]
 
 # Links (optional).
-url_pdf = "files/publications/giant_sea_bass.pdf"
+url_pdf = "files/publications/014_giant_sea_bass.pdf"
 url_preprint = ""
 url_code = ""
 url_dataset = ""
