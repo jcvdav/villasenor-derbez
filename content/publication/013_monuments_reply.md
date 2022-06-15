@@ -38,7 +38,7 @@ projects = ["mpas"]
 tags = ["mpa", "conservation", "biodiversity", "fisheries"]
 
 # Links (optional).
-url_pdf = "files/publication/013_monuments_reply.pdf"
+url_pdf = "files/publications/013_monuments_reply.pdf"
 url_preprint = ""
 url_code = ""
 url_dataset = ""
