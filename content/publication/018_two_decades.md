@@ -3,7 +3,7 @@ title = "Two Decades of Community-Based Marine Conservation Provide the Foundati
 date = "2022-07-01"
 
 # Authors. Comma separated list, e.g. `["Bob Smith", "David Jones"]`.
-authors = ["**J. C. Villaseñor-Derbez**", "I. G. Amador-Castro", "A Hernández-Velasco", "Jorge Torre" and "Stuart Fulton"]
+authors = ["**J. C. Villaseñor-Derbez**", "I. G. Amador-Castro", "A Hernández-Velasco", "Jorge Torre", "Stuart Fulton"]
 
 # Publication type.
 # Legend:
