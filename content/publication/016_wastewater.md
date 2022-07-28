@@ -35,7 +35,7 @@ selected = true
 #   Simply enter the filename (excluding '.md') of your project file in `content/project/`.
 projects = []
 
-tags = ["marine-conservation", "human-impacts"]
+tags = ["marine conservation", "human impacts"]
 
 # Links (optional).
 url_pdf = "files/publications/016_wastewater.pdf"

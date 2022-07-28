@@ -28,14 +28,14 @@ abstract_short = "We simulate and test an international fisheries management sch
 image_preview = ""
 
 # Is this a selected publication? (true/false)
-selected = true
+selected = false
 
 # Projects (optional).
 #   Associate this publication with one or more of your projects.
 #   Simply enter the filename (excluding '.md') of your project file in `content/project/`.
 projects = ["mpas", "fisheries"]
 
-tags = ["mpa", "conservation", "biodiversity", "fisheries", "markets"]
+tags = ["MPAs", "conservation", "biodiversity", "fisheries", "Environmental markets"]
 
 # Links (optional).
 url_pdf = "files/publications/011_markets_conservation.pdf"

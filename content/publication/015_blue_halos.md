@@ -35,7 +35,7 @@ selected = true
 #   Simply enter the filename (excluding '.md') of your project file in `content/project/`.
 projects = ["mpas"]
 
-tags = ["mpa", "conservation", "biodiversity", "fisheries", "markets"]
+tags = ["MPAs", "conservation", "biodiversity", "fisheries", "Environmental markets"]
 
 # Links (optional).
 url_pdf = "files/publications/015_blue_halos.pdf"
