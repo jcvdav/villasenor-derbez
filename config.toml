@@ -53,11 +53,11 @@ defaultContentLanguageInSubdir = false
 
   # Your details.
   name = "Juan Carlos Villaseñor-Derbez"
-  role = "Ph.D. Candidate"
+  role = "Postdoctoral Scholar"
 
   # Organizations/Affiliations.
   #   Separate multiple entries with a comma, using the form: `[ {name="Org1", url=""}, {name="Org2", url=""} ]`.
-  organizations = [ { name = "Bren School of Environmental Science and Management, UCSB", url = "http://bren.ucsb.edu/" } ]
+  organizations = [ { name = "Hopkins Marine Station, Stanford University", url = "http://bren.ucsb.edu/" } ]
 
   gravatar = false  # Get your avatar from Gravatar.com? (true/false)
   avatar = "headshot.jpg"  # Specify an avatar image (in `static/img/` folder) or delete value to disable avatar.
