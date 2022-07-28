@@ -35,7 +35,7 @@ selected = false
 #   Simply enter the filename (excluding '.md') of your project file in `content/project/`.
 # projects = [""]
 
-tags = ["biodiversity", "marine-ecology"]
+tags = ["biodiversity", "marine ecology"]
 
 
 # Links (optional).

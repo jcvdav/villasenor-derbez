@@ -35,7 +35,7 @@ selected = false
 #   Simply enter the filename (excluding '.md') of your project file in `content/project/`.
 # projects = [""]
 
-tags = ["biodiversity", "climate-change", "marine-ecology"]
+tags = ["biodiversity", "climate change", "marine ecology"]
 
 # Links (optional).
 url_pdf = "files/publications/004_clarion.pdf"

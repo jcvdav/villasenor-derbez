@@ -35,7 +35,7 @@ selected = false
 #   Simply enter the filename (excluding '.md') of your project file in `content/project/`.
 projects = ["mpas"]
 
-tags = ["mpa", "conservation", "biodiversity", "fisheries"]
+tags = ["MPAs", "conservation", "biodiversity", "fisheries"]
 
 # Links (optional).
 url_pdf = "files/publications/013_monuments_reply.pdf"
