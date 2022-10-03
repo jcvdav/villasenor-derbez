@@ -13,7 +13,7 @@ image_preview = "./lionfish.JPG"
 
 # Tags: can be used for filtering projects.
 # Example: `tags = ["machine-learning", "deep-learning"]`
-tags = ["invasive_spp", "lionfish", "marine-ecology"]
+tags = ["invasive species", "lionfish", "marine ecology"]
 
 # Optional external URL for project (replaces project detail page).
 external_link = ""

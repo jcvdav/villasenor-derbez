@@ -35,7 +35,7 @@ selected = false
 #   Simply enter the filename (excluding '.md') of your project file in `content/project/`.
 projects = []
 
-tags = ["biodiversity", "marine-ecology", "fisheries", "conservation"]
+tags = ["biodiversity", "marine ecology", "fisheries", "conservation"]
 
 # Links (optional).
 url_pdf = "files/publications/bosques_sumergidos.pdf"

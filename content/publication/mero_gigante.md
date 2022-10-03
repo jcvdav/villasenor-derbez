@@ -35,7 +35,7 @@ selected = false
 #   Simply enter the filename (excluding '.md') of your project file in `content/project/`.
 projects = ["mero_gigante"]
 
-tags = ["biodiversity", "marine-ecology", "fisheries", "conservation"]
+tags = ["biodiversity", "marine ecology", "fisheries", "conservation"]
 
 # Links (optional).
 url_pdf = "http://dx.doi.org/10.13140/RG.2.2.23098.70089"

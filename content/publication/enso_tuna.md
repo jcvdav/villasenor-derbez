@@ -35,7 +35,7 @@ selected = false
 #   Simply enter the filename (excluding '.md') of your project file in `content/project/`.
 # projects = [""]
 
-tags = ["climate-change", "fisheries"]
+tags = ["climate change", "fisheries"]
 
 # Links (optional).
 url_pdf = ""
