@@ -10,11 +10,10 @@ weight = 5
 # List your academic interests.
 [interests]
   interests = [
-    "Environmental markets",
     "Marine conservation",
     "Marine policy design and evaluation",
-    "Climate change adaptation",
-    "Environmental economics"
+    "Environmental markets",
+    "Coupled human-marine systems"
   ]
 
 # List your qualifications (such as academic degrees).
