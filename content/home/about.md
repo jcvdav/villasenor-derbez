@@ -37,5 +37,5 @@ weight = 5
 
 # Hi there!
 
-I am a Postdoctoral scholar with the Micheli Lab at Stanford, where I study study coupled human-ocean systems, with an emphasis on the design and evaluation of policy interventions that seek to conserve and manage natural resources. I draw from my training in oceanography, ecology and environmental economics as I combines geo-spatial, econometric, and machine learning methods. I also run [ERRE](https://www.erre-esp.org/), a blog about all things R and RStudio in Spanish, and help organize [EcoDataScience](http://eco-data-science.github.io/) a community of Environmental Data Science at UCSB and [beyond](https://github.com/eco-data-science/community_survey).
+I am a Postdoctoral scholar with the Micheli Lab at Stanford, where I study coupled human-ocean systems, with an emphasis on the design and evaluation of policy interventions that seek to conserve and manage natural resources. I draw from my training in oceanography, ecology and environmental economics as I combines geo-spatial, econometric, and machine learning methods. I also run [ERRE](https://www.erre-esp.org/), a blog about all things R and RStudio in Spanish, and help organize [EcoDataScience](http://eco-data-science.github.io/) a community of Environmental Data Science at UCSB and [beyond](https://github.com/eco-data-science/community_survey).
 
