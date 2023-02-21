@@ -10,7 +10,7 @@ weight = 5
 # List your academic interests.
 [interests]
   interests = [
-    "Coupled human-marine systems"
+    "Coupled human-marine systems",
     "Marine conservation",
     "Fisheries",
     "Marine policy design and evaluation",
