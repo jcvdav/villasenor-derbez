@@ -3,7 +3,7 @@ title = "Opportunities and challenges for livelihood resilience in urban and rur
 date = "2022-09-30"
 
 # Authors. Comma separated list, e.g. `["Bob Smith", "David Jones"]`.
-authors = ["Edward W. Wintergalen", "Rodrigo Oyanedel", "**J. C. Villaseñor-Derbez**", "Stuart Fulton", "Renato Molina"]
+authors = ["EW Wintergalen", "R Oyanedel", "**JC Villaseñor-Derbez**", "S Fulton", "R Molina"]
 
 # Publication type.
 # Legend:
@@ -38,7 +38,7 @@ projects = [""]
 tags = ["fisheries", "climate change"]
 
 # Links (optional).
-url_pdf = "files/publications/019/urban_rural_ssf.pdf"
+url_pdf = "files/publications/019_urban_rural_ssf.pdf"
 url_preprint = ""
 url_code = ""
 url_dataset = ""
