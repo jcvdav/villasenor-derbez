@@ -1,5 +1,5 @@
 +++
-title = "Asymmetry across international borders: Research, fishery and management trends and economic value of the giant sea bass (*Stereolepis gigas*)"
+title = "Asymmetry across international borders: Research, fishery and management trends and economic value of the giant sea bass (_Stereolepis gigas_)"
 date = "2021-08-04"
 
 # Authors. Comma separated list, e.g. `["Bob Smith", "David Jones"]`.

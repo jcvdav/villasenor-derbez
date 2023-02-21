@@ -38,7 +38,7 @@ projects = [""]
 tags = ["fisheries", "climate change"]
 
 # Links (optional).
-url_pdf = "files/publications/019/urban_rural_ssf.pdf"
+url_pdf = "files/publications/019_urban_rural_ssf.pdf"
 url_preprint = ""
 url_code = ""
 url_dataset = ""

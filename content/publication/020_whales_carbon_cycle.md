@@ -38,7 +38,7 @@ projects = [""]
 tags = ["Environmental markets", "conservation", "biodiversity" ,"climate change"]
 
 # Links (optional).
-url_pdf = ""
+url_pdf = "files/publications/020_whales_carbon_cycle.pdf"
 url_preprint = ""
 url_code = ""
 url_dataset = ""
