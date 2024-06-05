@@ -2,7 +2,7 @@
 # About/Biography widget.
 widget = "about"
 active = true
-date = "2024-02-26"
+date = "2024-06-05"
 
 # Order that this section will appear in.
 weight = 5
@@ -11,10 +11,9 @@ weight = 5
 [interests]
   interests = [
     "Coupled human-marine systems",
-    "Marine conservation",
-    "Fisheries",
     "Marine policy design and evaluation",
-    "Environmental markets"
+    "Marine conservation",
+    "Fisheries"
   ]
 
 # List your qualifications (such as academic degrees).
@@ -38,5 +37,5 @@ weight = 5
 
 # Hi there!
 
-I am a Postdoctoral scholar with the [Micheli Lab at Stanford](https://michelilab.stanford.edu/), where I study coupled human-ocean systems, with an emphasis on the design and evaluation of policy interventions that seek to conserve and manage natural resources. I am particularly interested in how ecological processes shape human incentives and how human actions can modify the environment. I draw from my training in oceanography, ecology and environmental economics and combine geo-spatial, econometric, and machine learning methods into my research, and focus my questions around Marine Protected Areas and fisheries. I will soon be joining the University of Miami as an Assistant Professor at the Rosenstiel School of Marine, Atmospheric & Earth Science and the Frost Institute for Data Science & Computing.
+I am an outgoing Postdoctoral scholar with the [Micheli Lab at Stanford](https://michelilab.stanford.edu/). Later this Fall I will be joining the [Rosenstiel School of Marine, Atmospheric, and Earth Science](https://www.earth.miami.edu/) and the [Frost Institute for Data Science & Computing](https://ficms.miami.edu/) at [UMiami](https://welcome.miami.edu/) as an Assistant Professor. I study coupled human-ocean systems, with an emphasis on the design and evaluation of policy interventions that seek to conserve and manage natural resources. I am particularly interested in how policies and ecological processes shape human incentives, and how human actions modify the marine environment. I draw from my training in oceanography, ecology and environmental economics and combine geo-spatial, econometric, and machine learning methods into my research. 
 
