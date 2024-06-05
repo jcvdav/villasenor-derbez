@@ -3,13 +3,13 @@
 date = "2022-03-07"
 
 # Project title.
-title = "Conservation markets"
+title = "Paying for conservation"
 
 # Project summary to display on homepage.
 summary = ""
 
 # Optional image to display on homepage (relative to `static/img/` folder).
-image_preview = "savings_map.png"
+image_preview = "JCV_87.jpg"
 
 # Tags: can be used for filtering projects.
 # Example: `tags = ["machine-learning", "deep-learning"]`
@@ -28,6 +28,6 @@ caption = ""
 
 +++
 
-Global coordination towards marine conservation is likely to be more efficient than unilateral efforts, but no institution currently allows for nations to cooperate over the conservation of the marine environment. I use ecological principles, global empirical data on biodiversity and fisheries, and environmental economics to propose and analyze a new institution where nations can trade conservation obligations within reasonable ecological constraints: a global market for marine conservation. We describe the challenges and solutions to designing a market for marine conservation, and provide an example of how to build such a market and estimate the gains from trade. We find that the high heterogeneity in habitat suitability, costs of conserving, and sheer area across nations implies large efficiency gains are possible. For a 30% conservation target, the market-based approach would reduce the global cost of conservation by 98%, relative to the case where all nations are required to protect the same percentage. To account for the need to ensure protection across all habitat types, we also consider several bubble policies where trading is restricted to occur within one's biogeographic region. Spatially delineating markets slightly reduces gains, but cost savings are still large (76% - 97%) compared to BAU. We simulate a range of protection targets, and find that a market approach always produces cost-savings to all nations participating in it.
+Marine conservation can be costly. Sometimes, the costs are so high that even committed actors may miss the opportunity to engage in it. While technological can help reduce costs, there is an opportunity to leverage policies to re-shape human incentives: make conservation not only affordable, but perhaps even profitable.
 
-![Gains from trade (y-axis) for a range of conservation targets (10% to 99%; x-axis), under four different bubble policies (colors). Each line shows the percent of the costs that can be avoided by allowing trade between nations within each segment. The dashed horizontal lines mark the often-cited conservation targets of 10%, 30%, and 50%.](../../img/rel_gain_from_trade_segmented_market_plot.png)
+These line of research explores different ways in which modest changes to our current approach to marine conservation can result in large gains. This include reforms to existing [environmental markets](https://villasenor-derbez.com/publication/011_markets_conservation/), [self-financed marine protected areas](https://villasenor-derbez.com/publication/015_blue_halos/), or [monetizing the biomass-accrual benefits of protection](https://villasenor-derbez.com/publication/021_biomass_accrual/). More recent work looks at a global market for marine conservation, or at the benefits that small-scale fishers derive from limited extraction of high-valued resources from their community-based marine protected areas.
