@@ -10,7 +10,7 @@ title = "Juan Carlos Villaseñor-Derbez"
 
 # Your copyright notice - appears in site footer.
 # To display a copyright symbol, type `&copy;`.
-copyright = "&copy; 2018 Juan Carlos Villaseñor-Derbez"
+copyright = "&copy; 20124 Juan Carlos Villaseñor-Derbez"
 
 theme = "hugo-academic"
 enableEmoji = true
@@ -53,7 +53,7 @@ defaultContentLanguageInSubdir = false
 
   # Your details.
   name = "Juan Carlos Villaseñor-Derbez"
-  role = "Postdoctoral Scholar"
+  role = "(Former) Postdoctoral Scholar"
 
   # Organizations/Affiliations.
   #   Separate multiple entries with a comma, using the form: `[ {name="Org1", url=""}, {name="Org2", url=""} ]`.
