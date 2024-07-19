@@ -3,7 +3,7 @@ title = "A market for 30x30 in the ocean"
 date = "2024-06-14"
 
 # Authors. Comma separated list, e.g. `["Bob Smith", "David Jones"]`.
-authors = ["**JC Villaseñor-Derbez**", Christopher Costello, Andrew J. Plantinga]
+authors = ["**JC Villaseñor-Derbez**", "Christopher Costello", "Andrew J. Plantinga"]
 
 # Publication type.
 # Legend:
@@ -22,7 +22,6 @@ publication_short = "*Science*. [DOI: 10.1126/science.adl401](https://doi.org/10
 
 # Abstract and optional shortened version.
 abstract = "After decades of fits and starts, the ambition to protect 30% of land and sea by 2030 (30x30) is gaining some momentum, but only modest progress has been made. One reason is that signing on to protect 30x30 will be much more costly for some nations than others; many nations facing low costs of conserving have already protected, while other nations foresee enormous costs and are reluctant to sign on. Focusing on the context of marine habitats contained by nation’s exclusive economic zones (EEZs), we propose an alternative approach to meeting these ambitious conservation targets in a way that lowers the costs to all nations: allowing nations to trade their conservation obligations with other nations. Some nations would voluntarily end up conserving more than 30% of their waters and others would end up conserving less, all within well-defined and ecologically informed constraints that ensure protection across marine habitats."
-
 abstract_short = "We propose an alternative approach to meeting these ambitious conservation targets in a way that lowers the costs to all nations: allowing nations to trade their conservation obligations with other nations"
 
 # Featured image thumbnail (optional)
@@ -36,7 +35,7 @@ selected = true
 #   Simply enter the filename (excluding '.md') of your project file in `content/project/`.
 projects = [""]
 
-tags = ["Environmental markets", "conservation", "biodiversity"]
+tags = ["Environmental markets", "conservation", "biodiversity", "MPAs"]
 
 # Links (optional).
 url_pdf = "https://www.science.org/stoken/author-tokens/ST-1926/full"
