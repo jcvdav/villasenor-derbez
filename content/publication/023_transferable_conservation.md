@@ -1,5 +1,5 @@
 +++
-title = ""
+title = "A market for 30x30 in the ocean"
 date = "2024-06-14"
 
 # Authors. Comma separated list, e.g. `["Bob Smith", "David Jones"]`.
@@ -18,7 +18,7 @@ publication_types = ["2"]
 
 # Publication name and optional abbreviated version.
 publication = "*Science*"
-publication_short = "**. [DOI: 10.1126/science.adl401](https://doi.org/10.1126/science.adl4019)"
+publication_short = "*Science*. [DOI: 10.1126/science.adl401](https://doi.org/10.1126/science.adl4019)"
 
 # Abstract and optional shortened version.
 abstract = "After decades of fits and starts, the ambition to protect 30% of land and sea by 2030 (30x30) is gaining some momentum, but only modest progress has been made. One reason is that signing on to protect 30x30 will be much more costly for some nations than others; many nations facing low costs of conserving have already protected, while other nations foresee enormous costs and are reluctant to sign on. Focusing on the context of marine habitats contained by nation’s exclusive economic zones (EEZs), we propose an alternative approach to meeting these ambitious conservation targets in a way that lowers the costs to all nations: allowing nations to trade their conservation obligations with other nations. Some nations would voluntarily end up conserving more than 30% of their waters and others would end up conserving less, all within well-defined and ecologically informed constraints that ensure protection across marine habitats."
@@ -39,7 +39,7 @@ projects = [""]
 tags = ["Environmental markets", "conservation", "biodiversity"]
 
 # Links (optional).
-url_pdf = ""
+url_pdf = "https://www.science.org/stoken/author-tokens/ST-1926/full"
 url_preprint = ""
 url_code = ""
 url_dataset = ""
