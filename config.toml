@@ -53,16 +53,17 @@ defaultContentLanguageInSubdir = false
 
   # Your details.
   name = "Juan Carlos Villaseñor-Derbez"
-  role = "(Former) Postdoctoral Scholar"
+  role = "Assistant Professor"
 
   # Organizations/Affiliations.
   #   Separate multiple entries with a comma, using the form: `[ {name="Org1", url=""}, {name="Org2", url=""} ]`.
-  organizations = [ { name = "Hopkins Marine Station, Doerr School of Sustainability, Stanford University", url = "https://hopkinsmarinestation.stanford.edu/" } ]
+  organizations = [ { name = "Department of Environmental Science and Policy, Rosenstiel School of Marine, Atmospheric, and Earth Science, University of Miami", url = "https://environmental-science-policy.earth.miami.edu/index.html" },
+  { name = "Frost Institute for Data Science & Computing, University of Miami", url = "https://idsc.miami.edu/" }]
 
   gravatar = false  # Get your avatar from Gravatar.com? (true/false)
   avatar = "headshot.jpg"  # Specify an avatar image (in `static/img/` folder) or delete value to disable avatar.
-  email = "juancvd@stanford.edu"
-  address = "120 Ocean View Blvd, Pacific Grove, CA 93950"
+  email = "jc_villasenor@miami.edu"
+  address = "4600 Rickenbacker Causeway, Miami, FL 33149"
   office_hours = ""
   phone = "+1 207 205 8435"
   telegram = ""
@@ -218,7 +219,7 @@ defaultContentLanguageInSubdir = false
   [[params.social]]
     icon = "envelope"
     icon_pack = "fa"
-    link = "mailto:jvillasenor@bren.ucsb.edu"
+    link = "mailto:jc_villasenor@miami.edu"
 
   [[params.social]]
     icon = "google-scholar"
@@ -273,6 +274,11 @@ defaultContentLanguageInSubdir = false
 #  name = "Workshops"
 #  url = "#teaching"
 #  weight = 5
+
+[[menu.main]]
+  name = "Students"
+  url = "#students"
+  weight = 5
   
 #[[menu.main]]
 #  name = "ERRE (Blog)"
@@ -282,7 +288,7 @@ defaultContentLanguageInSubdir = false
 [[menu.main]]
   name = "Contact"
   url = "#contact"
-  weight = 70
+  weight = 6
 
 # Taxonomies.
 [taxonomies]
