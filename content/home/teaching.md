@@ -20,7 +20,7 @@ weight = 60
 - EVR 662 - [Intermediate spatial analysis: An introduction to geocomputation](https://jcvdav.github.io/EVR_662/)
 - EVR 6XX - Introduction to Data Management and Visualization for Environmental Scientists
 
-#Past tutorials and short instruction sessions at [EcoDataScience](https://ecodatascience.github.io/:
+#[EcoDataScience](https://ecodatascience.github.io/) workshops:
 
 - Apr, 2021 - [**`GNU make` for reproducible workflows**](https://github.com/jcvdav/make_tutorial)
 - March, 2019 - [**GitHub for collaboration**](https://github.com/jcvdav/GitHubCollab)
