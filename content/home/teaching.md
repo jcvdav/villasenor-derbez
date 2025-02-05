@@ -15,19 +15,19 @@ weight = 60
 
 +++
 
-Courses at UM:
+#Courses at UM:
 
 - EVR 662 - [Intermediate spatial analysis: An introduction to geocomputation](https://jcvdav.github.io/EVR_662/)
 - EVR 6XX - Introduction to Data Management and Visualization for Environmental Scientists
 
-Past tutorials and short instruction sessions at [EcoDataScience](https://ecodatascience.github.io/:
+#Past tutorials and short instruction sessions at [EcoDataScience](https://ecodatascience.github.io/:
 
 - Apr, 2021 - [**`GNU make` for reproducible workflows**](https://github.com/jcvdav/make_tutorial)
 - March, 2019 - [**GitHub for collaboration**](https://github.com/jcvdav/GitHubCollab)
 - February, 2018 - [**Advanced RMarkdown**](https://github.com/jcvdav/LAFF_R)
 - September, 2017 - [**Intro to RMarkdown**](https://jcvdav.github.io/intro2Rmd/)
 
-Past workshops:
+#Other workshops:
 
 - March, 2019 -  - [**Evaluation of Marine Reserves in Mexico** (*spanish*)](https://jcvdav.github.io/curso_marea/) to environmental managers. *La Paz, Mexico*
 - November, 2018 - [**Evaluation of Marine Reserves in Mexico** (*spanish*)](https://jcvdav.github.io/curso_marea/) to environmental managers. *Cancun, Mexico*
