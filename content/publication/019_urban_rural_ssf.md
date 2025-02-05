@@ -28,7 +28,7 @@ abstract_short = "Most small-scale fisheries (SSFs) in the developing world are 
 image_preview = ""
 
 # Is this a selected publication? (true/false)
-selected = true
+selected = false
 
 # Projects (optional).
 #   Associate this publication with one or more of your projects.

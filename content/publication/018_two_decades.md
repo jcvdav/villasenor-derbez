@@ -28,7 +28,7 @@ abstract_short = "As a member of the “High Level Panel for a Sustainable Ocean
 image_preview = ""
 
 # Is this a selected publication? (true/false)
-selected = true
+selected = false
 
 # Projects (optional).
 #   Associate this publication with one or more of your projects.

@@ -260,6 +260,11 @@ defaultContentLanguageInSubdir = false
   url = "#selected_publications"
   weight = 2
   
+  [[menu.main]]
+  name = "Teaching"
+  url = "#teaching"
+  weight = 3
+  
 #[[menu.main]]
 #  name = "Research"
 #  url = "#projects"
@@ -271,14 +276,9 @@ defaultContentLanguageInSubdir = false
   weight = 4
 
 #[[menu.main]]
-#  name = "Workshops"
-#  url = "#teaching"
+#  name = "Students"
+#  url = "#students"
 #  weight = 5
-
-[[menu.main]]
-  name = "Students"
-  url = "#students"
-  weight = 5
   
 #[[menu.main]]
 #  name = "ERRE (Blog)"

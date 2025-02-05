@@ -7,10 +7,13 @@ active = true
 date = 2024-02-27
 
 title = "Recent Publications"
-subtitle = "2022 - Present"
+subtitle = "2023 - Present"
 
 # Order that this section will appear in.
 weight = 10
+
+# Number of publications to list.
+count = 10
 
 # List format.
 #   0 = Simple
