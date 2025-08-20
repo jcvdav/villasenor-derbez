@@ -18,7 +18,7 @@ weight = 60
 # Courses at UM:
 
 - EVR 662 - [Intermediate spatial analysis: An introduction to geocomputation](https://jcvdav.github.io/EVR_662/)
-- EVR 6XX - Introduction to Data Management and Visualization for Environmental Scientists
+- EVR 528/628 - [Introduction to Data Management and Visualization for Environmental Scientists](https://jcvdav.github.io/EVR_628/)
 
 # [EcoDataScience](https://ecodatascience.github.io/) workshops:
 
