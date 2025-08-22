@@ -17,8 +17,8 @@ authors = ["N Aragfeh-Damlau", "**JC Villaseñor-Derbez**", "DS Schoeman", "TW B
 publication_types = ["2"]
 
 # Publication name and optional abbreviated version.
-publication = "*Journal of Environmental Economics and Management*"
-publication_short = "*JEEM*. [DOI: 10.1038/s41467-025-58054-4](https://doi.org/10.1038/s41467-025-58054-4)"
+publication = "*Nature Communications*"
+publication_short = "*NatComm*. [DOI: 10.1038/s41467-025-58054-4](https://doi.org/10.1038/s41467-025-58054-4)"
 
 # Abstract and optional shortened version.
 abstract = "Kelp forests are one of the earth’s most productive ecosystems and are at great risk from climate change, yet little is known regarding their current conservation status and global future threats. Here, by combining a global remote sensing dataset of floating kelp forests with climate data and projections, we find that exposure to projected marine heatwaves will increase ~6 to ~16 times in the long term (2081–2100) compared to contemporary (2001–2020) exposure. While exposure will intensify across all regions, some southern hemisphere areas which have lower exposure to contemporary and projected marine heatwaves may provide climate refugia for floating kelp forests. Under these escalating threats, less than 3% of global floating kelp forests are currently within highly restrictive marine protected areas (MPAs), the most effective MPAs for protecting biodiversity. Our findings emphasize the urgent need to increase the global protection of floating kelp forests and set bolder climate adaptation goals."
