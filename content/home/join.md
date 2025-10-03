@@ -4,14 +4,14 @@
 # To create more sections, duplicate this file and edit the values below as desired.
 widget = "custom"
 active = true
-date = "2025-02-05"
+date = "2025-10-03"
 
 # Note: a full width section format can be enabled by commenting out the `title` and `subtitle` with a `#`.
-title = "Teaching"
+title = "Join the lab"
 subtitle = ""
 
 # Order that this section will appear in.
-weight = 60
+weight = 65
 
 +++
 
