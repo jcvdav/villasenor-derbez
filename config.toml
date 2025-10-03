@@ -260,7 +260,12 @@ defaultContentLanguageInSubdir = false
   url = "#selected_publications"
   weight = 2
   
-  [[menu.main]]
+[[menu.main]]
+  name = "Join the lab"
+  url = "#join"
+  weight = 1
+  
+[[menu.main]]
   name = "Teaching"
   url = "#teaching"
   weight = 3
