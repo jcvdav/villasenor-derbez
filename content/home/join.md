@@ -17,7 +17,8 @@ weight = 60
 
 # About the lab:
 
-We are a quantitative lab. We use large data sets, computer code, and causal
+We are a quantitative lab^[We don't do field work, we don't do surveys]. 
+We use large data sets, computer code, and causal
 inference techniques to study 1) how institutions, incentives, and the environment
 shape how humans use marine resources, 2) how humans respond to changes in the
 marine environment and policy landscapes, and 3) how these responses feed back
@@ -48,7 +49,7 @@ to substitute them for other quantitative skills (e.g. machine learning). All st
 are expected to be/become proficient in at least one scripting language (R / Python),
 as well as version control via git and GitHub.
 
-## PhD Positions:
+## PhD Positions for Fall '26
 
 I am hoping to recruit up to two PhD students to start in Fall 2026. Prospective
 students should contact me well in advance of the application deadline with a
@@ -56,7 +57,10 @@ description of their background and research interests.
 
 # Undergraduate / Masters opportunities
 
-Undergraduate students interested in joining my lab.
+Undergraduate students interested in joining my lab may do so via [MSC 411 / 412](https://undergraduate.earth.miami.edu/academics/independent-research/index.html).
+Please contact me to inquire about potential opportunities. You should be 
+comfortable working independently in R. A great resource to get you started is
+the [R for Data Science](https://r4ds.hadley.nz/) book, as well as my [course materials](https://jcvdav.github.io/EVR_628/).
 
 
 
