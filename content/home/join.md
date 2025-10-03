@@ -37,12 +37,13 @@ Active lines of inquiry include:
 My students enroll in the [PhD program in Environmental Science and Policy](https://abess.miami.edu/academics/ph.d.-program/index.html),
 jointly administered by the [Abess Center](https://abess.miami.edu/) and the 
 [Department of Environmental Science and Policy](https://environmental-science-policy.earth.miami.edu/index.html)
-at the University of Miami.
+at the University of Miami. Students will also be part of the [Earth System Science](https://idsc.miami.edu/research/earth-systems/)
+initiative at the Institute for Data Science and Computing.
 
 Note that students don't join the lab to work on specific projects. You will have
 the opportunity to develop your own research projects, so long as they align with
 the topics outlined above. Additionally, my PhD students are required to enroll
-in the Ph.D. Econometrics sequence at the Department of Economics to gain proficiency
+in the PhD Econometrics sequence at the Department of Economics to gain proficiency
 in causal inference techniques, as well as my [Intro to Environmental Data Science](https://jcvdav.github.io/EVR_628/)
 class. Students may also opt to gain these skills via independent study or 
 to substitute them for other quantitative skills (e.g. machine learning). All students
@@ -51,9 +52,10 @@ as well as version control via git and GitHub.
 
 ## PhD Positions for Fall '26
 
-I am hoping to recruit up to two PhD students to start in Fall 2026. Prospective
-students should contact me well in advance of the application deadline with a
-description of their background and research interests.
+I am hoping to recruit up to two fully funded PhD students to start in Fall 2026.
+Prospective students should contact me well in advance of the application deadline. 
+Please include your CV and a description of your past experience in academic research,
+as well as your research interests and motivations for pursuing a PhD.
 
 # Undergraduate / Masters opportunities
 
@@ -62,7 +64,10 @@ Please contact me to inquire about potential opportunities. You should be
 comfortable working independently in R. A great resource to get you started is
 the [R for Data Science](https://r4ds.hadley.nz/) book, as well as my [course materials](https://jcvdav.github.io/EVR_628/).
 
+# MS Students
 
+I don't actively recruit students to enroll in our Master of Sciences program unless you are
+bringing in your own funding. I am happy to work with you in securing your own funding.
 
 
 
