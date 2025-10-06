@@ -235,11 +235,6 @@ defaultContentLanguageInSubdir = false
     icon = "github"
     icon_pack = "fa"
     link = "https://github.com/jcvdav"
-    
-  [[params.social]]
-    icon = "twitter"
-    icon_pack = "fa"
-    link = "//twitter.com/villasenor_jc"
 
 
 # Navigation Links
