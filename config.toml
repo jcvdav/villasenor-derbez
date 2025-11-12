@@ -235,11 +235,6 @@ defaultContentLanguageInSubdir = false
     icon = "github"
     icon_pack = "fa"
     link = "https://github.com/jcvdav"
-    
-  [[params.social]]
-    icon = "twitter"
-    icon_pack = "fa"
-    link = "//twitter.com/villasenor_jc"
 
 
 # Navigation Links
@@ -260,10 +255,15 @@ defaultContentLanguageInSubdir = false
   url = "#selected_publications"
   weight = 2
   
-  [[menu.main]]
+[[menu.main]]
+  name = "Join the lab"
+  url = "#join"
+  weight = 3
+  
+[[menu.main]]
   name = "Teaching"
   url = "#teaching"
-  weight = 3
+  weight = 4
   
 #[[menu.main]]
 #  name = "Research"
@@ -273,7 +273,7 @@ defaultContentLanguageInSubdir = false
 [[menu.main]]
   name = "CV"
   url = "https://villasenor-derbez.com/files/CV_VillasenorDerbez.pdf"
-  weight = 4
+  weight = 5
 
 #[[menu.main]]
 #  name = "Students"
