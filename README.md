@@ -1,6 +1,6 @@
 # Welcome to [villasenor-derbez.com/](https://villasenor-derbez.com/)
 
-## Thanks for visiting.
+## Thanks for visiting. This site is being migrated.
 
 Maybe you wanted one of these two?
 
