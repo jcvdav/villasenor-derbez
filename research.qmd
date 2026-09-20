@@ -1,0 +1,74 @@
+---
+title: "Publications"
+---
+
+### In review
+
+- Molina R., **Villaseñor-Derbez J.C.**, McDonald G., and McDermott. The Economic and Environmental Cost of Pirate Avoidance. Revise and resubmit at _Nature Communications_ (R&R requested June 8, 2026: NCOMMS-25-93345A) | [working paper](documents/working_papers/piracy.pdf)
+- **Villaseñor-Derbez J.C.** et al., Towards Assessing Generalizability of Adaptive Responses in Small-Scale Fisheries. _npj Ocean Sustainability_ (submitted on June 25, 2026: 5fc3f864-31e2-4569-8f8f-25f06f4e2a44) | [working paper](documents/working_papers/generalizable_adaptation.pdf)
+
+### 2026
+
+- **Villaseñor-Derbez JC**, Willet Burfoot A\*, and Molina R. Competitiveness in American Seafood Requires Promoting Climate-Resilient Fisheries. _Fish & Fisheries_. 2026 July 6; 1:8 | doi: [10.1111/faf.70108](https://doi.org/10.1111/faf.70108)
+- Schiller L, **Villaseñor-Derbez J.C.**, Lynham J, and Worm B Global impacts of drifting fish aggregating devices on marine protected areas. _Science Advances_. 2026 June 17; 12:25. doi: [10.1126/sciadv.aee6998](https://doi.org/10.1126/sciadv.aee6998)
+- **Villaseñor-Derbez JC**, Fernández R, Fulton S, Hernández-Velasco A, Hernández T, Woodson CB, Cárdenas JC, DeLeo GA, Torre J, Micheli F. Digital technologies and the study of adaptation in small-scale fisheries. _Ocean & Coastal Management_. 2026 Apr 1;275:108071. doi: [10.1016/j.ocecoaman.2025.108071](https://doi.org/10.1016/j.ocecoaman.2025.108071)
+
+### 2025
+
+- **Villaseñor-Derbez JC**, Lynham J, Garibay-Toussaint I, Narchi NE, O’Connor R, Olguín-Jacobson C, DeLeo GA, Torre J, Arafeh-Dalmau N, Fulton S, Woodson CB. Climate-resilient fisheries are more resilient in general. _npj Ocean Sustainability_. 2025 Nov 11;4(1):56. doi: [10.1038/s44183-025-00154-1](https://doi.org/10.1038/s44183-025-00154-1)
+- Arafeh-Dalmau N, **Villaseñor-Derbez JC**, Schoeman DS, Mora-Soto A, Bell TW, Butler CL, et al. Global floating kelp forests have limited protection despite intensifying marine heatwave threats. _Nature Communications_. 2025;16: 3173. doi: [10.1038/s41467-025-58054-4](https://doi.org/10.1038/s41467-025-58054-4)
+- Englander G, Zhang J, **Villaseñor-Derbez JC**, Jiang Q, Hu M, Deschenes O, et al. Input subsidies and the depletion of natural capital: Chinese distant water fishing. _Journal of Environmental Economics and Management_. 2025;130: 103127. doi:[10.1016/j.jeem.2025.103127](https://doi.org/10.1016/j.jeem.2025.103127)
+
+### 2024
+
+- Lynham J, **Villaseñor-Derbez JC**. Evidence of spillover benefits from large-scale marine protected areas to purse seine fisheries. _Science_. 2024;386: 1276–1281. doi:[10.1126/science.adn1146](https://doi.org/10.1126/science.adn1146)
+- Kumagai JA, Goodman MC, **Villaseñor-Derbez JC**, Schoeman DS, Cavanuagh KC, Bell TW, et al. Marine protected areas that preserve trophic cascades promote resilience of kelp forests to marine heatwaves. _Global Change Biology_. 2024;30: e17620. doi:[10.1111/gcb.17620](https://doi.org/10.1111/gcb.17620)
+- **Villaseñor-Derbez JC**, Arafeh-Dalmau N, Micheli F. Past and future impacts of marine heatwaves on small-scale fisheries in Baja California, Mexico. _Communications in Earth & the Environment_. 2024;5: 623. doi:[10.1038/s43247-024-01696-x](https://doi.org/10.1038/s43247-024-01696-x)
+- **Villasenor-Derbez JC**, Costello C, Plantinga AJ. A market for 30x30 in the ocean. _Science_. 2024;384: 1177–1179. doi:[10.1126/science.adl4019](https://doi.org/10.1126/science.adl4019)
+
+### 2023
+
+- Arafeh-Dalmau N, Munguia-Vega A, Micheli F, Vilalta-Navas A, **Villaseñor-Derbez JC**, Précoma-de la Mora M, et al. Integrating climate adaptation and transboundary management: Guidelines for designing climate-smart marine protected areas. _One Earth_. 2023;6: 1523–1541. doi:[10.1016/j.oneear.2023.10.002](https://doi.org/10.1016/j.oneear.2023.10.002)
+- **Villaseñor-Derbez JC**, Fulton S, Hernández-Velasco A, Amador-Castro IG. Biomass accrual benefits of community-based marine protected areas outweigh their operational costs. _Frontiers in Marine Science_. 2023;10: 1180920. doi:[10.3389/fmars.2023.1180920](https://doi.org/10.3389/fmars.2023.1180920)
+- Pearson HC, Savoca MS, Costa DP, Lomas MW, Molina R, Pershing AJ, et al. Whales in the carbon cycle: can recovery remove carbon dioxide? _Trends in Ecology and Evolution_. 2023;38: 238–249. doi:[10.1016/j.tree.2022.10.012](https://doi.org/10.1016/j.tree.2022.10.012)
+
+### 2022
+
+- Wilson MW, Lawson JM, Rivera-Hechem MI, **Villaseñor-Derbez JC**, Gaines SD. Evaluating conditions for moored fish aggregating device fisheries development in the Caribbean and Bermuda. _Frontiers in Marine Sciencei_. 2022;9: 827068. doi:[10.3389/fmars.2022.827068](https://doi.org/10.3389/fmars.2022.827068)
+- **Villaseñor-Derbez JC**, Amador-Castro IG, Hernández-Velasco A, Torre J, Fulton S. Two decades of community-based marine conservation provide the foundations for future action. _Frontiers in Marine Science_. 2022;9: 893104. doi:[10.3389/fmars.2022.893104](https://doi.org/10.3389/fmars.2022.893104)
+- Wintergalen EW, Oyanedel R, **Villaseñor-Derbez JC**, Fulton S, Molina R. Opportunities and challenges for livelihood resilience in urban and rural Mexican small-scale fisheries. _Ecolgy & Society_. 2022;27. doi:[10.5751/es-13471-270346](https://doi.org/10.5751/es-13471-270346)
+
+### 2021
+
+- Ramírez-Valdez A, Rowell TJ, Dale KE, Craig MT, Allen LG, **Villaseñor-Derbez JC**, et al. Asymmetry across international borders: Research, fishery and management trends and economic value of the giant sea bass (Stereolepis gigas). _Fish & Fisheries_. 2021;22: 1392–1411.
+- Tuholske C, Halpern BS, Blasco G, Villasenor JC, Frazier M, Caylor K. Mapping global inputs and impacts from of human sewage in coastal ecosystems. _PLoS One_. 2021;16: e0258898. doi:[10.1371/journal.pone.0258898](https://doi.org/10.1371/journal.pone.0258898)
+- Millage KD, **Villaseñor-Derbez JC**, Bradley D, Burgess MG, Lenihan HS, Costello C. Self-financed marine protected areas. _Environmental Research Letters_. 2021;16: 125001. doi:[10.1088/1748-9326/ac3439](https://doi.org/10.1088/1748-9326/ac3439)
+
+### 2020
+
+- Wilson MW, Lawson JM, Rivera-Hechem MI, **Villaseñor-Derbez JC**, Gaines SD. Status and trends of moored fish aggregating device (MFAD) fisheries in the Caribbean and Bermuda. _Mar Policy_. 2020;121: 104148. Available: https://www.sciencedirect.com/science/article/pii/S0308597X20304796
+- Lynham J, Nikolaev A, Raynor J, Vilela T, **Villaseñor-Derbez JC**. Impact of two of the world's largest protected areas on longline fishery catch rates. _Nature Communications_. 2020;11: 979. doi:[10.1038/s41467-020-14588-3](https://doi.org/10.1038/s41467-020-14588-3)
+- **Villaseñor-Derbez JC**, Lynham J, Costello C. Environmental market design for large-scale marine conservation. _Nature Sustainability_. 2020;3: 234–240.
+
+### 2019
+
+- **Villaseñor-Derbez JC**, Aceves-Bueno E, Fulton S, Suarez A, Hernández-Velasco A, Torre J, et al. An interdisciplinary evaluation of community-based TURF-reserves. _PLoS One_. 2019;14: e0221660. doi:[10.1371/journal.pone.0221660](https://doi.org/10.1371/journal.pone.0221660)
+- **Villaseñor-Derbez JC**, Fitzgerald S. Spatial variation in allometric growth of invasive lionfish has management implications. _PeerJ_. 2019;7: e6667. doi:[10.7717/peerj.6667](https://doi.org/10.7717/peerj.6667)
+- O'Hara CC, **Villaseñor-Derbez JC**, Ralph GM, Halpern BS. Mapping status and conservation of global at-risk marine biodiversity. _Conservation Letters_. 2019;12: e12651.
+
+### 2018
+
+- **Villaseñor-Derbez JC**, Faro C, Wright M, Martínez J, Fitzgerald S, Fulton S, et al. A user-friendly tool to evaluate the effectiveness of no-take marine reserves. _PLoS One_. 2018;13: e0191821. doi:[10.1371/journal.pone.0191821](https://doi.org/10.1371/journal.pone.0191821)
+- Peake J, Bogdanoff AK, Layman CA, Castillo B, Reale-Munroe K, Chapman J, et al. Feeding ecology of invasive lionfish (Pterois volitans and Pterois miles) in the temperate and tropical western Atlantic. _Biological Invasions_. 2018;20: 2567–2597. Available: https://link.springer.com/article/10.1007/s10530-018-1720-5
+
+### 2016
+
+- Hernández-Velasco A, Fernández-Rivera-Melo FJ, Melo‐Merino SM, **Villaseñor‐Derbez JC**. Occurrence of Holacanthus clarionensis (Pomacanthidae), Stegastes leucorus, and Stegastes acapulcoensis (Pomacentridae) at Magdalena Bay, B.C.S., Mexico. _Marine Biodiversity Records_. 2016;9: 1–7. doi:[10.1186/s41200-016-0062-1](https://doi.org/10.1186/s41200-016-0062-1)
+
+### 2015
+
+- Dreyfus-León MJ, Mejía-Trejo A, **Villaseñor-Derbez JC**. Analysis of null sets (zero catch) made by the Mexican tuna purse seine fleet (2000--2013). _Ciencias Marinas_. 2015;41: 85–92.
+
+### 2014
+
+- **Villaseñor-Derbez JC**, Herrera-Pérez R. Brief description of prey selectivity and ontogenetic changes in the diet of the invasive lionfish Pterois volitans (Actinopterygii, Scorpaenidae) in the Mexican Caribbean. _Panamerican Journal of Aquatic Sciences_. 2014;9: 131–135.

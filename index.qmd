@@ -1,0 +1,46 @@
+---
+title: "Juan Carlos Villaseñor-Derbez"
+description-meta: "Villaseñor-Derbez"
+image: "files/images/headshot_villasenor.jpg"
+page-navigation: false
+toc: false
+#sidebar: false
+page-layout: full
+
+about:
+  id: hero-heading
+  template: trestles
+  image-width: 70%
+  links:
+    - icon: sun
+      text: Lab
+      href: https://human-ocean-systems.org/
+      target: _blank
+    - icon: globe
+      text: UM profile
+      href: https://people.miami.edu/profile/f90637397e2bb2828cdcebec044ea74a
+      target: _blank
+    - icon: envelope
+      text: E-mail
+      href: mailto:jxv893@miami.edu
+      target: _blank
+    - text: "{{< ai orcid >}} ORCID"   # use academic icons, "" are needed, you also need to install the fontawesome extension
+      href: https://orcid.org/0000-0003-1245-589X
+      target: _blank
+    - text: "{{< ai google-scholar >}} Google Scholar"
+      href: https://scholar.google.com/citations?user=y-HmU0AAAAAJ&hl=en
+      target: _blank
+
+---
+
+:::{#hero-heading}
+
+Welcome to my site. I am an Assistant Professor in the [Department of Environmental Science and Policy](https://environmental-science-policy.earth.miami.edu/index.html) at the Rosenstiel School of Marine, Atmpshperich & Earth Science and a Core Faculty member at the [Frost Institute for Data Science and Computing](https://idsc.miami.edu/_) at the University of Miami. I am the P.I. for the [Human-Ocean Systems Lab](https://human-ocean-systems.org/). We are broadly interested in understanding how institutions and ecological processes shape human incentives, and how human actions modify the marine environment. We uses modern data science tools and techniques to study the human dimensions of marine conservation and environmental change.
+
+## Education
+
+- PhD in Environmental Science & Management, UC Santa Barbara
+- Master of Environmental Science & Management, UC Santa Barbara
+- B.Sc. in Oceanography, Universidat Autónoma de Baja California
+
+:::

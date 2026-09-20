@@ -1,0 +1,17 @@
+---
+title: "Software & Data"
+---
+
+### Data Explorers
+
+- [Mex VMS explorer](https://mex-fisheries.github.io/mex_vms_explorer/)
+
+### Datasets
+
+- [MEX-fisheries](https://mex-fisheries.github.io/mex-fisheries/)
+- [RFMO Tuna](https://doi.org/10.5281/zenodo.21494710) | [GitHub repo](https://github.com/human-ocean/tuna_data) | [Usage examples](https://human-ocean.github.io/tuna_data/)
+
+### Software
+
+- [`EventHorizon`](https://github.com/jcvdav/EventHorizon): An R Package to build panels for event-study models based on a user-specified time horizon for repeated interventions
+- [`EVR628tools`](https://github.com/jcvdav/EVR628tools): An R Package with datasets, palettes, and functions to help in the instruction of [EVR 528 / 628](https://jcvdav.github.io/EVR_628/) Introduction to Data Management and Visualization for Environmental Scientists.

@@ -1,0 +1,58 @@
+project:
+  type: website
+  output-dir: docs
+
+website:
+  title: "villasenor-derbez"
+  image: "https://quarto.org/quarto.png"
+  description: "Juan Carlos Villaseñor-Derbez"
+  # Navbar ---------------------------------------------------------------------
+  navbar:
+    background: light  # You can change the background color here
+    left:
+      - text: Home
+        href: index.qmd
+      - text: Research
+        href: research.qmd
+      - text: Software and Data
+        href: software_and_data.qmd
+      - text: Teaching
+        menu:
+          - text: EVR 628 - Intro to Data Science
+            href: https://jcvdav.github.io/EVR_628/
+          - text: EVR 662 - Geocomputation
+            href: https://jcvdav.github.io/EVR_662/
+      - text: CV
+        href: files/cv.pdf
+    right:
+      - text: Lab Website
+        href: https://human-ocean-systems.org/
+  # Navbar ---------------------------------------------------------------------
+  page-footer: 
+    left: "[Juan Carlos Villaseñor-Derbez](http://www.github.com) &copy; <script>document.write(new Date().getFullYear())</script>" 
+
+# format:
+#   html:
+#     theme:
+#       - cosmo
+#       - brand
+#     css: styles.css
+#     toc: true
+
+format:
+  html:
+    theme: cosmo
+    css: styles.css
+    toc: true
+    footnotes-hover: true
+    code-copy: true
+    code-link: true
+    code-overflow: wrap
+    fig-align: center
+    link-external-icon: false
+    link-external-newwindow: true
+    email-obfuscation: javascript
+    link-external-filter: '^(?:http:|https:)\/\/drganghe\.github\.io\/custom'
+    include-in-header: "files/includes/_academic.qmd"
+
+
