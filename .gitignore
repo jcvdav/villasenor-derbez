@@ -8,3 +8,5 @@ public
 content/publication/template.md
 *.DS_Store
 public/
+/.quarto/
+**/*.quarto_ipynb
