@@ -2,9 +2,7 @@
 .Rhistory
 .RData
 .Ruserdata
-public
 .Rproj.user
-.Rproj.user/*
-content/publication/template.md
 *.DS_Store
-public/
+/.quarto/
+**/*.quarto_ipynb
