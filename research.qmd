@@ -4,8 +4,10 @@ title: "Publications"
 
 ### In review
 
+
+- Molina R., **Villaseñor-Derbez J.C.** and Agar J. Hurricanes on Fisheries in the United States. _Journal of the Association of Environmental and Resource Economists_. In Review
 - Molina R., **Villaseñor-Derbez J.C.**, McDonald G., and McDermott. The Economic and Environmental Cost of Pirate Avoidance. Revise and resubmit at _Nature Communications_ (R&R requested June 8, 2026: NCOMMS-25-93345A) | [working paper](documents/working_papers/piracy.pdf)
-- **Villaseñor-Derbez J.C.** et al., Towards Assessing Generalizability of Adaptive Responses in Small-Scale Fisheries. _npj Ocean Sustainability_ (submitted on June 25, 2026: 5fc3f864-31e2-4569-8f8f-25f06f4e2a44) | [working paper](documents/working_papers/generalizable_adaptation.pdf)
+- **Villaseñor-Derbez J.C.** et al., Towards Assessing Generalizability of Adaptive Responses in Small-Scale Fisheries. _npj Ocean Sustainability_ (R&R requested August 27: 5fc3f864-31e2-4569-8f8f-25f06f4e2a44) | [working paper](documents/working_papers/generalizable_adaptation.pdf)
 
 ### 2026
 
