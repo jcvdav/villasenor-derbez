@@ -32,6 +32,6 @@
     "href": "software_and_data.html",
     "title": "Software & Data",
     "section": "",
-    "text": "Data Explorers\n\nMex VMS explorer\n\n\n\nDatasets\n\nMEX-fisheries\nRFMO Tuna | GitHub repo | Usage examples\n\n\n\nSoftware\n\nEventHorizon: An R Package to build panels for event-study models based on a user-specified time horizon for repeated interventions\nEVR628tools: An R Package with datasets, palettes, and functions to help in the instruction of EVR 528 / 628 Introduction to Data Management and Visualization for Environmental Scientists."
+    "text": "Data Explorers\n\nMex VMS explorer\n\n\n\nDatasets\n\nMexican Fisheries Data (MEX-fisheries portal):\n\nVessel Monitoring Systems (VMS) data | link\nFisheries production (landings) data | link\nVessel registry and permits data | link\nLocation of fishing ports | link\nLocation of landing sites | link\n\nCatch and effort from the world’s tuna fisheries:\n\nGitHub repo (dev)\nZenodo (stable release)\nUsage examples\n\n\n\n\nSoftware\n\nEventHorizon: An R Package to build panels for event-study models based on a user-specified time horizon for repeated interventions\nEVR628tools: An R Package with datasets, palettes, and functions to help in the instruction of EVR 528 / 628 Introduction to Data Management and Visualization for Environmental Scientists."
   }
 ]

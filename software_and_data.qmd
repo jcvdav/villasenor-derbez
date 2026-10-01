@@ -8,8 +8,16 @@ title: "Software & Data"
 
 ### Datasets
 
-- [MEX-fisheries](https://mex-fisheries.github.io/mex-fisheries/)
-- [RFMO Tuna](https://doi.org/10.5281/zenodo.21494710) | [GitHub repo](https://github.com/human-ocean/tuna_data) | [Usage examples](https://human-ocean.github.io/tuna_data/)
+- Mexican Fisheries Data ([MEX-fisheries portal](https://mex-fisheries.github.io/mex-fisheries/)):
+  - Vessel Monitoring Systems (VMS) data | [link](https://mex-fisheries.github.io/mex_vms/)
+  - Fisheries production (landings) data | [link](https://mex-fisheries.github.io/mex_landings/)
+  - Vessel registry and permits data | [link](https://mex-fisheries.github.io/mex_vessel_registry/)
+  - Location of fishing ports | [link](https://mex-fisheries.github.io/mex_ports/)
+  - Location of landing sites | [link](https://mex-fisheries.github.io/mex_landing_sites/)
+- Catch and effort from the world's tuna fisheries:
+  - [GitHub repo](https://github.com/human-ocean/tuna_data) (dev)
+  - [Zenodo](https://doi.org/10.5281/zenodo.21494710) (stable release)
+  - [Usage examples](https://human-ocean.github.io/tuna_data/)
 
 ### Software
 
