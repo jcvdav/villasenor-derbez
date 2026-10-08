@@ -35,7 +35,7 @@ about:
 
 :::{#hero-heading}
 
-Welcome to my site. I am an Assistant Professor in the [Department of Environmental Science and Policy](https://environmental-science-policy.earth.miami.edu/index.html) at the Rosenstiel School of Marine, Atmpshperich & Earth Science and a Core Faculty member at the [Frost Institute for Data Science and Computing](https://idsc.miami.edu/_) at the University of Miami. I am the P.I. for the [Human-Ocean Systems Lab](https://human-ocean-systems.org/). We are broadly interested in understanding how institutions and ecological processes shape human incentives, and how human actions modify the marine environment. We uses modern data science tools and techniques to study the human dimensions of marine conservation and environmental change.
+Welcome to my site. I am an Assistant Professor in the [Department of Environmental Science and Policy](https://environmental-science-policy.earth.miami.edu/index.html) at the Rosenstiel School of Marine, Atmospheric & Earth Science and a Core Faculty member at the [Frost Institute for Data Science and Computing](https://idsc.miami.edu/_) at the University of Miami. I am the P.I. for the [Human-Ocean Systems Lab](https://human-ocean-systems.org/). We are broadly interested in understanding how institutions and ecological processes shape human incentives, and how human actions modify the marine environment. We uses modern data science tools and techniques to study the human dimensions of marine conservation and environmental change.
 
 ## Education
 
