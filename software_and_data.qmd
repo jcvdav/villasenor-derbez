@@ -16,7 +16,7 @@ title: "Software & Data"
   - Location of landing sites | [link](https://mex-fisheries.github.io/mex_landing_sites/)
 - Catch and effort from the world's tuna fisheries:
   - [GitHub repo](https://github.com/human-ocean/tuna_data) (dev)
-  - [Zenodo](https://doi.org/10.5281/zenodo.21494710) (stable release)
+  - [Zenodo](https://doi.org/10.5281/zenodo.21494709) (stable release)
   - [Usage examples](https://human-ocean.github.io/tuna_data/)
 
 ### Software
