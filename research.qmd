@@ -4,7 +4,9 @@ title: "Publications"
 
 ### In review
 
-- Engist D. Englander G., Costello C., Noack F., Raynor J. and **Villaseñor-Derbez J.C.** When Does Better Information Reduce Crime? _Journal of Political Economy Microeconomics_ (In Review)
+- Ferraro, D., Burns, E., Thomas, L., Bone, J., **Villaseñor-Derbez, J.C.**, Granados-Dieseldorff, P. & Costello, C. High seas fishing closures to reduce the opportunity costs of 30x30. _PNAS_ (In Review: 2026-40226)
+- García-Rada E., Egorova Y., Casemajor J., Kaschner K., Villalobos H., G. Mason, **Villaseñor-Derbez J.C.** & Reygondeau G. A Seasonality-aware extension of global marine species distribution models. _PLoS ONE_ (In Review: PONE-D-26-57291)
+- Engist D. ,Englander G., Costello C., Noack F., Raynor J. and **Villaseñor-Derbez J.C.** When Does Better Information Reduce Crime? _Journal of Political Economy Microeconomics_ (In Review)
 - **Villaseñor-Derbez J.C.** and Lynham J. Limited Conservation Benefits From the First Marine Protected Area on the High Seas. _Nature Sustainability_ (In Review: NATSUSTAIN-26108047) | [working paper](documents/working_papers/high_seas_pockets.pdf)
 - Molina R., **Villaseñor-Derbez J.C.** and Agar J. Hurricanes on Fisheries in the United States. _Journal of the Association of Environmental and Resource Economists_. (In Review)
 
